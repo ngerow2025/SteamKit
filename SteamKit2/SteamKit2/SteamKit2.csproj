@@ -57,4 +57,17 @@
     <PackageReference Include="ZstdSharp.Port" Version="0.8.7" />
   </ItemGroup>
 
+  <!-- NativeAOT -->
+  <PropertyGroup>
+    <PublishAot>true</PublishAot>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <StripSymbols>true</StripSymbols> 
+    <InvariantGlobalization>true</InvariantGlobalization>
+    <IsAotCompatible>true</IsAotCompatible>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DNNE" Version="2.1.2" />
+  </ItemGroup>
+
 </Project>

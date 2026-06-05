@@ -5,6 +5,8 @@
 
 SteamKit *(also known as SteamKit2)* is a .NET library designed to interoperate with Valve's [Steam network](https://store.steampowered.com/about). It aims to provide a simple, yet extensible, interface to perform various actions on the network.
 
+## Compiling to Native
+Requires using fork of DNNE to generate C/C++ headers for the native interface. Use https://github.com/ngerow2025/dnne fork of DNNE for proper support.
 
 ## Getting Binaries
 
