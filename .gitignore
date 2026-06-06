@@ -127,3 +127,4 @@ api/
 docfx.json
 index.md
 toc.yml
+nuget.config
