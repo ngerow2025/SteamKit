@@ -9,7 +9,7 @@
 namespace SteamKit2.GC.Deadlock.Internal
 {
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum ESOMsg
     {
         k_ESOMsg_Create = 21,
@@ -22,7 +22,7 @@ namespace SteamKit2.GC.Deadlock.Internal
         k_ESOMsg_CacheSubscribedUpToDate = 29,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EGCBaseClientMsg
     {
         k_EMsgGCPingRequest = 3001,

@@ -9,20 +9,21 @@
 namespace SteamKit2.WebUI.Internal
 {
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class AccountCartContents : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<AccountCartLineItem> line_items { get; } = new global::System.Collections.Generic.List<AccountCartLineItem>();
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public CartAmount subtotal { get; set; }
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public bool is_valid
         {
             get => __pbn__is_valid.GetValueOrDefault();
@@ -30,21 +31,23 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializeis_valid() => __pbn__is_valid != null;
         public void Resetis_valid() => __pbn__is_valid = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_valid;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public AccountCartValidationDetails validation_details { get; set; }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class AccountCartLineItem : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public ulong line_item_id
         {
             get => __pbn__line_item_id.GetValueOrDefault();
@@ -52,9 +55,10 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializeline_item_id() => __pbn__line_item_id != null;
         public void Resetline_item_id() => __pbn__line_item_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__line_item_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public int type
         {
             get => __pbn__type.GetValueOrDefault();
@@ -62,9 +66,10 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializetype() => __pbn__type != null;
         public void Resettype() => __pbn__type = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__type;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public uint packageid
         {
             get => __pbn__packageid.GetValueOrDefault();
@@ -72,9 +77,10 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializepackageid() => __pbn__packageid != null;
         public void Resetpackageid() => __pbn__packageid = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__packageid;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public uint bundleid
         {
             get => __pbn__bundleid.GetValueOrDefault();
@@ -82,9 +88,10 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializebundleid() => __pbn__bundleid != null;
         public void Resetbundleid() => __pbn__bundleid = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__bundleid;
 
-        [global::ProtoBuf.ProtoMember(8)]
+        [global::LightProto.ProtoMember(8)]
         public bool is_valid
         {
             get => __pbn__is_valid.GetValueOrDefault();
@@ -92,12 +99,13 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializeis_valid() => __pbn__is_valid != null;
         public void Resetis_valid() => __pbn__is_valid = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_valid;
 
-        [global::ProtoBuf.ProtoMember(9)]
+        [global::LightProto.ProtoMember(9)]
         public AccountCartValidationDetails validation_details { get; set; }
 
-        [global::ProtoBuf.ProtoMember(10)]
+        [global::LightProto.ProtoMember(10)]
         public uint time_added
         {
             get => __pbn__time_added.GetValueOrDefault();
@@ -105,18 +113,19 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializetime_added() => __pbn__time_added != null;
         public void Resettime_added() => __pbn__time_added = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__time_added;
 
-        [global::ProtoBuf.ProtoMember(11)]
+        [global::LightProto.ProtoMember(11)]
         public CartAmount price_when_added { get; set; }
 
-        [global::ProtoBuf.ProtoMember(12)]
+        [global::LightProto.ProtoMember(12)]
         public CartGiftInfo gift_info { get; set; }
 
-        [global::ProtoBuf.ProtoMember(13)]
+        [global::LightProto.ProtoMember(13)]
         public AccountCartLineItemFlags flags { get; set; }
 
-        [global::ProtoBuf.ProtoMember(14)]
+        [global::LightProto.ProtoMember(14)]
         public ulong gidcoupon_applied
         {
             get => __pbn__gidcoupon_applied.GetValueOrDefault();
@@ -124,18 +133,20 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializegidcoupon_applied() => __pbn__gidcoupon_applied != null;
         public void Resetgidcoupon_applied() => __pbn__gidcoupon_applied = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__gidcoupon_applied;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class AccountCartLineItemFlags : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public bool is_gift
         {
             get => __pbn__is_gift.GetValueOrDefault();
@@ -143,9 +154,10 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializeis_gift() => __pbn__is_gift != null;
         public void Resetis_gift() => __pbn__is_gift = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_gift;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public bool is_private
         {
             get => __pbn__is_private.GetValueOrDefault();
@@ -153,18 +165,20 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializeis_private() => __pbn__is_private != null;
         public void Resetis_private() => __pbn__is_private = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_private;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class AccountCartValidationDetails : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(0)]
         public int validation_failure
         {
@@ -173,18 +187,20 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializevalidation_failure() => __pbn__validation_failure != null;
         public void Resetvalidation_failure() => __pbn__validation_failure = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__validation_failure;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CAccountCart_AddItemsToCart_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue("")]
         public string user_country
         {
@@ -193,24 +209,26 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializeuser_country() => __pbn__user_country != null;
         public void Resetuser_country() => __pbn__user_country = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__user_country;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public global::System.Collections.Generic.List<CAccountCart_AddItemsToCart_Request_ItemToAdd> items { get; } = new global::System.Collections.Generic.List<CAccountCart_AddItemsToCart_Request_ItemToAdd>();
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public CUserInterface_NavData navdata { get; set; }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CAccountCart_AddItemsToCart_Request_ItemToAdd : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint packageid
         {
             get => __pbn__packageid.GetValueOrDefault();
@@ -218,9 +236,10 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializepackageid() => __pbn__packageid != null;
         public void Resetpackageid() => __pbn__packageid = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__packageid;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint bundleid
         {
             get => __pbn__bundleid.GetValueOrDefault();
@@ -228,33 +247,35 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializebundleid() => __pbn__bundleid != null;
         public void Resetbundleid() => __pbn__bundleid = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__bundleid;
 
-        [global::ProtoBuf.ProtoMember(10)]
+        [global::LightProto.ProtoMember(10)]
         public CartGiftInfo gift_info { get; set; }
 
-        [global::ProtoBuf.ProtoMember(11)]
+        [global::LightProto.ProtoMember(11)]
         public AccountCartLineItemFlags flags { get; set; }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CAccountCart_AddItemsToCart_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<ulong> line_item_ids { get; } = new global::System.Collections.Generic.List<ulong>();
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public AccountCartContents cart { get; set; }
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public global::System.Collections.Generic.List<uint> replaced_packages { get; } = new global::System.Collections.Generic.List<uint>();
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public ulong existing_billing_agreementid
         {
             get => __pbn__existing_billing_agreementid.GetValueOrDefault();
@@ -262,9 +283,10 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializeexisting_billing_agreementid() => __pbn__existing_billing_agreementid != null;
         public void Resetexisting_billing_agreementid() => __pbn__existing_billing_agreementid = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__existing_billing_agreementid;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public uint new_billing_agreement_recurring_packageid
         {
             get => __pbn__new_billing_agreement_recurring_packageid.GetValueOrDefault();
@@ -272,36 +294,40 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializenew_billing_agreement_recurring_packageid() => __pbn__new_billing_agreement_recurring_packageid != null;
         public void Resetnew_billing_agreement_recurring_packageid() => __pbn__new_billing_agreement_recurring_packageid = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__new_billing_agreement_recurring_packageid;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CAccountCart_DeleteCart_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CAccountCart_DeleteCart_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CAccountCart_GetCart_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue("")]
         public string user_country
         {
@@ -310,30 +336,33 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializeuser_country() => __pbn__user_country != null;
         public void Resetuser_country() => __pbn__user_country = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__user_country;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CAccountCart_GetCart_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public AccountCartContents cart { get; set; }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CAccountCart_GetRelevantCoupons_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint language
         {
             get => __pbn__language.GetValueOrDefault();
@@ -341,30 +370,33 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializelanguage() => __pbn__language != null;
         public void Resetlanguage() => __pbn__language = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__language;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CAccountCart_GetRelevantCoupons_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<CAccountCart_GetRelevantCoupons_Response_LineItemCoupons> line_items { get; } = new global::System.Collections.Generic.List<CAccountCart_GetRelevantCoupons_Response_LineItemCoupons>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CAccountCart_GetRelevantCoupons_Response_LineItemCoupons : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public ulong line_item_id
         {
             get => __pbn__line_item_id.GetValueOrDefault();
@@ -372,21 +404,23 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializeline_item_id() => __pbn__line_item_id != null;
         public void Resetline_item_id() => __pbn__line_item_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__line_item_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public global::System.Collections.Generic.List<CartCoupon> coupons { get; } = new global::System.Collections.Generic.List<CartCoupon>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CAccountCart_MergeShoppingCartContents_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong gidshoppingcart
         {
             get => __pbn__gidshoppingcart.GetValueOrDefault();
@@ -394,9 +428,10 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializegidshoppingcart() => __pbn__gidshoppingcart != null;
         public void Resetgidshoppingcart() => __pbn__gidshoppingcart = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__gidshoppingcart;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue("")]
         public string user_country
         {
@@ -405,30 +440,33 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializeuser_country() => __pbn__user_country != null;
         public void Resetuser_country() => __pbn__user_country = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__user_country;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CAccountCart_MergeShoppingCartContents_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public AccountCartContents cart { get; set; }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CAccountCart_ModifyLineItem_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public ulong line_item_id
         {
             get => __pbn__line_item_id.GetValueOrDefault();
@@ -436,9 +474,10 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializeline_item_id() => __pbn__line_item_id != null;
         public void Resetline_item_id() => __pbn__line_item_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__line_item_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue("")]
         public string user_country
         {
@@ -447,15 +486,16 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializeuser_country() => __pbn__user_country != null;
         public void Resetuser_country() => __pbn__user_country = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__user_country;
 
-        [global::ProtoBuf.ProtoMember(10)]
+        [global::LightProto.ProtoMember(10)]
         public CartGiftInfo gift_info { get; set; }
 
-        [global::ProtoBuf.ProtoMember(11)]
+        [global::LightProto.ProtoMember(11)]
         public AccountCartLineItemFlags flags { get; set; }
 
-        [global::ProtoBuf.ProtoMember(12)]
+        [global::LightProto.ProtoMember(12)]
         public ulong apply_gidcoupon
         {
             get => __pbn__apply_gidcoupon.GetValueOrDefault();
@@ -463,30 +503,33 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializeapply_gidcoupon() => __pbn__apply_gidcoupon != null;
         public void Resetapply_gidcoupon() => __pbn__apply_gidcoupon = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__apply_gidcoupon;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CAccountCart_ModifyLineItem_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public AccountCartContents cart { get; set; }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CAccountCart_RemoveItemFromCart_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public ulong line_item_id
         {
             get => __pbn__line_item_id.GetValueOrDefault();
@@ -494,9 +537,10 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializeline_item_id() => __pbn__line_item_id != null;
         public void Resetline_item_id() => __pbn__line_item_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__line_item_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue("")]
         public string user_country
         {
@@ -505,24 +549,27 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializeuser_country() => __pbn__user_country != null;
         public void Resetuser_country() => __pbn__user_country = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__user_country;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CAccountCart_RemoveItemFromCart_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public AccountCartContents cart { get; set; }
 
     }
 
     public class AccountCart : SteamUnifiedMessages.UnifiedService
     {
+        [global::LightProto.ProtoIgnore]
         public override string ServiceName { get; } = "AccountCart";
 
         public AsyncJob<SteamUnifiedMessages.ServiceMethodResponse<CAccountCart_AddItemsToCart_Response>> AddItemsToCart( CAccountCart_AddItemsToCart_Request request )

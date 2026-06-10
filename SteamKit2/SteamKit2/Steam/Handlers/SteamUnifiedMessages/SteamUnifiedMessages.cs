@@ -1,11 +1,11 @@
-﻿/*
+/*
  * This file is subject to the terms and conditions defined in
  * file 'license.txt', which is part of this source code package.
  */
 
 using System;
 using System.Collections.Concurrent;
-using ProtoBuf;
+using LightProto;
 
 namespace SteamKit2
 {
@@ -52,7 +52,7 @@ namespace SteamKit2
         /// <param name="message">The message to send.</param>
         /// <returns>The JobID of the request. This can be used to find the appropriate <see cref="ServiceMethodResponse{TResult}"/>.</returns>
         public AsyncJob<ServiceMethodResponse<TResult>> SendMessage<TRequest, TResult>( string name, TRequest message )
-            where TRequest : IExtensible, new() where TResult : IExtensible, new()
+            where TRequest : IExtensible, LightProto.IProtoParser<TRequest>, new() where TResult : IExtensible, LightProto.IProtoParser<TResult>, new()
         {
             if ( message is null )
             {
@@ -79,7 +79,7 @@ namespace SteamKit2
         /// <param name="name">Name of the RPC endpoint. Takes the format ServiceName.RpcName</param>
         /// <param name="message">The message to send.</param>
         public void SendNotification<TRequest>( string name, TRequest message )
-            where TRequest : IExtensible, new()
+            where TRequest : IExtensible, LightProto.IProtoParser<TRequest>, new()
         {
             if ( message is null )
             {

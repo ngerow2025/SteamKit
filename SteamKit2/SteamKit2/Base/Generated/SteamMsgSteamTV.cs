@@ -9,14 +9,15 @@
 namespace SteamKit2.Internal
 {
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_CreateBroadcastChannel_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue("")]
         public string unique_name
         {
@@ -25,18 +26,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeunique_name() => __pbn__unique_name != null;
         public void Resetunique_name() => __pbn__unique_name = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__unique_name;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_CreateBroadcastChannel_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong broadcast_channel_id
         {
             get => __pbn__broadcast_channel_id.GetValueOrDefault();
@@ -44,18 +47,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializebroadcast_channel_id() => __pbn__broadcast_channel_id != null;
         public void Resetbroadcast_channel_id() => __pbn__broadcast_channel_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__broadcast_channel_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_GetBroadcastChannelID_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue("")]
         public string unique_name
         {
@@ -64,18 +69,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeunique_name() => __pbn__unique_name != null;
         public void Resetunique_name() => __pbn__unique_name = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__unique_name;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_GetBroadcastChannelID_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong broadcast_channel_id
         {
             get => __pbn__broadcast_channel_id.GetValueOrDefault();
@@ -83,9 +90,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializebroadcast_channel_id() => __pbn__broadcast_channel_id != null;
         public void Resetbroadcast_channel_id() => __pbn__broadcast_channel_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__broadcast_channel_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue("")]
         public string unique_name
         {
@@ -94,9 +102,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeunique_name() => __pbn__unique_name != null;
         public void Resetunique_name() => __pbn__unique_name = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__unique_name;
 
-        [global::ProtoBuf.ProtoMember(3, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(3, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong steamid
         {
             get => __pbn__steamid.GetValueOrDefault();
@@ -104,18 +113,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializesteamid() => __pbn__steamid != null;
         public void Resetsteamid() => __pbn__steamid = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__steamid;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_SetBroadcastChannelProfile_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong broadcast_channel_id
         {
             get => __pbn__broadcast_channel_id.GetValueOrDefault();
@@ -123,9 +134,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializebroadcast_channel_id() => __pbn__broadcast_channel_id != null;
         public void Resetbroadcast_channel_id() => __pbn__broadcast_channel_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__broadcast_channel_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue("")]
         public string name
         {
@@ -134,9 +146,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializename() => __pbn__name != null;
         public void Resetname() => __pbn__name = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__name;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         [global::System.ComponentModel.DefaultValue("")]
         public string language
         {
@@ -145,9 +158,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializelanguage() => __pbn__language != null;
         public void Resetlanguage() => __pbn__language = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__language;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         [global::System.ComponentModel.DefaultValue("")]
         public string headline
         {
@@ -156,9 +170,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeheadline() => __pbn__headline != null;
         public void Resetheadline() => __pbn__headline = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__headline;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         [global::System.ComponentModel.DefaultValue("")]
         public string summary
         {
@@ -167,9 +182,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializesummary() => __pbn__summary != null;
         public void Resetsummary() => __pbn__summary = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__summary;
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         [global::System.ComponentModel.DefaultValue("")]
         public string avatar_hash
         {
@@ -178,9 +194,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeavatar_hash() => __pbn__avatar_hash != null;
         public void Resetavatar_hash() => __pbn__avatar_hash = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__avatar_hash;
 
-        [global::ProtoBuf.ProtoMember(7)]
+        [global::LightProto.ProtoMember(7)]
         [global::System.ComponentModel.DefaultValue("")]
         public string schedule
         {
@@ -189,9 +206,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeschedule() => __pbn__schedule != null;
         public void Resetschedule() => __pbn__schedule = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__schedule;
 
-        [global::ProtoBuf.ProtoMember(8)]
+        [global::LightProto.ProtoMember(8)]
         [global::System.ComponentModel.DefaultValue("")]
         public string rules
         {
@@ -200,9 +218,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializerules() => __pbn__rules != null;
         public void Resetrules() => __pbn__rules = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__rules;
 
-        [global::ProtoBuf.ProtoMember(9)]
+        [global::LightProto.ProtoMember(9)]
         [global::System.ComponentModel.DefaultValue("")]
         public string panels
         {
@@ -211,27 +230,30 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializepanels() => __pbn__panels != null;
         public void Resetpanels() => __pbn__panels = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__panels;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_SetBroadcastChannelProfile_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_GetBroadcastChannelProfile_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong broadcast_channel_id
         {
             get => __pbn__broadcast_channel_id.GetValueOrDefault();
@@ -239,18 +261,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializebroadcast_channel_id() => __pbn__broadcast_channel_id != null;
         public void Resetbroadcast_channel_id() => __pbn__broadcast_channel_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__broadcast_channel_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_GetBroadcastChannelProfile_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue("")]
         public string unique_name
         {
@@ -259,9 +283,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeunique_name() => __pbn__unique_name != null;
         public void Resetunique_name() => __pbn__unique_name = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__unique_name;
 
-        [global::ProtoBuf.ProtoMember(2, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(2, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong owner_steamid
         {
             get => __pbn__owner_steamid.GetValueOrDefault();
@@ -269,9 +294,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeowner_steamid() => __pbn__owner_steamid != null;
         public void Resetowner_steamid() => __pbn__owner_steamid = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__owner_steamid;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         [global::System.ComponentModel.DefaultValue("")]
         public string name
         {
@@ -280,9 +306,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializename() => __pbn__name != null;
         public void Resetname() => __pbn__name = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__name;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         [global::System.ComponentModel.DefaultValue("")]
         public string language
         {
@@ -291,9 +318,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializelanguage() => __pbn__language != null;
         public void Resetlanguage() => __pbn__language = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__language;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         [global::System.ComponentModel.DefaultValue("")]
         public string headline
         {
@@ -302,9 +330,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeheadline() => __pbn__headline != null;
         public void Resetheadline() => __pbn__headline = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__headline;
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         [global::System.ComponentModel.DefaultValue("")]
         public string summary
         {
@@ -313,9 +342,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializesummary() => __pbn__summary != null;
         public void Resetsummary() => __pbn__summary = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__summary;
 
-        [global::ProtoBuf.ProtoMember(7)]
+        [global::LightProto.ProtoMember(7)]
         [global::System.ComponentModel.DefaultValue("")]
         public string schedule
         {
@@ -324,9 +354,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeschedule() => __pbn__schedule != null;
         public void Resetschedule() => __pbn__schedule = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__schedule;
 
-        [global::ProtoBuf.ProtoMember(8)]
+        [global::LightProto.ProtoMember(8)]
         [global::System.ComponentModel.DefaultValue("")]
         public string rules
         {
@@ -335,9 +366,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializerules() => __pbn__rules != null;
         public void Resetrules() => __pbn__rules = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__rules;
 
-        [global::ProtoBuf.ProtoMember(9)]
+        [global::LightProto.ProtoMember(9)]
         [global::System.ComponentModel.DefaultValue("")]
         public string panels
         {
@@ -346,9 +378,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializepanels() => __pbn__panels != null;
         public void Resetpanels() => __pbn__panels = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__panels;
 
-        [global::ProtoBuf.ProtoMember(10)]
+        [global::LightProto.ProtoMember(10)]
         public bool is_partnered
         {
             get => __pbn__is_partnered.GetValueOrDefault();
@@ -356,18 +389,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeis_partnered() => __pbn__is_partnered != null;
         public void Resetis_partnered() => __pbn__is_partnered = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_partnered;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_SetBroadcastChannelImage_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong broadcast_channel_id
         {
             get => __pbn__broadcast_channel_id.GetValueOrDefault();
@@ -375,9 +410,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializebroadcast_channel_id() => __pbn__broadcast_channel_id != null;
         public void Resetbroadcast_channel_id() => __pbn__broadcast_channel_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__broadcast_channel_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue(EBroadcastImageType.k_EBroadcastImageType_None)]
         public EBroadcastImageType image_type
         {
@@ -386,9 +422,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeimage_type() => __pbn__image_type != null;
         public void Resetimage_type() => __pbn__image_type = null;
+        [global::LightProto.ProtoIgnore]
         private EBroadcastImageType? __pbn__image_type;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public uint image_index
         {
             get => __pbn__image_index.GetValueOrDefault();
@@ -396,9 +433,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeimage_index() => __pbn__image_index != null;
         public void Resetimage_index() => __pbn__image_index = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__image_index;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public uint image_width
         {
             get => __pbn__image_width.GetValueOrDefault();
@@ -406,9 +444,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeimage_width() => __pbn__image_width != null;
         public void Resetimage_width() => __pbn__image_width = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__image_width;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public uint image_height
         {
             get => __pbn__image_height.GetValueOrDefault();
@@ -416,9 +455,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeimage_height() => __pbn__image_height != null;
         public void Resetimage_height() => __pbn__image_height = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__image_height;
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         public uint file_size
         {
             get => __pbn__file_size.GetValueOrDefault();
@@ -426,9 +466,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializefile_size() => __pbn__file_size != null;
         public void Resetfile_size() => __pbn__file_size = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__file_size;
 
-        [global::ProtoBuf.ProtoMember(7)]
+        [global::LightProto.ProtoMember(7)]
         [global::System.ComponentModel.DefaultValue("")]
         public string file_extension
         {
@@ -437,9 +478,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializefile_extension() => __pbn__file_extension != null;
         public void Resetfile_extension() => __pbn__file_extension = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__file_extension;
 
-        [global::ProtoBuf.ProtoMember(8)]
+        [global::LightProto.ProtoMember(8)]
         [global::System.ComponentModel.DefaultValue("")]
         public string file_hash
         {
@@ -448,9 +490,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializefile_hash() => __pbn__file_hash != null;
         public void Resetfile_hash() => __pbn__file_hash = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__file_hash;
 
-        [global::ProtoBuf.ProtoMember(9)]
+        [global::LightProto.ProtoMember(9)]
         public bool undo
         {
             get => __pbn__undo.GetValueOrDefault();
@@ -458,18 +501,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeundo() => __pbn__undo != null;
         public void Resetundo() => __pbn__undo = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__undo;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_SetBroadcastChannelImage_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue("")]
         public string replace_image_hash
         {
@@ -478,18 +523,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializereplace_image_hash() => __pbn__replace_image_hash != null;
         public void Resetreplace_image_hash() => __pbn__replace_image_hash = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__replace_image_hash;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_GetBroadcastChannelImages_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong broadcast_channel_id
         {
             get => __pbn__broadcast_channel_id.GetValueOrDefault();
@@ -497,31 +544,34 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializebroadcast_channel_id() => __pbn__broadcast_channel_id != null;
         public void Resetbroadcast_channel_id() => __pbn__broadcast_channel_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__broadcast_channel_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public global::System.Collections.Generic.List<EBroadcastImageType> image_types { get; } = new global::System.Collections.Generic.List<EBroadcastImageType>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_GetBroadcastChannelImages_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<Images> images { get; } = new global::System.Collections.Generic.List<Images>();
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class Images : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             [global::System.ComponentModel.DefaultValue(EBroadcastImageType.k_EBroadcastImageType_None)]
             public EBroadcastImageType image_type
             {
@@ -530,9 +580,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializeimage_type() => __pbn__image_type != null;
             public void Resetimage_type() => __pbn__image_type = null;
+            [global::LightProto.ProtoIgnore]
             private EBroadcastImageType? __pbn__image_type;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             [global::System.ComponentModel.DefaultValue("")]
             public string image_path
             {
@@ -541,9 +592,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializeimage_path() => __pbn__image_path != null;
             public void Resetimage_path() => __pbn__image_path = null;
+            [global::LightProto.ProtoIgnore]
             private string __pbn__image_path;
 
-            [global::ProtoBuf.ProtoMember(3)]
+            [global::LightProto.ProtoMember(3)]
             public uint image_index
             {
                 get => __pbn__image_index.GetValueOrDefault();
@@ -551,20 +603,22 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializeimage_index() => __pbn__image_index != null;
             public void Resetimage_index() => __pbn__image_index = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__image_index;
 
         }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_SetBroadcastChannelLinkRegions_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong broadcast_channel_id
         {
             get => __pbn__broadcast_channel_id.GetValueOrDefault();
@@ -572,19 +626,21 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializebroadcast_channel_id() => __pbn__broadcast_channel_id != null;
         public void Resetbroadcast_channel_id() => __pbn__broadcast_channel_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__broadcast_channel_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public global::System.Collections.Generic.List<Links> links { get; } = new global::System.Collections.Generic.List<Links>();
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class Links : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public uint link_index
             {
                 get => __pbn__link_index.GetValueOrDefault();
@@ -592,9 +648,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializelink_index() => __pbn__link_index != null;
             public void Resetlink_index() => __pbn__link_index = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__link_index;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             [global::System.ComponentModel.DefaultValue("")]
             public string url
             {
@@ -603,9 +660,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializeurl() => __pbn__url != null;
             public void Reseturl() => __pbn__url = null;
+            [global::LightProto.ProtoIgnore]
             private string __pbn__url;
 
-            [global::ProtoBuf.ProtoMember(3)]
+            [global::LightProto.ProtoMember(3)]
             [global::System.ComponentModel.DefaultValue("")]
             public string link_description
             {
@@ -614,9 +672,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializelink_description() => __pbn__link_description != null;
             public void Resetlink_description() => __pbn__link_description = null;
+            [global::LightProto.ProtoIgnore]
             private string __pbn__link_description;
 
-            [global::ProtoBuf.ProtoMember(4)]
+            [global::LightProto.ProtoMember(4)]
             public uint left
             {
                 get => __pbn__left.GetValueOrDefault();
@@ -624,9 +683,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializeleft() => __pbn__left != null;
             public void Resetleft() => __pbn__left = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__left;
 
-            [global::ProtoBuf.ProtoMember(5)]
+            [global::LightProto.ProtoMember(5)]
             public uint top
             {
                 get => __pbn__top.GetValueOrDefault();
@@ -634,9 +694,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializetop() => __pbn__top != null;
             public void Resettop() => __pbn__top = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__top;
 
-            [global::ProtoBuf.ProtoMember(6)]
+            [global::LightProto.ProtoMember(6)]
             public uint width
             {
                 get => __pbn__width.GetValueOrDefault();
@@ -644,9 +705,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializewidth() => __pbn__width != null;
             public void Resetwidth() => __pbn__width = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__width;
 
-            [global::ProtoBuf.ProtoMember(7)]
+            [global::LightProto.ProtoMember(7)]
             public uint height
             {
                 get => __pbn__height.GetValueOrDefault();
@@ -654,29 +716,32 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializeheight() => __pbn__height != null;
             public void Resetheight() => __pbn__height = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__height;
 
         }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_SetBroadcastChannelLinkRegions_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_GetBroadcastChannelLinks_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong broadcast_channel_id
         {
             get => __pbn__broadcast_channel_id.GetValueOrDefault();
@@ -684,28 +749,31 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializebroadcast_channel_id() => __pbn__broadcast_channel_id != null;
         public void Resetbroadcast_channel_id() => __pbn__broadcast_channel_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__broadcast_channel_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_GetBroadcastChannelLinks_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<Links> links { get; } = new global::System.Collections.Generic.List<Links>();
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class Links : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public uint link_index
             {
                 get => __pbn__link_index.GetValueOrDefault();
@@ -713,9 +781,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializelink_index() => __pbn__link_index != null;
             public void Resetlink_index() => __pbn__link_index = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__link_index;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             [global::System.ComponentModel.DefaultValue("")]
             public string url
             {
@@ -724,9 +793,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializeurl() => __pbn__url != null;
             public void Reseturl() => __pbn__url = null;
+            [global::LightProto.ProtoIgnore]
             private string __pbn__url;
 
-            [global::ProtoBuf.ProtoMember(3)]
+            [global::LightProto.ProtoMember(3)]
             [global::System.ComponentModel.DefaultValue("")]
             public string link_description
             {
@@ -735,9 +805,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializelink_description() => __pbn__link_description != null;
             public void Resetlink_description() => __pbn__link_description = null;
+            [global::LightProto.ProtoIgnore]
             private string __pbn__link_description;
 
-            [global::ProtoBuf.ProtoMember(4)]
+            [global::LightProto.ProtoMember(4)]
             public uint left
             {
                 get => __pbn__left.GetValueOrDefault();
@@ -745,9 +816,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializeleft() => __pbn__left != null;
             public void Resetleft() => __pbn__left = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__left;
 
-            [global::ProtoBuf.ProtoMember(5)]
+            [global::LightProto.ProtoMember(5)]
             public uint top
             {
                 get => __pbn__top.GetValueOrDefault();
@@ -755,9 +827,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializetop() => __pbn__top != null;
             public void Resettop() => __pbn__top = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__top;
 
-            [global::ProtoBuf.ProtoMember(6)]
+            [global::LightProto.ProtoMember(6)]
             public uint width
             {
                 get => __pbn__width.GetValueOrDefault();
@@ -765,9 +838,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializewidth() => __pbn__width != null;
             public void Resetwidth() => __pbn__width = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__width;
 
-            [global::ProtoBuf.ProtoMember(7)]
+            [global::LightProto.ProtoMember(7)]
             public uint height
             {
                 get => __pbn__height.GetValueOrDefault();
@@ -775,20 +849,22 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializeheight() => __pbn__height != null;
             public void Resetheight() => __pbn__height = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__height;
 
         }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_GetBroadcastChannelBroadcasters_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong broadcast_channel_id
         {
             get => __pbn__broadcast_channel_id.GetValueOrDefault();
@@ -796,28 +872,31 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializebroadcast_channel_id() => __pbn__broadcast_channel_id != null;
         public void Resetbroadcast_channel_id() => __pbn__broadcast_channel_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__broadcast_channel_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_GetBroadcastChannelBroadcasters_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<Broadcaster> broadcasters { get; } = new global::System.Collections.Generic.List<Broadcaster>();
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class Broadcaster : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+            [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
             public ulong steamid
             {
                 get => __pbn__steamid.GetValueOrDefault();
@@ -825,9 +904,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializesteamid() => __pbn__steamid != null;
             public void Resetsteamid() => __pbn__steamid = null;
+            [global::LightProto.ProtoIgnore]
             private ulong? __pbn__steamid;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             [global::System.ComponentModel.DefaultValue("")]
             public string name
             {
@@ -836,9 +916,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializename() => __pbn__name != null;
             public void Resetname() => __pbn__name = null;
+            [global::LightProto.ProtoIgnore]
             private string __pbn__name;
 
-            [global::ProtoBuf.ProtoMember(3)]
+            [global::LightProto.ProtoMember(3)]
             [global::System.ComponentModel.DefaultValue("")]
             public string rtmp_token
             {
@@ -847,29 +928,32 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializertmp_token() => __pbn__rtmp_token != null;
             public void Resetrtmp_token() => __pbn__rtmp_token = null;
+            [global::LightProto.ProtoIgnore]
             private string __pbn__rtmp_token;
 
         }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_GetFollowedChannels_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class GetBroadcastChannelEntry : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong broadcast_channel_id
         {
             get => __pbn__broadcast_channel_id.GetValueOrDefault();
@@ -877,9 +961,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializebroadcast_channel_id() => __pbn__broadcast_channel_id != null;
         public void Resetbroadcast_channel_id() => __pbn__broadcast_channel_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__broadcast_channel_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue("")]
         public string unique_name
         {
@@ -888,9 +973,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeunique_name() => __pbn__unique_name != null;
         public void Resetunique_name() => __pbn__unique_name = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__unique_name;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         [global::System.ComponentModel.DefaultValue("")]
         public string name
         {
@@ -899,9 +985,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializename() => __pbn__name != null;
         public void Resetname() => __pbn__name = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__name;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public uint appid
         {
             get => __pbn__appid.GetValueOrDefault();
@@ -909,9 +996,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeappid() => __pbn__appid != null;
         public void Resetappid() => __pbn__appid = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__appid;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public ulong viewers
         {
             get => __pbn__viewers.GetValueOrDefault();
@@ -919,9 +1007,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeviewers() => __pbn__viewers != null;
         public void Resetviewers() => __pbn__viewers = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__viewers;
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         public ulong views
         {
             get => __pbn__views.GetValueOrDefault();
@@ -929,9 +1018,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeviews() => __pbn__views != null;
         public void Resetviews() => __pbn__views = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__views;
 
-        [global::ProtoBuf.ProtoMember(7)]
+        [global::LightProto.ProtoMember(7)]
         [global::System.ComponentModel.DefaultValue("")]
         public string thumbnail_url
         {
@@ -940,9 +1030,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializethumbnail_url() => __pbn__thumbnail_url != null;
         public void Resetthumbnail_url() => __pbn__thumbnail_url = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__thumbnail_url;
 
-        [global::ProtoBuf.ProtoMember(8)]
+        [global::LightProto.ProtoMember(8)]
         public ulong followers
         {
             get => __pbn__followers.GetValueOrDefault();
@@ -950,9 +1041,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializefollowers() => __pbn__followers != null;
         public void Resetfollowers() => __pbn__followers = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__followers;
 
-        [global::ProtoBuf.ProtoMember(9)]
+        [global::LightProto.ProtoMember(9)]
         [global::System.ComponentModel.DefaultValue("")]
         public string headline
         {
@@ -961,9 +1053,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeheadline() => __pbn__headline != null;
         public void Resetheadline() => __pbn__headline = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__headline;
 
-        [global::ProtoBuf.ProtoMember(10)]
+        [global::LightProto.ProtoMember(10)]
         [global::System.ComponentModel.DefaultValue("")]
         public string avatar_url
         {
@@ -972,9 +1065,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeavatar_url() => __pbn__avatar_url != null;
         public void Resetavatar_url() => __pbn__avatar_url = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__avatar_url;
 
-        [global::ProtoBuf.ProtoMember(11, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(11, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong broadcaster_steamid
         {
             get => __pbn__broadcaster_steamid.GetValueOrDefault();
@@ -982,9 +1076,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializebroadcaster_steamid() => __pbn__broadcaster_steamid != null;
         public void Resetbroadcaster_steamid() => __pbn__broadcaster_steamid = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__broadcaster_steamid;
 
-        [global::ProtoBuf.ProtoMember(12)]
+        [global::LightProto.ProtoMember(12)]
         public ulong subscribers
         {
             get => __pbn__subscribers.GetValueOrDefault();
@@ -992,9 +1087,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializesubscribers() => __pbn__subscribers != null;
         public void Resetsubscribers() => __pbn__subscribers = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__subscribers;
 
-        [global::ProtoBuf.ProtoMember(13)]
+        [global::LightProto.ProtoMember(13)]
         [global::System.ComponentModel.DefaultValue("")]
         public string background_url
         {
@@ -1003,9 +1099,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializebackground_url() => __pbn__background_url != null;
         public void Resetbackground_url() => __pbn__background_url = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__background_url;
 
-        [global::ProtoBuf.ProtoMember(14)]
+        [global::LightProto.ProtoMember(14)]
         public bool is_featured
         {
             get => __pbn__is_featured.GetValueOrDefault();
@@ -1013,9 +1110,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeis_featured() => __pbn__is_featured != null;
         public void Resetis_featured() => __pbn__is_featured = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_featured;
 
-        [global::ProtoBuf.ProtoMember(15)]
+        [global::LightProto.ProtoMember(15)]
         public bool is_disabled
         {
             get => __pbn__is_disabled.GetValueOrDefault();
@@ -1023,9 +1121,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeis_disabled() => __pbn__is_disabled != null;
         public void Resetis_disabled() => __pbn__is_disabled = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_disabled;
 
-        [global::ProtoBuf.ProtoMember(16)]
+        [global::LightProto.ProtoMember(16)]
         public bool is_live
         {
             get => __pbn__is_live.GetValueOrDefault();
@@ -1033,9 +1132,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeis_live() => __pbn__is_live != null;
         public void Resetis_live() => __pbn__is_live = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_live;
 
-        [global::ProtoBuf.ProtoMember(17)]
+        [global::LightProto.ProtoMember(17)]
         [global::System.ComponentModel.DefaultValue("")]
         public string language
         {
@@ -1044,9 +1144,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializelanguage() => __pbn__language != null;
         public void Resetlanguage() => __pbn__language = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__language;
 
-        [global::ProtoBuf.ProtoMember(18)]
+        [global::LightProto.ProtoMember(18)]
         public uint reports
         {
             get => __pbn__reports.GetValueOrDefault();
@@ -1054,9 +1155,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializereports() => __pbn__reports != null;
         public void Resetreports() => __pbn__reports = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__reports;
 
-        [global::ProtoBuf.ProtoMember(19)]
+        [global::LightProto.ProtoMember(19)]
         public bool is_partnered
         {
             get => __pbn__is_partnered.GetValueOrDefault();
@@ -1064,51 +1166,56 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeis_partnered() => __pbn__is_partnered != null;
         public void Resetis_partnered() => __pbn__is_partnered = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_partnered;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_GetFollowedChannels_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<GetBroadcastChannelEntry> results { get; } = new global::System.Collections.Generic.List<GetBroadcastChannelEntry>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_GetSubscribedChannels_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_GetSubscribedChannels_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<GetBroadcastChannelEntry> results { get; } = new global::System.Collections.Generic.List<GetBroadcastChannelEntry>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_GetBroadcastChannelStatus_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong broadcast_channel_id
         {
             get => __pbn__broadcast_channel_id.GetValueOrDefault();
@@ -1116,18 +1223,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializebroadcast_channel_id() => __pbn__broadcast_channel_id != null;
         public void Resetbroadcast_channel_id() => __pbn__broadcast_channel_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__broadcast_channel_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_GetBroadcastChannelStatus_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public bool is_live
         {
             get => __pbn__is_live.GetValueOrDefault();
@@ -1135,9 +1244,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeis_live() => __pbn__is_live != null;
         public void Resetis_live() => __pbn__is_live = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_live;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public bool is_disabled
         {
             get => __pbn__is_disabled.GetValueOrDefault();
@@ -1145,9 +1255,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeis_disabled() => __pbn__is_disabled != null;
         public void Resetis_disabled() => __pbn__is_disabled = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_disabled;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public uint appid
         {
             get => __pbn__appid.GetValueOrDefault();
@@ -1155,9 +1266,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeappid() => __pbn__appid != null;
         public void Resetappid() => __pbn__appid = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__appid;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public ulong viewers
         {
             get => __pbn__viewers.GetValueOrDefault();
@@ -1165,9 +1277,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeviewers() => __pbn__viewers != null;
         public void Resetviewers() => __pbn__viewers = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__viewers;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public ulong views
         {
             get => __pbn__views.GetValueOrDefault();
@@ -1175,9 +1288,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeviews() => __pbn__views != null;
         public void Resetviews() => __pbn__views = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__views;
 
-        [global::ProtoBuf.ProtoMember(6, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(6, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong broadcaster_steamid
         {
             get => __pbn__broadcaster_steamid.GetValueOrDefault();
@@ -1185,9 +1299,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializebroadcaster_steamid() => __pbn__broadcaster_steamid != null;
         public void Resetbroadcaster_steamid() => __pbn__broadcaster_steamid = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__broadcaster_steamid;
 
-        [global::ProtoBuf.ProtoMember(7)]
+        [global::LightProto.ProtoMember(7)]
         [global::System.ComponentModel.DefaultValue("")]
         public string thumbnail_url
         {
@@ -1196,9 +1311,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializethumbnail_url() => __pbn__thumbnail_url != null;
         public void Resetthumbnail_url() => __pbn__thumbnail_url = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__thumbnail_url;
 
-        [global::ProtoBuf.ProtoMember(8)]
+        [global::LightProto.ProtoMember(8)]
         public ulong followers
         {
             get => __pbn__followers.GetValueOrDefault();
@@ -1206,9 +1322,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializefollowers() => __pbn__followers != null;
         public void Resetfollowers() => __pbn__followers = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__followers;
 
-        [global::ProtoBuf.ProtoMember(9)]
+        [global::LightProto.ProtoMember(9)]
         public ulong subscribers
         {
             get => __pbn__subscribers.GetValueOrDefault();
@@ -1216,9 +1333,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializesubscribers() => __pbn__subscribers != null;
         public void Resetsubscribers() => __pbn__subscribers = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__subscribers;
 
-        [global::ProtoBuf.ProtoMember(10)]
+        [global::LightProto.ProtoMember(10)]
         [global::System.ComponentModel.DefaultValue("")]
         public string unique_name
         {
@@ -1227,9 +1345,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeunique_name() => __pbn__unique_name != null;
         public void Resetunique_name() => __pbn__unique_name = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__unique_name;
 
-        [global::ProtoBuf.ProtoMember(11)]
+        [global::LightProto.ProtoMember(11)]
         public ulong broadcast_session_id
         {
             get => __pbn__broadcast_session_id.GetValueOrDefault();
@@ -1237,18 +1356,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializebroadcast_session_id() => __pbn__broadcast_session_id != null;
         public void Resetbroadcast_session_id() => __pbn__broadcast_session_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__broadcast_session_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_FollowBroadcastChannel_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong broadcast_channel_id
         {
             get => __pbn__broadcast_channel_id.GetValueOrDefault();
@@ -1256,9 +1377,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializebroadcast_channel_id() => __pbn__broadcast_channel_id != null;
         public void Resetbroadcast_channel_id() => __pbn__broadcast_channel_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__broadcast_channel_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public bool undo
         {
             get => __pbn__undo.GetValueOrDefault();
@@ -1266,18 +1388,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeundo() => __pbn__undo != null;
         public void Resetundo() => __pbn__undo = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__undo;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_FollowBroadcastChannel_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public bool is_followed
         {
             get => __pbn__is_followed.GetValueOrDefault();
@@ -1285,18 +1409,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeis_followed() => __pbn__is_followed != null;
         public void Resetis_followed() => __pbn__is_followed = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_followed;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_SubscribeBroadcastChannel_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong broadcast_channel_id
         {
             get => __pbn__broadcast_channel_id.GetValueOrDefault();
@@ -1304,18 +1430,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializebroadcast_channel_id() => __pbn__broadcast_channel_id != null;
         public void Resetbroadcast_channel_id() => __pbn__broadcast_channel_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__broadcast_channel_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_SubscribeBroadcastChannel_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public bool is_subscribed
         {
             get => __pbn__is_subscribed.GetValueOrDefault();
@@ -1323,18 +1451,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeis_subscribed() => __pbn__is_subscribed != null;
         public void Resetis_subscribed() => __pbn__is_subscribed = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_subscribed;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_GetBroadcastChannelClips_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong broadcast_channel_id
         {
             get => __pbn__broadcast_channel_id.GetValueOrDefault();
@@ -1342,18 +1472,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializebroadcast_channel_id() => __pbn__broadcast_channel_id != null;
         public void Resetbroadcast_channel_id() => __pbn__broadcast_channel_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__broadcast_channel_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_BroadcastClipInfo : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public ulong broadcast_clip_id
         {
             get => __pbn__broadcast_clip_id.GetValueOrDefault();
@@ -1361,9 +1493,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializebroadcast_clip_id() => __pbn__broadcast_clip_id != null;
         public void Resetbroadcast_clip_id() => __pbn__broadcast_clip_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__broadcast_clip_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public ulong channel_id
         {
             get => __pbn__channel_id.GetValueOrDefault();
@@ -1371,9 +1504,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializechannel_id() => __pbn__channel_id != null;
         public void Resetchannel_id() => __pbn__channel_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__channel_id;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public uint app_id
         {
             get => __pbn__app_id.GetValueOrDefault();
@@ -1381,9 +1515,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeapp_id() => __pbn__app_id != null;
         public void Resetapp_id() => __pbn__app_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__app_id;
 
-        [global::ProtoBuf.ProtoMember(4, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(4, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong broadcaster_steamid
         {
             get => __pbn__broadcaster_steamid.GetValueOrDefault();
@@ -1391,9 +1526,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializebroadcaster_steamid() => __pbn__broadcaster_steamid != null;
         public void Resetbroadcaster_steamid() => __pbn__broadcaster_steamid = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__broadcaster_steamid;
 
-        [global::ProtoBuf.ProtoMember(5, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(5, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong creator_steamid
         {
             get => __pbn__creator_steamid.GetValueOrDefault();
@@ -1401,9 +1537,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializecreator_steamid() => __pbn__creator_steamid != null;
         public void Resetcreator_steamid() => __pbn__creator_steamid = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__creator_steamid;
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         [global::System.ComponentModel.DefaultValue("")]
         public string video_description
         {
@@ -1412,9 +1549,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializevideo_description() => __pbn__video_description != null;
         public void Resetvideo_description() => __pbn__video_description = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__video_description;
 
-        [global::ProtoBuf.ProtoMember(7)]
+        [global::LightProto.ProtoMember(7)]
         public uint live_time
         {
             get => __pbn__live_time.GetValueOrDefault();
@@ -1422,9 +1560,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializelive_time() => __pbn__live_time != null;
         public void Resetlive_time() => __pbn__live_time = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__live_time;
 
-        [global::ProtoBuf.ProtoMember(8)]
+        [global::LightProto.ProtoMember(8)]
         public uint length_ms
         {
             get => __pbn__length_ms.GetValueOrDefault();
@@ -1432,9 +1571,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializelength_ms() => __pbn__length_ms != null;
         public void Resetlength_ms() => __pbn__length_ms = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__length_ms;
 
-        [global::ProtoBuf.ProtoMember(9)]
+        [global::LightProto.ProtoMember(9)]
         [global::System.ComponentModel.DefaultValue("")]
         public string thumbnail_path
         {
@@ -1443,21 +1583,23 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializethumbnail_path() => __pbn__thumbnail_path != null;
         public void Resetthumbnail_path() => __pbn__thumbnail_path = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__thumbnail_path;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_GetBroadcastChannelClips_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<CSteamTV_BroadcastClipInfo> clips { get; } = new global::System.Collections.Generic.List<CSteamTV_BroadcastClipInfo>();
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue("")]
         public string thumbnail_host
         {
@@ -1466,18 +1608,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializethumbnail_host() => __pbn__thumbnail_host != null;
         public void Resetthumbnail_host() => __pbn__thumbnail_host = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__thumbnail_host;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_ReportBroadcastChannel_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong broadcast_channel_id
         {
             get => __pbn__broadcast_channel_id.GetValueOrDefault();
@@ -1485,9 +1629,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializebroadcast_channel_id() => __pbn__broadcast_channel_id != null;
         public void Resetbroadcast_channel_id() => __pbn__broadcast_channel_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__broadcast_channel_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue("")]
         public string reason
         {
@@ -1496,27 +1641,30 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializereason() => __pbn__reason != null;
         public void Resetreason() => __pbn__reason = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__reason;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_ReportBroadcastChannel_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_GetBroadcastChannelInteraction_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong broadcast_channel_id
         {
             get => __pbn__broadcast_channel_id.GetValueOrDefault();
@@ -1524,18 +1672,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializebroadcast_channel_id() => __pbn__broadcast_channel_id != null;
         public void Resetbroadcast_channel_id() => __pbn__broadcast_channel_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__broadcast_channel_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_GetBroadcastChannelInteraction_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public bool is_followed
         {
             get => __pbn__is_followed.GetValueOrDefault();
@@ -1543,9 +1693,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeis_followed() => __pbn__is_followed != null;
         public void Resetis_followed() => __pbn__is_followed = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_followed;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public bool is_subscribed
         {
             get => __pbn__is_subscribed.GetValueOrDefault();
@@ -1553,18 +1704,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeis_subscribed() => __pbn__is_subscribed != null;
         public void Resetis_subscribed() => __pbn__is_subscribed = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_subscribed;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_GetGames_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint appid
         {
             get => __pbn__appid.GetValueOrDefault();
@@ -1572,9 +1725,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeappid() => __pbn__appid != null;
         public void Resetappid() => __pbn__appid = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__appid;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue(EGetGamesAlgorithm.k_EGetGamesAlgorithm_Default)]
         public EGetGamesAlgorithm algorithm
         {
@@ -1583,9 +1737,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializealgorithm() => __pbn__algorithm != null;
         public void Resetalgorithm() => __pbn__algorithm = null;
+        [global::LightProto.ProtoIgnore]
         private EGetGamesAlgorithm? __pbn__algorithm;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public uint count
         {
             get => __pbn__count.GetValueOrDefault();
@@ -1593,18 +1748,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializecount() => __pbn__count != null;
         public void Resetcount() => __pbn__count = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__count;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_Game : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint appid
         {
             get => __pbn__appid.GetValueOrDefault();
@@ -1612,9 +1769,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeappid() => __pbn__appid != null;
         public void Resetappid() => __pbn__appid = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__appid;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue("")]
         public string name
         {
@@ -1623,9 +1781,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializename() => __pbn__name != null;
         public void Resetname() => __pbn__name = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__name;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         [global::System.ComponentModel.DefaultValue("")]
         public string image
         {
@@ -1634,9 +1793,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeimage() => __pbn__image != null;
         public void Resetimage() => __pbn__image = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__image;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public ulong viewers
         {
             get => __pbn__viewers.GetValueOrDefault();
@@ -1644,12 +1804,13 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeviewers() => __pbn__viewers != null;
         public void Resetviewers() => __pbn__viewers = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__viewers;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public global::System.Collections.Generic.List<GetBroadcastChannelEntry> channels { get; } = new global::System.Collections.Generic.List<GetBroadcastChannelEntry>();
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         [global::System.ComponentModel.DefaultValue("")]
         public string release_date
         {
@@ -1658,9 +1819,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializerelease_date() => __pbn__release_date != null;
         public void Resetrelease_date() => __pbn__release_date = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__release_date;
 
-        [global::ProtoBuf.ProtoMember(7)]
+        [global::LightProto.ProtoMember(7)]
         [global::System.ComponentModel.DefaultValue("")]
         public string developer
         {
@@ -1669,9 +1831,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializedeveloper() => __pbn__developer != null;
         public void Resetdeveloper() => __pbn__developer = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__developer;
 
-        [global::ProtoBuf.ProtoMember(8)]
+        [global::LightProto.ProtoMember(8)]
         [global::System.ComponentModel.DefaultValue("")]
         public string publisher
         {
@@ -1680,30 +1843,33 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializepublisher() => __pbn__publisher != null;
         public void Resetpublisher() => __pbn__publisher = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__publisher;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_GetGames_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<CSteamTV_Game> results { get; } = new global::System.Collections.Generic.List<CSteamTV_Game>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_GetChannels_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EGetChannelsAlgorithm.k_EGetChannelsAlgorithm_Default)]
         public EGetChannelsAlgorithm algorithm
         {
@@ -1712,9 +1878,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializealgorithm() => __pbn__algorithm != null;
         public void Resetalgorithm() => __pbn__algorithm = null;
+        [global::LightProto.ProtoIgnore]
         private EGetChannelsAlgorithm? __pbn__algorithm;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint count
         {
             get => __pbn__count.GetValueOrDefault();
@@ -1722,9 +1889,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializecount() => __pbn__count != null;
         public void Resetcount() => __pbn__count = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__count;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public uint appid
         {
             get => __pbn__appid.GetValueOrDefault();
@@ -1732,30 +1900,33 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeappid() => __pbn__appid != null;
         public void Resetappid() => __pbn__appid = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__appid;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_GetChannels_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<GetBroadcastChannelEntry> results { get; } = new global::System.Collections.Generic.List<GetBroadcastChannelEntry>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_AddChatBan_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong broadcast_channel_id
         {
             get => __pbn__broadcast_channel_id.GetValueOrDefault();
@@ -1763,9 +1934,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializebroadcast_channel_id() => __pbn__broadcast_channel_id != null;
         public void Resetbroadcast_channel_id() => __pbn__broadcast_channel_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__broadcast_channel_id;
 
-        [global::ProtoBuf.ProtoMember(2, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(2, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong chatter_steamid
         {
             get => __pbn__chatter_steamid.GetValueOrDefault();
@@ -1773,9 +1945,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializechatter_steamid() => __pbn__chatter_steamid != null;
         public void Resetchatter_steamid() => __pbn__chatter_steamid = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__chatter_steamid;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public uint duration
         {
             get => __pbn__duration.GetValueOrDefault();
@@ -1783,9 +1956,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeduration() => __pbn__duration != null;
         public void Resetduration() => __pbn__duration = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__duration;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public bool permanent
         {
             get => __pbn__permanent.GetValueOrDefault();
@@ -1793,9 +1967,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializepermanent() => __pbn__permanent != null;
         public void Resetpermanent() => __pbn__permanent = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__permanent;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public bool undo
         {
             get => __pbn__undo.GetValueOrDefault();
@@ -1803,27 +1978,30 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeundo() => __pbn__undo != null;
         public void Resetundo() => __pbn__undo = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__undo;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_AddChatBan_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_GetChatBans_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong broadcast_channel_id
         {
             get => __pbn__broadcast_channel_id.GetValueOrDefault();
@@ -1831,18 +2009,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializebroadcast_channel_id() => __pbn__broadcast_channel_id != null;
         public void Resetbroadcast_channel_id() => __pbn__broadcast_channel_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__broadcast_channel_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_ChatBan : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong issuer_steamid
         {
             get => __pbn__issuer_steamid.GetValueOrDefault();
@@ -1850,9 +2030,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeissuer_steamid() => __pbn__issuer_steamid != null;
         public void Resetissuer_steamid() => __pbn__issuer_steamid = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__issuer_steamid;
 
-        [global::ProtoBuf.ProtoMember(2, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(2, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong chatter_steamid
         {
             get => __pbn__chatter_steamid.GetValueOrDefault();
@@ -1860,9 +2041,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializechatter_steamid() => __pbn__chatter_steamid != null;
         public void Resetchatter_steamid() => __pbn__chatter_steamid = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__chatter_steamid;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         [global::System.ComponentModel.DefaultValue("")]
         public string time_expires
         {
@@ -1871,9 +2053,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializetime_expires() => __pbn__time_expires != null;
         public void Resettime_expires() => __pbn__time_expires = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__time_expires;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public bool permanent
         {
             get => __pbn__permanent.GetValueOrDefault();
@@ -1881,9 +2064,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializepermanent() => __pbn__permanent != null;
         public void Resetpermanent() => __pbn__permanent = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__permanent;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         [global::System.ComponentModel.DefaultValue("")]
         public string name
         {
@@ -1892,30 +2076,33 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializename() => __pbn__name != null;
         public void Resetname() => __pbn__name = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__name;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_GetChatBans_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<CSteamTV_ChatBan> results { get; } = new global::System.Collections.Generic.List<CSteamTV_ChatBan>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_AddChatModerator_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong broadcast_channel_id
         {
             get => __pbn__broadcast_channel_id.GetValueOrDefault();
@@ -1923,9 +2110,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializebroadcast_channel_id() => __pbn__broadcast_channel_id != null;
         public void Resetbroadcast_channel_id() => __pbn__broadcast_channel_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__broadcast_channel_id;
 
-        [global::ProtoBuf.ProtoMember(2, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(2, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong moderator_steamid
         {
             get => __pbn__moderator_steamid.GetValueOrDefault();
@@ -1933,9 +2121,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializemoderator_steamid() => __pbn__moderator_steamid != null;
         public void Resetmoderator_steamid() => __pbn__moderator_steamid = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__moderator_steamid;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public bool undo
         {
             get => __pbn__undo.GetValueOrDefault();
@@ -1943,27 +2132,30 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeundo() => __pbn__undo != null;
         public void Resetundo() => __pbn__undo = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__undo;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_AddChatModerator_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_GetChatModerators_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong broadcast_channel_id
         {
             get => __pbn__broadcast_channel_id.GetValueOrDefault();
@@ -1971,18 +2163,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializebroadcast_channel_id() => __pbn__broadcast_channel_id != null;
         public void Resetbroadcast_channel_id() => __pbn__broadcast_channel_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__broadcast_channel_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_ChatModerator : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong steamid
         {
             get => __pbn__steamid.GetValueOrDefault();
@@ -1990,9 +2184,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializesteamid() => __pbn__steamid != null;
         public void Resetsteamid() => __pbn__steamid = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__steamid;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue("")]
         public string name
         {
@@ -2001,30 +2196,33 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializename() => __pbn__name != null;
         public void Resetname() => __pbn__name = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__name;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_GetChatModerators_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<CSteamTV_ChatModerator> results { get; } = new global::System.Collections.Generic.List<CSteamTV_ChatModerator>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_AddWordBan_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong broadcast_channel_id
         {
             get => __pbn__broadcast_channel_id.GetValueOrDefault();
@@ -2032,9 +2230,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializebroadcast_channel_id() => __pbn__broadcast_channel_id != null;
         public void Resetbroadcast_channel_id() => __pbn__broadcast_channel_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__broadcast_channel_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue("")]
         public string word
         {
@@ -2043,9 +2242,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeword() => __pbn__word != null;
         public void Resetword() => __pbn__word = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__word;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public bool undo
         {
             get => __pbn__undo.GetValueOrDefault();
@@ -2053,27 +2253,30 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeundo() => __pbn__undo != null;
         public void Resetundo() => __pbn__undo = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__undo;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_AddWordBan_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_GetWordBans_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong broadcast_channel_id
         {
             get => __pbn__broadcast_channel_id.GetValueOrDefault();
@@ -2081,30 +2284,33 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializebroadcast_channel_id() => __pbn__broadcast_channel_id != null;
         public void Resetbroadcast_channel_id() => __pbn__broadcast_channel_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__broadcast_channel_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_GetWordBans_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<string> results { get; } = new global::System.Collections.Generic.List<string>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_JoinChat_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong broadcast_channel_id
         {
             get => __pbn__broadcast_channel_id.GetValueOrDefault();
@@ -2112,18 +2318,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializebroadcast_channel_id() => __pbn__broadcast_channel_id != null;
         public void Resetbroadcast_channel_id() => __pbn__broadcast_channel_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__broadcast_channel_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_JoinChat_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong chat_id
         {
             get => __pbn__chat_id.GetValueOrDefault();
@@ -2131,9 +2339,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializechat_id() => __pbn__chat_id != null;
         public void Resetchat_id() => __pbn__chat_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__chat_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue("")]
         public string view_url_template
         {
@@ -2142,21 +2351,23 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeview_url_template() => __pbn__view_url_template != null;
         public void Resetview_url_template() => __pbn__view_url_template = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__view_url_template;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public global::System.Collections.Generic.List<ulong> flair_group_ids { get; } = new global::System.Collections.Generic.List<ulong>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_Search_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue("")]
         public string term
         {
@@ -2165,39 +2376,43 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeterm() => __pbn__term != null;
         public void Resetterm() => __pbn__term = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__term;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_Search_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<GetBroadcastChannelEntry> results { get; } = new global::System.Collections.Generic.List<GetBroadcastChannelEntry>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_GetSteamTVUserSettings_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_GetSteamTVUserSettings_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public bool stream_live_email
         {
             get => __pbn__stream_live_email.GetValueOrDefault();
@@ -2205,9 +2420,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializestream_live_email() => __pbn__stream_live_email != null;
         public void Resetstream_live_email() => __pbn__stream_live_email = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__stream_live_email;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public bool stream_live_notification
         {
             get => __pbn__stream_live_notification.GetValueOrDefault();
@@ -2215,18 +2431,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializestream_live_notification() => __pbn__stream_live_notification != null;
         public void Resetstream_live_notification() => __pbn__stream_live_notification = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__stream_live_notification;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_SetSteamTVUserSettings_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public bool stream_live_email
         {
             get => __pbn__stream_live_email.GetValueOrDefault();
@@ -2234,9 +2452,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializestream_live_email() => __pbn__stream_live_email != null;
         public void Resetstream_live_email() => __pbn__stream_live_email = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__stream_live_email;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public bool stream_live_notification
         {
             get => __pbn__stream_live_notification.GetValueOrDefault();
@@ -2244,72 +2463,79 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializestream_live_notification() => __pbn__stream_live_notification != null;
         public void Resetstream_live_notification() => __pbn__stream_live_notification = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__stream_live_notification;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_SetSteamTVUserSettings_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_GetMyBroadcastChannels_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_GetMyBroadcastChannels_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<GetBroadcastChannelEntry> results { get; } = new global::System.Collections.Generic.List<GetBroadcastChannelEntry>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_GetHomePageContents_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_HomePageTemplate_Takeover : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<GetBroadcastChannelEntry> broadcasts { get; } = new global::System.Collections.Generic.List<GetBroadcastChannelEntry>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_HomePageTemplate_SingleGame : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<GetBroadcastChannelEntry> broadcasts { get; } = new global::System.Collections.Generic.List<GetBroadcastChannelEntry>();
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint appid
         {
             get => __pbn__appid.GetValueOrDefault();
@@ -2317,9 +2543,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeappid() => __pbn__appid != null;
         public void Resetappid() => __pbn__appid = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__appid;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         [global::System.ComponentModel.DefaultValue("")]
         public string title
         {
@@ -2328,18 +2555,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializetitle() => __pbn__title != null;
         public void Resettitle() => __pbn__title = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__title;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class GameListEntry : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint appid
         {
             get => __pbn__appid.GetValueOrDefault();
@@ -2347,9 +2576,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeappid() => __pbn__appid != null;
         public void Resetappid() => __pbn__appid = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__appid;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue("")]
         public string game_name
         {
@@ -2358,24 +2588,26 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializegame_name() => __pbn__game_name != null;
         public void Resetgame_name() => __pbn__game_name = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__game_name;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public GetBroadcastChannelEntry broadcast { get; set; }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_HomePageTemplate_GameList : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<GameListEntry> entries { get; } = new global::System.Collections.Generic.List<GameListEntry>();
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue("")]
         public string title
         {
@@ -2384,21 +2616,23 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializetitle() => __pbn__title != null;
         public void Resettitle() => __pbn__title = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__title;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_HomePageTemplate_QuickExplore : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<GetBroadcastChannelEntry> broadcasts { get; } = new global::System.Collections.Generic.List<GetBroadcastChannelEntry>();
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue("")]
         public string title
         {
@@ -2407,21 +2641,23 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializetitle() => __pbn__title != null;
         public void Resettitle() => __pbn__title = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__title;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_HomePageTemplate_ConveyorBelt : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<GetBroadcastChannelEntry> broadcasts { get; } = new global::System.Collections.Generic.List<GetBroadcastChannelEntry>();
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue("")]
         public string title
         {
@@ -2430,21 +2666,23 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializetitle() => __pbn__title != null;
         public void Resettitle() => __pbn__title = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__title;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_HomePageTemplate_WatchParty : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public GetBroadcastChannelEntry broadcast { get; set; }
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue("")]
         public string title
         {
@@ -2453,9 +2691,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializetitle() => __pbn__title != null;
         public void Resettitle() => __pbn__title = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__title;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public ulong chat_group_id
         {
             get => __pbn__chat_group_id.GetValueOrDefault();
@@ -2463,21 +2702,23 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializechat_group_id() => __pbn__chat_group_id != null;
         public void Resetchat_group_id() => __pbn__chat_group_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__chat_group_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_HomePageTemplate_Developer : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public GetBroadcastChannelEntry broadcast { get; set; }
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue("")]
         public string title
         {
@@ -2486,18 +2727,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializetitle() => __pbn__title != null;
         public void Resettitle() => __pbn__title = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__title;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_HomePageTemplate_Event : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue("")]
         public string title
         {
@@ -2506,18 +2749,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializetitle() => __pbn__title != null;
         public void Resettitle() => __pbn__title = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__title;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_HomePageContentRow : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(ESteamTVContentTemplate.k_ESteamTVContentTemplate_Invalid)]
         public ESteamTVContentTemplate template_type
         {
@@ -2526,54 +2771,59 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializetemplate_type() => __pbn__template_type != null;
         public void Resettemplate_type() => __pbn__template_type = null;
+        [global::LightProto.ProtoIgnore]
         private ESteamTVContentTemplate? __pbn__template_type;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public CSteamTV_HomePageTemplate_Takeover takeover { get; set; }
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public CSteamTV_HomePageTemplate_SingleGame single_game { get; set; }
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public CSteamTV_HomePageTemplate_GameList game_list { get; set; }
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public CSteamTV_HomePageTemplate_QuickExplore quick_explore { get; set; }
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         public CSteamTV_HomePageTemplate_ConveyorBelt conveyor_belt { get; set; }
 
-        [global::ProtoBuf.ProtoMember(7)]
+        [global::LightProto.ProtoMember(7)]
         public CSteamTV_HomePageTemplate_WatchParty watch_party { get; set; }
 
-        [global::ProtoBuf.ProtoMember(8)]
+        [global::LightProto.ProtoMember(8)]
         public CSteamTV_HomePageTemplate_Developer developer { get; set; }
 
-        [global::ProtoBuf.ProtoMember(9)]
-        public CSteamTV_HomePageTemplate_Event @event { get; set; }
+        [global::LightProto.ProtoMember(9)]
+        public CSteamTV_HomePageTemplate_Event event_ { get; set; }
+        [global::LightProto.ProtoIgnore]
+        public CSteamTV_HomePageTemplate_Event @event { get => event_; set => event_ = value; }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_GetHomePageContents_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<CSteamTV_HomePageContentRow> rows { get; } = new global::System.Collections.Generic.List<CSteamTV_HomePageContentRow>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_AppCheer_SingleCheerType : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint cheer_type
         {
             get => __pbn__cheer_type.GetValueOrDefault();
@@ -2581,9 +2831,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializecheer_type() => __pbn__cheer_type != null;
         public void Resetcheer_type() => __pbn__cheer_type = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__cheer_type;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint cheer_amount
         {
             get => __pbn__cheer_amount.GetValueOrDefault();
@@ -2591,18 +2842,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializecheer_amount() => __pbn__cheer_amount != null;
         public void Resetcheer_amount() => __pbn__cheer_amount = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__cheer_amount;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_AppCheer_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint app_id
         {
             get => __pbn__app_id.GetValueOrDefault();
@@ -2610,9 +2863,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeapp_id() => __pbn__app_id != null;
         public void Resetapp_id() => __pbn__app_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__app_id;
 
-        [global::ProtoBuf.ProtoMember(2, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(2, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong cheer_target_id
         {
             get => __pbn__cheer_target_id.GetValueOrDefault();
@@ -2620,21 +2874,23 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializecheer_target_id() => __pbn__cheer_target_id != null;
         public void Resetcheer_target_id() => __pbn__cheer_target_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__cheer_target_id;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public global::System.Collections.Generic.List<CSteamTV_AppCheer_SingleCheerType> cheers { get; } = new global::System.Collections.Generic.List<CSteamTV_AppCheer_SingleCheerType>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSteamTV_AppCheer_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint aggregation_delay_ms
         {
             get => __pbn__aggregation_delay_ms.GetValueOrDefault();
@@ -2642,11 +2898,12 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeaggregation_delay_ms() => __pbn__aggregation_delay_ms != null;
         public void Resetaggregation_delay_ms() => __pbn__aggregation_delay_ms = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__aggregation_delay_ms;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EBroadcastImageType
     {
         k_EBroadcastImageType_None = 0,
@@ -2658,7 +2915,7 @@ namespace SteamKit2.Internal
         k_EBroadcastImageType_Emoticon = 6,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EGetGamesAlgorithm
     {
         k_EGetGamesAlgorithm_Default = 1,
@@ -2666,7 +2923,7 @@ namespace SteamKit2.Internal
         k_EGetGamesAlgorithm_PopularNew = 3,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EGetChannelsAlgorithm
     {
         k_EGetChannelsAlgorithm_Default = 1,
@@ -2676,7 +2933,7 @@ namespace SteamKit2.Internal
         k_EGetChannelsAlgorithm_Following = 5,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum ESteamTVContentTemplate
     {
         k_ESteamTVContentTemplate_Invalid = 0,
@@ -2692,6 +2949,7 @@ namespace SteamKit2.Internal
 
     public class SteamTV : SteamUnifiedMessages.UnifiedService
     {
+        [global::LightProto.ProtoIgnore]
         public override string ServiceName { get; } = "SteamTV";
 
         public AsyncJob<SteamUnifiedMessages.ServiceMethodResponse<CSteamTV_CreateBroadcastChannel_Response>> CreateBroadcastChannel( CSteamTV_CreateBroadcastChannel_Request request )

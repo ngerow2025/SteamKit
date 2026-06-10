@@ -1,4 +1,4 @@
-﻿/*
+/*
  * This file is subject to the terms and conditions defined in
  * file 'license.txt', which is part of this source code package.
  */
@@ -325,7 +325,7 @@ namespace SteamKit2
                 var msg = gcTokens.Body;
 
                 TokensToKeep = msg.max_tokens_to_keep;
-                Tokens = new ReadOnlyCollection<byte[]>( msg.tokens );
+                Tokens = new ReadOnlyCollection<byte[]>( msg.tokens.ConvertAll( x => ( byte[] )x ) );
             }
         }
 

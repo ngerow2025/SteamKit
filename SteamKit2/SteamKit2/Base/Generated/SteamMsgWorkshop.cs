@@ -9,14 +9,15 @@
 namespace SteamKit2.Internal
 {
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CWorkshop_GetEULAStatus_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint appid
         {
             get => __pbn__appid.GetValueOrDefault();
@@ -24,18 +25,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeappid() => __pbn__appid != null;
         public void Resetappid() => __pbn__appid = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__appid;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CWorkshop_GetEULAStatus_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint version
         {
             get => __pbn__version.GetValueOrDefault();
@@ -43,9 +46,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeversion() => __pbn__version != null;
         public void Resetversion() => __pbn__version = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__version;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint timestamp_action
         {
             get => __pbn__timestamp_action.GetValueOrDefault();
@@ -53,9 +57,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializetimestamp_action() => __pbn__timestamp_action != null;
         public void Resettimestamp_action() => __pbn__timestamp_action = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__timestamp_action;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public bool accepted
         {
             get => __pbn__accepted.GetValueOrDefault();
@@ -63,9 +68,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeaccepted() => __pbn__accepted != null;
         public void Resetaccepted() => __pbn__accepted = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__accepted;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public bool needs_action
         {
             get => __pbn__needs_action.GetValueOrDefault();
@@ -73,12 +79,14 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeneeds_action() => __pbn__needs_action != null;
         public void Resetneeds_action() => __pbn__needs_action = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__needs_action;
 
     }
 
     public class Workshop : SteamUnifiedMessages.UnifiedService
     {
+        [global::LightProto.ProtoIgnore]
         public override string ServiceName { get; } = "Workshop";
 
         public AsyncJob<SteamUnifiedMessages.ServiceMethodResponse<CWorkshop_GetEULAStatus_Response>> GetEULAStatus( CWorkshop_GetEULAStatus_Request request )

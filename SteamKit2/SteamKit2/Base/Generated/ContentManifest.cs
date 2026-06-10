@@ -9,24 +9,26 @@
 namespace SteamKit2.Internal
 {
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class ContentManifestPayload : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<FileMapping> mappings { get; } = new global::System.Collections.Generic.List<FileMapping>();
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class FileMapping : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             [global::System.ComponentModel.DefaultValue("")]
             public string filename
             {
@@ -35,9 +37,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializefilename() => __pbn__filename != null;
             public void Resetfilename() => __pbn__filename = null;
+            [global::LightProto.ProtoIgnore]
             private string __pbn__filename;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public ulong size
             {
                 get => __pbn__size.GetValueOrDefault();
@@ -45,9 +48,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializesize() => __pbn__size != null;
             public void Resetsize() => __pbn__size = null;
+            [global::LightProto.ProtoIgnore]
             private ulong? __pbn__size;
 
-            [global::ProtoBuf.ProtoMember(3)]
+            [global::LightProto.ProtoMember(3)]
             public uint flags
             {
                 get => __pbn__flags.GetValueOrDefault();
@@ -55,9 +59,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializeflags() => __pbn__flags != null;
             public void Resetflags() => __pbn__flags = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__flags;
 
-            [global::ProtoBuf.ProtoMember(4)]
+            [global::LightProto.ProtoMember(4)]
             public byte[] sha_filename
             {
                 get => __pbn__sha_filename;
@@ -65,9 +70,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializesha_filename() => __pbn__sha_filename != null;
             public void Resetsha_filename() => __pbn__sha_filename = null;
+            [global::LightProto.ProtoIgnore]
             private byte[] __pbn__sha_filename;
 
-            [global::ProtoBuf.ProtoMember(5)]
+            [global::LightProto.ProtoMember(5)]
             public byte[] sha_content
             {
                 get => __pbn__sha_content;
@@ -75,12 +81,13 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializesha_content() => __pbn__sha_content != null;
             public void Resetsha_content() => __pbn__sha_content = null;
+            [global::LightProto.ProtoIgnore]
             private byte[] __pbn__sha_content;
 
-            [global::ProtoBuf.ProtoMember(6)]
+            [global::LightProto.ProtoMember(6)]
             public global::System.Collections.Generic.List<ChunkData> chunks { get; } = new global::System.Collections.Generic.List<ChunkData>();
 
-            [global::ProtoBuf.ProtoMember(7)]
+            [global::LightProto.ProtoMember(7)]
             [global::System.ComponentModel.DefaultValue("")]
             public string linktarget
             {
@@ -89,16 +96,18 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializelinktarget() => __pbn__linktarget != null;
             public void Resetlinktarget() => __pbn__linktarget = null;
+            [global::LightProto.ProtoIgnore]
             private string __pbn__linktarget;
 
-            [global::ProtoBuf.ProtoContract()]
+            [global::LightProto.ProtoContract()]
             public partial class ChunkData : global::ProtoBuf.IExtensible
             {
-                private global::ProtoBuf.IExtension __pbn__extensionData;
-                global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                    => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+                [global::LightProto.ProtoIgnore]
+                private global::LightProto.IExtension __pbn__extensionData;
+                global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                    => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-                [global::ProtoBuf.ProtoMember(1)]
+                [global::LightProto.ProtoMember(1)]
                 public byte[] sha
                 {
                     get => __pbn__sha;
@@ -106,9 +115,10 @@ namespace SteamKit2.Internal
                 }
                 public bool ShouldSerializesha() => __pbn__sha != null;
                 public void Resetsha() => __pbn__sha = null;
+                [global::LightProto.ProtoIgnore]
                 private byte[] __pbn__sha;
 
-                [global::ProtoBuf.ProtoMember(2, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+                [global::LightProto.ProtoMember(2, DataFormat = global::LightProto.DataFormat.FixedSize)]
                 public uint crc
                 {
                     get => __pbn__crc.GetValueOrDefault();
@@ -116,9 +126,10 @@ namespace SteamKit2.Internal
                 }
                 public bool ShouldSerializecrc() => __pbn__crc != null;
                 public void Resetcrc() => __pbn__crc = null;
+                [global::LightProto.ProtoIgnore]
                 private uint? __pbn__crc;
 
-                [global::ProtoBuf.ProtoMember(3)]
+                [global::LightProto.ProtoMember(3)]
                 public ulong offset
                 {
                     get => __pbn__offset.GetValueOrDefault();
@@ -126,9 +137,10 @@ namespace SteamKit2.Internal
                 }
                 public bool ShouldSerializeoffset() => __pbn__offset != null;
                 public void Resetoffset() => __pbn__offset = null;
+                [global::LightProto.ProtoIgnore]
                 private ulong? __pbn__offset;
 
-                [global::ProtoBuf.ProtoMember(4)]
+                [global::LightProto.ProtoMember(4)]
                 public uint cb_original
                 {
                     get => __pbn__cb_original.GetValueOrDefault();
@@ -136,9 +148,10 @@ namespace SteamKit2.Internal
                 }
                 public bool ShouldSerializecb_original() => __pbn__cb_original != null;
                 public void Resetcb_original() => __pbn__cb_original = null;
+                [global::LightProto.ProtoIgnore]
                 private uint? __pbn__cb_original;
 
-                [global::ProtoBuf.ProtoMember(5)]
+                [global::LightProto.ProtoMember(5)]
                 public uint cb_compressed
                 {
                     get => __pbn__cb_compressed.GetValueOrDefault();
@@ -146,6 +159,7 @@ namespace SteamKit2.Internal
                 }
                 public bool ShouldSerializecb_compressed() => __pbn__cb_compressed != null;
                 public void Resetcb_compressed() => __pbn__cb_compressed = null;
+                [global::LightProto.ProtoIgnore]
                 private uint? __pbn__cb_compressed;
 
             }
@@ -154,14 +168,15 @@ namespace SteamKit2.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class ContentManifestMetadata : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint depot_id
         {
             get => __pbn__depot_id.GetValueOrDefault();
@@ -169,9 +184,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializedepot_id() => __pbn__depot_id != null;
         public void Resetdepot_id() => __pbn__depot_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__depot_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public ulong gid_manifest
         {
             get => __pbn__gid_manifest.GetValueOrDefault();
@@ -179,9 +195,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializegid_manifest() => __pbn__gid_manifest != null;
         public void Resetgid_manifest() => __pbn__gid_manifest = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__gid_manifest;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public uint creation_time
         {
             get => __pbn__creation_time.GetValueOrDefault();
@@ -189,9 +206,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializecreation_time() => __pbn__creation_time != null;
         public void Resetcreation_time() => __pbn__creation_time = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__creation_time;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public bool filenames_encrypted
         {
             get => __pbn__filenames_encrypted.GetValueOrDefault();
@@ -199,9 +217,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializefilenames_encrypted() => __pbn__filenames_encrypted != null;
         public void Resetfilenames_encrypted() => __pbn__filenames_encrypted = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__filenames_encrypted;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public ulong cb_disk_original
         {
             get => __pbn__cb_disk_original.GetValueOrDefault();
@@ -209,9 +228,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializecb_disk_original() => __pbn__cb_disk_original != null;
         public void Resetcb_disk_original() => __pbn__cb_disk_original = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__cb_disk_original;
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         public ulong cb_disk_compressed
         {
             get => __pbn__cb_disk_compressed.GetValueOrDefault();
@@ -219,9 +239,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializecb_disk_compressed() => __pbn__cb_disk_compressed != null;
         public void Resetcb_disk_compressed() => __pbn__cb_disk_compressed = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__cb_disk_compressed;
 
-        [global::ProtoBuf.ProtoMember(7)]
+        [global::LightProto.ProtoMember(7)]
         public uint unique_chunks
         {
             get => __pbn__unique_chunks.GetValueOrDefault();
@@ -229,9 +250,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeunique_chunks() => __pbn__unique_chunks != null;
         public void Resetunique_chunks() => __pbn__unique_chunks = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__unique_chunks;
 
-        [global::ProtoBuf.ProtoMember(8)]
+        [global::LightProto.ProtoMember(8)]
         public uint crc_encrypted
         {
             get => __pbn__crc_encrypted.GetValueOrDefault();
@@ -239,9 +261,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializecrc_encrypted() => __pbn__crc_encrypted != null;
         public void Resetcrc_encrypted() => __pbn__crc_encrypted = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__crc_encrypted;
 
-        [global::ProtoBuf.ProtoMember(9)]
+        [global::LightProto.ProtoMember(9)]
         public uint crc_clear
         {
             get => __pbn__crc_clear.GetValueOrDefault();
@@ -249,18 +272,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializecrc_clear() => __pbn__crc_clear != null;
         public void Resetcrc_clear() => __pbn__crc_clear = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__crc_clear;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class ContentManifestSignature : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public byte[] signature
         {
             get => __pbn__signature;
@@ -268,18 +293,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializesignature() => __pbn__signature != null;
         public void Resetsignature() => __pbn__signature = null;
+        [global::LightProto.ProtoIgnore]
         private byte[] __pbn__signature;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class ContentDeltaChunks : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint depot_id
         {
             get => __pbn__depot_id.GetValueOrDefault();
@@ -287,9 +314,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializedepot_id() => __pbn__depot_id != null;
         public void Resetdepot_id() => __pbn__depot_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__depot_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public ulong manifest_id_source
         {
             get => __pbn__manifest_id_source.GetValueOrDefault();
@@ -297,9 +325,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializemanifest_id_source() => __pbn__manifest_id_source != null;
         public void Resetmanifest_id_source() => __pbn__manifest_id_source = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__manifest_id_source;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public ulong manifest_id_target
         {
             get => __pbn__manifest_id_target.GetValueOrDefault();
@@ -307,12 +336,13 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializemanifest_id_target() => __pbn__manifest_id_target != null;
         public void Resetmanifest_id_target() => __pbn__manifest_id_target = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__manifest_id_target;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public global::System.Collections.Generic.List<DeltaChunk> deltaChunks { get; } = new global::System.Collections.Generic.List<DeltaChunk>();
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         [global::System.ComponentModel.DefaultValue(EContentDeltaChunkDataLocation.k_EContentDeltaChunkDataLocationInProtobuf)]
         public EContentDeltaChunkDataLocation chunk_data_location
         {
@@ -321,16 +351,18 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializechunk_data_location() => __pbn__chunk_data_location != null;
         public void Resetchunk_data_location() => __pbn__chunk_data_location = null;
+        [global::LightProto.ProtoIgnore]
         private EContentDeltaChunkDataLocation? __pbn__chunk_data_location;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class DeltaChunk : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public byte[] sha_source
             {
                 get => __pbn__sha_source;
@@ -338,9 +370,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializesha_source() => __pbn__sha_source != null;
             public void Resetsha_source() => __pbn__sha_source = null;
+            [global::LightProto.ProtoIgnore]
             private byte[] __pbn__sha_source;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public byte[] sha_target
             {
                 get => __pbn__sha_target;
@@ -348,9 +381,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializesha_target() => __pbn__sha_target != null;
             public void Resetsha_target() => __pbn__sha_target = null;
+            [global::LightProto.ProtoIgnore]
             private byte[] __pbn__sha_target;
 
-            [global::ProtoBuf.ProtoMember(3)]
+            [global::LightProto.ProtoMember(3)]
             public uint size_original
             {
                 get => __pbn__size_original.GetValueOrDefault();
@@ -358,9 +392,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializesize_original() => __pbn__size_original != null;
             public void Resetsize_original() => __pbn__size_original = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__size_original;
 
-            [global::ProtoBuf.ProtoMember(4)]
+            [global::LightProto.ProtoMember(4)]
             public uint patch_method
             {
                 get => __pbn__patch_method.GetValueOrDefault();
@@ -368,9 +403,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializepatch_method() => __pbn__patch_method != null;
             public void Resetpatch_method() => __pbn__patch_method = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__patch_method;
 
-            [global::ProtoBuf.ProtoMember(5)]
+            [global::LightProto.ProtoMember(5)]
             public byte[] chunk
             {
                 get => __pbn__chunk;
@@ -378,9 +414,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializechunk() => __pbn__chunk != null;
             public void Resetchunk() => __pbn__chunk = null;
+            [global::LightProto.ProtoIgnore]
             private byte[] __pbn__chunk;
 
-            [global::ProtoBuf.ProtoMember(6)]
+            [global::LightProto.ProtoMember(6)]
             public uint size_delta
             {
                 get => __pbn__size_delta.GetValueOrDefault();
@@ -388,13 +425,14 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializesize_delta() => __pbn__size_delta != null;
             public void Resetsize_delta() => __pbn__size_delta = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__size_delta;
 
         }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EContentDeltaChunkDataLocation
     {
         k_EContentDeltaChunkDataLocationInProtobuf = 0,

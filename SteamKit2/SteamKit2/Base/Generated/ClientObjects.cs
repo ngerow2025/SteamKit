@@ -9,14 +9,15 @@
 namespace SteamKit2.Internal
 {
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class SteamMessagesClientIClientForcedEnumDependencies : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EBluetoothDeviceType.k_BluetoothDeviceType_Invalid)]
         public EBluetoothDeviceType a
         {
@@ -25,9 +26,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializea() => __pbn__a != null;
         public void Reseta() => __pbn__a = null;
+        [global::LightProto.ProtoIgnore]
         private EBluetoothDeviceType? __pbn__a;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue(EStorageBlockContentType.k_EStorageBlockContentType_Invalid)]
         public EStorageBlockContentType b
         {
@@ -36,9 +38,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeb() => __pbn__b != null;
         public void Resetb() => __pbn__b = null;
+        [global::LightProto.ProtoIgnore]
         private EStorageBlockContentType? __pbn__b;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         [global::System.ComponentModel.DefaultValue(EStorageBlockFileSystemType.k_EStorageBlockFileSystemType_Invalid)]
         public EStorageBlockFileSystemType c
         {
@@ -47,9 +50,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializec() => __pbn__c != null;
         public void Resetc() => __pbn__c = null;
+        [global::LightProto.ProtoIgnore]
         private EStorageBlockFileSystemType? __pbn__c;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         [global::System.ComponentModel.DefaultValue(ESDCardFormatStage.k_ESDCardFormatStage_Invalid)]
         public ESDCardFormatStage d
         {
@@ -58,18 +62,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerialized() => __pbn__d != null;
         public void Resetd() => __pbn__d = null;
+        [global::LightProto.ProtoIgnore]
         private ESDCardFormatStage? __pbn__d;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgNetworkDeviceIP4Address : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(0)]
         public int ip
         {
@@ -78,9 +84,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeip() => __pbn__ip != null;
         public void Resetip() => __pbn__ip = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__ip;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public int netmask
         {
             get => __pbn__netmask.GetValueOrDefault();
@@ -88,24 +95,26 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializenetmask() => __pbn__netmask != null;
         public void Resetnetmask() => __pbn__netmask = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__netmask;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgNetworkDeviceIP4Config : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<CMsgNetworkDeviceIP4Address> addresses { get; } = new global::System.Collections.Generic.List<CMsgNetworkDeviceIP4Address>();
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public global::System.Collections.Generic.List<int> dns_ip { get; } = new global::System.Collections.Generic.List<int>();
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public int gateway_ip
         {
             get => __pbn__gateway_ip.GetValueOrDefault();
@@ -113,9 +122,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializegateway_ip() => __pbn__gateway_ip != null;
         public void Resetgateway_ip() => __pbn__gateway_ip = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__gateway_ip;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public bool is_dhcp_enabled
         {
             get => __pbn__is_dhcp_enabled.GetValueOrDefault();
@@ -123,9 +133,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeis_dhcp_enabled() => __pbn__is_dhcp_enabled != null;
         public void Resetis_dhcp_enabled() => __pbn__is_dhcp_enabled = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_dhcp_enabled;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public bool is_default_route
         {
             get => __pbn__is_default_route.GetValueOrDefault();
@@ -133,9 +144,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeis_default_route() => __pbn__is_default_route != null;
         public void Resetis_default_route() => __pbn__is_default_route = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_default_route;
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         [global::System.ComponentModel.DefaultValue(false)]
         public bool is_enabled
         {
@@ -144,18 +156,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeis_enabled() => __pbn__is_enabled != null;
         public void Resetis_enabled() => __pbn__is_enabled = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_enabled;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgNetworkDeviceIP6Address : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue("")]
         public string ip
         {
@@ -164,24 +178,26 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeip() => __pbn__ip != null;
         public void Resetip() => __pbn__ip = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__ip;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgNetworkDeviceIP6Config : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<CMsgNetworkDeviceIP6Address> addresses { get; } = new global::System.Collections.Generic.List<CMsgNetworkDeviceIP6Address>();
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public global::System.Collections.Generic.List<string> dns_ip { get; } = new global::System.Collections.Generic.List<string>();
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         [global::System.ComponentModel.DefaultValue("")]
         public string gateway_ip
         {
@@ -190,9 +206,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializegateway_ip() => __pbn__gateway_ip != null;
         public void Resetgateway_ip() => __pbn__gateway_ip = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__gateway_ip;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public bool is_dhcp_enabled
         {
             get => __pbn__is_dhcp_enabled.GetValueOrDefault();
@@ -200,9 +217,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeis_dhcp_enabled() => __pbn__is_dhcp_enabled != null;
         public void Resetis_dhcp_enabled() => __pbn__is_dhcp_enabled = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_dhcp_enabled;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public bool is_default_route
         {
             get => __pbn__is_default_route.GetValueOrDefault();
@@ -210,9 +228,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeis_default_route() => __pbn__is_default_route != null;
         public void Resetis_default_route() => __pbn__is_default_route = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_default_route;
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         [global::System.ComponentModel.DefaultValue(false)]
         public bool is_enabled
         {
@@ -221,21 +240,23 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeis_enabled() => __pbn__is_enabled != null;
         public void Resetis_enabled() => __pbn__is_enabled = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_enabled;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgNetworkDevicesData : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<Device> devices { get; } = new global::System.Collections.Generic.List<Device>();
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public bool is_wifi_enabled
         {
             get => __pbn__is_wifi_enabled.GetValueOrDefault();
@@ -243,9 +264,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeis_wifi_enabled() => __pbn__is_wifi_enabled != null;
         public void Resetis_wifi_enabled() => __pbn__is_wifi_enabled = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_wifi_enabled;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public bool is_wifi_scanning_enabled
         {
             get => __pbn__is_wifi_scanning_enabled.GetValueOrDefault();
@@ -253,16 +275,18 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeis_wifi_scanning_enabled() => __pbn__is_wifi_scanning_enabled != null;
         public void Resetis_wifi_scanning_enabled() => __pbn__is_wifi_scanning_enabled = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_wifi_scanning_enabled;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class Device : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             [global::System.ComponentModel.DefaultValue(0u)]
             public uint id
             {
@@ -271,9 +295,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializeid() => __pbn__id != null;
             public void Resetid() => __pbn__id = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__id;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public int etype
             {
                 get => __pbn__etype.GetValueOrDefault();
@@ -281,9 +306,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializeetype() => __pbn__etype != null;
             public void Resetetype() => __pbn__etype = null;
+            [global::LightProto.ProtoIgnore]
             private int? __pbn__etype;
 
-            [global::ProtoBuf.ProtoMember(3)]
+            [global::LightProto.ProtoMember(3)]
             public int estate
             {
                 get => __pbn__estate.GetValueOrDefault();
@@ -291,9 +317,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializeestate() => __pbn__estate != null;
             public void Resetestate() => __pbn__estate = null;
+            [global::LightProto.ProtoIgnore]
             private int? __pbn__estate;
 
-            [global::ProtoBuf.ProtoMember(4)]
+            [global::LightProto.ProtoMember(4)]
             [global::System.ComponentModel.DefaultValue("")]
             public string mac
             {
@@ -302,9 +329,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializemac() => __pbn__mac != null;
             public void Resetmac() => __pbn__mac = null;
+            [global::LightProto.ProtoIgnore]
             private string __pbn__mac;
 
-            [global::ProtoBuf.ProtoMember(5)]
+            [global::LightProto.ProtoMember(5)]
             [global::System.ComponentModel.DefaultValue("")]
             public string vendor
             {
@@ -313,9 +341,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializevendor() => __pbn__vendor != null;
             public void Resetvendor() => __pbn__vendor = null;
+            [global::LightProto.ProtoIgnore]
             private string __pbn__vendor;
 
-            [global::ProtoBuf.ProtoMember(6)]
+            [global::LightProto.ProtoMember(6)]
             [global::System.ComponentModel.DefaultValue("")]
             public string product
             {
@@ -324,28 +353,30 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializeproduct() => __pbn__product != null;
             public void Resetproduct() => __pbn__product = null;
+            [global::LightProto.ProtoIgnore]
             private string __pbn__product;
 
-            [global::ProtoBuf.ProtoMember(7)]
+            [global::LightProto.ProtoMember(7)]
             public CMsgNetworkDeviceIP4Config ip4 { get; set; }
 
-            [global::ProtoBuf.ProtoMember(8)]
+            [global::LightProto.ProtoMember(8)]
             public CMsgNetworkDeviceIP6Config ip6 { get; set; }
 
-            [global::ProtoBuf.ProtoMember(9)]
+            [global::LightProto.ProtoMember(9)]
             public Wired wired { get; set; }
 
-            [global::ProtoBuf.ProtoMember(10)]
+            [global::LightProto.ProtoMember(10)]
             public Wireless wireless { get; set; }
 
-            [global::ProtoBuf.ProtoContract()]
+            [global::LightProto.ProtoContract()]
             public partial class Wired : global::ProtoBuf.IExtensible
             {
-                private global::ProtoBuf.IExtension __pbn__extensionData;
-                global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                    => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+                [global::LightProto.ProtoIgnore]
+                private global::LightProto.IExtension __pbn__extensionData;
+                global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                    => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-                [global::ProtoBuf.ProtoMember(1)]
+                [global::LightProto.ProtoMember(1)]
                 [global::System.ComponentModel.DefaultValue(false)]
                 public bool is_cable_present
                 {
@@ -354,9 +385,10 @@ namespace SteamKit2.Internal
                 }
                 public bool ShouldSerializeis_cable_present() => __pbn__is_cable_present != null;
                 public void Resetis_cable_present() => __pbn__is_cable_present = null;
+                [global::LightProto.ProtoIgnore]
                 private bool? __pbn__is_cable_present;
 
-                [global::ProtoBuf.ProtoMember(2)]
+                [global::LightProto.ProtoMember(2)]
                 public uint speed_mbit
                 {
                     get => __pbn__speed_mbit.GetValueOrDefault();
@@ -364,9 +396,10 @@ namespace SteamKit2.Internal
                 }
                 public bool ShouldSerializespeed_mbit() => __pbn__speed_mbit != null;
                 public void Resetspeed_mbit() => __pbn__speed_mbit = null;
+                [global::LightProto.ProtoIgnore]
                 private uint? __pbn__speed_mbit;
 
-                [global::ProtoBuf.ProtoMember(3)]
+                [global::LightProto.ProtoMember(3)]
                 [global::System.ComponentModel.DefaultValue("")]
                 public string friendly_name
                 {
@@ -375,21 +408,23 @@ namespace SteamKit2.Internal
                 }
                 public bool ShouldSerializefriendly_name() => __pbn__friendly_name != null;
                 public void Resetfriendly_name() => __pbn__friendly_name = null;
+                [global::LightProto.ProtoIgnore]
                 private string __pbn__friendly_name;
 
             }
 
-            [global::ProtoBuf.ProtoContract()]
+            [global::LightProto.ProtoContract()]
             public partial class Wireless : global::ProtoBuf.IExtensible
             {
-                private global::ProtoBuf.IExtension __pbn__extensionData;
-                global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                    => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+                [global::LightProto.ProtoIgnore]
+                private global::LightProto.IExtension __pbn__extensionData;
+                global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                    => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-                [global::ProtoBuf.ProtoMember(1)]
+                [global::LightProto.ProtoMember(1)]
                 public global::System.Collections.Generic.List<AP> aps { get; } = new global::System.Collections.Generic.List<AP>();
 
-                [global::ProtoBuf.ProtoMember(2)]
+                [global::LightProto.ProtoMember(2)]
                 public int esecurity_supported
                 {
                     get => __pbn__esecurity_supported.GetValueOrDefault();
@@ -397,16 +432,18 @@ namespace SteamKit2.Internal
                 }
                 public bool ShouldSerializeesecurity_supported() => __pbn__esecurity_supported != null;
                 public void Resetesecurity_supported() => __pbn__esecurity_supported = null;
+                [global::LightProto.ProtoIgnore]
                 private int? __pbn__esecurity_supported;
 
-                [global::ProtoBuf.ProtoContract()]
+                [global::LightProto.ProtoContract()]
                 public partial class AP : global::ProtoBuf.IExtensible
                 {
-                    private global::ProtoBuf.IExtension __pbn__extensionData;
-                    global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                        => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+                    [global::LightProto.ProtoIgnore]
+                    private global::LightProto.IExtension __pbn__extensionData;
+                    global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                        => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-                    [global::ProtoBuf.ProtoMember(1)]
+                    [global::LightProto.ProtoMember(1)]
                     [global::System.ComponentModel.DefaultValue(0u)]
                     public uint id
                     {
@@ -415,9 +452,10 @@ namespace SteamKit2.Internal
                     }
                     public bool ShouldSerializeid() => __pbn__id != null;
                     public void Resetid() => __pbn__id = null;
+                    [global::LightProto.ProtoIgnore]
                     private uint? __pbn__id;
 
-                    [global::ProtoBuf.ProtoMember(2)]
+                    [global::LightProto.ProtoMember(2)]
                     public int estrength
                     {
                         get => __pbn__estrength.GetValueOrDefault();
@@ -425,9 +463,10 @@ namespace SteamKit2.Internal
                     }
                     public bool ShouldSerializeestrength() => __pbn__estrength != null;
                     public void Resetestrength() => __pbn__estrength = null;
+                    [global::LightProto.ProtoIgnore]
                     private int? __pbn__estrength;
 
-                    [global::ProtoBuf.ProtoMember(3)]
+                    [global::LightProto.ProtoMember(3)]
                     [global::System.ComponentModel.DefaultValue("")]
                     public string ssid
                     {
@@ -436,9 +475,10 @@ namespace SteamKit2.Internal
                     }
                     public bool ShouldSerializessid() => __pbn__ssid != null;
                     public void Resetssid() => __pbn__ssid = null;
+                    [global::LightProto.ProtoIgnore]
                     private string __pbn__ssid;
 
-                    [global::ProtoBuf.ProtoMember(4)]
+                    [global::LightProto.ProtoMember(4)]
                     public bool is_active
                     {
                         get => __pbn__is_active.GetValueOrDefault();
@@ -446,9 +486,10 @@ namespace SteamKit2.Internal
                     }
                     public bool ShouldSerializeis_active() => __pbn__is_active != null;
                     public void Resetis_active() => __pbn__is_active = null;
+                    [global::LightProto.ProtoIgnore]
                     private bool? __pbn__is_active;
 
-                    [global::ProtoBuf.ProtoMember(5)]
+                    [global::LightProto.ProtoMember(5)]
                     public bool is_autoconnect
                     {
                         get => __pbn__is_autoconnect.GetValueOrDefault();
@@ -456,9 +497,10 @@ namespace SteamKit2.Internal
                     }
                     public bool ShouldSerializeis_autoconnect() => __pbn__is_autoconnect != null;
                     public void Resetis_autoconnect() => __pbn__is_autoconnect = null;
+                    [global::LightProto.ProtoIgnore]
                     private bool? __pbn__is_autoconnect;
 
-                    [global::ProtoBuf.ProtoMember(6)]
+                    [global::LightProto.ProtoMember(6)]
                     public int esecurity
                     {
                         get => __pbn__esecurity.GetValueOrDefault();
@@ -466,9 +508,10 @@ namespace SteamKit2.Internal
                     }
                     public bool ShouldSerializeesecurity() => __pbn__esecurity != null;
                     public void Resetesecurity() => __pbn__esecurity = null;
+                    [global::LightProto.ProtoIgnore]
                     private int? __pbn__esecurity;
 
-                    [global::ProtoBuf.ProtoMember(7)]
+                    [global::LightProto.ProtoMember(7)]
                     [global::System.ComponentModel.DefaultValue("")]
                     public string user_name
                     {
@@ -477,9 +520,10 @@ namespace SteamKit2.Internal
                     }
                     public bool ShouldSerializeuser_name() => __pbn__user_name != null;
                     public void Resetuser_name() => __pbn__user_name = null;
+                    [global::LightProto.ProtoIgnore]
                     private string __pbn__user_name;
 
-                    [global::ProtoBuf.ProtoMember(8)]
+                    [global::LightProto.ProtoMember(8)]
                     [global::System.ComponentModel.DefaultValue("")]
                     public string password
                     {
@@ -488,9 +532,10 @@ namespace SteamKit2.Internal
                     }
                     public bool ShouldSerializepassword() => __pbn__password != null;
                     public void Resetpassword() => __pbn__password = null;
+                    [global::LightProto.ProtoIgnore]
                     private string __pbn__password;
 
-                    [global::ProtoBuf.ProtoMember(9)]
+                    [global::LightProto.ProtoMember(9)]
                     public int strength_raw
                     {
                         get => __pbn__strength_raw.GetValueOrDefault();
@@ -498,9 +543,10 @@ namespace SteamKit2.Internal
                     }
                     public bool ShouldSerializestrength_raw() => __pbn__strength_raw != null;
                     public void Resetstrength_raw() => __pbn__strength_raw = null;
+                    [global::LightProto.ProtoIgnore]
                     private int? __pbn__strength_raw;
 
-                    [global::ProtoBuf.ProtoMember(10)]
+                    [global::LightProto.ProtoMember(10)]
                     [global::System.ComponentModel.DefaultValue("")]
                     public string band_filter
                     {
@@ -509,9 +555,10 @@ namespace SteamKit2.Internal
                     }
                     public bool ShouldSerializeband_filter() => __pbn__band_filter != null;
                     public void Resetband_filter() => __pbn__band_filter = null;
+                    [global::LightProto.ProtoIgnore]
                     private string __pbn__band_filter;
 
-                    [global::ProtoBuf.ProtoMember(11)]
+                    [global::LightProto.ProtoMember(11)]
                     public bool has_non_6ghz_channel
                     {
                         get => __pbn__has_non_6ghz_channel.GetValueOrDefault();
@@ -519,9 +566,10 @@ namespace SteamKit2.Internal
                     }
                     public bool ShouldSerializehas_non_6ghz_channel() => __pbn__has_non_6ghz_channel != null;
                     public void Resethas_non_6ghz_channel() => __pbn__has_non_6ghz_channel = null;
+                    [global::LightProto.ProtoIgnore]
                     private bool? __pbn__has_non_6ghz_channel;
 
-                    [global::ProtoBuf.ProtoMember(12)]
+                    [global::LightProto.ProtoMember(12)]
                     public bool is_saved
                     {
                         get => __pbn__is_saved.GetValueOrDefault();
@@ -529,6 +577,7 @@ namespace SteamKit2.Internal
                     }
                     public bool ShouldSerializeis_saved() => __pbn__is_saved != null;
                     public void Resetis_saved() => __pbn__is_saved = null;
+                    [global::LightProto.ProtoIgnore]
                     private bool? __pbn__is_saved;
 
                 }
@@ -539,14 +588,15 @@ namespace SteamKit2.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgNetworkDeviceConnect : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(0u)]
         public uint device_id
         {
@@ -555,21 +605,22 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializedevice_id() => __pbn__device_id != null;
         public void Resetdevice_id() => __pbn__device_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__device_id;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public Credentials credentials { get; set; }
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public CMsgNetworkDeviceIP4Config ip4 { get; set; }
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         public CMsgNetworkDeviceIP6Config ip6 { get; set; }
 
-        [global::ProtoBuf.ProtoMember(7)]
+        [global::LightProto.ProtoMember(7)]
         public Wireless wireless { get; set; }
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public KnownAP ap_known
         {
             get => __pbn__ap_info.Is(2) ? ((KnownAP)__pbn__ap_info.Object) : default;
@@ -578,9 +629,11 @@ namespace SteamKit2.Internal
         public bool ShouldSerializeap_known() => __pbn__ap_info.Is(2);
         public void Resetap_known() => global::ProtoBuf.DiscriminatedUnionObject.Reset(ref __pbn__ap_info, 2);
 
+        [global::LightProto.ProtoIgnore]
+
         private global::ProtoBuf.DiscriminatedUnionObject __pbn__ap_info;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public CustomAP ap_custom
         {
             get => __pbn__ap_info.Is(3) ? ((CustomAP)__pbn__ap_info.Object) : default;
@@ -589,14 +642,15 @@ namespace SteamKit2.Internal
         public bool ShouldSerializeap_custom() => __pbn__ap_info.Is(3);
         public void Resetap_custom() => global::ProtoBuf.DiscriminatedUnionObject.Reset(ref __pbn__ap_info, 3);
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class KnownAP : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public uint ap_id
             {
                 get => __pbn__ap_id.GetValueOrDefault();
@@ -604,18 +658,20 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializeap_id() => __pbn__ap_id != null;
             public void Resetap_id() => __pbn__ap_id = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__ap_id;
 
         }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class CustomAP : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             [global::System.ComponentModel.DefaultValue("")]
             public string ssid
             {
@@ -624,9 +680,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializessid() => __pbn__ssid != null;
             public void Resetssid() => __pbn__ssid = null;
+            [global::LightProto.ProtoIgnore]
             private string __pbn__ssid;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public int esecurity
             {
                 get => __pbn__esecurity.GetValueOrDefault();
@@ -634,18 +691,20 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializeesecurity() => __pbn__esecurity != null;
             public void Resetesecurity() => __pbn__esecurity = null;
+            [global::LightProto.ProtoIgnore]
             private int? __pbn__esecurity;
 
         }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class Credentials : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             [global::System.ComponentModel.DefaultValue("")]
             public string username
             {
@@ -654,9 +713,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializeusername() => __pbn__username != null;
             public void Resetusername() => __pbn__username = null;
+            [global::LightProto.ProtoIgnore]
             private string __pbn__username;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             [global::System.ComponentModel.DefaultValue("")]
             public string password
             {
@@ -665,18 +725,20 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializepassword() => __pbn__password != null;
             public void Resetpassword() => __pbn__password = null;
+            [global::LightProto.ProtoIgnore]
             private string __pbn__password;
 
         }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class Wireless : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             [global::System.ComponentModel.DefaultValue("")]
             public string band_filter
             {
@@ -685,33 +747,36 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializeband_filter() => __pbn__band_filter != null;
             public void Resetband_filter() => __pbn__band_filter = null;
+            [global::LightProto.ProtoIgnore]
             private string __pbn__band_filter;
 
         }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgNetworkDeviceSetOptions : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public Wireless wireless { get; set; }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class Wireless : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1, IsRequired = true)]
+            [global::LightProto.ProtoMember(1, IsRequired = true)]
             public uint ap_id { get; set; }
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public bool is_autoconnect
             {
                 get => __pbn__is_autoconnect.GetValueOrDefault();
@@ -719,9 +784,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializeis_autoconnect() => __pbn__is_autoconnect != null;
             public void Resetis_autoconnect() => __pbn__is_autoconnect = null;
+            [global::LightProto.ProtoIgnore]
             private bool? __pbn__is_autoconnect;
 
-            [global::ProtoBuf.ProtoMember(3)]
+            [global::LightProto.ProtoMember(3)]
             [global::System.ComponentModel.DefaultValue("")]
             public string band_filter
             {
@@ -730,26 +796,28 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializeband_filter() => __pbn__band_filter != null;
             public void Resetband_filter() => __pbn__band_filter = null;
+            [global::LightProto.ProtoIgnore]
             private string __pbn__band_filter;
 
         }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgStorageDevicesData : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<Drive> drives { get; } = new global::System.Collections.Generic.List<Drive>();
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public global::System.Collections.Generic.List<BlockDevice> block_devices { get; } = new global::System.Collections.Generic.List<BlockDevice>();
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public bool is_unmount_supported
         {
             get => __pbn__is_unmount_supported.GetValueOrDefault();
@@ -757,9 +825,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeis_unmount_supported() => __pbn__is_unmount_supported != null;
         public void Resetis_unmount_supported() => __pbn__is_unmount_supported = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_unmount_supported;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public bool is_trim_supported
         {
             get => __pbn__is_trim_supported.GetValueOrDefault();
@@ -767,9 +836,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeis_trim_supported() => __pbn__is_trim_supported != null;
         public void Resetis_trim_supported() => __pbn__is_trim_supported = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_trim_supported;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public bool is_trim_running
         {
             get => __pbn__is_trim_running.GetValueOrDefault();
@@ -777,16 +847,18 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeis_trim_running() => __pbn__is_trim_running != null;
         public void Resetis_trim_running() => __pbn__is_trim_running = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_trim_running;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class Drive : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             [global::System.ComponentModel.DefaultValue(0u)]
             public uint id
             {
@@ -795,9 +867,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializeid() => __pbn__id != null;
             public void Resetid() => __pbn__id = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__id;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             [global::System.ComponentModel.DefaultValue("")]
             public string model
             {
@@ -806,9 +879,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializemodel() => __pbn__model != null;
             public void Resetmodel() => __pbn__model = null;
+            [global::LightProto.ProtoIgnore]
             private string __pbn__model;
 
-            [global::ProtoBuf.ProtoMember(3)]
+            [global::LightProto.ProtoMember(3)]
             [global::System.ComponentModel.DefaultValue("")]
             public string vendor
             {
@@ -817,9 +891,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializevendor() => __pbn__vendor != null;
             public void Resetvendor() => __pbn__vendor = null;
+            [global::LightProto.ProtoIgnore]
             private string __pbn__vendor;
 
-            [global::ProtoBuf.ProtoMember(4)]
+            [global::LightProto.ProtoMember(4)]
             [global::System.ComponentModel.DefaultValue("")]
             public string serial
             {
@@ -828,9 +903,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializeserial() => __pbn__serial != null;
             public void Resetserial() => __pbn__serial = null;
+            [global::LightProto.ProtoIgnore]
             private string __pbn__serial;
 
-            [global::ProtoBuf.ProtoMember(5)]
+            [global::LightProto.ProtoMember(5)]
             public bool is_ejectable
             {
                 get => __pbn__is_ejectable.GetValueOrDefault();
@@ -838,9 +914,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializeis_ejectable() => __pbn__is_ejectable != null;
             public void Resetis_ejectable() => __pbn__is_ejectable = null;
+            [global::LightProto.ProtoIgnore]
             private bool? __pbn__is_ejectable;
 
-            [global::ProtoBuf.ProtoMember(6)]
+            [global::LightProto.ProtoMember(6)]
             public ulong size_bytes
             {
                 get => __pbn__size_bytes.GetValueOrDefault();
@@ -848,9 +925,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializesize_bytes() => __pbn__size_bytes != null;
             public void Resetsize_bytes() => __pbn__size_bytes = null;
+            [global::LightProto.ProtoIgnore]
             private ulong? __pbn__size_bytes;
 
-            [global::ProtoBuf.ProtoMember(7)]
+            [global::LightProto.ProtoMember(7)]
             [global::System.ComponentModel.DefaultValue(EStorageDriveMediaType.k_EStorageDriveMediaType_Invalid)]
             public EStorageDriveMediaType media_type
             {
@@ -859,18 +937,20 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializemedia_type() => __pbn__media_type != null;
             public void Resetmedia_type() => __pbn__media_type = null;
+            [global::LightProto.ProtoIgnore]
             private EStorageDriveMediaType? __pbn__media_type;
 
         }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class BlockDevice : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             [global::System.ComponentModel.DefaultValue(0u)]
             public uint id
             {
@@ -879,9 +959,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializeid() => __pbn__id != null;
             public void Resetid() => __pbn__id = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__id;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             [global::System.ComponentModel.DefaultValue(0u)]
             public uint drive_id
             {
@@ -890,9 +971,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializedrive_id() => __pbn__drive_id != null;
             public void Resetdrive_id() => __pbn__drive_id = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__drive_id;
 
-            [global::ProtoBuf.ProtoMember(3)]
+            [global::LightProto.ProtoMember(3)]
             [global::System.ComponentModel.DefaultValue("")]
             public string path
             {
@@ -901,9 +983,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializepath() => __pbn__path != null;
             public void Resetpath() => __pbn__path = null;
+            [global::LightProto.ProtoIgnore]
             private string __pbn__path;
 
-            [global::ProtoBuf.ProtoMember(4)]
+            [global::LightProto.ProtoMember(4)]
             [global::System.ComponentModel.DefaultValue("")]
             public string friendly_path
             {
@@ -912,9 +995,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializefriendly_path() => __pbn__friendly_path != null;
             public void Resetfriendly_path() => __pbn__friendly_path = null;
+            [global::LightProto.ProtoIgnore]
             private string __pbn__friendly_path;
 
-            [global::ProtoBuf.ProtoMember(5)]
+            [global::LightProto.ProtoMember(5)]
             [global::System.ComponentModel.DefaultValue("")]
             public string label
             {
@@ -923,9 +1007,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializelabel() => __pbn__label != null;
             public void Resetlabel() => __pbn__label = null;
+            [global::LightProto.ProtoIgnore]
             private string __pbn__label;
 
-            [global::ProtoBuf.ProtoMember(6)]
+            [global::LightProto.ProtoMember(6)]
             public ulong size_bytes
             {
                 get => __pbn__size_bytes.GetValueOrDefault();
@@ -933,9 +1018,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializesize_bytes() => __pbn__size_bytes != null;
             public void Resetsize_bytes() => __pbn__size_bytes = null;
+            [global::LightProto.ProtoIgnore]
             private ulong? __pbn__size_bytes;
 
-            [global::ProtoBuf.ProtoMember(7)]
+            [global::LightProto.ProtoMember(7)]
             public bool is_formattable
             {
                 get => __pbn__is_formattable.GetValueOrDefault();
@@ -943,9 +1029,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializeis_formattable() => __pbn__is_formattable != null;
             public void Resetis_formattable() => __pbn__is_formattable = null;
+            [global::LightProto.ProtoIgnore]
             private bool? __pbn__is_formattable;
 
-            [global::ProtoBuf.ProtoMember(8)]
+            [global::LightProto.ProtoMember(8)]
             public bool is_read_only
             {
                 get => __pbn__is_read_only.GetValueOrDefault();
@@ -953,9 +1040,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializeis_read_only() => __pbn__is_read_only != null;
             public void Resetis_read_only() => __pbn__is_read_only = null;
+            [global::LightProto.ProtoIgnore]
             private bool? __pbn__is_read_only;
 
-            [global::ProtoBuf.ProtoMember(9)]
+            [global::LightProto.ProtoMember(9)]
             public bool is_root_device
             {
                 get => __pbn__is_root_device.GetValueOrDefault();
@@ -963,9 +1051,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializeis_root_device() => __pbn__is_root_device != null;
             public void Resetis_root_device() => __pbn__is_root_device = null;
+            [global::LightProto.ProtoIgnore]
             private bool? __pbn__is_root_device;
 
-            [global::ProtoBuf.ProtoMember(10)]
+            [global::LightProto.ProtoMember(10)]
             [global::System.ComponentModel.DefaultValue(EStorageBlockContentType.k_EStorageBlockContentType_Invalid)]
             public EStorageBlockContentType content_type
             {
@@ -974,9 +1063,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializecontent_type() => __pbn__content_type != null;
             public void Resetcontent_type() => __pbn__content_type = null;
+            [global::LightProto.ProtoIgnore]
             private EStorageBlockContentType? __pbn__content_type;
 
-            [global::ProtoBuf.ProtoMember(11)]
+            [global::LightProto.ProtoMember(11)]
             [global::System.ComponentModel.DefaultValue(EStorageBlockFileSystemType.k_EStorageBlockFileSystemType_Invalid)]
             public EStorageBlockFileSystemType filesystem_type
             {
@@ -985,9 +1075,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializefilesystem_type() => __pbn__filesystem_type != null;
             public void Resetfilesystem_type() => __pbn__filesystem_type = null;
+            [global::LightProto.ProtoIgnore]
             private EStorageBlockFileSystemType? __pbn__filesystem_type;
 
-            [global::ProtoBuf.ProtoMember(12)]
+            [global::LightProto.ProtoMember(12)]
             [global::System.ComponentModel.DefaultValue("")]
             public string mount_path
             {
@@ -996,20 +1087,22 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializemount_path() => __pbn__mount_path != null;
             public void Resetmount_path() => __pbn__mount_path = null;
+            [global::LightProto.ProtoIgnore]
             private string __pbn__mount_path;
 
         }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CCloud_PendingRemoteOperation : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(ECloudPendingRemoteOperation.k_ECloudPendingRemoteOperationNone)]
         public ECloudPendingRemoteOperation operation
         {
@@ -1018,9 +1111,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeoperation() => __pbn__operation != null;
         public void Resetoperation() => __pbn__operation = null;
+        [global::LightProto.ProtoIgnore]
         private ECloudPendingRemoteOperation? __pbn__operation;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue("")]
         public string machine_name
         {
@@ -1029,9 +1123,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializemachine_name() => __pbn__machine_name != null;
         public void Resetmachine_name() => __pbn__machine_name = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__machine_name;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public ulong client_id
         {
             get => __pbn__client_id.GetValueOrDefault();
@@ -1039,9 +1134,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeclient_id() => __pbn__client_id != null;
         public void Resetclient_id() => __pbn__client_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__client_id;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public uint time_last_updated
         {
             get => __pbn__time_last_updated.GetValueOrDefault();
@@ -1049,9 +1145,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializetime_last_updated() => __pbn__time_last_updated != null;
         public void Resettime_last_updated() => __pbn__time_last_updated = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__time_last_updated;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public int os_type
         {
             get => __pbn__os_type.GetValueOrDefault();
@@ -1059,9 +1156,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeos_type() => __pbn__os_type != null;
         public void Resetos_type() => __pbn__os_type = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__os_type;
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         public int device_type
         {
             get => __pbn__device_type.GetValueOrDefault();
@@ -1069,46 +1167,50 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializedevice_type() => __pbn__device_type != null;
         public void Resetdevice_type() => __pbn__device_type = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__device_type;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgCloudPendingRemoteOperations : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<CCloud_PendingRemoteOperation> operations { get; } = new global::System.Collections.Generic.List<CCloud_PendingRemoteOperation>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgBluetoothDevicesData : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<Adapter> adapters { get; } = new global::System.Collections.Generic.List<Adapter>();
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public global::System.Collections.Generic.List<Device> devices { get; } = new global::System.Collections.Generic.List<Device>();
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public Manager manager { get; set; }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class Adapter : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             [global::System.ComponentModel.DefaultValue(0u)]
             public uint id
             {
@@ -1117,9 +1219,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializeid() => __pbn__id != null;
             public void Resetid() => __pbn__id = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__id;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             [global::System.ComponentModel.DefaultValue("")]
             public string mac
             {
@@ -1128,9 +1231,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializemac() => __pbn__mac != null;
             public void Resetmac() => __pbn__mac = null;
+            [global::LightProto.ProtoIgnore]
             private string __pbn__mac;
 
-            [global::ProtoBuf.ProtoMember(3)]
+            [global::LightProto.ProtoMember(3)]
             [global::System.ComponentModel.DefaultValue("")]
             public string name
             {
@@ -1139,9 +1243,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializename() => __pbn__name != null;
             public void Resetname() => __pbn__name = null;
+            [global::LightProto.ProtoIgnore]
             private string __pbn__name;
 
-            [global::ProtoBuf.ProtoMember(4)]
+            [global::LightProto.ProtoMember(4)]
             public bool is_enabled
             {
                 get => __pbn__is_enabled.GetValueOrDefault();
@@ -1149,9 +1254,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializeis_enabled() => __pbn__is_enabled != null;
             public void Resetis_enabled() => __pbn__is_enabled = null;
+            [global::LightProto.ProtoIgnore]
             private bool? __pbn__is_enabled;
 
-            [global::ProtoBuf.ProtoMember(5)]
+            [global::LightProto.ProtoMember(5)]
             public bool is_discovering
             {
                 get => __pbn__is_discovering.GetValueOrDefault();
@@ -1159,18 +1265,20 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializeis_discovering() => __pbn__is_discovering != null;
             public void Resetis_discovering() => __pbn__is_discovering = null;
+            [global::LightProto.ProtoIgnore]
             private bool? __pbn__is_discovering;
 
         }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class Device : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             [global::System.ComponentModel.DefaultValue(0u)]
             public uint id
             {
@@ -1179,9 +1287,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializeid() => __pbn__id != null;
             public void Resetid() => __pbn__id = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__id;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             [global::System.ComponentModel.DefaultValue(0u)]
             public uint adapter_id
             {
@@ -1190,9 +1299,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializeadapter_id() => __pbn__adapter_id != null;
             public void Resetadapter_id() => __pbn__adapter_id = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__adapter_id;
 
-            [global::ProtoBuf.ProtoMember(3)]
+            [global::LightProto.ProtoMember(3)]
             [global::System.ComponentModel.DefaultValue(EBluetoothDeviceType.k_BluetoothDeviceType_Invalid)]
             public EBluetoothDeviceType etype
             {
@@ -1201,9 +1311,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializeetype() => __pbn__etype != null;
             public void Resetetype() => __pbn__etype = null;
+            [global::LightProto.ProtoIgnore]
             private EBluetoothDeviceType? __pbn__etype;
 
-            [global::ProtoBuf.ProtoMember(4)]
+            [global::LightProto.ProtoMember(4)]
             [global::System.ComponentModel.DefaultValue("")]
             public string mac
             {
@@ -1212,9 +1323,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializemac() => __pbn__mac != null;
             public void Resetmac() => __pbn__mac = null;
+            [global::LightProto.ProtoIgnore]
             private string __pbn__mac;
 
-            [global::ProtoBuf.ProtoMember(5)]
+            [global::LightProto.ProtoMember(5)]
             [global::System.ComponentModel.DefaultValue("")]
             public string name
             {
@@ -1223,9 +1335,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializename() => __pbn__name != null;
             public void Resetname() => __pbn__name = null;
+            [global::LightProto.ProtoIgnore]
             private string __pbn__name;
 
-            [global::ProtoBuf.ProtoMember(6)]
+            [global::LightProto.ProtoMember(6)]
             public bool is_connected
             {
                 get => __pbn__is_connected.GetValueOrDefault();
@@ -1233,9 +1346,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializeis_connected() => __pbn__is_connected != null;
             public void Resetis_connected() => __pbn__is_connected = null;
+            [global::LightProto.ProtoIgnore]
             private bool? __pbn__is_connected;
 
-            [global::ProtoBuf.ProtoMember(7)]
+            [global::LightProto.ProtoMember(7)]
             public bool is_paired
             {
                 get => __pbn__is_paired.GetValueOrDefault();
@@ -1243,9 +1357,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializeis_paired() => __pbn__is_paired != null;
             public void Resetis_paired() => __pbn__is_paired = null;
+            [global::LightProto.ProtoIgnore]
             private bool? __pbn__is_paired;
 
-            [global::ProtoBuf.ProtoMember(8)]
+            [global::LightProto.ProtoMember(8)]
             public int strength_raw
             {
                 get => __pbn__strength_raw.GetValueOrDefault();
@@ -1253,9 +1368,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializestrength_raw() => __pbn__strength_raw != null;
             public void Resetstrength_raw() => __pbn__strength_raw = null;
+            [global::LightProto.ProtoIgnore]
             private int? __pbn__strength_raw;
 
-            [global::ProtoBuf.ProtoMember(9)]
+            [global::LightProto.ProtoMember(9)]
             public bool wake_allowed
             {
                 get => __pbn__wake_allowed.GetValueOrDefault();
@@ -1263,9 +1379,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializewake_allowed() => __pbn__wake_allowed != null;
             public void Resetwake_allowed() => __pbn__wake_allowed = null;
+            [global::LightProto.ProtoIgnore]
             private bool? __pbn__wake_allowed;
 
-            [global::ProtoBuf.ProtoMember(10)]
+            [global::LightProto.ProtoMember(10)]
             public bool wake_allowed_supported
             {
                 get => __pbn__wake_allowed_supported.GetValueOrDefault();
@@ -1273,9 +1390,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializewake_allowed_supported() => __pbn__wake_allowed_supported != null;
             public void Resetwake_allowed_supported() => __pbn__wake_allowed_supported = null;
+            [global::LightProto.ProtoIgnore]
             private bool? __pbn__wake_allowed_supported;
 
-            [global::ProtoBuf.ProtoMember(11)]
+            [global::LightProto.ProtoMember(11)]
             public int battery_percent
             {
                 get => __pbn__battery_percent.GetValueOrDefault();
@@ -1283,18 +1401,20 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializebattery_percent() => __pbn__battery_percent != null;
             public void Resetbattery_percent() => __pbn__battery_percent = null;
+            [global::LightProto.ProtoIgnore]
             private int? __pbn__battery_percent;
 
         }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class Manager : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public bool is_bluetooth_enabled
             {
                 get => __pbn__is_bluetooth_enabled.GetValueOrDefault();
@@ -1302,20 +1422,22 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializeis_bluetooth_enabled() => __pbn__is_bluetooth_enabled != null;
             public void Resetis_bluetooth_enabled() => __pbn__is_bluetooth_enabled = null;
+            [global::LightProto.ProtoIgnore]
             private bool? __pbn__is_bluetooth_enabled;
 
         }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgSystemPerfDiagnosticEntry : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue("")]
         public string name
         {
@@ -1324,9 +1446,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializename() => __pbn__name != null;
         public void Resetname() => __pbn__name = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__name;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue("")]
         public string value
         {
@@ -1335,18 +1458,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializevalue() => __pbn__value != null;
         public void Resetvalue() => __pbn__value = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__value;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgSystemPerfNetworkInterface : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue("")]
         public string name
         {
@@ -1355,9 +1480,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializename() => __pbn__name != null;
         public void Resetname() => __pbn__name = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__name;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public double timestamp
         {
             get => __pbn__timestamp.GetValueOrDefault();
@@ -1365,9 +1491,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializetimestamp() => __pbn__timestamp != null;
         public void Resettimestamp() => __pbn__timestamp = null;
+        [global::LightProto.ProtoIgnore]
         private double? __pbn__timestamp;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public long tx_bytes_total
         {
             get => __pbn__tx_bytes_total.GetValueOrDefault();
@@ -1375,9 +1502,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializetx_bytes_total() => __pbn__tx_bytes_total != null;
         public void Resettx_bytes_total() => __pbn__tx_bytes_total = null;
+        [global::LightProto.ProtoIgnore]
         private long? __pbn__tx_bytes_total;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public long rx_bytes_total
         {
             get => __pbn__rx_bytes_total.GetValueOrDefault();
@@ -1385,9 +1513,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializerx_bytes_total() => __pbn__rx_bytes_total != null;
         public void Resetrx_bytes_total() => __pbn__rx_bytes_total = null;
+        [global::LightProto.ProtoIgnore]
         private long? __pbn__rx_bytes_total;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public int tx_bytes_per_sec
         {
             get => __pbn__tx_bytes_per_sec.GetValueOrDefault();
@@ -1395,9 +1524,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializetx_bytes_per_sec() => __pbn__tx_bytes_per_sec != null;
         public void Resettx_bytes_per_sec() => __pbn__tx_bytes_per_sec = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__tx_bytes_per_sec;
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         public int rx_bytes_per_sec
         {
             get => __pbn__rx_bytes_per_sec.GetValueOrDefault();
@@ -1405,24 +1535,26 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializerx_bytes_per_sec() => __pbn__rx_bytes_per_sec != null;
         public void Resetrx_bytes_per_sec() => __pbn__rx_bytes_per_sec = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__rx_bytes_per_sec;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgSystemPerfDiagnosticInfo : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<CMsgSystemPerfDiagnosticEntry> entries { get; } = new global::System.Collections.Generic.List<CMsgSystemPerfDiagnosticEntry>();
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public global::System.Collections.Generic.List<CMsgSystemPerfNetworkInterface> interfaces { get; } = new global::System.Collections.Generic.List<CMsgSystemPerfNetworkInterface>();
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public float battery_temp_c
         {
             get => __pbn__battery_temp_c.GetValueOrDefault();
@@ -1430,18 +1562,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializebattery_temp_c() => __pbn__battery_temp_c != null;
         public void Resetbattery_temp_c() => __pbn__battery_temp_c = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__battery_temp_c;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgSystemPerfLimits : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public int cpu_governor_manual_min_mhz
         {
             get => __pbn__cpu_governor_manual_min_mhz.GetValueOrDefault();
@@ -1449,9 +1583,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializecpu_governor_manual_min_mhz() => __pbn__cpu_governor_manual_min_mhz != null;
         public void Resetcpu_governor_manual_min_mhz() => __pbn__cpu_governor_manual_min_mhz = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__cpu_governor_manual_min_mhz;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public int cpu_governor_manual_max_mhz
         {
             get => __pbn__cpu_governor_manual_max_mhz.GetValueOrDefault();
@@ -1459,9 +1594,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializecpu_governor_manual_max_mhz() => __pbn__cpu_governor_manual_max_mhz != null;
         public void Resetcpu_governor_manual_max_mhz() => __pbn__cpu_governor_manual_max_mhz = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__cpu_governor_manual_max_mhz;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public int fsr_sharpness_min
         {
             get => __pbn__fsr_sharpness_min.GetValueOrDefault();
@@ -1469,9 +1605,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializefsr_sharpness_min() => __pbn__fsr_sharpness_min != null;
         public void Resetfsr_sharpness_min() => __pbn__fsr_sharpness_min = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__fsr_sharpness_min;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public int fsr_sharpness_max
         {
             get => __pbn__fsr_sharpness_max.GetValueOrDefault();
@@ -1479,9 +1616,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializefsr_sharpness_max() => __pbn__fsr_sharpness_max != null;
         public void Resetfsr_sharpness_max() => __pbn__fsr_sharpness_max = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__fsr_sharpness_max;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public int gpu_performance_manual_min_mhz
         {
             get => __pbn__gpu_performance_manual_min_mhz.GetValueOrDefault();
@@ -1489,9 +1627,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializegpu_performance_manual_min_mhz() => __pbn__gpu_performance_manual_min_mhz != null;
         public void Resetgpu_performance_manual_min_mhz() => __pbn__gpu_performance_manual_min_mhz = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__gpu_performance_manual_min_mhz;
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         public int gpu_performance_manual_max_mhz
         {
             get => __pbn__gpu_performance_manual_max_mhz.GetValueOrDefault();
@@ -1499,9 +1638,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializegpu_performance_manual_max_mhz() => __pbn__gpu_performance_manual_max_mhz != null;
         public void Resetgpu_performance_manual_max_mhz() => __pbn__gpu_performance_manual_max_mhz = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__gpu_performance_manual_max_mhz;
 
-        [global::ProtoBuf.ProtoMember(7)]
+        [global::LightProto.ProtoMember(7)]
         public bool perf_overlay_is_standalone
         {
             get => __pbn__perf_overlay_is_standalone.GetValueOrDefault();
@@ -1509,9 +1649,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeperf_overlay_is_standalone() => __pbn__perf_overlay_is_standalone != null;
         public void Resetperf_overlay_is_standalone() => __pbn__perf_overlay_is_standalone = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__perf_overlay_is_standalone;
 
-        [global::ProtoBuf.ProtoMember(9)]
+        [global::LightProto.ProtoMember(9)]
         public bool is_manual_display_refresh_rate_available
         {
             get => __pbn__is_manual_display_refresh_rate_available.GetValueOrDefault();
@@ -1519,12 +1660,13 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeis_manual_display_refresh_rate_available() => __pbn__is_manual_display_refresh_rate_available != null;
         public void Resetis_manual_display_refresh_rate_available() => __pbn__is_manual_display_refresh_rate_available = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_manual_display_refresh_rate_available;
 
-        [global::ProtoBuf.ProtoMember(10)]
+        [global::LightProto.ProtoMember(10)]
         public global::System.Collections.Generic.List<EGPUPerformanceLevel> gpu_performance_levels_available { get; } = new global::System.Collections.Generic.List<EGPUPerformanceLevel>();
 
-        [global::ProtoBuf.ProtoMember(11)]
+        [global::LightProto.ProtoMember(11)]
         public int display_refresh_manual_hz_min
         {
             get => __pbn__display_refresh_manual_hz_min.GetValueOrDefault();
@@ -1532,9 +1674,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializedisplay_refresh_manual_hz_min() => __pbn__display_refresh_manual_hz_min != null;
         public void Resetdisplay_refresh_manual_hz_min() => __pbn__display_refresh_manual_hz_min = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__display_refresh_manual_hz_min;
 
-        [global::ProtoBuf.ProtoMember(12)]
+        [global::LightProto.ProtoMember(12)]
         public int display_refresh_manual_hz_max
         {
             get => __pbn__display_refresh_manual_hz_max.GetValueOrDefault();
@@ -1542,12 +1685,13 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializedisplay_refresh_manual_hz_max() => __pbn__display_refresh_manual_hz_max != null;
         public void Resetdisplay_refresh_manual_hz_max() => __pbn__display_refresh_manual_hz_max = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__display_refresh_manual_hz_max;
 
-        [global::ProtoBuf.ProtoMember(13)]
+        [global::LightProto.ProtoMember(13)]
         public global::System.Collections.Generic.List<int> fps_limit_options { get; } = new global::System.Collections.Generic.List<int>();
 
-        [global::ProtoBuf.ProtoMember(14)]
+        [global::LightProto.ProtoMember(14)]
         public int tdp_limit_min
         {
             get => __pbn__tdp_limit_min.GetValueOrDefault();
@@ -1555,9 +1699,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializetdp_limit_min() => __pbn__tdp_limit_min != null;
         public void Resettdp_limit_min() => __pbn__tdp_limit_min = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__tdp_limit_min;
 
-        [global::ProtoBuf.ProtoMember(15)]
+        [global::LightProto.ProtoMember(15)]
         public int tdp_limit_max
         {
             get => __pbn__tdp_limit_max.GetValueOrDefault();
@@ -1565,9 +1710,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializetdp_limit_max() => __pbn__tdp_limit_max != null;
         public void Resettdp_limit_max() => __pbn__tdp_limit_max = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__tdp_limit_max;
 
-        [global::ProtoBuf.ProtoMember(19)]
+        [global::LightProto.ProtoMember(19)]
         public int display_external_refresh_manual_hz_min
         {
             get => __pbn__display_external_refresh_manual_hz_min.GetValueOrDefault();
@@ -1575,9 +1721,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializedisplay_external_refresh_manual_hz_min() => __pbn__display_external_refresh_manual_hz_min != null;
         public void Resetdisplay_external_refresh_manual_hz_min() => __pbn__display_external_refresh_manual_hz_min = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__display_external_refresh_manual_hz_min;
 
-        [global::ProtoBuf.ProtoMember(20)]
+        [global::LightProto.ProtoMember(20)]
         public int display_external_refresh_manual_hz_max
         {
             get => __pbn__display_external_refresh_manual_hz_max.GetValueOrDefault();
@@ -1585,12 +1732,13 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializedisplay_external_refresh_manual_hz_max() => __pbn__display_external_refresh_manual_hz_max != null;
         public void Resetdisplay_external_refresh_manual_hz_max() => __pbn__display_external_refresh_manual_hz_max = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__display_external_refresh_manual_hz_max;
 
-        [global::ProtoBuf.ProtoMember(21)]
+        [global::LightProto.ProtoMember(21)]
         public global::System.Collections.Generic.List<int> fps_limit_options_external { get; } = new global::System.Collections.Generic.List<int>();
 
-        [global::ProtoBuf.ProtoMember(23)]
+        [global::LightProto.ProtoMember(23)]
         public bool is_vrr_supported
         {
             get => __pbn__is_vrr_supported.GetValueOrDefault();
@@ -1598,9 +1746,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeis_vrr_supported() => __pbn__is_vrr_supported != null;
         public void Resetis_vrr_supported() => __pbn__is_vrr_supported = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_vrr_supported;
 
-        [global::ProtoBuf.ProtoMember(24)]
+        [global::LightProto.ProtoMember(24)]
         public bool is_dynamic_refresh_rate_in_steam_supported
         {
             get => __pbn__is_dynamic_refresh_rate_in_steam_supported.GetValueOrDefault();
@@ -1608,15 +1757,16 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeis_dynamic_refresh_rate_in_steam_supported() => __pbn__is_dynamic_refresh_rate_in_steam_supported != null;
         public void Resetis_dynamic_refresh_rate_in_steam_supported() => __pbn__is_dynamic_refresh_rate_in_steam_supported = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_dynamic_refresh_rate_in_steam_supported;
 
-        [global::ProtoBuf.ProtoMember(26)]
+        [global::LightProto.ProtoMember(26)]
         public global::System.Collections.Generic.List<ESplitScalingFilter> split_scaling_filters_available { get; } = new global::System.Collections.Generic.List<ESplitScalingFilter>();
 
-        [global::ProtoBuf.ProtoMember(27)]
+        [global::LightProto.ProtoMember(27)]
         public global::System.Collections.Generic.List<ESplitScalingScaler> split_scaling_scalers_available { get; } = new global::System.Collections.Generic.List<ESplitScalingScaler>();
 
-        [global::ProtoBuf.ProtoMember(30)]
+        [global::LightProto.ProtoMember(30)]
         public bool disable_refresh_rate_management
         {
             get => __pbn__disable_refresh_rate_management.GetValueOrDefault();
@@ -1624,18 +1774,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializedisable_refresh_rate_management() => __pbn__disable_refresh_rate_management != null;
         public void Resetdisable_refresh_rate_management() => __pbn__disable_refresh_rate_management = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__disable_refresh_rate_management;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgSystemPerfSettingsGlobal : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public float diagnostic_update_rate
         {
             get => __pbn__diagnostic_update_rate.GetValueOrDefault();
@@ -1643,9 +1795,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializediagnostic_update_rate() => __pbn__diagnostic_update_rate != null;
         public void Resetdiagnostic_update_rate() => __pbn__diagnostic_update_rate = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__diagnostic_update_rate;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         [global::System.ComponentModel.DefaultValue(ESystemServiceState.k_ESystemServiceState_Unavailable)]
         public ESystemServiceState graphics_profiling_service_state
         {
@@ -1654,9 +1807,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializegraphics_profiling_service_state() => __pbn__graphics_profiling_service_state != null;
         public void Resetgraphics_profiling_service_state() => __pbn__graphics_profiling_service_state = null;
+        [global::LightProto.ProtoIgnore]
         private ESystemServiceState? __pbn__graphics_profiling_service_state;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         [global::System.ComponentModel.DefaultValue(ESystemServiceState.k_ESystemServiceState_Unavailable)]
         public ESystemServiceState perf_overlay_service_state
         {
@@ -1665,9 +1819,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeperf_overlay_service_state() => __pbn__perf_overlay_service_state != null;
         public void Resetperf_overlay_service_state() => __pbn__perf_overlay_service_state = null;
+        [global::LightProto.ProtoIgnore]
         private ESystemServiceState? __pbn__perf_overlay_service_state;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         [global::System.ComponentModel.DefaultValue(EGraphicsPerfOverlayLevel.k_EGraphicsPerfOverlayLevel_Hidden)]
         public EGraphicsPerfOverlayLevel perf_overlay_level
         {
@@ -1676,9 +1831,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeperf_overlay_level() => __pbn__perf_overlay_level != null;
         public void Resetperf_overlay_level() => __pbn__perf_overlay_level = null;
+        [global::LightProto.ProtoIgnore]
         private EGraphicsPerfOverlayLevel? __pbn__perf_overlay_level;
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         public bool is_show_perf_overlay_over_steam_enabled
         {
             get => __pbn__is_show_perf_overlay_over_steam_enabled.GetValueOrDefault();
@@ -1686,9 +1842,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeis_show_perf_overlay_over_steam_enabled() => __pbn__is_show_perf_overlay_over_steam_enabled != null;
         public void Resetis_show_perf_overlay_over_steam_enabled() => __pbn__is_show_perf_overlay_over_steam_enabled = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_show_perf_overlay_over_steam_enabled;
 
-        [global::ProtoBuf.ProtoMember(7)]
+        [global::LightProto.ProtoMember(7)]
         public bool is_advanced_settings_enabled
         {
             get => __pbn__is_advanced_settings_enabled.GetValueOrDefault();
@@ -1696,9 +1853,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeis_advanced_settings_enabled() => __pbn__is_advanced_settings_enabled != null;
         public void Resetis_advanced_settings_enabled() => __pbn__is_advanced_settings_enabled = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_advanced_settings_enabled;
 
-        [global::ProtoBuf.ProtoMember(8)]
+        [global::LightProto.ProtoMember(8)]
         public bool allow_external_display_refresh_control
         {
             get => __pbn__allow_external_display_refresh_control.GetValueOrDefault();
@@ -1706,9 +1864,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeallow_external_display_refresh_control() => __pbn__allow_external_display_refresh_control != null;
         public void Resetallow_external_display_refresh_control() => __pbn__allow_external_display_refresh_control = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__allow_external_display_refresh_control;
 
-        [global::ProtoBuf.ProtoMember(12)]
+        [global::LightProto.ProtoMember(12)]
         [global::System.ComponentModel.DefaultValue(EHDRToneMapOperator.k_EHDRToneMapOperator_Invalid)]
         public EHDRToneMapOperator hdr_on_sdr_tonemap_operator
         {
@@ -1717,9 +1876,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializehdr_on_sdr_tonemap_operator() => __pbn__hdr_on_sdr_tonemap_operator != null;
         public void Resethdr_on_sdr_tonemap_operator() => __pbn__hdr_on_sdr_tonemap_operator = null;
+        [global::LightProto.ProtoIgnore]
         private EHDRToneMapOperator? __pbn__hdr_on_sdr_tonemap_operator;
 
-        [global::ProtoBuf.ProtoMember(13)]
+        [global::LightProto.ProtoMember(13)]
         public bool is_hdr_debug_heatmap_enabled
         {
             get => __pbn__is_hdr_debug_heatmap_enabled.GetValueOrDefault();
@@ -1727,9 +1887,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeis_hdr_debug_heatmap_enabled() => __pbn__is_hdr_debug_heatmap_enabled != null;
         public void Resetis_hdr_debug_heatmap_enabled() => __pbn__is_hdr_debug_heatmap_enabled = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_hdr_debug_heatmap_enabled;
 
-        [global::ProtoBuf.ProtoMember(15)]
+        [global::LightProto.ProtoMember(15)]
         [global::System.ComponentModel.DefaultValue(true)]
         public bool force_hdr_wide_gammut_for_sdr
         {
@@ -1738,9 +1899,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeforce_hdr_wide_gammut_for_sdr() => __pbn__force_hdr_wide_gammut_for_sdr != null;
         public void Resetforce_hdr_wide_gammut_for_sdr() => __pbn__force_hdr_wide_gammut_for_sdr = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__force_hdr_wide_gammut_for_sdr;
 
-        [global::ProtoBuf.ProtoMember(22)]
+        [global::LightProto.ProtoMember(22)]
         public float sdr_to_hdr_brightness
         {
             get => __pbn__sdr_to_hdr_brightness.GetValueOrDefault();
@@ -1748,9 +1910,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializesdr_to_hdr_brightness() => __pbn__sdr_to_hdr_brightness != null;
         public void Resetsdr_to_hdr_brightness() => __pbn__sdr_to_hdr_brightness = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__sdr_to_hdr_brightness;
 
-        [global::ProtoBuf.ProtoMember(21)]
+        [global::LightProto.ProtoMember(21)]
         public bool is_color_management_enabled
         {
             get => __pbn__is_color_management_enabled.GetValueOrDefault();
@@ -1758,18 +1921,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeis_color_management_enabled() => __pbn__is_color_management_enabled != null;
         public void Resetis_color_management_enabled() => __pbn__is_color_management_enabled = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_color_management_enabled;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgSystemPerfSettingsPerApp : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public int gpu_performance_manual_mhz
         {
             get => __pbn__gpu_performance_manual_mhz.GetValueOrDefault();
@@ -1777,9 +1942,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializegpu_performance_manual_mhz() => __pbn__gpu_performance_manual_mhz != null;
         public void Resetgpu_performance_manual_mhz() => __pbn__gpu_performance_manual_mhz = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__gpu_performance_manual_mhz;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public int fps_limit
         {
             get => __pbn__fps_limit.GetValueOrDefault();
@@ -1787,9 +1953,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializefps_limit() => __pbn__fps_limit != null;
         public void Resetfps_limit() => __pbn__fps_limit = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__fps_limit;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public bool is_variable_resolution_enabled
         {
             get => __pbn__is_variable_resolution_enabled.GetValueOrDefault();
@@ -1797,9 +1964,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeis_variable_resolution_enabled() => __pbn__is_variable_resolution_enabled != null;
         public void Resetis_variable_resolution_enabled() => __pbn__is_variable_resolution_enabled = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_variable_resolution_enabled;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public bool is_dynamic_refresh_rate_enabled
         {
             get => __pbn__is_dynamic_refresh_rate_enabled.GetValueOrDefault();
@@ -1807,9 +1975,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeis_dynamic_refresh_rate_enabled() => __pbn__is_dynamic_refresh_rate_enabled != null;
         public void Resetis_dynamic_refresh_rate_enabled() => __pbn__is_dynamic_refresh_rate_enabled = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_dynamic_refresh_rate_enabled;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public int tdp_limit
         {
             get => __pbn__tdp_limit.GetValueOrDefault();
@@ -1817,9 +1986,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializetdp_limit() => __pbn__tdp_limit != null;
         public void Resettdp_limit() => __pbn__tdp_limit = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__tdp_limit;
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         [global::System.ComponentModel.DefaultValue(ECPUGovernor.k_ECPUGovernor_Invalid)]
         public ECPUGovernor cpu_governor
         {
@@ -1828,9 +1998,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializecpu_governor() => __pbn__cpu_governor != null;
         public void Resetcpu_governor() => __pbn__cpu_governor = null;
+        [global::LightProto.ProtoIgnore]
         private ECPUGovernor? __pbn__cpu_governor;
 
-        [global::ProtoBuf.ProtoMember(7)]
+        [global::LightProto.ProtoMember(7)]
         public int cpu_governor_manual_mhz
         {
             get => __pbn__cpu_governor_manual_mhz.GetValueOrDefault();
@@ -1838,9 +2009,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializecpu_governor_manual_mhz() => __pbn__cpu_governor_manual_mhz != null;
         public void Resetcpu_governor_manual_mhz() => __pbn__cpu_governor_manual_mhz = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__cpu_governor_manual_mhz;
 
-        [global::ProtoBuf.ProtoMember(8)]
+        [global::LightProto.ProtoMember(8)]
         public int scaling_filter
         {
             get => __pbn__scaling_filter.GetValueOrDefault();
@@ -1848,9 +2020,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializescaling_filter() => __pbn__scaling_filter != null;
         public void Resetscaling_filter() => __pbn__scaling_filter = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__scaling_filter;
 
-        [global::ProtoBuf.ProtoMember(9)]
+        [global::LightProto.ProtoMember(9)]
         public int fsr_sharpness
         {
             get => __pbn__fsr_sharpness.GetValueOrDefault();
@@ -1858,9 +2031,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializefsr_sharpness() => __pbn__fsr_sharpness != null;
         public void Resetfsr_sharpness() => __pbn__fsr_sharpness = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__fsr_sharpness;
 
-        [global::ProtoBuf.ProtoMember(10)]
+        [global::LightProto.ProtoMember(10)]
         public bool is_fps_limit_enabled
         {
             get => __pbn__is_fps_limit_enabled.GetValueOrDefault();
@@ -1868,9 +2042,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeis_fps_limit_enabled() => __pbn__is_fps_limit_enabled != null;
         public void Resetis_fps_limit_enabled() => __pbn__is_fps_limit_enabled = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_fps_limit_enabled;
 
-        [global::ProtoBuf.ProtoMember(11)]
+        [global::LightProto.ProtoMember(11)]
         public bool is_tdp_limit_enabled
         {
             get => __pbn__is_tdp_limit_enabled.GetValueOrDefault();
@@ -1878,9 +2053,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeis_tdp_limit_enabled() => __pbn__is_tdp_limit_enabled != null;
         public void Resetis_tdp_limit_enabled() => __pbn__is_tdp_limit_enabled = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_tdp_limit_enabled;
 
-        [global::ProtoBuf.ProtoMember(12)]
+        [global::LightProto.ProtoMember(12)]
         public bool is_low_latency_mode_enabled
         {
             get => __pbn__is_low_latency_mode_enabled.GetValueOrDefault();
@@ -1888,9 +2064,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeis_low_latency_mode_enabled() => __pbn__is_low_latency_mode_enabled != null;
         public void Resetis_low_latency_mode_enabled() => __pbn__is_low_latency_mode_enabled = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_low_latency_mode_enabled;
 
-        [global::ProtoBuf.ProtoMember(13)]
+        [global::LightProto.ProtoMember(13)]
         public int display_refresh_manual_hz
         {
             get => __pbn__display_refresh_manual_hz.GetValueOrDefault();
@@ -1898,9 +2075,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializedisplay_refresh_manual_hz() => __pbn__display_refresh_manual_hz != null;
         public void Resetdisplay_refresh_manual_hz() => __pbn__display_refresh_manual_hz = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__display_refresh_manual_hz;
 
-        [global::ProtoBuf.ProtoMember(14)]
+        [global::LightProto.ProtoMember(14)]
         public bool is_game_perf_profile_enabled
         {
             get => __pbn__is_game_perf_profile_enabled.GetValueOrDefault();
@@ -1908,9 +2086,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeis_game_perf_profile_enabled() => __pbn__is_game_perf_profile_enabled != null;
         public void Resetis_game_perf_profile_enabled() => __pbn__is_game_perf_profile_enabled = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_game_perf_profile_enabled;
 
-        [global::ProtoBuf.ProtoMember(15)]
+        [global::LightProto.ProtoMember(15)]
         [global::System.ComponentModel.DefaultValue(EGPUPerformanceLevel.k_EGPUPerformanceLevel_Invalid)]
         public EGPUPerformanceLevel gpu_performance_level
         {
@@ -1919,9 +2098,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializegpu_performance_level() => __pbn__gpu_performance_level != null;
         public void Resetgpu_performance_level() => __pbn__gpu_performance_level = null;
+        [global::LightProto.ProtoIgnore]
         private EGPUPerformanceLevel? __pbn__gpu_performance_level;
 
-        [global::ProtoBuf.ProtoMember(17)]
+        [global::LightProto.ProtoMember(17)]
         public int display_external_refresh_manual_hz
         {
             get => __pbn__display_external_refresh_manual_hz.GetValueOrDefault();
@@ -1929,9 +2109,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializedisplay_external_refresh_manual_hz() => __pbn__display_external_refresh_manual_hz != null;
         public void Resetdisplay_external_refresh_manual_hz() => __pbn__display_external_refresh_manual_hz = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__display_external_refresh_manual_hz;
 
-        [global::ProtoBuf.ProtoMember(18)]
+        [global::LightProto.ProtoMember(18)]
         public int fps_limit_external
         {
             get => __pbn__fps_limit_external.GetValueOrDefault();
@@ -1939,9 +2120,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializefps_limit_external() => __pbn__fps_limit_external != null;
         public void Resetfps_limit_external() => __pbn__fps_limit_external = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__fps_limit_external;
 
-        [global::ProtoBuf.ProtoMember(19)]
+        [global::LightProto.ProtoMember(19)]
         public bool is_tearing_enabled
         {
             get => __pbn__is_tearing_enabled.GetValueOrDefault();
@@ -1949,9 +2131,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeis_tearing_enabled() => __pbn__is_tearing_enabled != null;
         public void Resetis_tearing_enabled() => __pbn__is_tearing_enabled = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_tearing_enabled;
 
-        [global::ProtoBuf.ProtoMember(20)]
+        [global::LightProto.ProtoMember(20)]
         public bool is_vrr_enabled
         {
             get => __pbn__is_vrr_enabled.GetValueOrDefault();
@@ -1959,9 +2142,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeis_vrr_enabled() => __pbn__is_vrr_enabled != null;
         public void Resetis_vrr_enabled() => __pbn__is_vrr_enabled = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_vrr_enabled;
 
-        [global::ProtoBuf.ProtoMember(23)]
+        [global::LightProto.ProtoMember(23)]
         public bool use_dynamic_refresh_rate_in_steam
         {
             get => __pbn__use_dynamic_refresh_rate_in_steam.GetValueOrDefault();
@@ -1969,9 +2153,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeuse_dynamic_refresh_rate_in_steam() => __pbn__use_dynamic_refresh_rate_in_steam != null;
         public void Resetuse_dynamic_refresh_rate_in_steam() => __pbn__use_dynamic_refresh_rate_in_steam = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__use_dynamic_refresh_rate_in_steam;
 
-        [global::ProtoBuf.ProtoMember(24)]
+        [global::LightProto.ProtoMember(24)]
         [global::System.ComponentModel.DefaultValue(ESplitScalingFilter.k_ESplitScalingFilter_Invalid)]
         public ESplitScalingFilter split_scaling_filter
         {
@@ -1980,9 +2165,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializesplit_scaling_filter() => __pbn__split_scaling_filter != null;
         public void Resetsplit_scaling_filter() => __pbn__split_scaling_filter = null;
+        [global::LightProto.ProtoIgnore]
         private ESplitScalingFilter? __pbn__split_scaling_filter;
 
-        [global::ProtoBuf.ProtoMember(25)]
+        [global::LightProto.ProtoMember(25)]
         [global::System.ComponentModel.DefaultValue(ESplitScalingScaler.k_ESplitScalingScaler_Invalid)]
         public ESplitScalingScaler split_scaling_scaler
         {
@@ -1991,33 +2177,36 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializesplit_scaling_scaler() => __pbn__split_scaling_scaler != null;
         public void Resetsplit_scaling_scaler() => __pbn__split_scaling_scaler = null;
+        [global::LightProto.ProtoIgnore]
         private ESplitScalingScaler? __pbn__split_scaling_scaler;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgSystemPerfSettings : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public CMsgSystemPerfSettingsGlobal global { get; set; }
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public CMsgSystemPerfSettingsPerApp per_app { get; set; }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgSystemPerfSettingsV1 : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public float diagnostic_update_rate
         {
             get => __pbn__diagnostic_update_rate.GetValueOrDefault();
@@ -2025,9 +2214,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializediagnostic_update_rate() => __pbn__diagnostic_update_rate != null;
         public void Resetdiagnostic_update_rate() => __pbn__diagnostic_update_rate = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__diagnostic_update_rate;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue(ESystemServiceState.k_ESystemServiceState_Unavailable)]
         public ESystemServiceState system_trace_service_state
         {
@@ -2036,9 +2226,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializesystem_trace_service_state() => __pbn__system_trace_service_state != null;
         public void Resetsystem_trace_service_state() => __pbn__system_trace_service_state = null;
+        [global::LightProto.ProtoIgnore]
         private ESystemServiceState? __pbn__system_trace_service_state;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         [global::System.ComponentModel.DefaultValue(ESystemServiceState.k_ESystemServiceState_Unavailable)]
         public ESystemServiceState graphics_profiling_service_state
         {
@@ -2047,9 +2238,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializegraphics_profiling_service_state() => __pbn__graphics_profiling_service_state != null;
         public void Resetgraphics_profiling_service_state() => __pbn__graphics_profiling_service_state = null;
+        [global::LightProto.ProtoIgnore]
         private ESystemServiceState? __pbn__graphics_profiling_service_state;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         [global::System.ComponentModel.DefaultValue(ESystemServiceState.k_ESystemServiceState_Unavailable)]
         public ESystemServiceState perf_overlay_service_state
         {
@@ -2058,9 +2250,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeperf_overlay_service_state() => __pbn__perf_overlay_service_state != null;
         public void Resetperf_overlay_service_state() => __pbn__perf_overlay_service_state = null;
+        [global::LightProto.ProtoIgnore]
         private ESystemServiceState? __pbn__perf_overlay_service_state;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         [global::System.ComponentModel.DefaultValue(EGraphicsPerfOverlayLevel.k_EGraphicsPerfOverlayLevel_Hidden)]
         public EGraphicsPerfOverlayLevel perf_overlay_level
         {
@@ -2069,9 +2262,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeperf_overlay_level() => __pbn__perf_overlay_level != null;
         public void Resetperf_overlay_level() => __pbn__perf_overlay_level = null;
+        [global::LightProto.ProtoIgnore]
         private EGraphicsPerfOverlayLevel? __pbn__perf_overlay_level;
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         [global::System.ComponentModel.DefaultValue(EGPUPerformanceLevel.k_EGPUPerformanceLevel_Invalid)]
         public EGPUPerformanceLevel gpu_performance_level
         {
@@ -2080,9 +2274,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializegpu_performance_level() => __pbn__gpu_performance_level != null;
         public void Resetgpu_performance_level() => __pbn__gpu_performance_level = null;
+        [global::LightProto.ProtoIgnore]
         private EGPUPerformanceLevel? __pbn__gpu_performance_level;
 
-        [global::ProtoBuf.ProtoMember(7)]
+        [global::LightProto.ProtoMember(7)]
         public int gpu_performance_manual_mhz
         {
             get => __pbn__gpu_performance_manual_mhz.GetValueOrDefault();
@@ -2090,9 +2285,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializegpu_performance_manual_mhz() => __pbn__gpu_performance_manual_mhz != null;
         public void Resetgpu_performance_manual_mhz() => __pbn__gpu_performance_manual_mhz = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__gpu_performance_manual_mhz;
 
-        [global::ProtoBuf.ProtoMember(8)]
+        [global::LightProto.ProtoMember(8)]
         public int fps_limit
         {
             get => __pbn__fps_limit.GetValueOrDefault();
@@ -2100,9 +2296,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializefps_limit() => __pbn__fps_limit != null;
         public void Resetfps_limit() => __pbn__fps_limit = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__fps_limit;
 
-        [global::ProtoBuf.ProtoMember(9)]
+        [global::LightProto.ProtoMember(9)]
         public bool is_variable_resolution_enabled
         {
             get => __pbn__is_variable_resolution_enabled.GetValueOrDefault();
@@ -2110,9 +2307,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeis_variable_resolution_enabled() => __pbn__is_variable_resolution_enabled != null;
         public void Resetis_variable_resolution_enabled() => __pbn__is_variable_resolution_enabled = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_variable_resolution_enabled;
 
-        [global::ProtoBuf.ProtoMember(10)]
+        [global::LightProto.ProtoMember(10)]
         public bool is_dynamic_refresh_rate_enabled
         {
             get => __pbn__is_dynamic_refresh_rate_enabled.GetValueOrDefault();
@@ -2120,9 +2318,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeis_dynamic_refresh_rate_enabled() => __pbn__is_dynamic_refresh_rate_enabled != null;
         public void Resetis_dynamic_refresh_rate_enabled() => __pbn__is_dynamic_refresh_rate_enabled = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_dynamic_refresh_rate_enabled;
 
-        [global::ProtoBuf.ProtoMember(11)]
+        [global::LightProto.ProtoMember(11)]
         public int tdp_limit
         {
             get => __pbn__tdp_limit.GetValueOrDefault();
@@ -2130,9 +2329,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializetdp_limit() => __pbn__tdp_limit != null;
         public void Resettdp_limit() => __pbn__tdp_limit = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__tdp_limit;
 
-        [global::ProtoBuf.ProtoMember(12)]
+        [global::LightProto.ProtoMember(12)]
         [global::System.ComponentModel.DefaultValue(ECPUGovernor.k_ECPUGovernor_Invalid)]
         public ECPUGovernor cpu_governor
         {
@@ -2141,9 +2341,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializecpu_governor() => __pbn__cpu_governor != null;
         public void Resetcpu_governor() => __pbn__cpu_governor = null;
+        [global::LightProto.ProtoIgnore]
         private ECPUGovernor? __pbn__cpu_governor;
 
-        [global::ProtoBuf.ProtoMember(13)]
+        [global::LightProto.ProtoMember(13)]
         public int cpu_governor_manual_mhz
         {
             get => __pbn__cpu_governor_manual_mhz.GetValueOrDefault();
@@ -2151,9 +2352,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializecpu_governor_manual_mhz() => __pbn__cpu_governor_manual_mhz != null;
         public void Resetcpu_governor_manual_mhz() => __pbn__cpu_governor_manual_mhz = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__cpu_governor_manual_mhz;
 
-        [global::ProtoBuf.ProtoMember(14)]
+        [global::LightProto.ProtoMember(14)]
         public int scaling_filter
         {
             get => __pbn__scaling_filter.GetValueOrDefault();
@@ -2161,9 +2363,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializescaling_filter() => __pbn__scaling_filter != null;
         public void Resetscaling_filter() => __pbn__scaling_filter = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__scaling_filter;
 
-        [global::ProtoBuf.ProtoMember(15)]
+        [global::LightProto.ProtoMember(15)]
         public int fsr_sharpness
         {
             get => __pbn__fsr_sharpness.GetValueOrDefault();
@@ -2171,9 +2374,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializefsr_sharpness() => __pbn__fsr_sharpness != null;
         public void Resetfsr_sharpness() => __pbn__fsr_sharpness = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__fsr_sharpness;
 
-        [global::ProtoBuf.ProtoMember(16)]
+        [global::LightProto.ProtoMember(16)]
         public bool is_fps_limit_enabled
         {
             get => __pbn__is_fps_limit_enabled.GetValueOrDefault();
@@ -2181,9 +2385,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeis_fps_limit_enabled() => __pbn__is_fps_limit_enabled != null;
         public void Resetis_fps_limit_enabled() => __pbn__is_fps_limit_enabled = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_fps_limit_enabled;
 
-        [global::ProtoBuf.ProtoMember(17)]
+        [global::LightProto.ProtoMember(17)]
         public bool is_tdp_limit_enabled
         {
             get => __pbn__is_tdp_limit_enabled.GetValueOrDefault();
@@ -2191,9 +2396,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeis_tdp_limit_enabled() => __pbn__is_tdp_limit_enabled != null;
         public void Resetis_tdp_limit_enabled() => __pbn__is_tdp_limit_enabled = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_tdp_limit_enabled;
 
-        [global::ProtoBuf.ProtoMember(18)]
+        [global::LightProto.ProtoMember(18)]
         public bool is_show_perf_overlay_over_steam_enabled
         {
             get => __pbn__is_show_perf_overlay_over_steam_enabled.GetValueOrDefault();
@@ -2201,9 +2407,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeis_show_perf_overlay_over_steam_enabled() => __pbn__is_show_perf_overlay_over_steam_enabled != null;
         public void Resetis_show_perf_overlay_over_steam_enabled() => __pbn__is_show_perf_overlay_over_steam_enabled = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_show_perf_overlay_over_steam_enabled;
 
-        [global::ProtoBuf.ProtoMember(19)]
+        [global::LightProto.ProtoMember(19)]
         public bool is_low_latency_mode_enabled
         {
             get => __pbn__is_low_latency_mode_enabled.GetValueOrDefault();
@@ -2211,9 +2418,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeis_low_latency_mode_enabled() => __pbn__is_low_latency_mode_enabled != null;
         public void Resetis_low_latency_mode_enabled() => __pbn__is_low_latency_mode_enabled = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_low_latency_mode_enabled;
 
-        [global::ProtoBuf.ProtoMember(20)]
+        [global::LightProto.ProtoMember(20)]
         public int display_refresh_manual_hz
         {
             get => __pbn__display_refresh_manual_hz.GetValueOrDefault();
@@ -2221,9 +2429,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializedisplay_refresh_manual_hz() => __pbn__display_refresh_manual_hz != null;
         public void Resetdisplay_refresh_manual_hz() => __pbn__display_refresh_manual_hz = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__display_refresh_manual_hz;
 
-        [global::ProtoBuf.ProtoMember(21)]
+        [global::LightProto.ProtoMember(21)]
         public bool is_game_perf_profile_enabled
         {
             get => __pbn__is_game_perf_profile_enabled.GetValueOrDefault();
@@ -2231,24 +2440,26 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeis_game_perf_profile_enabled() => __pbn__is_game_perf_profile_enabled != null;
         public void Resetis_game_perf_profile_enabled() => __pbn__is_game_perf_profile_enabled = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_game_perf_profile_enabled;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgSystemPerfState : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public CMsgSystemPerfLimits limits { get; set; }
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public CMsgSystemPerfSettings settings { get; set; }
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public ulong current_game_id
         {
             get => __pbn__current_game_id.GetValueOrDefault();
@@ -2256,9 +2467,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializecurrent_game_id() => __pbn__current_game_id != null;
         public void Resetcurrent_game_id() => __pbn__current_game_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__current_game_id;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public ulong active_profile_game_id
         {
             get => __pbn__active_profile_game_id.GetValueOrDefault();
@@ -2266,18 +2478,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeactive_profile_game_id() => __pbn__active_profile_game_id != null;
         public void Resetactive_profile_game_id() => __pbn__active_profile_game_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__active_profile_game_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgSystemPerfUpdateSettings : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public ulong gameid
         {
             get => __pbn__gameid.GetValueOrDefault();
@@ -2285,9 +2499,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializegameid() => __pbn__gameid != null;
         public void Resetgameid() => __pbn__gameid = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__gameid;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public bool skip_storage_update
         {
             get => __pbn__skip_storage_update.GetValueOrDefault();
@@ -2295,9 +2510,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeskip_storage_update() => __pbn__skip_storage_update != null;
         public void Resetskip_storage_update() => __pbn__skip_storage_update = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__skip_storage_update;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public bool reset_to_default
         {
             get => __pbn__update.Is(2) ? __pbn__update.Boolean : default;
@@ -2306,9 +2522,11 @@ namespace SteamKit2.Internal
         public bool ShouldSerializereset_to_default() => __pbn__update.Is(2);
         public void Resetreset_to_default() => global::ProtoBuf.DiscriminatedUnion32Object.Reset(ref __pbn__update, 2);
 
+        [global::LightProto.ProtoIgnore]
+
         private global::ProtoBuf.DiscriminatedUnion32Object __pbn__update;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public CMsgSystemPerfSettings settings_delta
         {
             get => __pbn__update.Is(3) ? ((CMsgSystemPerfSettings)__pbn__update.Object) : default;
@@ -2319,14 +2537,15 @@ namespace SteamKit2.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgSystemPerfLegacySettingEntry : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public ulong profile_game_id
         {
             get => __pbn__profile_game_id.GetValueOrDefault();
@@ -2334,36 +2553,39 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeprofile_game_id() => __pbn__profile_game_id != null;
         public void Resetprofile_game_id() => __pbn__profile_game_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__profile_game_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public CMsgSystemPerfSettingsPerApp settings { get; set; }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgSystemPerfLegacySettings : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public CMsgSystemPerfSettingsGlobal global { get; set; }
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public global::System.Collections.Generic.List<CMsgSystemPerfLegacySettingEntry> per_app_settings { get; } = new global::System.Collections.Generic.List<CMsgSystemPerfLegacySettingEntry>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgSystemDockUpdateState : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EUpdaterState.k_EUpdaterState_Invalid)]
         public EUpdaterState state
         {
@@ -2372,9 +2594,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializestate() => __pbn__state != null;
         public void Resetstate() => __pbn__state = null;
+        [global::LightProto.ProtoIgnore]
         private EUpdaterState? __pbn__state;
 
-        [global::ProtoBuf.ProtoMember(2, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(2, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public uint rtime_last_checked
         {
             get => __pbn__rtime_last_checked.GetValueOrDefault();
@@ -2382,9 +2605,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializertime_last_checked() => __pbn__rtime_last_checked != null;
         public void Resetrtime_last_checked() => __pbn__rtime_last_checked = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__rtime_last_checked;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         [global::System.ComponentModel.DefaultValue("")]
         public string version_current
         {
@@ -2393,9 +2617,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeversion_current() => __pbn__version_current != null;
         public void Resetversion_current() => __pbn__version_current = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__version_current;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         [global::System.ComponentModel.DefaultValue("")]
         public string version_available
         {
@@ -2404,9 +2629,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeversion_available() => __pbn__version_available != null;
         public void Resetversion_available() => __pbn__version_available = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__version_available;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public float stage_progress
         {
             get => __pbn__stage_progress.GetValueOrDefault();
@@ -2414,9 +2640,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializestage_progress() => __pbn__stage_progress != null;
         public void Resetstage_progress() => __pbn__stage_progress = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__stage_progress;
 
-        [global::ProtoBuf.ProtoMember(6, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(6, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public uint rtime_estimated_completion
         {
             get => __pbn__rtime_estimated_completion.GetValueOrDefault();
@@ -2424,9 +2651,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializertime_estimated_completion() => __pbn__rtime_estimated_completion != null;
         public void Resetrtime_estimated_completion() => __pbn__rtime_estimated_completion = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__rtime_estimated_completion;
 
-        [global::ProtoBuf.ProtoMember(7)]
+        [global::LightProto.ProtoMember(7)]
         public int old_fw_workaround
         {
             get => __pbn__old_fw_workaround.GetValueOrDefault();
@@ -2434,30 +2662,33 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeold_fw_workaround() => __pbn__old_fw_workaround != null;
         public void Resetold_fw_workaround() => __pbn__old_fw_workaround = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__old_fw_workaround;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgSystemDockState : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public CMsgSystemDockUpdateState update_state { get; set; }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgSystemDockUpdateFirmware : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public bool check_only
         {
             get => __pbn__check_only.GetValueOrDefault();
@@ -2465,21 +2696,23 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializecheck_only() => __pbn__check_only != null;
         public void Resetcheck_only() => __pbn__check_only = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__check_only;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgSystemAudioVolume : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<ChannelEntry> entries { get; } = new global::System.Collections.Generic.List<ChannelEntry>();
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public bool is_muted
         {
             get => __pbn__is_muted.GetValueOrDefault();
@@ -2487,16 +2720,18 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeis_muted() => __pbn__is_muted != null;
         public void Resetis_muted() => __pbn__is_muted = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_muted;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class ChannelEntry : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             [global::System.ComponentModel.DefaultValue(ESystemAudioChannel.k_SystemAudioChannel_Invalid)]
             public ESystemAudioChannel echannel
             {
@@ -2505,9 +2740,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializeechannel() => __pbn__echannel != null;
             public void Resetechannel() => __pbn__echannel = null;
+            [global::LightProto.ProtoIgnore]
             private ESystemAudioChannel? __pbn__echannel;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public float volume
             {
                 get => __pbn__volume.GetValueOrDefault();
@@ -2515,20 +2751,22 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializevolume() => __pbn__volume != null;
             public void Resetvolume() => __pbn__volume = null;
+            [global::LightProto.ProtoIgnore]
             private float? __pbn__volume;
 
         }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgSystemAudioManagerObject : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint id
         {
             get => __pbn__id.GetValueOrDefault();
@@ -2536,9 +2774,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeid() => __pbn__id != null;
         public void Resetid() => __pbn__id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__id;
 
-        [global::ProtoBuf.ProtoMember(2, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(2, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public uint rtime_last_update
         {
             get => __pbn__rtime_last_update.GetValueOrDefault();
@@ -2546,21 +2785,25 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializertime_last_update() => __pbn__rtime_last_update != null;
         public void Resetrtime_last_update() => __pbn__rtime_last_update = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__rtime_last_update;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgSystemAudioManagerDevice : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
-        public CMsgSystemAudioManagerObject @base { get; set; }
+        [global::LightProto.ProtoMember(1)]
+        public CMsgSystemAudioManagerObject base_ { get; set; }
+        [global::LightProto.ProtoIgnore]
+        public CMsgSystemAudioManagerObject @base { get => base_; set => base_ = value; }
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue("")]
         public string name
         {
@@ -2569,9 +2812,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializename() => __pbn__name != null;
         public void Resetname() => __pbn__name = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__name;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         [global::System.ComponentModel.DefaultValue("")]
         public string nick
         {
@@ -2580,9 +2824,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializenick() => __pbn__nick != null;
         public void Resetnick() => __pbn__nick = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__nick;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         [global::System.ComponentModel.DefaultValue("")]
         public string description
         {
@@ -2591,9 +2836,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializedescription() => __pbn__description != null;
         public void Resetdescription() => __pbn__description = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__description;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         [global::System.ComponentModel.DefaultValue("")]
         public string api
         {
@@ -2602,21 +2848,25 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeapi() => __pbn__api != null;
         public void Resetapi() => __pbn__api = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__api;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgSystemAudioManagerNode : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
-        public CMsgSystemAudioManagerObject @base { get; set; }
+        [global::LightProto.ProtoMember(1)]
+        public CMsgSystemAudioManagerObject base_ { get; set; }
+        [global::LightProto.ProtoIgnore]
+        public CMsgSystemAudioManagerObject @base { get => base_; set => base_ = value; }
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint device_id
         {
             get => __pbn__device_id.GetValueOrDefault();
@@ -2624,9 +2874,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializedevice_id() => __pbn__device_id != null;
         public void Resetdevice_id() => __pbn__device_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__device_id;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         [global::System.ComponentModel.DefaultValue("")]
         public string name
         {
@@ -2635,9 +2886,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializename() => __pbn__name != null;
         public void Resetname() => __pbn__name = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__name;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         [global::System.ComponentModel.DefaultValue("")]
         public string nick
         {
@@ -2646,9 +2898,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializenick() => __pbn__nick != null;
         public void Resetnick() => __pbn__nick = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__nick;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         [global::System.ComponentModel.DefaultValue("")]
         public string description
         {
@@ -2657,9 +2910,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializedescription() => __pbn__description != null;
         public void Resetdescription() => __pbn__description = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__description;
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         [global::System.ComponentModel.DefaultValue(ESystemAudioDirection.k_SystemAudioDirection_Invalid)]
         public ESystemAudioDirection edirection
         {
@@ -2668,24 +2922,28 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeedirection() => __pbn__edirection != null;
         public void Resetedirection() => __pbn__edirection = null;
+        [global::LightProto.ProtoIgnore]
         private ESystemAudioDirection? __pbn__edirection;
 
-        [global::ProtoBuf.ProtoMember(7)]
+        [global::LightProto.ProtoMember(7)]
         public CMsgSystemAudioVolume volume { get; set; }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgSystemAudioManagerPort : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
-        public CMsgSystemAudioManagerObject @base { get; set; }
+        [global::LightProto.ProtoMember(1)]
+        public CMsgSystemAudioManagerObject base_ { get; set; }
+        [global::LightProto.ProtoIgnore]
+        public CMsgSystemAudioManagerObject @base { get => base_; set => base_ = value; }
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public uint node_id
         {
             get => __pbn__node_id.GetValueOrDefault();
@@ -2693,9 +2951,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializenode_id() => __pbn__node_id != null;
         public void Resetnode_id() => __pbn__node_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__node_id;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         [global::System.ComponentModel.DefaultValue("")]
         public string name
         {
@@ -2704,9 +2963,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializename() => __pbn__name != null;
         public void Resetname() => __pbn__name = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__name;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         [global::System.ComponentModel.DefaultValue("")]
         public string alias
         {
@@ -2715,9 +2975,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializealias() => __pbn__alias != null;
         public void Resetalias() => __pbn__alias = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__alias;
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         [global::System.ComponentModel.DefaultValue(ESystemAudioPortType.k_SystemAudioPortType_Invalid)]
         public ESystemAudioPortType etype
         {
@@ -2726,9 +2987,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeetype() => __pbn__etype != null;
         public void Resetetype() => __pbn__etype = null;
+        [global::LightProto.ProtoIgnore]
         private ESystemAudioPortType? __pbn__etype;
 
-        [global::ProtoBuf.ProtoMember(7)]
+        [global::LightProto.ProtoMember(7)]
         [global::System.ComponentModel.DefaultValue(ESystemAudioPortDirection.k_SystemAudioPortDirection_Invalid)]
         public ESystemAudioPortDirection edirection
         {
@@ -2737,9 +2999,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeedirection() => __pbn__edirection != null;
         public void Resetedirection() => __pbn__edirection = null;
+        [global::LightProto.ProtoIgnore]
         private ESystemAudioPortDirection? __pbn__edirection;
 
-        [global::ProtoBuf.ProtoMember(8)]
+        [global::LightProto.ProtoMember(8)]
         public bool is_physical
         {
             get => __pbn__is_physical.GetValueOrDefault();
@@ -2747,9 +3010,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeis_physical() => __pbn__is_physical != null;
         public void Resetis_physical() => __pbn__is_physical = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_physical;
 
-        [global::ProtoBuf.ProtoMember(9)]
+        [global::LightProto.ProtoMember(9)]
         public bool is_terminal
         {
             get => __pbn__is_terminal.GetValueOrDefault();
@@ -2757,9 +3021,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeis_terminal() => __pbn__is_terminal != null;
         public void Resetis_terminal() => __pbn__is_terminal = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_terminal;
 
-        [global::ProtoBuf.ProtoMember(10)]
+        [global::LightProto.ProtoMember(10)]
         public bool is_control
         {
             get => __pbn__is_control.GetValueOrDefault();
@@ -2767,9 +3032,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeis_control() => __pbn__is_control != null;
         public void Resetis_control() => __pbn__is_control = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_control;
 
-        [global::ProtoBuf.ProtoMember(11)]
+        [global::LightProto.ProtoMember(11)]
         public bool is_monitor
         {
             get => __pbn__is_monitor.GetValueOrDefault();
@@ -2777,21 +3043,25 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeis_monitor() => __pbn__is_monitor != null;
         public void Resetis_monitor() => __pbn__is_monitor = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_monitor;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgSystemAudioManagerLink : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
-        public CMsgSystemAudioManagerObject @base { get; set; }
+        [global::LightProto.ProtoMember(1)]
+        public CMsgSystemAudioManagerObject base_ { get; set; }
+        [global::LightProto.ProtoIgnore]
+        public CMsgSystemAudioManagerObject @base { get => base_; set => base_ = value; }
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint output_node_id
         {
             get => __pbn__output_node_id.GetValueOrDefault();
@@ -2799,9 +3069,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeoutput_node_id() => __pbn__output_node_id != null;
         public void Resetoutput_node_id() => __pbn__output_node_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__output_node_id;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public uint output_port_id
         {
             get => __pbn__output_port_id.GetValueOrDefault();
@@ -2809,9 +3080,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeoutput_port_id() => __pbn__output_port_id != null;
         public void Resetoutput_port_id() => __pbn__output_port_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__output_port_id;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public uint input_node_id
         {
             get => __pbn__input_node_id.GetValueOrDefault();
@@ -2819,9 +3091,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeinput_node_id() => __pbn__input_node_id != null;
         public void Resetinput_node_id() => __pbn__input_node_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__input_node_id;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public uint input_port_id
         {
             get => __pbn__input_port_id.GetValueOrDefault();
@@ -2829,39 +3102,42 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeinput_port_id() => __pbn__input_port_id != null;
         public void Resetinput_port_id() => __pbn__input_port_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__input_port_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgSystemAudioManagerStateHW : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<CMsgSystemAudioManagerDevice> devices { get; } = new global::System.Collections.Generic.List<CMsgSystemAudioManagerDevice>();
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public global::System.Collections.Generic.List<CMsgSystemAudioManagerNode> nodes { get; } = new global::System.Collections.Generic.List<CMsgSystemAudioManagerNode>();
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public global::System.Collections.Generic.List<CMsgSystemAudioManagerPort> ports { get; } = new global::System.Collections.Generic.List<CMsgSystemAudioManagerPort>();
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public global::System.Collections.Generic.List<CMsgSystemAudioManagerLink> links { get; } = new global::System.Collections.Generic.List<CMsgSystemAudioManagerLink>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgSystemAudioManagerState : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public uint rtime_filter
         {
             get => __pbn__rtime_filter.GetValueOrDefault();
@@ -2869,9 +3145,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializertime_filter() => __pbn__rtime_filter != null;
         public void Resetrtime_filter() => __pbn__rtime_filter = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__rtime_filter;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public int counter
         {
             get => __pbn__counter.GetValueOrDefault();
@@ -2879,21 +3156,23 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializecounter() => __pbn__counter != null;
         public void Resetcounter() => __pbn__counter = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__counter;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public CMsgSystemAudioManagerStateHW hw { get; set; }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgSystemAudioManagerUpdateSomething : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public int counter
         {
             get => __pbn__counter.GetValueOrDefault();
@@ -2901,18 +3180,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializecounter() => __pbn__counter != null;
         public void Resetcounter() => __pbn__counter = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__counter;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgSystemDisplayMode : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public int id
         {
             get => __pbn__id.GetValueOrDefault();
@@ -2920,9 +3201,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeid() => __pbn__id != null;
         public void Resetid() => __pbn__id = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public int width
         {
             get => __pbn__width.GetValueOrDefault();
@@ -2930,9 +3212,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializewidth() => __pbn__width != null;
         public void Resetwidth() => __pbn__width = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__width;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public int height
         {
             get => __pbn__height.GetValueOrDefault();
@@ -2940,9 +3223,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeheight() => __pbn__height != null;
         public void Resetheight() => __pbn__height = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__height;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public int refresh_hz
         {
             get => __pbn__refresh_hz.GetValueOrDefault();
@@ -2950,18 +3234,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializerefresh_hz() => __pbn__refresh_hz != null;
         public void Resetrefresh_hz() => __pbn__refresh_hz = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__refresh_hz;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgSystemDisplay : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public int id
         {
             get => __pbn__id.GetValueOrDefault();
@@ -2969,9 +3255,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeid() => __pbn__id != null;
         public void Resetid() => __pbn__id = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue("")]
         public string name
         {
@@ -2980,9 +3267,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializename() => __pbn__name != null;
         public void Resetname() => __pbn__name = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__name;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         [global::System.ComponentModel.DefaultValue("")]
         public string description
         {
@@ -2991,9 +3279,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializedescription() => __pbn__description != null;
         public void Resetdescription() => __pbn__description = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__description;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public bool is_primary
         {
             get => __pbn__is_primary.GetValueOrDefault();
@@ -3001,9 +3290,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeis_primary() => __pbn__is_primary != null;
         public void Resetis_primary() => __pbn__is_primary = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_primary;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public bool is_enabled
         {
             get => __pbn__is_enabled.GetValueOrDefault();
@@ -3011,9 +3301,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeis_enabled() => __pbn__is_enabled != null;
         public void Resetis_enabled() => __pbn__is_enabled = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_enabled;
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         public bool is_internal
         {
             get => __pbn__is_internal.GetValueOrDefault();
@@ -3021,9 +3312,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeis_internal() => __pbn__is_internal != null;
         public void Resetis_internal() => __pbn__is_internal = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_internal;
 
-        [global::ProtoBuf.ProtoMember(7)]
+        [global::LightProto.ProtoMember(7)]
         public bool has_mode_override
         {
             get => __pbn__has_mode_override.GetValueOrDefault();
@@ -3031,9 +3323,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializehas_mode_override() => __pbn__has_mode_override != null;
         public void Resethas_mode_override() => __pbn__has_mode_override = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__has_mode_override;
 
-        [global::ProtoBuf.ProtoMember(8)]
+        [global::LightProto.ProtoMember(8)]
         public int width_mm
         {
             get => __pbn__width_mm.GetValueOrDefault();
@@ -3041,9 +3334,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializewidth_mm() => __pbn__width_mm != null;
         public void Resetwidth_mm() => __pbn__width_mm = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__width_mm;
 
-        [global::ProtoBuf.ProtoMember(9)]
+        [global::LightProto.ProtoMember(9)]
         public int height_mm
         {
             get => __pbn__height_mm.GetValueOrDefault();
@@ -3051,9 +3345,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeheight_mm() => __pbn__height_mm != null;
         public void Resetheight_mm() => __pbn__height_mm = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__height_mm;
 
-        [global::ProtoBuf.ProtoMember(10)]
+        [global::LightProto.ProtoMember(10)]
         public int current_mode_id
         {
             get => __pbn__current_mode_id.GetValueOrDefault();
@@ -3061,12 +3356,13 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializecurrent_mode_id() => __pbn__current_mode_id != null;
         public void Resetcurrent_mode_id() => __pbn__current_mode_id = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__current_mode_id;
 
-        [global::ProtoBuf.ProtoMember(11)]
+        [global::LightProto.ProtoMember(11)]
         public global::System.Collections.Generic.List<CMsgSystemDisplayMode> modes { get; } = new global::System.Collections.Generic.List<CMsgSystemDisplayMode>();
 
-        [global::ProtoBuf.ProtoMember(12)]
+        [global::LightProto.ProtoMember(12)]
         public int refresh_rate_min
         {
             get => __pbn__refresh_rate_min.GetValueOrDefault();
@@ -3074,9 +3370,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializerefresh_rate_min() => __pbn__refresh_rate_min != null;
         public void Resetrefresh_rate_min() => __pbn__refresh_rate_min = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__refresh_rate_min;
 
-        [global::ProtoBuf.ProtoMember(13)]
+        [global::LightProto.ProtoMember(13)]
         public int refresh_rate_max
         {
             get => __pbn__refresh_rate_max.GetValueOrDefault();
@@ -3084,9 +3381,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializerefresh_rate_max() => __pbn__refresh_rate_max != null;
         public void Resetrefresh_rate_max() => __pbn__refresh_rate_max = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__refresh_rate_max;
 
-        [global::ProtoBuf.ProtoMember(14)]
+        [global::LightProto.ProtoMember(14)]
         public bool is_vrr_capable
         {
             get => __pbn__is_vrr_capable.GetValueOrDefault();
@@ -3094,9 +3392,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeis_vrr_capable() => __pbn__is_vrr_capable != null;
         public void Resetis_vrr_capable() => __pbn__is_vrr_capable = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_vrr_capable;
 
-        [global::ProtoBuf.ProtoMember(15)]
+        [global::LightProto.ProtoMember(15)]
         public bool is_vrr_output_active
         {
             get => __pbn__is_vrr_output_active.GetValueOrDefault();
@@ -3104,9 +3403,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeis_vrr_output_active() => __pbn__is_vrr_output_active != null;
         public void Resetis_vrr_output_active() => __pbn__is_vrr_output_active = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_vrr_output_active;
 
-        [global::ProtoBuf.ProtoMember(16)]
+        [global::LightProto.ProtoMember(16)]
         public bool is_hdr_capable
         {
             get => __pbn__is_hdr_capable.GetValueOrDefault();
@@ -3114,9 +3414,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeis_hdr_capable() => __pbn__is_hdr_capable != null;
         public void Resetis_hdr_capable() => __pbn__is_hdr_capable = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_hdr_capable;
 
-        [global::ProtoBuf.ProtoMember(17)]
+        [global::LightProto.ProtoMember(17)]
         public bool is_hdr_output_active
         {
             get => __pbn__is_hdr_output_active.GetValueOrDefault();
@@ -3124,24 +3425,26 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeis_hdr_output_active() => __pbn__is_hdr_output_active != null;
         public void Resetis_hdr_output_active() => __pbn__is_hdr_output_active = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_hdr_output_active;
 
-        [global::ProtoBuf.ProtoMember(18)]
+        [global::LightProto.ProtoMember(18)]
         public global::System.Collections.Generic.List<int> supported_refresh_rates { get; } = new global::System.Collections.Generic.List<int>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgSystemDisplayManagerState : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<CMsgSystemDisplay> displays { get; } = new global::System.Collections.Generic.List<CMsgSystemDisplay>();
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public bool is_mode_switching_supported
         {
             get => __pbn__is_mode_switching_supported.GetValueOrDefault();
@@ -3149,9 +3452,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeis_mode_switching_supported() => __pbn__is_mode_switching_supported != null;
         public void Resetis_mode_switching_supported() => __pbn__is_mode_switching_supported = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_mode_switching_supported;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         [global::System.ComponentModel.DefaultValue(ESystemDisplayCompatibilityMode.k_ESystemDisplayCompatibilityMode_Invalid)]
         public ESystemDisplayCompatibilityMode compatibility_mode
         {
@@ -3160,18 +3464,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializecompatibility_mode() => __pbn__compatibility_mode != null;
         public void Resetcompatibility_mode() => __pbn__compatibility_mode = null;
+        [global::LightProto.ProtoIgnore]
         private ESystemDisplayCompatibilityMode? __pbn__compatibility_mode;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgSystemDisplayManagerSetMode : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public int display_id
         {
             get => __pbn__display_id.GetValueOrDefault();
@@ -3179,9 +3485,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializedisplay_id() => __pbn__display_id != null;
         public void Resetdisplay_id() => __pbn__display_id = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__display_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public int mode_id
         {
             get => __pbn__mode_id.GetValueOrDefault();
@@ -3189,18 +3496,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializemode_id() => __pbn__mode_id != null;
         public void Resetmode_id() => __pbn__mode_id = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__mode_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgSystemManagerSettings : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public float idle_backlight_dim_battery_seconds
         {
             get => __pbn__idle_backlight_dim_battery_seconds.GetValueOrDefault();
@@ -3208,9 +3517,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeidle_backlight_dim_battery_seconds() => __pbn__idle_backlight_dim_battery_seconds != null;
         public void Resetidle_backlight_dim_battery_seconds() => __pbn__idle_backlight_dim_battery_seconds = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__idle_backlight_dim_battery_seconds;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public float idle_backlight_dim_ac_seconds
         {
             get => __pbn__idle_backlight_dim_ac_seconds.GetValueOrDefault();
@@ -3218,9 +3528,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeidle_backlight_dim_ac_seconds() => __pbn__idle_backlight_dim_ac_seconds != null;
         public void Resetidle_backlight_dim_ac_seconds() => __pbn__idle_backlight_dim_ac_seconds = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__idle_backlight_dim_ac_seconds;
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         public bool is_adaptive_brightness_available
         {
             get => __pbn__is_adaptive_brightness_available.GetValueOrDefault();
@@ -3228,9 +3539,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeis_adaptive_brightness_available() => __pbn__is_adaptive_brightness_available != null;
         public void Resetis_adaptive_brightness_available() => __pbn__is_adaptive_brightness_available = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_adaptive_brightness_available;
 
-        [global::ProtoBuf.ProtoMember(7)]
+        [global::LightProto.ProtoMember(7)]
         public bool display_adaptive_brightness_enabled
         {
             get => __pbn__display_adaptive_brightness_enabled.GetValueOrDefault();
@@ -3238,9 +3550,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializedisplay_adaptive_brightness_enabled() => __pbn__display_adaptive_brightness_enabled != null;
         public void Resetdisplay_adaptive_brightness_enabled() => __pbn__display_adaptive_brightness_enabled = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__display_adaptive_brightness_enabled;
 
-        [global::ProtoBuf.ProtoMember(10)]
+        [global::LightProto.ProtoMember(10)]
         public bool display_nightmode_enabled
         {
             get => __pbn__display_nightmode_enabled.GetValueOrDefault();
@@ -3248,9 +3561,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializedisplay_nightmode_enabled() => __pbn__display_nightmode_enabled != null;
         public void Resetdisplay_nightmode_enabled() => __pbn__display_nightmode_enabled = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__display_nightmode_enabled;
 
-        [global::ProtoBuf.ProtoMember(11)]
+        [global::LightProto.ProtoMember(11)]
         public float display_nightmode_tintstrength
         {
             get => __pbn__display_nightmode_tintstrength.GetValueOrDefault();
@@ -3258,9 +3572,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializedisplay_nightmode_tintstrength() => __pbn__display_nightmode_tintstrength != null;
         public void Resetdisplay_nightmode_tintstrength() => __pbn__display_nightmode_tintstrength = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__display_nightmode_tintstrength;
 
-        [global::ProtoBuf.ProtoMember(12)]
+        [global::LightProto.ProtoMember(12)]
         public float display_nightmode_maxhue
         {
             get => __pbn__display_nightmode_maxhue.GetValueOrDefault();
@@ -3268,9 +3583,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializedisplay_nightmode_maxhue() => __pbn__display_nightmode_maxhue != null;
         public void Resetdisplay_nightmode_maxhue() => __pbn__display_nightmode_maxhue = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__display_nightmode_maxhue;
 
-        [global::ProtoBuf.ProtoMember(13)]
+        [global::LightProto.ProtoMember(13)]
         public float display_nightmode_maxsat
         {
             get => __pbn__display_nightmode_maxsat.GetValueOrDefault();
@@ -3278,9 +3594,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializedisplay_nightmode_maxsat() => __pbn__display_nightmode_maxsat != null;
         public void Resetdisplay_nightmode_maxsat() => __pbn__display_nightmode_maxsat = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__display_nightmode_maxsat;
 
-        [global::ProtoBuf.ProtoMember(14)]
+        [global::LightProto.ProtoMember(14)]
         public float display_nightmode_uiexp
         {
             get => __pbn__display_nightmode_uiexp.GetValueOrDefault();
@@ -3288,9 +3605,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializedisplay_nightmode_uiexp() => __pbn__display_nightmode_uiexp != null;
         public void Resetdisplay_nightmode_uiexp() => __pbn__display_nightmode_uiexp = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__display_nightmode_uiexp;
 
-        [global::ProtoBuf.ProtoMember(15)]
+        [global::LightProto.ProtoMember(15)]
         public float display_nightmode_blend
         {
             get => __pbn__display_nightmode_blend.GetValueOrDefault();
@@ -3298,9 +3616,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializedisplay_nightmode_blend() => __pbn__display_nightmode_blend != null;
         public void Resetdisplay_nightmode_blend() => __pbn__display_nightmode_blend = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__display_nightmode_blend;
 
-        [global::ProtoBuf.ProtoMember(16)]
+        [global::LightProto.ProtoMember(16)]
         public bool display_nightmode_reset
         {
             get => __pbn__display_nightmode_reset.GetValueOrDefault();
@@ -3308,9 +3627,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializedisplay_nightmode_reset() => __pbn__display_nightmode_reset != null;
         public void Resetdisplay_nightmode_reset() => __pbn__display_nightmode_reset = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__display_nightmode_reset;
 
-        [global::ProtoBuf.ProtoMember(17)]
+        [global::LightProto.ProtoMember(17)]
         public bool display_nightmode_schedule_enabled
         {
             get => __pbn__display_nightmode_schedule_enabled.GetValueOrDefault();
@@ -3318,9 +3638,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializedisplay_nightmode_schedule_enabled() => __pbn__display_nightmode_schedule_enabled != null;
         public void Resetdisplay_nightmode_schedule_enabled() => __pbn__display_nightmode_schedule_enabled = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__display_nightmode_schedule_enabled;
 
-        [global::ProtoBuf.ProtoMember(18)]
+        [global::LightProto.ProtoMember(18)]
         public float display_nightmode_schedule_starttime
         {
             get => __pbn__display_nightmode_schedule_starttime.GetValueOrDefault();
@@ -3328,9 +3649,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializedisplay_nightmode_schedule_starttime() => __pbn__display_nightmode_schedule_starttime != null;
         public void Resetdisplay_nightmode_schedule_starttime() => __pbn__display_nightmode_schedule_starttime = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__display_nightmode_schedule_starttime;
 
-        [global::ProtoBuf.ProtoMember(19)]
+        [global::LightProto.ProtoMember(19)]
         public float display_nightmode_schedule_endtime
         {
             get => __pbn__display_nightmode_schedule_endtime.GetValueOrDefault();
@@ -3338,9 +3660,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializedisplay_nightmode_schedule_endtime() => __pbn__display_nightmode_schedule_endtime != null;
         public void Resetdisplay_nightmode_schedule_endtime() => __pbn__display_nightmode_schedule_endtime = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__display_nightmode_schedule_endtime;
 
-        [global::ProtoBuf.ProtoMember(20)]
+        [global::LightProto.ProtoMember(20)]
         public bool display_diagnostics_enabled
         {
             get => __pbn__display_diagnostics_enabled.GetValueOrDefault();
@@ -3348,9 +3671,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializedisplay_diagnostics_enabled() => __pbn__display_diagnostics_enabled != null;
         public void Resetdisplay_diagnostics_enabled() => __pbn__display_diagnostics_enabled = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__display_diagnostics_enabled;
 
-        [global::ProtoBuf.ProtoMember(21)]
+        [global::LightProto.ProtoMember(21)]
         public float als_lux_primary
         {
             get => __pbn__als_lux_primary.GetValueOrDefault();
@@ -3358,9 +3682,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeals_lux_primary() => __pbn__als_lux_primary != null;
         public void Resetals_lux_primary() => __pbn__als_lux_primary = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__als_lux_primary;
 
-        [global::ProtoBuf.ProtoMember(22)]
+        [global::LightProto.ProtoMember(22)]
         public float als_lux_median
         {
             get => __pbn__als_lux_median.GetValueOrDefault();
@@ -3368,9 +3693,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeals_lux_median() => __pbn__als_lux_median != null;
         public void Resetals_lux_median() => __pbn__als_lux_median = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__als_lux_median;
 
-        [global::ProtoBuf.ProtoMember(23)]
+        [global::LightProto.ProtoMember(23)]
         public float display_backlight_raw
         {
             get => __pbn__display_backlight_raw.GetValueOrDefault();
@@ -3378,9 +3704,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializedisplay_backlight_raw() => __pbn__display_backlight_raw != null;
         public void Resetdisplay_backlight_raw() => __pbn__display_backlight_raw = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__display_backlight_raw;
 
-        [global::ProtoBuf.ProtoMember(24)]
+        [global::LightProto.ProtoMember(24)]
         public float display_brightness_adaptivemin
         {
             get => __pbn__display_brightness_adaptivemin.GetValueOrDefault();
@@ -3388,9 +3715,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializedisplay_brightness_adaptivemin() => __pbn__display_brightness_adaptivemin != null;
         public void Resetdisplay_brightness_adaptivemin() => __pbn__display_brightness_adaptivemin = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__display_brightness_adaptivemin;
 
-        [global::ProtoBuf.ProtoMember(25)]
+        [global::LightProto.ProtoMember(25)]
         public float display_brightness_adaptivemax
         {
             get => __pbn__display_brightness_adaptivemax.GetValueOrDefault();
@@ -3398,9 +3726,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializedisplay_brightness_adaptivemax() => __pbn__display_brightness_adaptivemax != null;
         public void Resetdisplay_brightness_adaptivemax() => __pbn__display_brightness_adaptivemax = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__display_brightness_adaptivemax;
 
-        [global::ProtoBuf.ProtoMember(26)]
+        [global::LightProto.ProtoMember(26)]
         public bool is_wifi_powersave_enabled
         {
             get => __pbn__is_wifi_powersave_enabled.GetValueOrDefault();
@@ -3408,9 +3737,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeis_wifi_powersave_enabled() => __pbn__is_wifi_powersave_enabled != null;
         public void Resetis_wifi_powersave_enabled() => __pbn__is_wifi_powersave_enabled = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_wifi_powersave_enabled;
 
-        [global::ProtoBuf.ProtoMember(27)]
+        [global::LightProto.ProtoMember(27)]
         public bool is_fan_control_available
         {
             get => __pbn__is_fan_control_available.GetValueOrDefault();
@@ -3418,9 +3748,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeis_fan_control_available() => __pbn__is_fan_control_available != null;
         public void Resetis_fan_control_available() => __pbn__is_fan_control_available = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_fan_control_available;
 
-        [global::ProtoBuf.ProtoMember(28)]
+        [global::LightProto.ProtoMember(28)]
         [global::System.ComponentModel.DefaultValue(ESystemFanControlMode.k_SystemFanControlMode_Invalid)]
         public ESystemFanControlMode fan_control_mode
         {
@@ -3429,9 +3760,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializefan_control_mode() => __pbn__fan_control_mode != null;
         public void Resetfan_control_mode() => __pbn__fan_control_mode = null;
+        [global::LightProto.ProtoIgnore]
         private ESystemFanControlMode? __pbn__fan_control_mode;
 
-        [global::ProtoBuf.ProtoMember(29)]
+        [global::LightProto.ProtoMember(29)]
         public bool is_display_brightness_available
         {
             get => __pbn__is_display_brightness_available.GetValueOrDefault();
@@ -3439,9 +3771,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeis_display_brightness_available() => __pbn__is_display_brightness_available != null;
         public void Resetis_display_brightness_available() => __pbn__is_display_brightness_available = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_display_brightness_available;
 
-        [global::ProtoBuf.ProtoMember(31)]
+        [global::LightProto.ProtoMember(31)]
         public bool is_display_colormanagement_available
         {
             get => __pbn__is_display_colormanagement_available.GetValueOrDefault();
@@ -3449,9 +3782,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeis_display_colormanagement_available() => __pbn__is_display_colormanagement_available != null;
         public void Resetis_display_colormanagement_available() => __pbn__is_display_colormanagement_available = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_display_colormanagement_available;
 
-        [global::ProtoBuf.ProtoMember(32)]
+        [global::LightProto.ProtoMember(32)]
         public float display_colorgamut
         {
             get => __pbn__display_colorgamut.GetValueOrDefault();
@@ -3459,9 +3793,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializedisplay_colorgamut() => __pbn__display_colorgamut != null;
         public void Resetdisplay_colorgamut() => __pbn__display_colorgamut = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__display_colorgamut;
 
-        [global::ProtoBuf.ProtoMember(33)]
+        [global::LightProto.ProtoMember(33)]
         public float als_lux_alternate
         {
             get => __pbn__als_lux_alternate.GetValueOrDefault();
@@ -3469,9 +3804,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeals_lux_alternate() => __pbn__als_lux_alternate != null;
         public void Resetals_lux_alternate() => __pbn__als_lux_alternate = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__als_lux_alternate;
 
-        [global::ProtoBuf.ProtoMember(34)]
+        [global::LightProto.ProtoMember(34)]
         public bool is_display_colortemp_available
         {
             get => __pbn__is_display_colortemp_available.GetValueOrDefault();
@@ -3479,9 +3815,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeis_display_colortemp_available() => __pbn__is_display_colortemp_available != null;
         public void Resetis_display_colortemp_available() => __pbn__is_display_colortemp_available = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_display_colortemp_available;
 
-        [global::ProtoBuf.ProtoMember(35)]
+        [global::LightProto.ProtoMember(35)]
         public float display_colortemp
         {
             get => __pbn__display_colortemp.GetValueOrDefault();
@@ -3489,9 +3826,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializedisplay_colortemp() => __pbn__display_colortemp != null;
         public void Resetdisplay_colortemp() => __pbn__display_colortemp = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__display_colortemp;
 
-        [global::ProtoBuf.ProtoMember(36)]
+        [global::LightProto.ProtoMember(36)]
         public float display_colortemp_default
         {
             get => __pbn__display_colortemp_default.GetValueOrDefault();
@@ -3499,9 +3837,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializedisplay_colortemp_default() => __pbn__display_colortemp_default != null;
         public void Resetdisplay_colortemp_default() => __pbn__display_colortemp_default = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__display_colortemp_default;
 
-        [global::ProtoBuf.ProtoMember(37)]
+        [global::LightProto.ProtoMember(37)]
         public bool display_colortemp_enabled
         {
             get => __pbn__display_colortemp_enabled.GetValueOrDefault();
@@ -3509,9 +3848,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializedisplay_colortemp_enabled() => __pbn__display_colortemp_enabled != null;
         public void Resetdisplay_colortemp_enabled() => __pbn__display_colortemp_enabled = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__display_colortemp_enabled;
 
-        [global::ProtoBuf.ProtoMember(38)]
+        [global::LightProto.ProtoMember(38)]
         [global::System.ComponentModel.DefaultValue(EColorGamutLabelSet.k_ColorGamutLabelSet_Default)]
         public EColorGamutLabelSet display_colorgamut_labelset
         {
@@ -3520,9 +3860,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializedisplay_colorgamut_labelset() => __pbn__display_colorgamut_labelset != null;
         public void Resetdisplay_colorgamut_labelset() => __pbn__display_colorgamut_labelset = null;
+        [global::LightProto.ProtoIgnore]
         private EColorGamutLabelSet? __pbn__display_colorgamut_labelset;
 
-        [global::ProtoBuf.ProtoMember(39)]
+        [global::LightProto.ProtoMember(39)]
         public float display_brightness_overdrive_hdr_split
         {
             get => __pbn__display_brightness_overdrive_hdr_split.GetValueOrDefault();
@@ -3530,18 +3871,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializedisplay_brightness_overdrive_hdr_split() => __pbn__display_brightness_overdrive_hdr_split != null;
         public void Resetdisplay_brightness_overdrive_hdr_split() => __pbn__display_brightness_overdrive_hdr_split = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__display_brightness_overdrive_hdr_split;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgSelectOSBranchParams : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EOSBranch.k_EOSBranch_Unknown)]
         public EOSBranch branch
         {
@@ -3550,9 +3893,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializebranch() => __pbn__branch != null;
         public void Resetbranch() => __pbn__branch = null;
+        [global::LightProto.ProtoIgnore]
         private EOSBranch? __pbn__branch;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue("")]
         public string custom_branch
         {
@@ -3561,18 +3905,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializecustom_branch() => __pbn__custom_branch != null;
         public void Resetcustom_branch() => __pbn__custom_branch = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__custom_branch;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgSystemUpdateProgress : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public float stage_progress
         {
             get => __pbn__stage_progress.GetValueOrDefault();
@@ -3580,9 +3926,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializestage_progress() => __pbn__stage_progress != null;
         public void Resetstage_progress() => __pbn__stage_progress = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__stage_progress;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public long stage_size_bytes
         {
             get => __pbn__stage_size_bytes.GetValueOrDefault();
@@ -3590,9 +3937,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializestage_size_bytes() => __pbn__stage_size_bytes != null;
         public void Resetstage_size_bytes() => __pbn__stage_size_bytes = null;
+        [global::LightProto.ProtoIgnore]
         private long? __pbn__stage_size_bytes;
 
-        [global::ProtoBuf.ProtoMember(3, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(3, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public uint rtime_estimated_completion
         {
             get => __pbn__rtime_estimated_completion.GetValueOrDefault();
@@ -3600,18 +3948,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializertime_estimated_completion() => __pbn__rtime_estimated_completion != null;
         public void Resetrtime_estimated_completion() => __pbn__rtime_estimated_completion = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__rtime_estimated_completion;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgSystemUpdateCheckResult : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EUpdaterType.k_EUpdaterType_Invalid)]
         public EUpdaterType type
         {
@@ -3620,9 +3970,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializetype() => __pbn__type != null;
         public void Resettype() => __pbn__type = null;
+        [global::LightProto.ProtoIgnore]
         private EUpdaterType? __pbn__type;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue(2u)]
         public uint eresult
         {
@@ -3631,9 +3982,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeeresult() => __pbn__eresult != null;
         public void Reseteresult() => __pbn__eresult = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__eresult;
 
-        [global::ProtoBuf.ProtoMember(3, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(3, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public uint rtime_checked
         {
             get => __pbn__rtime_checked.GetValueOrDefault();
@@ -3641,9 +3993,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializertime_checked() => __pbn__rtime_checked != null;
         public void Resetrtime_checked() => __pbn__rtime_checked = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__rtime_checked;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public bool available
         {
             get => __pbn__available.GetValueOrDefault();
@@ -3651,9 +4004,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeavailable() => __pbn__available != null;
         public void Resetavailable() => __pbn__available = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__available;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         [global::System.ComponentModel.DefaultValue("")]
         public string version
         {
@@ -3662,9 +4016,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeversion() => __pbn__version != null;
         public void Resetversion() => __pbn__version = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__version;
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         [global::System.ComponentModel.DefaultValue("")]
         public string auto_message
         {
@@ -3673,9 +4028,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeauto_message() => __pbn__auto_message != null;
         public void Resetauto_message() => __pbn__auto_message = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__auto_message;
 
-        [global::ProtoBuf.ProtoMember(7)]
+        [global::LightProto.ProtoMember(7)]
         public bool system_restart_pending
         {
             get => __pbn__system_restart_pending.GetValueOrDefault();
@@ -3683,30 +4039,33 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializesystem_restart_pending() => __pbn__system_restart_pending != null;
         public void Resetsystem_restart_pending() => __pbn__system_restart_pending = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__system_restart_pending;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgSystemUpdateApplyParams : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<EUpdaterType> apply_types { get; } = new global::System.Collections.Generic.List<EUpdaterType>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgSystemUpdateApplyResult : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EUpdaterType.k_EUpdaterType_Invalid)]
         public EUpdaterType type
         {
@@ -3715,9 +4074,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializetype() => __pbn__type != null;
         public void Resettype() => __pbn__type = null;
+        [global::LightProto.ProtoIgnore]
         private EUpdaterType? __pbn__type;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue(2u)]
         public uint eresult
         {
@@ -3726,9 +4086,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeeresult() => __pbn__eresult != null;
         public void Reseteresult() => __pbn__eresult = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__eresult;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         [global::System.ComponentModel.DefaultValue(false)]
         public bool requires_client_restart
         {
@@ -3737,9 +4098,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializerequires_client_restart() => __pbn__requires_client_restart != null;
         public void Resetrequires_client_restart() => __pbn__requires_client_restart = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__requires_client_restart;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         [global::System.ComponentModel.DefaultValue(false)]
         public bool requires_system_restart
         {
@@ -3748,18 +4110,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializerequires_system_restart() => __pbn__requires_system_restart != null;
         public void Resetrequires_system_restart() => __pbn__requires_system_restart = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__requires_system_restart;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgSystemUpdateState : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EUpdaterState.k_EUpdaterState_Invalid)]
         public EUpdaterState state
         {
@@ -3768,18 +4132,19 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializestate() => __pbn__state != null;
         public void Resetstate() => __pbn__state = null;
+        [global::LightProto.ProtoIgnore]
         private EUpdaterState? __pbn__state;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public CMsgSystemUpdateProgress progress { get; set; }
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public global::System.Collections.Generic.List<CMsgSystemUpdateCheckResult> update_check_results { get; } = new global::System.Collections.Generic.List<CMsgSystemUpdateCheckResult>();
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public global::System.Collections.Generic.List<CMsgSystemUpdateApplyResult> update_apply_results { get; } = new global::System.Collections.Generic.List<CMsgSystemUpdateApplyResult>();
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public bool supports_os_updates
         {
             get => __pbn__supports_os_updates.GetValueOrDefault();
@@ -3787,18 +4152,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializesupports_os_updates() => __pbn__supports_os_updates != null;
         public void Resetsupports_os_updates() => __pbn__supports_os_updates = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__supports_os_updates;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgAchievementChange : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint appid
         {
             get => __pbn__appid.GetValueOrDefault();
@@ -3806,28 +4173,31 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeappid() => __pbn__appid != null;
         public void Resetappid() => __pbn__appid = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__appid;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgCellList : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<Cell> cells { get; } = new global::System.Collections.Generic.List<Cell>();
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class Cell : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public uint cell_id
             {
                 get => __pbn__cell_id.GetValueOrDefault();
@@ -3835,9 +4205,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializecell_id() => __pbn__cell_id != null;
             public void Resetcell_id() => __pbn__cell_id = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__cell_id;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             [global::System.ComponentModel.DefaultValue("")]
             public string loc_name
             {
@@ -3846,20 +4217,22 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializeloc_name() => __pbn__loc_name != null;
             public void Resetloc_name() => __pbn__loc_name = null;
+            [global::LightProto.ProtoIgnore]
             private string __pbn__loc_name;
 
         }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgShortcutInfo : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint appid
         {
             get => __pbn__appid.GetValueOrDefault();
@@ -3867,9 +4240,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeappid() => __pbn__appid != null;
         public void Resetappid() => __pbn__appid = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__appid;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue("")]
         public string exe
         {
@@ -3878,9 +4252,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeexe() => __pbn__exe != null;
         public void Resetexe() => __pbn__exe = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__exe;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         [global::System.ComponentModel.DefaultValue("")]
         public string start_dir
         {
@@ -3889,9 +4264,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializestart_dir() => __pbn__start_dir != null;
         public void Resetstart_dir() => __pbn__start_dir = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__start_dir;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         [global::System.ComponentModel.DefaultValue("")]
         public string icon
         {
@@ -3900,9 +4276,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeicon() => __pbn__icon != null;
         public void Reseticon() => __pbn__icon = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__icon;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         [global::System.ComponentModel.DefaultValue("")]
         public string path
         {
@@ -3911,9 +4288,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializepath() => __pbn__path != null;
         public void Resetpath() => __pbn__path = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__path;
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         [global::System.ComponentModel.DefaultValue("")]
         public string args
         {
@@ -3922,9 +4300,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeargs() => __pbn__args != null;
         public void Resetargs() => __pbn__args = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__args;
 
-        [global::ProtoBuf.ProtoMember(7)]
+        [global::LightProto.ProtoMember(7)]
         [global::System.ComponentModel.DefaultValue("")]
         public string app_name
         {
@@ -3933,9 +4312,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeapp_name() => __pbn__app_name != null;
         public void Resetapp_name() => __pbn__app_name = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__app_name;
 
-        [global::ProtoBuf.ProtoMember(8)]
+        [global::LightProto.ProtoMember(8)]
         public uint override_appid
         {
             get => __pbn__override_appid.GetValueOrDefault();
@@ -3943,9 +4323,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeoverride_appid() => __pbn__override_appid != null;
         public void Resetoverride_appid() => __pbn__override_appid = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__override_appid;
 
-        [global::ProtoBuf.ProtoMember(9)]
+        [global::LightProto.ProtoMember(9)]
         [global::System.ComponentModel.DefaultValue("")]
         public string flatpak_appid
         {
@@ -3954,12 +4335,13 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeflatpak_appid() => __pbn__flatpak_appid != null;
         public void Resetflatpak_appid() => __pbn__flatpak_appid = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__flatpak_appid;
 
-        [global::ProtoBuf.ProtoMember(10)]
+        [global::LightProto.ProtoMember(10)]
         public global::System.Collections.Generic.List<string> tags { get; } = new global::System.Collections.Generic.List<string>();
 
-        [global::ProtoBuf.ProtoMember(11)]
+        [global::LightProto.ProtoMember(11)]
         public ulong remote_client_id
         {
             get => __pbn__remote_client_id.GetValueOrDefault();
@@ -3967,9 +4349,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeremote_client_id() => __pbn__remote_client_id != null;
         public void Resetremote_client_id() => __pbn__remote_client_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__remote_client_id;
 
-        [global::ProtoBuf.ProtoMember(12)]
+        [global::LightProto.ProtoMember(12)]
         public bool is_hidden
         {
             get => __pbn__is_hidden.GetValueOrDefault();
@@ -3977,9 +4360,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeis_hidden() => __pbn__is_hidden != null;
         public void Resetis_hidden() => __pbn__is_hidden = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_hidden;
 
-        [global::ProtoBuf.ProtoMember(13)]
+        [global::LightProto.ProtoMember(13)]
         public bool is_temporary
         {
             get => __pbn__is_temporary.GetValueOrDefault();
@@ -3987,9 +4371,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeis_temporary() => __pbn__is_temporary != null;
         public void Resetis_temporary() => __pbn__is_temporary = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_temporary;
 
-        [global::ProtoBuf.ProtoMember(14)]
+        [global::LightProto.ProtoMember(14)]
         public bool is_openvr
         {
             get => __pbn__is_openvr.GetValueOrDefault();
@@ -3997,9 +4382,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeis_openvr() => __pbn__is_openvr != null;
         public void Resetis_openvr() => __pbn__is_openvr = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_openvr;
 
-        [global::ProtoBuf.ProtoMember(15)]
+        [global::LightProto.ProtoMember(15)]
         public bool allow_desktop_config
         {
             get => __pbn__allow_desktop_config.GetValueOrDefault();
@@ -4007,9 +4393,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeallow_desktop_config() => __pbn__allow_desktop_config != null;
         public void Resetallow_desktop_config() => __pbn__allow_desktop_config = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__allow_desktop_config;
 
-        [global::ProtoBuf.ProtoMember(16)]
+        [global::LightProto.ProtoMember(16)]
         public bool allow_overlay
         {
             get => __pbn__allow_overlay.GetValueOrDefault();
@@ -4017,9 +4404,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeallow_overlay() => __pbn__allow_overlay != null;
         public void Resetallow_overlay() => __pbn__allow_overlay = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__allow_overlay;
 
-        [global::ProtoBuf.ProtoMember(17)]
+        [global::LightProto.ProtoMember(17)]
         public uint rt_last_played_time
         {
             get => __pbn__rt_last_played_time.GetValueOrDefault();
@@ -4027,9 +4415,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializert_last_played_time() => __pbn__rt_last_played_time != null;
         public void Resetrt_last_played_time() => __pbn__rt_last_played_time = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__rt_last_played_time;
 
-        [global::ProtoBuf.ProtoMember(18)]
+        [global::LightProto.ProtoMember(18)]
         public bool is_devkit_shortcut
         {
             get => __pbn__is_devkit_shortcut.GetValueOrDefault();
@@ -4037,9 +4426,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeis_devkit_shortcut() => __pbn__is_devkit_shortcut != null;
         public void Resetis_devkit_shortcut() => __pbn__is_devkit_shortcut = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_devkit_shortcut;
 
-        [global::ProtoBuf.ProtoMember(19)]
+        [global::LightProto.ProtoMember(19)]
         [global::System.ComponentModel.DefaultValue("")]
         public string devkit_gameid
         {
@@ -4048,9 +4438,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializedevkit_gameid() => __pbn__devkit_gameid != null;
         public void Resetdevkit_gameid() => __pbn__devkit_gameid = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__devkit_gameid;
 
-        [global::ProtoBuf.ProtoMember(20)]
+        [global::LightProto.ProtoMember(20)]
         public bool remote_launch_available
         {
             get => __pbn__remote_launch_available.GetValueOrDefault();
@@ -4058,9 +4449,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeremote_launch_available() => __pbn__remote_launch_available != null;
         public void Resetremote_launch_available() => __pbn__remote_launch_available = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__remote_launch_available;
 
-        [global::ProtoBuf.ProtoMember(21)]
+        [global::LightProto.ProtoMember(21)]
         [global::System.ComponentModel.DefaultValue("")]
         public string sortas
         {
@@ -4069,72 +4461,78 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializesortas() => __pbn__sortas != null;
         public void Resetsortas() => __pbn__sortas = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__sortas;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgShortcutInfos : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<CMsgShortcutInfo> shorcuts { get; } = new global::System.Collections.Generic.List<CMsgShortcutInfo>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgShortcutAppIds : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<uint> appids { get; } = new global::System.Collections.Generic.List<uint>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgMonitorInfo : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, IsRequired = true)]
+        [global::LightProto.ProtoMember(1, IsRequired = true)]
         public string selected_device_name { get; set; }
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public global::System.Collections.Generic.List<MonitorInfo> monitors { get; } = new global::System.Collections.Generic.List<MonitorInfo>();
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class MonitorInfo : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1, IsRequired = true)]
+            [global::LightProto.ProtoMember(1, IsRequired = true)]
             public string monitor_device_name { get; set; }
 
-            [global::ProtoBuf.ProtoMember(2, IsRequired = true)]
+            [global::LightProto.ProtoMember(2, IsRequired = true)]
             public string monitor_display_name { get; set; }
 
         }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGenerateSystemReportReply : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue("")]
         public string report_id
         {
@@ -4143,18 +4541,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializereport_id() => __pbn__report_id != null;
         public void Resetreport_id() => __pbn__report_id = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__report_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgWebUITransportInfo : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint port
         {
             get => __pbn__port.GetValueOrDefault();
@@ -4162,9 +4562,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeport() => __pbn__port != null;
         public void Resetport() => __pbn__port = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__port;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue("")]
         public string auth_key
         {
@@ -4173,18 +4574,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeauth_key() => __pbn__auth_key != null;
         public void Resetauth_key() => __pbn__auth_key = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__auth_key;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgWebUITransportFailure : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint connect_count
         {
             get => __pbn__connect_count.GetValueOrDefault();
@@ -4192,18 +4595,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeconnect_count() => __pbn__connect_count != null;
         public void Resetconnect_count() => __pbn__connect_count = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__connect_count;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientShaderHitCacheEntry : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public byte[] key_sha
         {
             get => __pbn__key_sha;
@@ -4211,9 +4616,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializekey_sha() => __pbn__key_sha != null;
         public void Resetkey_sha() => __pbn__key_sha = null;
+        [global::LightProto.ProtoIgnore]
         private byte[] __pbn__key_sha;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public byte[] code_sha
         {
             get => __pbn__code_sha;
@@ -4221,9 +4627,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializecode_sha() => __pbn__code_sha != null;
         public void Resetcode_sha() => __pbn__code_sha = null;
+        [global::LightProto.ProtoIgnore]
         private byte[] __pbn__code_sha;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public ulong time_last_reported
         {
             get => __pbn__time_last_reported.GetValueOrDefault();
@@ -4231,23 +4638,25 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializetime_last_reported() => __pbn__time_last_reported != null;
         public void Resettime_last_reported() => __pbn__time_last_reported = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__time_last_reported;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientShaderHitCache : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<CMsgClientShaderHitCacheEntry> entries { get; } = new global::System.Collections.Generic.List<CMsgClientShaderHitCacheEntry>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum ECloudPendingRemoteOperation
     {
         k_ECloudPendingRemoteOperationNone = 0,
@@ -4257,7 +4666,7 @@ namespace SteamKit2.Internal
         k_ECloudPendingRemoteOperationAppSessionSuspended = 4,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum ESteamDeckKeyboardLayout
     {
         k_ESteamDeckKeyboardLayout_QWERTY = 0,

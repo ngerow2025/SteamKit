@@ -9,36 +9,39 @@
 namespace SteamKit2.Internal
 {
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CGameServers_GetServerSteamIDsByIP_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<string> server_ips { get; } = new global::System.Collections.Generic.List<string>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CGameServers_IPsWithSteamIDs_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<Server> servers { get; } = new global::System.Collections.Generic.List<Server>();
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class Server : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             [global::System.ComponentModel.DefaultValue("")]
             public string addr
             {
@@ -47,9 +50,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializeaddr() => __pbn__addr != null;
             public void Resetaddr() => __pbn__addr = null;
+            [global::LightProto.ProtoIgnore]
             private string __pbn__addr;
 
-            [global::ProtoBuf.ProtoMember(2, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+            [global::LightProto.ProtoMember(2, DataFormat = global::LightProto.DataFormat.FixedSize)]
             public ulong steamid
             {
                 get => __pbn__steamid.GetValueOrDefault();
@@ -57,32 +61,35 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializesteamid() => __pbn__steamid != null;
             public void Resetsteamid() => __pbn__steamid = null;
+            [global::LightProto.ProtoIgnore]
             private ulong? __pbn__steamid;
 
         }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CGameServers_GetServerIPsBySteamID_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public global::System.Collections.Generic.List<ulong> server_steamids { get; } = new global::System.Collections.Generic.List<ulong>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CGameServers_QueryByFakeIP_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint fake_ip
         {
             get => __pbn__fake_ip.GetValueOrDefault();
@@ -90,9 +97,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializefake_ip() => __pbn__fake_ip != null;
         public void Resetfake_ip() => __pbn__fake_ip = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__fake_ip;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint fake_port
         {
             get => __pbn__fake_port.GetValueOrDefault();
@@ -100,9 +108,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializefake_port() => __pbn__fake_port != null;
         public void Resetfake_port() => __pbn__fake_port = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__fake_port;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public uint app_id
         {
             get => __pbn__app_id.GetValueOrDefault();
@@ -110,9 +119,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeapp_id() => __pbn__app_id != null;
         public void Resetapp_id() => __pbn__app_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__app_id;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         [global::System.ComponentModel.DefaultValue(EQueryType.Query_Invalid)]
         public EQueryType query_type
         {
@@ -121,9 +131,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializequery_type() => __pbn__query_type != null;
         public void Resetquery_type() => __pbn__query_type = null;
+        [global::LightProto.ProtoIgnore]
         private EQueryType? __pbn__query_type;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum EQueryType
         {
             Query_Invalid = 0,
@@ -134,17 +145,18 @@ namespace SteamKit2.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGameServerPingQueryData : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public CMsgIPAddress server_ip { get; set; }
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint query_port
         {
             get => __pbn__query_port.GetValueOrDefault();
@@ -152,9 +164,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializequery_port() => __pbn__query_port != null;
         public void Resetquery_port() => __pbn__query_port = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__query_port;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public uint game_port
         {
             get => __pbn__game_port.GetValueOrDefault();
@@ -162,9 +175,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializegame_port() => __pbn__game_port != null;
         public void Resetgame_port() => __pbn__game_port = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__game_port;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public uint spectator_port
         {
             get => __pbn__spectator_port.GetValueOrDefault();
@@ -172,9 +186,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializespectator_port() => __pbn__spectator_port != null;
         public void Resetspectator_port() => __pbn__spectator_port = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__spectator_port;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         [global::System.ComponentModel.DefaultValue("")]
         public string spectator_server_name
         {
@@ -183,9 +198,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializespectator_server_name() => __pbn__spectator_server_name != null;
         public void Resetspectator_server_name() => __pbn__spectator_server_name = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__spectator_server_name;
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         [global::System.ComponentModel.DefaultValue("")]
         public string server_name
         {
@@ -194,9 +210,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeserver_name() => __pbn__server_name != null;
         public void Resetserver_name() => __pbn__server_name = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__server_name;
 
-        [global::ProtoBuf.ProtoMember(7, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(7, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong steamid
         {
             get => __pbn__steamid.GetValueOrDefault();
@@ -204,9 +221,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializesteamid() => __pbn__steamid != null;
         public void Resetsteamid() => __pbn__steamid = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__steamid;
 
-        [global::ProtoBuf.ProtoMember(8)]
+        [global::LightProto.ProtoMember(8)]
         public uint app_id
         {
             get => __pbn__app_id.GetValueOrDefault();
@@ -214,9 +232,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeapp_id() => __pbn__app_id != null;
         public void Resetapp_id() => __pbn__app_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__app_id;
 
-        [global::ProtoBuf.ProtoMember(9)]
+        [global::LightProto.ProtoMember(9)]
         [global::System.ComponentModel.DefaultValue("")]
         public string gamedir
         {
@@ -225,9 +244,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializegamedir() => __pbn__gamedir != null;
         public void Resetgamedir() => __pbn__gamedir = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__gamedir;
 
-        [global::ProtoBuf.ProtoMember(10)]
+        [global::LightProto.ProtoMember(10)]
         [global::System.ComponentModel.DefaultValue("")]
         public string map
         {
@@ -236,9 +256,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializemap() => __pbn__map != null;
         public void Resetmap() => __pbn__map = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__map;
 
-        [global::ProtoBuf.ProtoMember(11)]
+        [global::LightProto.ProtoMember(11)]
         [global::System.ComponentModel.DefaultValue("")]
         public string game_description
         {
@@ -247,9 +268,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializegame_description() => __pbn__game_description != null;
         public void Resetgame_description() => __pbn__game_description = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__game_description;
 
-        [global::ProtoBuf.ProtoMember(12)]
+        [global::LightProto.ProtoMember(12)]
         [global::System.ComponentModel.DefaultValue("")]
         public string gametype
         {
@@ -258,9 +280,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializegametype() => __pbn__gametype != null;
         public void Resetgametype() => __pbn__gametype = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__gametype;
 
-        [global::ProtoBuf.ProtoMember(13)]
+        [global::LightProto.ProtoMember(13)]
         public uint num_players
         {
             get => __pbn__num_players.GetValueOrDefault();
@@ -268,9 +291,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializenum_players() => __pbn__num_players != null;
         public void Resetnum_players() => __pbn__num_players = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__num_players;
 
-        [global::ProtoBuf.ProtoMember(14)]
+        [global::LightProto.ProtoMember(14)]
         public uint max_players
         {
             get => __pbn__max_players.GetValueOrDefault();
@@ -278,9 +302,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializemax_players() => __pbn__max_players != null;
         public void Resetmax_players() => __pbn__max_players = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__max_players;
 
-        [global::ProtoBuf.ProtoMember(15)]
+        [global::LightProto.ProtoMember(15)]
         public uint num_bots
         {
             get => __pbn__num_bots.GetValueOrDefault();
@@ -288,9 +313,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializenum_bots() => __pbn__num_bots != null;
         public void Resetnum_bots() => __pbn__num_bots = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__num_bots;
 
-        [global::ProtoBuf.ProtoMember(16)]
+        [global::LightProto.ProtoMember(16)]
         public bool password
         {
             get => __pbn__password.GetValueOrDefault();
@@ -298,9 +324,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializepassword() => __pbn__password != null;
         public void Resetpassword() => __pbn__password = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__password;
 
-        [global::ProtoBuf.ProtoMember(17)]
+        [global::LightProto.ProtoMember(17)]
         public bool secure
         {
             get => __pbn__secure.GetValueOrDefault();
@@ -308,9 +335,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializesecure() => __pbn__secure != null;
         public void Resetsecure() => __pbn__secure = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__secure;
 
-        [global::ProtoBuf.ProtoMember(18)]
+        [global::LightProto.ProtoMember(18)]
         public bool dedicated
         {
             get => __pbn__dedicated.GetValueOrDefault();
@@ -318,9 +346,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializededicated() => __pbn__dedicated != null;
         public void Resetdedicated() => __pbn__dedicated = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__dedicated;
 
-        [global::ProtoBuf.ProtoMember(19)]
+        [global::LightProto.ProtoMember(19)]
         [global::System.ComponentModel.DefaultValue("")]
         public string version
         {
@@ -329,9 +358,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeversion() => __pbn__version != null;
         public void Resetversion() => __pbn__version = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__version;
 
-        [global::ProtoBuf.ProtoMember(20, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(20, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public uint sdr_popid
         {
             get => __pbn__sdr_popid.GetValueOrDefault();
@@ -339,9 +369,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializesdr_popid() => __pbn__sdr_popid != null;
         public void Resetsdr_popid() => __pbn__sdr_popid = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__sdr_popid;
 
-        [global::ProtoBuf.ProtoMember(21)]
+        [global::LightProto.ProtoMember(21)]
         [global::System.ComponentModel.DefaultValue("")]
         public string sdr_location_string
         {
@@ -350,28 +381,31 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializesdr_location_string() => __pbn__sdr_location_string != null;
         public void Resetsdr_location_string() => __pbn__sdr_location_string = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__sdr_location_string;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGameServerPlayersQueryData : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<Player> players { get; } = new global::System.Collections.Generic.List<Player>();
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class Player : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             [global::System.ComponentModel.DefaultValue("")]
             public string name
             {
@@ -380,9 +414,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializename() => __pbn__name != null;
             public void Resetname() => __pbn__name = null;
+            [global::LightProto.ProtoIgnore]
             private string __pbn__name;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public uint score
             {
                 get => __pbn__score.GetValueOrDefault();
@@ -390,9 +425,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializescore() => __pbn__score != null;
             public void Resetscore() => __pbn__score = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__score;
 
-            [global::ProtoBuf.ProtoMember(3)]
+            [global::LightProto.ProtoMember(3)]
             public uint time_played
             {
                 get => __pbn__time_played.GetValueOrDefault();
@@ -400,30 +436,33 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializetime_played() => __pbn__time_played != null;
             public void Resettime_played() => __pbn__time_played = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__time_played;
 
         }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGameServerRulesQueryData : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<Rule> rules { get; } = new global::System.Collections.Generic.List<Rule>();
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class Rule : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             [global::System.ComponentModel.DefaultValue("")]
             public string rule
             {
@@ -432,9 +471,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializerule() => __pbn__rule != null;
             public void Resetrule() => __pbn__rule = null;
+            [global::LightProto.ProtoIgnore]
             private string __pbn__rule;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             [global::System.ComponentModel.DefaultValue("")]
             public string value
             {
@@ -443,41 +483,44 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializevalue() => __pbn__value != null;
             public void Resetvalue() => __pbn__value = null;
+            [global::LightProto.ProtoIgnore]
             private string __pbn__value;
 
         }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CGameServers_GameServerQuery_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public CMsgGameServerPingQueryData ping_data { get; set; }
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public CMsgGameServerPlayersQueryData players_data { get; set; }
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public CMsgGameServerRulesQueryData rules_data { get; set; }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CGameServers_ReportServerPingReply_Notification : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public CMsgGameServerPingQueryData server_data { get; set; }
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint ping_ms
         {
             get => __pbn__ping_ms.GetValueOrDefault();
@@ -485,9 +528,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeping_ms() => __pbn__ping_ms != null;
         public void Resetping_ms() => __pbn__ping_ms = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__ping_ms;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         [global::System.ComponentModel.DefaultValue("")]
         public string client_sdr_location_string
         {
@@ -496,39 +540,43 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeclient_sdr_location_string() => __pbn__client_sdr_location_string != null;
         public void Resetclient_sdr_location_string() => __pbn__client_sdr_location_string = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__client_sdr_location_string;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class GameServerClient_QueryServerData_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class GameServerClient_QueryServerData_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public CMsgGameServerPingQueryData ping_data { get; set; }
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public CMsgGameServerPlayersQueryData players_data { get; set; }
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public CMsgGameServerRulesQueryData rules_data { get; set; }
 
     }
 
     public class GameServers : SteamUnifiedMessages.UnifiedService
     {
+        [global::LightProto.ProtoIgnore]
         public override string ServiceName { get; } = "GameServers";
 
         public AsyncJob<SteamUnifiedMessages.ServiceMethodResponse<CGameServers_IPsWithSteamIDs_Response>> GetServerSteamIDsByIP( CGameServers_GetServerSteamIDsByIP_Request request )
@@ -580,6 +628,7 @@ namespace SteamKit2.Internal
 
     public class GameServerClient : SteamUnifiedMessages.UnifiedService
     {
+        [global::LightProto.ProtoIgnore]
         public override string ServiceName { get; } = "GameServerClient";
 
         public AsyncJob<SteamUnifiedMessages.ServiceMethodResponse<GameServerClient_QueryServerData_Response>> QueryServerData( GameServerClient_QueryServerData_Request request )

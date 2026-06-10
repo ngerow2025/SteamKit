@@ -1,4 +1,4 @@
-﻿/*
+/*
  * This file is subject to the terms and conditions defined in
  * file 'license.txt', which is part of this source code package.
  */
@@ -182,7 +182,7 @@ namespace SteamKit2
         /// <returns>An <see cref="IDisposable"/>. Disposing of the return value will unsubscribe the <paramref name="callbackFunc"/>.</returns>
         public IDisposable SubscribeServiceNotification<TService, TNotification>( Action<SteamUnifiedMessages.ServiceMethodNotification<TNotification>> callbackFunc )
             where TService : SteamUnifiedMessages.UnifiedService, new()
-            where TNotification : IExtensible, new()
+            where TNotification : IExtensible, LightProto.IProtoParser<TNotification>, new()
         {
             ArgumentNullException.ThrowIfNull( callbackFunc );
 
@@ -201,7 +201,7 @@ namespace SteamKit2
         /// <returns>An <see cref="IDisposable"/>. Disposing of the return value will unsubscribe the <paramref name="callbackFunc"/>.</returns>
         public IDisposable SubscribeServiceNotification<TService, TNotification>( Func<SteamUnifiedMessages.ServiceMethodNotification<TNotification>, Task> callbackFunc )
             where TService : SteamUnifiedMessages.UnifiedService, new()
-            where TNotification : IExtensible, new()
+            where TNotification : IExtensible, LightProto.IProtoParser<TNotification>, new()
         {
             ArgumentNullException.ThrowIfNull( callbackFunc );
 
@@ -219,7 +219,7 @@ namespace SteamKit2
         /// <returns>An <see cref="IDisposable"/>. Disposing of the return value will unsubscribe the <paramref name="callbackFunc"/>.</returns>
         public IDisposable SubscribeServiceResponse<TService, TResponse>( Action<SteamUnifiedMessages.ServiceMethodResponse<TResponse>> callbackFunc )
             where TService : SteamUnifiedMessages.UnifiedService, new()
-            where TResponse : IExtensible, new()
+            where TResponse : IExtensible, LightProto.IProtoParser<TResponse>, new()
         {
             ArgumentNullException.ThrowIfNull( callbackFunc );
 
@@ -238,7 +238,7 @@ namespace SteamKit2
         /// <returns>An <see cref="IDisposable"/>. Disposing of the return value will unsubscribe the <paramref name="callbackFunc"/>.</returns>
         public IDisposable SubscribeServiceResponse<TService, TResponse>( Func<SteamUnifiedMessages.ServiceMethodResponse<TResponse>, Task> callbackFunc )
             where TService : SteamUnifiedMessages.UnifiedService, new()
-            where TResponse : IExtensible, new()
+            where TResponse : IExtensible, LightProto.IProtoParser<TResponse>, new()
         {
             ArgumentNullException.ThrowIfNull( callbackFunc );
 

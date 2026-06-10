@@ -9,14 +9,15 @@
 namespace SteamKit2.Internal.Steamworks
 {
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class COAuthToken_ImplicitGrantNoPrompt_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue("")]
         public string clientid
         {
@@ -25,18 +26,20 @@ namespace SteamKit2.Internal.Steamworks
         }
         public bool ShouldSerializeclientid() => __pbn__clientid != null;
         public void Resetclientid() => __pbn__clientid = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__clientid;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class COAuthToken_ImplicitGrantNoPrompt_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue("")]
         public string access_token
         {
@@ -45,9 +48,10 @@ namespace SteamKit2.Internal.Steamworks
         }
         public bool ShouldSerializeaccess_token() => __pbn__access_token != null;
         public void Resetaccess_token() => __pbn__access_token = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__access_token;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue("")]
         public string redirect_uri
         {
@@ -56,12 +60,14 @@ namespace SteamKit2.Internal.Steamworks
         }
         public bool ShouldSerializeredirect_uri() => __pbn__redirect_uri != null;
         public void Resetredirect_uri() => __pbn__redirect_uri = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__redirect_uri;
 
     }
 
     public class OAuthToken : SteamUnifiedMessages.UnifiedService
     {
+        [global::LightProto.ProtoIgnore]
         public override string ServiceName { get; } = "OAuthToken";
 
         public AsyncJob<SteamUnifiedMessages.ServiceMethodResponse<COAuthToken_ImplicitGrantNoPrompt_Response>> ImplicitGrantNoPrompt( COAuthToken_ImplicitGrantNoPrompt_Request request )

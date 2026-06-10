@@ -9,14 +9,15 @@
 namespace SteamKit2.Internal
 {
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CEconMarket_IsMarketplaceAllowed_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue("")]
         public string webcookie
         {
@@ -25,18 +26,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializewebcookie() => __pbn__webcookie != null;
         public void Resetwebcookie() => __pbn__webcookie = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__webcookie;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CEconMarket_IsMarketplaceAllowed_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public bool allowed
         {
             get => __pbn__allowed.GetValueOrDefault();
@@ -44,9 +47,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeallowed() => __pbn__allowed != null;
         public void Resetallowed() => __pbn__allowed = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__allowed;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint reason
         {
             get => __pbn__reason.GetValueOrDefault();
@@ -54,9 +58,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializereason() => __pbn__reason != null;
         public void Resetreason() => __pbn__reason = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__reason;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public uint allowed_at_time
         {
             get => __pbn__allowed_at_time.GetValueOrDefault();
@@ -64,9 +69,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeallowed_at_time() => __pbn__allowed_at_time != null;
         public void Resetallowed_at_time() => __pbn__allowed_at_time = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__allowed_at_time;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public uint steamguard_required_days
         {
             get => __pbn__steamguard_required_days.GetValueOrDefault();
@@ -74,9 +80,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializesteamguard_required_days() => __pbn__steamguard_required_days != null;
         public void Resetsteamguard_required_days() => __pbn__steamguard_required_days = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__steamguard_required_days;
 
-        [global::ProtoBuf.ProtoMember(7)]
+        [global::LightProto.ProtoMember(7)]
         public bool forms_requested
         {
             get => __pbn__forms_requested.GetValueOrDefault();
@@ -84,9 +91,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeforms_requested() => __pbn__forms_requested != null;
         public void Resetforms_requested() => __pbn__forms_requested = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__forms_requested;
 
-        [global::ProtoBuf.ProtoMember(8)]
+        [global::LightProto.ProtoMember(8)]
         public bool forms_require_verification
         {
             get => __pbn__forms_require_verification.GetValueOrDefault();
@@ -94,9 +102,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeforms_require_verification() => __pbn__forms_require_verification != null;
         public void Resetforms_require_verification() => __pbn__forms_require_verification = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__forms_require_verification;
 
-        [global::ProtoBuf.ProtoMember(9)]
+        [global::LightProto.ProtoMember(9)]
         public uint new_device_cooldown_days
         {
             get => __pbn__new_device_cooldown_days.GetValueOrDefault();
@@ -104,12 +113,14 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializenew_device_cooldown_days() => __pbn__new_device_cooldown_days != null;
         public void Resetnew_device_cooldown_days() => __pbn__new_device_cooldown_days = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__new_device_cooldown_days;
 
     }
 
     public class EconMarket : SteamUnifiedMessages.UnifiedService
     {
+        [global::LightProto.ProtoIgnore]
         public override string ServiceName { get; } = "EconMarket";
 
         public AsyncJob<SteamUnifiedMessages.ServiceMethodResponse<CEconMarket_IsMarketplaceAllowed_Response>> IsMarketplaceAllowed( CEconMarket_IsMarketplaceAllowed_Request request )

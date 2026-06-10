@@ -9,7 +9,7 @@
 namespace SteamKit2.Internal
 {
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EContentDescriptorID
     {
         k_EContentDescriptor_NudityOrSexualContent = 1,

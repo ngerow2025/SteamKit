@@ -9,14 +9,15 @@
 namespace SteamKit2.GC.Dota.Internal
 {
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientSuspended : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint time_end
         {
             get => __pbn__time_end.GetValueOrDefault();
@@ -24,27 +25,30 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializetime_end() => __pbn__time_end != null;
         public void Resettime_end() => __pbn__time_end = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__time_end;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgBalancedShuffleLobby : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgInitialQuestionnaireResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint initial_skill
         {
             get => __pbn__initial_skill.GetValueOrDefault();
@@ -52,24 +56,26 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeinitial_skill() => __pbn__initial_skill != null;
         public void Resetinitial_skill() => __pbn__initial_skill = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__initial_skill;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTARequestMatchesResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<CMsgDOTAMatch> matches { get; } = new global::System.Collections.Generic.List<CMsgDOTAMatch>();
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public global::System.Collections.Generic.List<Series> series { get; } = new global::System.Collections.Generic.List<Series>();
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public uint request_id
         {
             get => __pbn__request_id.GetValueOrDefault();
@@ -77,9 +83,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializerequest_id() => __pbn__request_id != null;
         public void Resetrequest_id() => __pbn__request_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__request_id;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public uint total_results
         {
             get => __pbn__total_results.GetValueOrDefault();
@@ -87,9 +94,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializetotal_results() => __pbn__total_results != null;
         public void Resettotal_results() => __pbn__total_results = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__total_results;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public uint results_remaining
         {
             get => __pbn__results_remaining.GetValueOrDefault();
@@ -97,19 +105,21 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresults_remaining() => __pbn__results_remaining != null;
         public void Resetresults_remaining() => __pbn__results_remaining = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__results_remaining;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class Series : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public global::System.Collections.Generic.List<CMsgDOTAMatch> matches { get; } = new global::System.Collections.Generic.List<CMsgDOTAMatch>();
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public uint series_id
             {
                 get => __pbn__series_id.GetValueOrDefault();
@@ -117,9 +127,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeseries_id() => __pbn__series_id != null;
             public void Resetseries_id() => __pbn__series_id = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__series_id;
 
-            [global::ProtoBuf.ProtoMember(3)]
+            [global::LightProto.ProtoMember(3)]
             public uint series_type
             {
                 get => __pbn__series_type.GetValueOrDefault();
@@ -127,20 +138,22 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeseries_type() => __pbn__series_type != null;
             public void Resetseries_type() => __pbn__series_type = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__series_type;
 
         }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTAPopup : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(PopupID.NONE)]
         public PopupID id
         {
@@ -149,9 +162,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeid() => __pbn__id != null;
         public void Resetid() => __pbn__id = null;
+        [global::LightProto.ProtoIgnore]
         private PopupID? __pbn__id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue("")]
         public string custom_text
         {
@@ -160,9 +174,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializecustom_text() => __pbn__custom_text != null;
         public void Resetcustom_text() => __pbn__custom_text = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__custom_text;
 
-        [global::ProtoBuf.ProtoMember(3, DataFormat = global::ProtoBuf.DataFormat.ZigZag)]
+        [global::LightProto.ProtoMember(3, DataFormat = global::LightProto.DataFormat.ZigZag)]
         public int int_data
         {
             get => __pbn__int_data.GetValueOrDefault();
@@ -170,9 +185,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeint_data() => __pbn__int_data != null;
         public void Resetint_data() => __pbn__int_data = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__int_data;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public byte[] popup_data
         {
             get => __pbn__popup_data;
@@ -180,9 +196,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializepopup_data() => __pbn__popup_data != null;
         public void Resetpopup_data() => __pbn__popup_data = null;
+        [global::LightProto.ProtoIgnore]
         private byte[] __pbn__popup_data;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         [global::System.ComponentModel.DefaultValue("")]
         public string loc_token_header
         {
@@ -191,9 +208,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeloc_token_header() => __pbn__loc_token_header != null;
         public void Resetloc_token_header() => __pbn__loc_token_header = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__loc_token_header;
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         [global::System.ComponentModel.DefaultValue("")]
         public string loc_token_msg
         {
@@ -202,15 +220,16 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeloc_token_msg() => __pbn__loc_token_msg != null;
         public void Resetloc_token_msg() => __pbn__loc_token_msg = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__loc_token_msg;
 
-        [global::ProtoBuf.ProtoMember(7)]
+        [global::LightProto.ProtoMember(7)]
         public global::System.Collections.Generic.List<string> var_names { get; } = new global::System.Collections.Generic.List<string>();
 
-        [global::ProtoBuf.ProtoMember(8)]
+        [global::LightProto.ProtoMember(8)]
         public global::System.Collections.Generic.List<string> var_values { get; } = new global::System.Collections.Generic.List<string>();
 
-        [global::ProtoBuf.ProtoMember(9)]
+        [global::LightProto.ProtoMember(9)]
         [global::System.ComponentModel.DefaultValue("")]
         public string debug_text
         {
@@ -219,9 +238,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializedebug_text() => __pbn__debug_text != null;
         public void Resetdebug_text() => __pbn__debug_text = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__debug_text;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum PopupID
         {
             NONE = -1,
@@ -291,23 +311,25 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTAReportsRemainingRequest : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTAReportsRemainingResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint num_positive_reports_remaining
         {
             get => __pbn__num_positive_reports_remaining.GetValueOrDefault();
@@ -315,9 +337,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializenum_positive_reports_remaining() => __pbn__num_positive_reports_remaining != null;
         public void Resetnum_positive_reports_remaining() => __pbn__num_positive_reports_remaining = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__num_positive_reports_remaining;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint num_negative_reports_remaining
         {
             get => __pbn__num_negative_reports_remaining.GetValueOrDefault();
@@ -325,9 +348,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializenum_negative_reports_remaining() => __pbn__num_negative_reports_remaining != null;
         public void Resetnum_negative_reports_remaining() => __pbn__num_negative_reports_remaining = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__num_negative_reports_remaining;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public uint num_positive_reports_total
         {
             get => __pbn__num_positive_reports_total.GetValueOrDefault();
@@ -335,9 +359,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializenum_positive_reports_total() => __pbn__num_positive_reports_total != null;
         public void Resetnum_positive_reports_total() => __pbn__num_positive_reports_total = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__num_positive_reports_total;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public uint num_negative_reports_total
         {
             get => __pbn__num_negative_reports_total.GetValueOrDefault();
@@ -345,9 +370,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializenum_negative_reports_total() => __pbn__num_negative_reports_total != null;
         public void Resetnum_negative_reports_total() => __pbn__num_negative_reports_total = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__num_negative_reports_total;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public uint num_comms_reports_remaining
         {
             get => __pbn__num_comms_reports_remaining.GetValueOrDefault();
@@ -355,9 +381,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializenum_comms_reports_remaining() => __pbn__num_comms_reports_remaining != null;
         public void Resetnum_comms_reports_remaining() => __pbn__num_comms_reports_remaining = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__num_comms_reports_remaining;
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         public uint num_comms_reports_total
         {
             get => __pbn__num_comms_reports_total.GetValueOrDefault();
@@ -365,18 +392,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializenum_comms_reports_total() => __pbn__num_comms_reports_total != null;
         public void Resetnum_comms_reports_total() => __pbn__num_comms_reports_total = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__num_comms_reports_total;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTASubmitPlayerReport : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint target_account_id
         {
             get => __pbn__target_account_id.GetValueOrDefault();
@@ -384,9 +413,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializetarget_account_id() => __pbn__target_account_id != null;
         public void Resettarget_account_id() => __pbn__target_account_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__target_account_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint report_flags
         {
             get => __pbn__report_flags.GetValueOrDefault();
@@ -394,9 +424,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializereport_flags() => __pbn__report_flags != null;
         public void Resetreport_flags() => __pbn__report_flags = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__report_flags;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public ulong lobby_id
         {
             get => __pbn__lobby_id.GetValueOrDefault();
@@ -404,9 +435,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializelobby_id() => __pbn__lobby_id != null;
         public void Resetlobby_id() => __pbn__lobby_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__lobby_id;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         [global::System.ComponentModel.DefaultValue("")]
         public string comment
         {
@@ -415,18 +447,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializecomment() => __pbn__comment != null;
         public void Resetcomment() => __pbn__comment = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__comment;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTASubmitPlayerReportResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint target_account_id
         {
             get => __pbn__target_account_id.GetValueOrDefault();
@@ -434,9 +468,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializetarget_account_id() => __pbn__target_account_id != null;
         public void Resettarget_account_id() => __pbn__target_account_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__target_account_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint report_flags
         {
             get => __pbn__report_flags.GetValueOrDefault();
@@ -444,9 +479,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializereport_flags() => __pbn__report_flags != null;
         public void Resetreport_flags() => __pbn__report_flags = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__report_flags;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         [global::System.ComponentModel.DefaultValue("")]
         public string debug_message
         {
@@ -455,9 +491,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializedebug_message() => __pbn__debug_message != null;
         public void Resetdebug_message() => __pbn__debug_message = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__debug_message;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         [global::System.ComponentModel.DefaultValue(EResult.k_eInternalError)]
         public EResult enum_result
         {
@@ -466,9 +503,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeenum_result() => __pbn__enum_result != null;
         public void Resetenum_result() => __pbn__enum_result = null;
+        [global::LightProto.ProtoIgnore]
         private EResult? __pbn__enum_result;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum EResult
         {
             k_eInternalError = 0,
@@ -489,14 +527,15 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTASubmitPlayerAvoidRequest : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint target_account_id
         {
             get => __pbn__target_account_id.GetValueOrDefault();
@@ -504,9 +543,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializetarget_account_id() => __pbn__target_account_id != null;
         public void Resettarget_account_id() => __pbn__target_account_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__target_account_id;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public ulong lobby_id
         {
             get => __pbn__lobby_id.GetValueOrDefault();
@@ -514,9 +554,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializelobby_id() => __pbn__lobby_id != null;
         public void Resetlobby_id() => __pbn__lobby_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__lobby_id;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         [global::System.ComponentModel.DefaultValue("")]
         public string user_note
         {
@@ -525,18 +566,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeuser_note() => __pbn__user_note != null;
         public void Resetuser_note() => __pbn__user_note = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__user_note;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTASubmitPlayerAvoidRequestResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint target_account_id
         {
             get => __pbn__target_account_id.GetValueOrDefault();
@@ -544,9 +587,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializetarget_account_id() => __pbn__target_account_id != null;
         public void Resettarget_account_id() => __pbn__target_account_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__target_account_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint result
         {
             get => __pbn__result.GetValueOrDefault();
@@ -554,9 +598,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__result;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         [global::System.ComponentModel.DefaultValue("")]
         public string debug_message
         {
@@ -565,18 +610,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializedebug_message() => __pbn__debug_message != null;
         public void Resetdebug_message() => __pbn__debug_message = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__debug_message;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTASubmitPlayerReportV2 : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint target_account_id
         {
             get => __pbn__target_account_id.GetValueOrDefault();
@@ -584,12 +631,13 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializetarget_account_id() => __pbn__target_account_id != null;
         public void Resettarget_account_id() => __pbn__target_account_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__target_account_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public global::System.Collections.Generic.List<uint> report_reason { get; } = new global::System.Collections.Generic.List<uint>();
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public ulong lobby_id
         {
             get => __pbn__lobby_id.GetValueOrDefault();
@@ -597,9 +645,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializelobby_id() => __pbn__lobby_id != null;
         public void Resetlobby_id() => __pbn__lobby_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__lobby_id;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public float game_time
         {
             get => __pbn__game_time.GetValueOrDefault();
@@ -607,9 +656,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializegame_time() => __pbn__game_time != null;
         public void Resetgame_time() => __pbn__game_time = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__game_time;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public uint debug_slot
         {
             get => __pbn__debug_slot.GetValueOrDefault();
@@ -617,9 +667,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializedebug_slot() => __pbn__debug_slot != null;
         public void Resetdebug_slot() => __pbn__debug_slot = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__debug_slot;
 
-        [global::ProtoBuf.ProtoMember(6, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(6, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong debug_match_id
         {
             get => __pbn__debug_match_id.GetValueOrDefault();
@@ -627,18 +678,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializedebug_match_id() => __pbn__debug_match_id != null;
         public void Resetdebug_match_id() => __pbn__debug_match_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__debug_match_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTASubmitPlayerReportResponseV2 : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint target_account_id
         {
             get => __pbn__target_account_id.GetValueOrDefault();
@@ -646,12 +699,13 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializetarget_account_id() => __pbn__target_account_id != null;
         public void Resettarget_account_id() => __pbn__target_account_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__target_account_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public global::System.Collections.Generic.List<uint> report_reason { get; } = new global::System.Collections.Generic.List<uint>();
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         [global::System.ComponentModel.DefaultValue("")]
         public string debug_message
         {
@@ -660,9 +714,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializedebug_message() => __pbn__debug_message != null;
         public void Resetdebug_message() => __pbn__debug_message = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__debug_message;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         [global::System.ComponentModel.DefaultValue(EResult.k_eInternalError)]
         public EResult enum_result
         {
@@ -671,9 +726,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeenum_result() => __pbn__enum_result != null;
         public void Resetenum_result() => __pbn__enum_result = null;
+        [global::LightProto.ProtoIgnore]
         private EResult? __pbn__enum_result;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum EResult
         {
             k_eInternalError = 0,
@@ -695,14 +751,15 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTASubmitLobbyMVPVote : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint target_account_id
         {
             get => __pbn__target_account_id.GetValueOrDefault();
@@ -710,18 +767,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializetarget_account_id() => __pbn__target_account_id != null;
         public void Resettarget_account_id() => __pbn__target_account_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__target_account_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTASubmitLobbyMVPVoteResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint target_account_id
         {
             get => __pbn__target_account_id.GetValueOrDefault();
@@ -729,9 +788,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializetarget_account_id() => __pbn__target_account_id != null;
         public void Resettarget_account_id() => __pbn__target_account_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__target_account_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint eresult
         {
             get => __pbn__eresult.GetValueOrDefault();
@@ -739,18 +799,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeeresult() => __pbn__eresult != null;
         public void Reseteresult() => __pbn__eresult = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__eresult;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTALobbyMVPAwarded : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public ulong match_id
         {
             get => __pbn__match_id.GetValueOrDefault();
@@ -758,21 +820,23 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializematch_id() => __pbn__match_id != null;
         public void Resetmatch_id() => __pbn__match_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__match_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public global::System.Collections.Generic.List<uint> mvp_account_id { get; } = new global::System.Collections.Generic.List<uint>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTAKickedFromMatchmakingQueue : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(MatchType.MATCH_TYPE_CASUAL)]
         public MatchType match_type
         {
@@ -781,18 +845,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializematch_type() => __pbn__match_type != null;
         public void Resetmatch_type() => __pbn__match_type = null;
+        [global::LightProto.ProtoIgnore]
         private MatchType? __pbn__match_type;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCMatchDetailsRequest : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public ulong match_id
         {
             get => __pbn__match_id.GetValueOrDefault();
@@ -800,18 +866,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializematch_id() => __pbn__match_id != null;
         public void Resetmatch_id() => __pbn__match_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__match_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCMatchDetailsResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint result
         {
             get => __pbn__result.GetValueOrDefault();
@@ -819,12 +887,13 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__result;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public CMsgDOTAMatch match { get; set; }
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         [global::System.ComponentModel.DefaultValue(DOTAMatchVote.DOTAMatchVote_INVALID)]
         public DOTAMatchVote vote
         {
@@ -833,18 +902,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializevote() => __pbn__vote != null;
         public void Resetvote() => __pbn__vote = null;
+        [global::LightProto.ProtoIgnore]
         private DOTAMatchVote? __pbn__vote;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTAProfileTickets : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint result
         {
             get => __pbn__result.GetValueOrDefault();
@@ -852,9 +923,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__result;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint account_id
         {
             get => __pbn__account_id.GetValueOrDefault();
@@ -862,19 +934,21 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeaccount_id() => __pbn__account_id != null;
         public void Resetaccount_id() => __pbn__account_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__account_id;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public global::System.Collections.Generic.List<LeaguePass> league_passes { get; } = new global::System.Collections.Generic.List<LeaguePass>();
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class LeaguePass : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public uint league_id
             {
                 get => __pbn__league_id.GetValueOrDefault();
@@ -882,9 +956,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeleague_id() => __pbn__league_id != null;
             public void Resetleague_id() => __pbn__league_id = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__league_id;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public uint item_def
             {
                 get => __pbn__item_def.GetValueOrDefault();
@@ -892,20 +967,22 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeitem_def() => __pbn__item_def != null;
             public void Resetitem_def() => __pbn__item_def = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__item_def;
 
         }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCGetProfileTickets : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint account_id
         {
             get => __pbn__account_id.GetValueOrDefault();
@@ -913,30 +990,33 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeaccount_id() => __pbn__account_id != null;
         public void Resetaccount_id() => __pbn__account_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__account_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCToClientPartySearchInvites : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<CMsgGCToClientPartySearchInvite> invites { get; } = new global::System.Collections.Generic.List<CMsgGCToClientPartySearchInvite>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTAWelcome : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public uint store_item_hash
         {
             get => __pbn__store_item_hash.GetValueOrDefault();
@@ -944,9 +1024,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializestore_item_hash() => __pbn__store_item_hash != null;
         public void Resetstore_item_hash() => __pbn__store_item_hash = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__store_item_hash;
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         public uint timeplayedconsecutively
         {
             get => __pbn__timeplayedconsecutively.GetValueOrDefault();
@@ -954,9 +1035,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializetimeplayedconsecutively() => __pbn__timeplayedconsecutively != null;
         public void Resettimeplayedconsecutively() => __pbn__timeplayedconsecutively = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__timeplayedconsecutively;
 
-        [global::ProtoBuf.ProtoMember(7)]
+        [global::LightProto.ProtoMember(7)]
         public bool allow_3rd_party_match_history
         {
             get => __pbn__allow_3rd_party_match_history.GetValueOrDefault();
@@ -964,9 +1046,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeallow_3rd_party_match_history() => __pbn__allow_3rd_party_match_history != null;
         public void Resetallow_3rd_party_match_history() => __pbn__allow_3rd_party_match_history = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__allow_3rd_party_match_history;
 
-        [global::ProtoBuf.ProtoMember(13)]
+        [global::LightProto.ProtoMember(13)]
         public uint last_ip_address
         {
             get => __pbn__last_ip_address.GetValueOrDefault();
@@ -974,9 +1057,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializelast_ip_address() => __pbn__last_ip_address != null;
         public void Resetlast_ip_address() => __pbn__last_ip_address = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__last_ip_address;
 
-        [global::ProtoBuf.ProtoMember(17)]
+        [global::LightProto.ProtoMember(17)]
         public bool profile_private
         {
             get => __pbn__profile_private.GetValueOrDefault();
@@ -984,9 +1068,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeprofile_private() => __pbn__profile_private != null;
         public void Resetprofile_private() => __pbn__profile_private = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__profile_private;
 
-        [global::ProtoBuf.ProtoMember(18)]
+        [global::LightProto.ProtoMember(18)]
         public uint currency
         {
             get => __pbn__currency.GetValueOrDefault();
@@ -994,9 +1079,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializecurrency() => __pbn__currency != null;
         public void Resetcurrency() => __pbn__currency = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__currency;
 
-        [global::ProtoBuf.ProtoMember(20)]
+        [global::LightProto.ProtoMember(20)]
         public bool should_request_player_origin
         {
             get => __pbn__should_request_player_origin.GetValueOrDefault();
@@ -1004,9 +1090,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeshould_request_player_origin() => __pbn__should_request_player_origin != null;
         public void Resetshould_request_player_origin() => __pbn__should_request_player_origin = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__should_request_player_origin;
 
-        [global::ProtoBuf.ProtoMember(22)]
+        [global::LightProto.ProtoMember(22)]
         public uint gc_socache_file_version
         {
             get => __pbn__gc_socache_file_version.GetValueOrDefault();
@@ -1014,9 +1101,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializegc_socache_file_version() => __pbn__gc_socache_file_version != null;
         public void Resetgc_socache_file_version() => __pbn__gc_socache_file_version = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__gc_socache_file_version;
 
-        [global::ProtoBuf.ProtoMember(24)]
+        [global::LightProto.ProtoMember(24)]
         public bool is_perfect_world_test_account
         {
             get => __pbn__is_perfect_world_test_account.GetValueOrDefault();
@@ -1024,12 +1112,13 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeis_perfect_world_test_account() => __pbn__is_perfect_world_test_account != null;
         public void Resetis_perfect_world_test_account() => __pbn__is_perfect_world_test_account = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_perfect_world_test_account;
 
-        [global::ProtoBuf.ProtoMember(26)]
+        [global::LightProto.ProtoMember(26)]
         public global::System.Collections.Generic.List<CExtraMsg> extra_messages { get; } = new global::System.Collections.Generic.List<CExtraMsg>();
 
-        [global::ProtoBuf.ProtoMember(27)]
+        [global::LightProto.ProtoMember(27)]
         public ulong minimum_recent_item_id
         {
             get => __pbn__minimum_recent_item_id.GetValueOrDefault();
@@ -1037,9 +1126,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeminimum_recent_item_id() => __pbn__minimum_recent_item_id != null;
         public void Resetminimum_recent_item_id() => __pbn__minimum_recent_item_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__minimum_recent_item_id;
 
-        [global::ProtoBuf.ProtoMember(28)]
+        [global::LightProto.ProtoMember(28)]
         [global::System.ComponentModel.DefaultValue(EEvent.EVENT_ID_NONE)]
         public EEvent active_event
         {
@@ -1048,9 +1138,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeactive_event() => __pbn__active_event != null;
         public void Resetactive_event() => __pbn__active_event = null;
+        [global::LightProto.ProtoIgnore]
         private EEvent? __pbn__active_event;
 
-        [global::ProtoBuf.ProtoMember(29)]
+        [global::LightProto.ProtoMember(29)]
         public uint additional_user_message
         {
             get => __pbn__additional_user_message.GetValueOrDefault();
@@ -1058,9 +1149,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeadditional_user_message() => __pbn__additional_user_message != null;
         public void Resetadditional_user_message() => __pbn__additional_user_message = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__additional_user_message;
 
-        [global::ProtoBuf.ProtoMember(30)]
+        [global::LightProto.ProtoMember(30)]
         public uint custom_game_whitelist_version
         {
             get => __pbn__custom_game_whitelist_version.GetValueOrDefault();
@@ -1068,12 +1160,13 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializecustom_game_whitelist_version() => __pbn__custom_game_whitelist_version != null;
         public void Resetcustom_game_whitelist_version() => __pbn__custom_game_whitelist_version = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__custom_game_whitelist_version;
 
-        [global::ProtoBuf.ProtoMember(31)]
+        [global::LightProto.ProtoMember(31)]
         public CMsgGCToClientPartySearchInvites party_search_friend_invites { get; set; }
 
-        [global::ProtoBuf.ProtoMember(32)]
+        [global::LightProto.ProtoMember(32)]
         [global::System.ComponentModel.DefaultValue(-1)]
         public int remaining_playtime
         {
@@ -1082,9 +1175,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeremaining_playtime() => __pbn__remaining_playtime != null;
         public void Resetremaining_playtime() => __pbn__remaining_playtime = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__remaining_playtime;
 
-        [global::ProtoBuf.ProtoMember(33)]
+        [global::LightProto.ProtoMember(33)]
         public bool disable_guild_persona_info
         {
             get => __pbn__disable_guild_persona_info.GetValueOrDefault();
@@ -1092,12 +1186,13 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializedisable_guild_persona_info() => __pbn__disable_guild_persona_info != null;
         public void Resetdisable_guild_persona_info() => __pbn__disable_guild_persona_info = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__disable_guild_persona_info;
 
-        [global::ProtoBuf.ProtoMember(34)]
+        [global::LightProto.ProtoMember(34)]
         public global::System.Collections.Generic.List<CExtraMsgBlock> extra_message_blocks { get; } = new global::System.Collections.Generic.List<CExtraMsgBlock>();
 
-        [global::ProtoBuf.ProtoMember(35)]
+        [global::LightProto.ProtoMember(35)]
         [global::System.ComponentModel.DefaultValue(EEvent.EVENT_ID_NONE)]
         public EEvent active_event_for_display
         {
@@ -1106,16 +1201,18 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeactive_event_for_display() => __pbn__active_event_for_display != null;
         public void Resetactive_event_for_display() => __pbn__active_event_for_display = null;
+        [global::LightProto.ProtoIgnore]
         private EEvent? __pbn__active_event_for_display;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class CExtraMsg : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public uint id
             {
                 get => __pbn__id.GetValueOrDefault();
@@ -1123,9 +1220,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeid() => __pbn__id != null;
             public void Resetid() => __pbn__id = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__id;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public byte[] contents
             {
                 get => __pbn__contents;
@@ -1133,20 +1231,22 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializecontents() => __pbn__contents != null;
             public void Resetcontents() => __pbn__contents = null;
+            [global::LightProto.ProtoIgnore]
             private byte[] __pbn__contents;
 
         }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSODOTAGameHeroFavorites : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint account_id
         {
             get => __pbn__account_id.GetValueOrDefault();
@@ -1154,9 +1254,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeaccount_id() => __pbn__account_id != null;
         public void Resetaccount_id() => __pbn__account_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__account_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public int hero_id
         {
             get => __pbn__hero_id.GetValueOrDefault();
@@ -1164,18 +1265,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializehero_id() => __pbn__hero_id != null;
         public void Resethero_id() => __pbn__hero_id = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__hero_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTAMatchVotes : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public ulong match_id
         {
             get => __pbn__match_id.GetValueOrDefault();
@@ -1183,19 +1286,21 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializematch_id() => __pbn__match_id != null;
         public void Resetmatch_id() => __pbn__match_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__match_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public global::System.Collections.Generic.List<PlayerVote> votes { get; } = new global::System.Collections.Generic.List<PlayerVote>();
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class PlayerVote : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public uint account_id
             {
                 get => __pbn__account_id.GetValueOrDefault();
@@ -1203,9 +1308,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeaccount_id() => __pbn__account_id != null;
             public void Resetaccount_id() => __pbn__account_id = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__account_id;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public uint vote
             {
                 get => __pbn__vote.GetValueOrDefault();
@@ -1213,20 +1319,22 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializevote() => __pbn__vote != null;
             public void Resetvote() => __pbn__vote = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__vote;
 
         }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgMatchmakingMatchGroupInfo : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint players_searching
         {
             get => __pbn__players_searching.GetValueOrDefault();
@@ -1234,9 +1342,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeplayers_searching() => __pbn__players_searching != null;
         public void Resetplayers_searching() => __pbn__players_searching = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__players_searching;
 
-        [global::ProtoBuf.ProtoMember(2, DataFormat = global::ProtoBuf.DataFormat.ZigZag)]
+        [global::LightProto.ProtoMember(2, DataFormat = global::LightProto.DataFormat.ZigZag)]
         public int auto_region_select_ping_penalty
         {
             get => __pbn__auto_region_select_ping_penalty.GetValueOrDefault();
@@ -1244,9 +1353,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeauto_region_select_ping_penalty() => __pbn__auto_region_select_ping_penalty != null;
         public void Resetauto_region_select_ping_penalty() => __pbn__auto_region_select_ping_penalty = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__auto_region_select_ping_penalty;
 
-        [global::ProtoBuf.ProtoMember(4, DataFormat = global::ProtoBuf.DataFormat.ZigZag)]
+        [global::LightProto.ProtoMember(4, DataFormat = global::LightProto.DataFormat.ZigZag)]
         public int auto_region_select_ping_penalty_custom
         {
             get => __pbn__auto_region_select_ping_penalty_custom.GetValueOrDefault();
@@ -1254,9 +1364,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeauto_region_select_ping_penalty_custom() => __pbn__auto_region_select_ping_penalty_custom != null;
         public void Resetauto_region_select_ping_penalty_custom() => __pbn__auto_region_select_ping_penalty_custom = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__auto_region_select_ping_penalty_custom;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         [global::System.ComponentModel.DefaultValue(EMatchGroupServerStatus.k_EMatchGroupServerStatus_OK)]
         public EMatchGroupServerStatus status
         {
@@ -1265,27 +1376,30 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializestatus() => __pbn__status != null;
         public void Resetstatus() => __pbn__status = null;
+        [global::LightProto.ProtoIgnore]
         private EMatchGroupServerStatus? __pbn__status;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTAMatchmakingStatsRequest : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTAMatchmakingStatsResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint matchgroups_version
         {
             get => __pbn__matchgroups_version.GetValueOrDefault();
@@ -1293,48 +1407,52 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializematchgroups_version() => __pbn__matchgroups_version != null;
         public void Resetmatchgroups_version() => __pbn__matchgroups_version = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__matchgroups_version;
 
-        [global::ProtoBuf.ProtoMember(7)]
+        [global::LightProto.ProtoMember(7)]
         public global::System.Collections.Generic.List<uint> legacy_searching_players_by_group_source2 { get; } = new global::System.Collections.Generic.List<uint>();
 
-        [global::ProtoBuf.ProtoMember(8)]
+        [global::LightProto.ProtoMember(8)]
         public global::System.Collections.Generic.List<CMsgMatchmakingMatchGroupInfo> match_groups { get; } = new global::System.Collections.Generic.List<CMsgMatchmakingMatchGroupInfo>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTAUpdateMatchmakingStats : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public CMsgDOTAMatchmakingStatsResponse stats { get; set; }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTAUpdateMatchManagementStats : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public CMsgDOTAMatchmakingStatsResponse stats { get; set; }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTASetMatchHistoryAccess : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public bool allow_3rd_party_match_history
         {
             get => __pbn__allow_3rd_party_match_history.GetValueOrDefault();
@@ -1342,18 +1460,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeallow_3rd_party_match_history() => __pbn__allow_3rd_party_match_history != null;
         public void Resetallow_3rd_party_match_history() => __pbn__allow_3rd_party_match_history = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__allow_3rd_party_match_history;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTASetMatchHistoryAccessResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(2u)]
         public uint eresult
         {
@@ -1362,18 +1482,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeeresult() => __pbn__eresult != null;
         public void Reseteresult() => __pbn__eresult = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__eresult;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTANotifyAccountFlagsChange : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint accountid
         {
             get => __pbn__accountid.GetValueOrDefault();
@@ -1381,9 +1503,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeaccountid() => __pbn__accountid != null;
         public void Resetaccountid() => __pbn__accountid = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__accountid;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint account_flags
         {
             get => __pbn__account_flags.GetValueOrDefault();
@@ -1391,18 +1514,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeaccount_flags() => __pbn__account_flags != null;
         public void Resetaccount_flags() => __pbn__account_flags = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__account_flags;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTASetProfilePrivacy : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public bool profile_private
         {
             get => __pbn__profile_private.GetValueOrDefault();
@@ -1410,18 +1535,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeprofile_private() => __pbn__profile_private != null;
         public void Resetprofile_private() => __pbn__profile_private = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__profile_private;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTASetProfilePrivacyResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint eresult
         {
             get => __pbn__eresult.GetValueOrDefault();
@@ -1429,18 +1556,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeeresult() => __pbn__eresult != null;
         public void Reseteresult() => __pbn__eresult = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__eresult;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgUpgradeLeagueItem : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public ulong match_id
         {
             get => __pbn__match_id.GetValueOrDefault();
@@ -1448,9 +1577,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializematch_id() => __pbn__match_id != null;
         public void Resetmatch_id() => __pbn__match_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__match_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint league_id
         {
             get => __pbn__league_id.GetValueOrDefault();
@@ -1458,27 +1588,30 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeleague_id() => __pbn__league_id != null;
         public void Resetleague_id() => __pbn__league_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__league_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgUpgradeLeagueItemResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCWatchDownloadedReplay : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public ulong match_id
         {
             get => __pbn__match_id.GetValueOrDefault();
@@ -1486,9 +1619,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializematch_id() => __pbn__match_id != null;
         public void Resetmatch_id() => __pbn__match_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__match_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue(DOTA_WatchReplayType.DOTA_WATCH_REPLAY_NORMAL)]
         public DOTA_WatchReplayType watch_type
         {
@@ -1497,18 +1631,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializewatch_type() => __pbn__watch_type != null;
         public void Resetwatch_type() => __pbn__watch_type = null;
+        [global::LightProto.ProtoIgnore]
         private DOTA_WatchReplayType? __pbn__watch_type;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCWatchingBroadcast : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public ulong match_id
         {
             get => __pbn__match_id.GetValueOrDefault();
@@ -1516,46 +1652,51 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializematch_id() => __pbn__match_id != null;
         public void Resetmatch_id() => __pbn__match_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__match_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientsRejoinChatChannels : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCGetHeroStandings : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCGetHeroStandingsResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<Hero> standings { get; } = new global::System.Collections.Generic.List<Hero>();
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class Hero : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public int hero_id
             {
                 get => __pbn__hero_id.GetValueOrDefault();
@@ -1563,9 +1704,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializehero_id() => __pbn__hero_id != null;
             public void Resethero_id() => __pbn__hero_id = null;
+            [global::LightProto.ProtoIgnore]
             private int? __pbn__hero_id;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public uint wins
             {
                 get => __pbn__wins.GetValueOrDefault();
@@ -1573,9 +1715,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializewins() => __pbn__wins != null;
             public void Resetwins() => __pbn__wins = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__wins;
 
-            [global::ProtoBuf.ProtoMember(3)]
+            [global::LightProto.ProtoMember(3)]
             public uint losses
             {
                 get => __pbn__losses.GetValueOrDefault();
@@ -1583,9 +1726,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializelosses() => __pbn__losses != null;
             public void Resetlosses() => __pbn__losses = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__losses;
 
-            [global::ProtoBuf.ProtoMember(4)]
+            [global::LightProto.ProtoMember(4)]
             public uint win_streak
             {
                 get => __pbn__win_streak.GetValueOrDefault();
@@ -1593,9 +1737,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializewin_streak() => __pbn__win_streak != null;
             public void Resetwin_streak() => __pbn__win_streak = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__win_streak;
 
-            [global::ProtoBuf.ProtoMember(5)]
+            [global::LightProto.ProtoMember(5)]
             public uint best_win_streak
             {
                 get => __pbn__best_win_streak.GetValueOrDefault();
@@ -1603,9 +1748,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializebest_win_streak() => __pbn__best_win_streak != null;
             public void Resetbest_win_streak() => __pbn__best_win_streak = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__best_win_streak;
 
-            [global::ProtoBuf.ProtoMember(6)]
+            [global::LightProto.ProtoMember(6)]
             public float avg_kills
             {
                 get => __pbn__avg_kills.GetValueOrDefault();
@@ -1613,9 +1759,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeavg_kills() => __pbn__avg_kills != null;
             public void Resetavg_kills() => __pbn__avg_kills = null;
+            [global::LightProto.ProtoIgnore]
             private float? __pbn__avg_kills;
 
-            [global::ProtoBuf.ProtoMember(7)]
+            [global::LightProto.ProtoMember(7)]
             public float avg_deaths
             {
                 get => __pbn__avg_deaths.GetValueOrDefault();
@@ -1623,9 +1770,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeavg_deaths() => __pbn__avg_deaths != null;
             public void Resetavg_deaths() => __pbn__avg_deaths = null;
+            [global::LightProto.ProtoIgnore]
             private float? __pbn__avg_deaths;
 
-            [global::ProtoBuf.ProtoMember(8)]
+            [global::LightProto.ProtoMember(8)]
             public float avg_assists
             {
                 get => __pbn__avg_assists.GetValueOrDefault();
@@ -1633,9 +1781,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeavg_assists() => __pbn__avg_assists != null;
             public void Resetavg_assists() => __pbn__avg_assists = null;
+            [global::LightProto.ProtoIgnore]
             private float? __pbn__avg_assists;
 
-            [global::ProtoBuf.ProtoMember(9)]
+            [global::LightProto.ProtoMember(9)]
             public float avg_gpm
             {
                 get => __pbn__avg_gpm.GetValueOrDefault();
@@ -1643,9 +1792,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeavg_gpm() => __pbn__avg_gpm != null;
             public void Resetavg_gpm() => __pbn__avg_gpm = null;
+            [global::LightProto.ProtoIgnore]
             private float? __pbn__avg_gpm;
 
-            [global::ProtoBuf.ProtoMember(10)]
+            [global::LightProto.ProtoMember(10)]
             public float avg_xpm
             {
                 get => __pbn__avg_xpm.GetValueOrDefault();
@@ -1653,9 +1803,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeavg_xpm() => __pbn__avg_xpm != null;
             public void Resetavg_xpm() => __pbn__avg_xpm = null;
+            [global::LightProto.ProtoIgnore]
             private float? __pbn__avg_xpm;
 
-            [global::ProtoBuf.ProtoMember(11)]
+            [global::LightProto.ProtoMember(11)]
             public uint best_kills
             {
                 get => __pbn__best_kills.GetValueOrDefault();
@@ -1663,9 +1814,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializebest_kills() => __pbn__best_kills != null;
             public void Resetbest_kills() => __pbn__best_kills = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__best_kills;
 
-            [global::ProtoBuf.ProtoMember(12)]
+            [global::LightProto.ProtoMember(12)]
             public uint best_assists
             {
                 get => __pbn__best_assists.GetValueOrDefault();
@@ -1673,9 +1825,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializebest_assists() => __pbn__best_assists != null;
             public void Resetbest_assists() => __pbn__best_assists = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__best_assists;
 
-            [global::ProtoBuf.ProtoMember(13)]
+            [global::LightProto.ProtoMember(13)]
             public uint best_gpm
             {
                 get => __pbn__best_gpm.GetValueOrDefault();
@@ -1683,9 +1836,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializebest_gpm() => __pbn__best_gpm != null;
             public void Resetbest_gpm() => __pbn__best_gpm = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__best_gpm;
 
-            [global::ProtoBuf.ProtoMember(14)]
+            [global::LightProto.ProtoMember(14)]
             public uint best_xpm
             {
                 get => __pbn__best_xpm.GetValueOrDefault();
@@ -1693,9 +1847,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializebest_xpm() => __pbn__best_xpm != null;
             public void Resetbest_xpm() => __pbn__best_xpm = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__best_xpm;
 
-            [global::ProtoBuf.ProtoMember(15)]
+            [global::LightProto.ProtoMember(15)]
             public float performance
             {
                 get => __pbn__performance.GetValueOrDefault();
@@ -1703,9 +1858,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeperformance() => __pbn__performance != null;
             public void Resetperformance() => __pbn__performance = null;
+            [global::LightProto.ProtoIgnore]
             private float? __pbn__performance;
 
-            [global::ProtoBuf.ProtoMember(16)]
+            [global::LightProto.ProtoMember(16)]
             public uint wins_with_ally
             {
                 get => __pbn__wins_with_ally.GetValueOrDefault();
@@ -1713,9 +1869,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializewins_with_ally() => __pbn__wins_with_ally != null;
             public void Resetwins_with_ally() => __pbn__wins_with_ally = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__wins_with_ally;
 
-            [global::ProtoBuf.ProtoMember(17)]
+            [global::LightProto.ProtoMember(17)]
             public uint losses_with_ally
             {
                 get => __pbn__losses_with_ally.GetValueOrDefault();
@@ -1723,9 +1880,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializelosses_with_ally() => __pbn__losses_with_ally != null;
             public void Resetlosses_with_ally() => __pbn__losses_with_ally = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__losses_with_ally;
 
-            [global::ProtoBuf.ProtoMember(18)]
+            [global::LightProto.ProtoMember(18)]
             public uint wins_against_enemy
             {
                 get => __pbn__wins_against_enemy.GetValueOrDefault();
@@ -1733,9 +1891,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializewins_against_enemy() => __pbn__wins_against_enemy != null;
             public void Resetwins_against_enemy() => __pbn__wins_against_enemy = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__wins_against_enemy;
 
-            [global::ProtoBuf.ProtoMember(19)]
+            [global::LightProto.ProtoMember(19)]
             public uint losses_against_enemy
             {
                 get => __pbn__losses_against_enemy.GetValueOrDefault();
@@ -1743,9 +1902,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializelosses_against_enemy() => __pbn__losses_against_enemy != null;
             public void Resetlosses_against_enemy() => __pbn__losses_against_enemy = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__losses_against_enemy;
 
-            [global::ProtoBuf.ProtoMember(20)]
+            [global::LightProto.ProtoMember(20)]
             public uint networth_peak
             {
                 get => __pbn__networth_peak.GetValueOrDefault();
@@ -1753,9 +1913,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializenetworth_peak() => __pbn__networth_peak != null;
             public void Resetnetworth_peak() => __pbn__networth_peak = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__networth_peak;
 
-            [global::ProtoBuf.ProtoMember(21)]
+            [global::LightProto.ProtoMember(21)]
             public uint lasthit_peak
             {
                 get => __pbn__lasthit_peak.GetValueOrDefault();
@@ -1763,9 +1924,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializelasthit_peak() => __pbn__lasthit_peak != null;
             public void Resetlasthit_peak() => __pbn__lasthit_peak = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__lasthit_peak;
 
-            [global::ProtoBuf.ProtoMember(22)]
+            [global::LightProto.ProtoMember(22)]
             public uint deny_peak
             {
                 get => __pbn__deny_peak.GetValueOrDefault();
@@ -1773,9 +1935,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializedeny_peak() => __pbn__deny_peak != null;
             public void Resetdeny_peak() => __pbn__deny_peak = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__deny_peak;
 
-            [global::ProtoBuf.ProtoMember(23)]
+            [global::LightProto.ProtoMember(23)]
             public uint damage_peak
             {
                 get => __pbn__damage_peak.GetValueOrDefault();
@@ -1783,9 +1946,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializedamage_peak() => __pbn__damage_peak != null;
             public void Resetdamage_peak() => __pbn__damage_peak = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__damage_peak;
 
-            [global::ProtoBuf.ProtoMember(24)]
+            [global::LightProto.ProtoMember(24)]
             public uint longest_game_peak
             {
                 get => __pbn__longest_game_peak.GetValueOrDefault();
@@ -1793,9 +1957,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializelongest_game_peak() => __pbn__longest_game_peak != null;
             public void Resetlongest_game_peak() => __pbn__longest_game_peak = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__longest_game_peak;
 
-            [global::ProtoBuf.ProtoMember(25)]
+            [global::LightProto.ProtoMember(25)]
             public uint healing_peak
             {
                 get => __pbn__healing_peak.GetValueOrDefault();
@@ -1803,9 +1968,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializehealing_peak() => __pbn__healing_peak != null;
             public void Resethealing_peak() => __pbn__healing_peak = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__healing_peak;
 
-            [global::ProtoBuf.ProtoMember(26)]
+            [global::LightProto.ProtoMember(26)]
             public float avg_lasthits
             {
                 get => __pbn__avg_lasthits.GetValueOrDefault();
@@ -1813,9 +1979,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeavg_lasthits() => __pbn__avg_lasthits != null;
             public void Resetavg_lasthits() => __pbn__avg_lasthits = null;
+            [global::LightProto.ProtoIgnore]
             private float? __pbn__avg_lasthits;
 
-            [global::ProtoBuf.ProtoMember(27)]
+            [global::LightProto.ProtoMember(27)]
             public float avg_denies
             {
                 get => __pbn__avg_denies.GetValueOrDefault();
@@ -1823,20 +1990,22 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeavg_denies() => __pbn__avg_denies != null;
             public void Resetavg_denies() => __pbn__avg_denies = null;
+            [global::LightProto.ProtoIgnore]
             private float? __pbn__avg_denies;
 
         }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMatchPlayerTimedStatAverages : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public float kills
         {
             get => __pbn__kills.GetValueOrDefault();
@@ -1844,9 +2013,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializekills() => __pbn__kills != null;
         public void Resetkills() => __pbn__kills = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__kills;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public float deaths
         {
             get => __pbn__deaths.GetValueOrDefault();
@@ -1854,9 +2024,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializedeaths() => __pbn__deaths != null;
         public void Resetdeaths() => __pbn__deaths = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__deaths;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public float assists
         {
             get => __pbn__assists.GetValueOrDefault();
@@ -1864,9 +2035,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeassists() => __pbn__assists != null;
         public void Resetassists() => __pbn__assists = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__assists;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public float net_worth
         {
             get => __pbn__net_worth.GetValueOrDefault();
@@ -1874,9 +2046,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializenet_worth() => __pbn__net_worth != null;
         public void Resetnet_worth() => __pbn__net_worth = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__net_worth;
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         public float last_hits
         {
             get => __pbn__last_hits.GetValueOrDefault();
@@ -1884,9 +2057,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializelast_hits() => __pbn__last_hits != null;
         public void Resetlast_hits() => __pbn__last_hits = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__last_hits;
 
-        [global::ProtoBuf.ProtoMember(7)]
+        [global::LightProto.ProtoMember(7)]
         public float denies
         {
             get => __pbn__denies.GetValueOrDefault();
@@ -1894,9 +2068,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializedenies() => __pbn__denies != null;
         public void Resetdenies() => __pbn__denies = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__denies;
 
-        [global::ProtoBuf.ProtoMember(8)]
+        [global::LightProto.ProtoMember(8)]
         public float item_value
         {
             get => __pbn__item_value.GetValueOrDefault();
@@ -1904,9 +2079,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeitem_value() => __pbn__item_value != null;
         public void Resetitem_value() => __pbn__item_value = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__item_value;
 
-        [global::ProtoBuf.ProtoMember(9)]
+        [global::LightProto.ProtoMember(9)]
         public float support_gold_spent
         {
             get => __pbn__support_gold_spent.GetValueOrDefault();
@@ -1914,9 +2090,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializesupport_gold_spent() => __pbn__support_gold_spent != null;
         public void Resetsupport_gold_spent() => __pbn__support_gold_spent = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__support_gold_spent;
 
-        [global::ProtoBuf.ProtoMember(10)]
+        [global::LightProto.ProtoMember(10)]
         public float camps_stacked
         {
             get => __pbn__camps_stacked.GetValueOrDefault();
@@ -1924,9 +2101,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializecamps_stacked() => __pbn__camps_stacked != null;
         public void Resetcamps_stacked() => __pbn__camps_stacked = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__camps_stacked;
 
-        [global::ProtoBuf.ProtoMember(11)]
+        [global::LightProto.ProtoMember(11)]
         public float wards_placed
         {
             get => __pbn__wards_placed.GetValueOrDefault();
@@ -1934,9 +2112,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializewards_placed() => __pbn__wards_placed != null;
         public void Resetwards_placed() => __pbn__wards_placed = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__wards_placed;
 
-        [global::ProtoBuf.ProtoMember(12)]
+        [global::LightProto.ProtoMember(12)]
         public float dewards
         {
             get => __pbn__dewards.GetValueOrDefault();
@@ -1944,9 +2123,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializedewards() => __pbn__dewards != null;
         public void Resetdewards() => __pbn__dewards = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__dewards;
 
-        [global::ProtoBuf.ProtoMember(13)]
+        [global::LightProto.ProtoMember(13)]
         public float triple_kills
         {
             get => __pbn__triple_kills.GetValueOrDefault();
@@ -1954,9 +2134,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializetriple_kills() => __pbn__triple_kills != null;
         public void Resettriple_kills() => __pbn__triple_kills = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__triple_kills;
 
-        [global::ProtoBuf.ProtoMember(14)]
+        [global::LightProto.ProtoMember(14)]
         public float rampages
         {
             get => __pbn__rampages.GetValueOrDefault();
@@ -1964,18 +2145,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializerampages() => __pbn__rampages != null;
         public void Resetrampages() => __pbn__rampages = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__rampages;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMatchPlayerTimedStatStdDeviations : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue(1f)]
         public float kills
         {
@@ -1984,9 +2167,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializekills() => __pbn__kills != null;
         public void Resetkills() => __pbn__kills = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__kills;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         [global::System.ComponentModel.DefaultValue(1f)]
         public float deaths
         {
@@ -1995,9 +2179,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializedeaths() => __pbn__deaths != null;
         public void Resetdeaths() => __pbn__deaths = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__deaths;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         [global::System.ComponentModel.DefaultValue(1f)]
         public float assists
         {
@@ -2006,9 +2191,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeassists() => __pbn__assists != null;
         public void Resetassists() => __pbn__assists = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__assists;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         [global::System.ComponentModel.DefaultValue(1f)]
         public float net_worth
         {
@@ -2017,9 +2203,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializenet_worth() => __pbn__net_worth != null;
         public void Resetnet_worth() => __pbn__net_worth = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__net_worth;
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         [global::System.ComponentModel.DefaultValue(1f)]
         public float last_hits
         {
@@ -2028,9 +2215,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializelast_hits() => __pbn__last_hits != null;
         public void Resetlast_hits() => __pbn__last_hits = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__last_hits;
 
-        [global::ProtoBuf.ProtoMember(7)]
+        [global::LightProto.ProtoMember(7)]
         [global::System.ComponentModel.DefaultValue(1f)]
         public float denies
         {
@@ -2039,9 +2227,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializedenies() => __pbn__denies != null;
         public void Resetdenies() => __pbn__denies = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__denies;
 
-        [global::ProtoBuf.ProtoMember(8)]
+        [global::LightProto.ProtoMember(8)]
         [global::System.ComponentModel.DefaultValue(1f)]
         public float item_value
         {
@@ -2050,9 +2239,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeitem_value() => __pbn__item_value != null;
         public void Resetitem_value() => __pbn__item_value = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__item_value;
 
-        [global::ProtoBuf.ProtoMember(9)]
+        [global::LightProto.ProtoMember(9)]
         [global::System.ComponentModel.DefaultValue(1f)]
         public float support_gold_spent
         {
@@ -2061,9 +2251,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializesupport_gold_spent() => __pbn__support_gold_spent != null;
         public void Resetsupport_gold_spent() => __pbn__support_gold_spent = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__support_gold_spent;
 
-        [global::ProtoBuf.ProtoMember(10)]
+        [global::LightProto.ProtoMember(10)]
         [global::System.ComponentModel.DefaultValue(1f)]
         public float camps_stacked
         {
@@ -2072,9 +2263,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializecamps_stacked() => __pbn__camps_stacked != null;
         public void Resetcamps_stacked() => __pbn__camps_stacked = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__camps_stacked;
 
-        [global::ProtoBuf.ProtoMember(11)]
+        [global::LightProto.ProtoMember(11)]
         [global::System.ComponentModel.DefaultValue(1f)]
         public float wards_placed
         {
@@ -2083,9 +2275,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializewards_placed() => __pbn__wards_placed != null;
         public void Resetwards_placed() => __pbn__wards_placed = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__wards_placed;
 
-        [global::ProtoBuf.ProtoMember(12)]
+        [global::LightProto.ProtoMember(12)]
         [global::System.ComponentModel.DefaultValue(1f)]
         public float dewards
         {
@@ -2094,9 +2287,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializedewards() => __pbn__dewards != null;
         public void Resetdewards() => __pbn__dewards = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__dewards;
 
-        [global::ProtoBuf.ProtoMember(13)]
+        [global::LightProto.ProtoMember(13)]
         [global::System.ComponentModel.DefaultValue(1f)]
         public float triple_kills
         {
@@ -2105,9 +2299,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializetriple_kills() => __pbn__triple_kills != null;
         public void Resettriple_kills() => __pbn__triple_kills = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__triple_kills;
 
-        [global::ProtoBuf.ProtoMember(14)]
+        [global::LightProto.ProtoMember(14)]
         [global::System.ComponentModel.DefaultValue(1f)]
         public float rampages
         {
@@ -2116,18 +2311,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializerampages() => __pbn__rampages != null;
         public void Resetrampages() => __pbn__rampages = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__rampages;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCGetHeroTimedStatsResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public int hero_id
         {
             get => __pbn__hero_id.GetValueOrDefault();
@@ -2135,19 +2332,21 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializehero_id() => __pbn__hero_id != null;
         public void Resethero_id() => __pbn__hero_id = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__hero_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public global::System.Collections.Generic.List<RankChunkedStats> rank_chunked_stats { get; } = new global::System.Collections.Generic.List<RankChunkedStats>();
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class TimedStatsContainer : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public uint time
             {
                 get => __pbn__time.GetValueOrDefault();
@@ -2155,33 +2354,35 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializetime() => __pbn__time != null;
             public void Resettime() => __pbn__time = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__time;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public CMatchPlayerTimedStatAverages all_stats { get; set; }
 
-            [global::ProtoBuf.ProtoMember(3)]
+            [global::LightProto.ProtoMember(3)]
             public CMatchPlayerTimedStatAverages winning_stats { get; set; }
 
-            [global::ProtoBuf.ProtoMember(4)]
+            [global::LightProto.ProtoMember(4)]
             public CMatchPlayerTimedStatAverages losing_stats { get; set; }
 
-            [global::ProtoBuf.ProtoMember(5)]
+            [global::LightProto.ProtoMember(5)]
             public CMatchPlayerTimedStatStdDeviations winning_stddevs { get; set; }
 
-            [global::ProtoBuf.ProtoMember(6)]
+            [global::LightProto.ProtoMember(6)]
             public CMatchPlayerTimedStatStdDeviations losing_stddevs { get; set; }
 
         }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class RankChunkedStats : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public uint rank_chunk
             {
                 get => __pbn__rank_chunk.GetValueOrDefault();
@@ -2189,32 +2390,35 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializerank_chunk() => __pbn__rank_chunk != null;
             public void Resetrank_chunk() => __pbn__rank_chunk = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__rank_chunk;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public global::System.Collections.Generic.List<CMsgGCGetHeroTimedStatsResponse.TimedStatsContainer> timed_stats { get; } = new global::System.Collections.Generic.List<CMsgGCGetHeroTimedStatsResponse.TimedStatsContainer>();
 
         }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCItemEditorReservationsRequest : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCItemEditorReservation : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint def_index
         {
             get => __pbn__def_index.GetValueOrDefault();
@@ -2222,9 +2426,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializedef_index() => __pbn__def_index != null;
         public void Resetdef_index() => __pbn__def_index = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__def_index;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue("")]
         public string name
         {
@@ -2233,30 +2438,33 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializename() => __pbn__name != null;
         public void Resetname() => __pbn__name = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__name;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCItemEditorReservationsResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<CMsgGCItemEditorReservation> reservations { get; } = new global::System.Collections.Generic.List<CMsgGCItemEditorReservation>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCItemEditorReserveItemDef : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint def_index
         {
             get => __pbn__def_index.GetValueOrDefault();
@@ -2264,9 +2472,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializedef_index() => __pbn__def_index != null;
         public void Resetdef_index() => __pbn__def_index = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__def_index;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue("")]
         public string username
         {
@@ -2275,18 +2484,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeusername() => __pbn__username != null;
         public void Resetusername() => __pbn__username = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__username;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCItemEditorReserveItemDefResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint def_index
         {
             get => __pbn__def_index.GetValueOrDefault();
@@ -2294,9 +2505,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializedef_index() => __pbn__def_index != null;
         public void Resetdef_index() => __pbn__def_index = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__def_index;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue("")]
         public string username
         {
@@ -2305,9 +2517,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeusername() => __pbn__username != null;
         public void Resetusername() => __pbn__username = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__username;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public uint result
         {
             get => __pbn__result.GetValueOrDefault();
@@ -2315,18 +2528,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__result;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCItemEditorReleaseReservation : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint def_index
         {
             get => __pbn__def_index.GetValueOrDefault();
@@ -2334,9 +2549,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializedef_index() => __pbn__def_index != null;
         public void Resetdef_index() => __pbn__def_index = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__def_index;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue("")]
         public string username
         {
@@ -2345,18 +2561,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeusername() => __pbn__username != null;
         public void Resetusername() => __pbn__username = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__username;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCItemEditorReleaseReservationResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint def_index
         {
             get => __pbn__def_index.GetValueOrDefault();
@@ -2364,9 +2582,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializedef_index() => __pbn__def_index != null;
         public void Resetdef_index() => __pbn__def_index = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__def_index;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public bool released
         {
             get => __pbn__released.GetValueOrDefault();
@@ -2374,27 +2593,30 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializereleased() => __pbn__released != null;
         public void Resetreleased() => __pbn__released = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__released;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgFlipLobbyTeams : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCLobbyUpdateBroadcastChannelInfo : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint channel_id
         {
             get => __pbn__channel_id.GetValueOrDefault();
@@ -2402,9 +2624,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializechannel_id() => __pbn__channel_id != null;
         public void Resetchannel_id() => __pbn__channel_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__channel_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue("")]
         public string country_code
         {
@@ -2413,9 +2636,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializecountry_code() => __pbn__country_code != null;
         public void Resetcountry_code() => __pbn__country_code = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__country_code;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         [global::System.ComponentModel.DefaultValue("")]
         public string description
         {
@@ -2424,9 +2648,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializedescription() => __pbn__description != null;
         public void Resetdescription() => __pbn__description = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__description;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         [global::System.ComponentModel.DefaultValue("")]
         public string language_code
         {
@@ -2435,21 +2660,23 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializelanguage_code() => __pbn__language_code != null;
         public void Resetlanguage_code() => __pbn__language_code = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__language_code;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTAClaimEventActionData : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public GrantItemGiftData grant_item_gift_data { get; set; }
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public ulong grant_item_choice_item_def
         {
             get => __pbn__grant_item_choice_item_def.GetValueOrDefault();
@@ -2457,16 +2684,18 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializegrant_item_choice_item_def() => __pbn__grant_item_choice_item_def != null;
         public void Resetgrant_item_choice_item_def() => __pbn__grant_item_choice_item_def = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__grant_item_choice_item_def;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class GrantItemGiftData : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public uint give_to_account_id
             {
                 get => __pbn__give_to_account_id.GetValueOrDefault();
@@ -2474,9 +2703,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializegive_to_account_id() => __pbn__give_to_account_id != null;
             public void Resetgive_to_account_id() => __pbn__give_to_account_id = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__give_to_account_id;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             [global::System.ComponentModel.DefaultValue("")]
             public string gift_message
             {
@@ -2485,20 +2715,22 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializegift_message() => __pbn__gift_message != null;
             public void Resetgift_message() => __pbn__gift_message = null;
+            [global::LightProto.ProtoIgnore]
             private string __pbn__gift_message;
 
         }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTAClaimEventAction : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint event_id
         {
             get => __pbn__event_id.GetValueOrDefault();
@@ -2506,9 +2738,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeevent_id() => __pbn__event_id != null;
         public void Resetevent_id() => __pbn__event_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__event_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint action_id
         {
             get => __pbn__action_id.GetValueOrDefault();
@@ -2516,9 +2749,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeaction_id() => __pbn__action_id != null;
         public void Resetaction_id() => __pbn__action_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__action_id;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public uint quantity
         {
             get => __pbn__quantity.GetValueOrDefault();
@@ -2526,12 +2760,13 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializequantity() => __pbn__quantity != null;
         public void Resetquantity() => __pbn__quantity = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__quantity;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public CMsgDOTAClaimEventActionData data { get; set; }
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         [global::System.ComponentModel.DefaultValue(EEventActionScoreMode.k_eEventActionScoreMode_Add)]
         public EEventActionScoreMode score_mode
         {
@@ -2540,9 +2775,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializescore_mode() => __pbn__score_mode != null;
         public void Resetscore_mode() => __pbn__score_mode = null;
+        [global::LightProto.ProtoIgnore]
         private EEventActionScoreMode? __pbn__score_mode;
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         public bool suppress_rewards
         {
             get => __pbn__suppress_rewards.GetValueOrDefault();
@@ -2550,18 +2786,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializesuppress_rewards() => __pbn__suppress_rewards != null;
         public void Resetsuppress_rewards() => __pbn__suppress_rewards = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__suppress_rewards;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCClaimEventActionUsingItem : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint event_id
         {
             get => __pbn__event_id.GetValueOrDefault();
@@ -2569,9 +2807,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeevent_id() => __pbn__event_id != null;
         public void Resetevent_id() => __pbn__event_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__event_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint action_id
         {
             get => __pbn__action_id.GetValueOrDefault();
@@ -2579,9 +2818,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeaction_id() => __pbn__action_id != null;
         public void Resetaction_id() => __pbn__action_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__action_id;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public ulong item_id
         {
             get => __pbn__item_id.GetValueOrDefault();
@@ -2589,9 +2829,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeitem_id() => __pbn__item_id != null;
         public void Resetitem_id() => __pbn__item_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__item_id;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public uint quantity
         {
             get => __pbn__quantity.GetValueOrDefault();
@@ -2599,9 +2840,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializequantity() => __pbn__quantity != null;
         public void Resetquantity() => __pbn__quantity = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__quantity;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public bool suppress_rewards
         {
             get => __pbn__suppress_rewards.GetValueOrDefault();
@@ -2609,30 +2851,33 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializesuppress_rewards() => __pbn__suppress_rewards != null;
         public void Resetsuppress_rewards() => __pbn__suppress_rewards = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__suppress_rewards;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCClaimEventActionUsingItemResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public CMsgDOTAClaimEventActionResponse action_results { get; set; }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCToClientClaimEventActionUsingItemCompleted : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public ulong item_id
         {
             get => __pbn__item_id.GetValueOrDefault();
@@ -2640,21 +2885,23 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeitem_id() => __pbn__item_id != null;
         public void Resetitem_id() => __pbn__item_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__item_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public CMsgDOTAClaimEventActionResponse action_results { get; set; }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTAGetEventPoints : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint event_id
         {
             get => __pbn__event_id.GetValueOrDefault();
@@ -2662,9 +2909,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeevent_id() => __pbn__event_id != null;
         public void Resetevent_id() => __pbn__event_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__event_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint account_id
         {
             get => __pbn__account_id.GetValueOrDefault();
@@ -2672,18 +2920,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeaccount_id() => __pbn__account_id != null;
         public void Resetaccount_id() => __pbn__account_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__account_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTAGetEventPointsResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint total_points
         {
             get => __pbn__total_points.GetValueOrDefault();
@@ -2691,9 +2941,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializetotal_points() => __pbn__total_points != null;
         public void Resettotal_points() => __pbn__total_points = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__total_points;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint total_premium_points
         {
             get => __pbn__total_premium_points.GetValueOrDefault();
@@ -2701,9 +2952,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializetotal_premium_points() => __pbn__total_premium_points != null;
         public void Resettotal_premium_points() => __pbn__total_premium_points = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__total_premium_points;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public uint event_id
         {
             get => __pbn__event_id.GetValueOrDefault();
@@ -2711,9 +2963,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeevent_id() => __pbn__event_id != null;
         public void Resetevent_id() => __pbn__event_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__event_id;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public uint points
         {
             get => __pbn__points.GetValueOrDefault();
@@ -2721,9 +2974,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializepoints() => __pbn__points != null;
         public void Resetpoints() => __pbn__points = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__points;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public uint premium_points
         {
             get => __pbn__premium_points.GetValueOrDefault();
@@ -2731,12 +2985,13 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializepremium_points() => __pbn__premium_points != null;
         public void Resetpremium_points() => __pbn__premium_points = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__premium_points;
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         public global::System.Collections.Generic.List<Action> completed_actions { get; } = new global::System.Collections.Generic.List<Action>();
 
-        [global::ProtoBuf.ProtoMember(7)]
+        [global::LightProto.ProtoMember(7)]
         public uint account_id
         {
             get => __pbn__account_id.GetValueOrDefault();
@@ -2744,9 +2999,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeaccount_id() => __pbn__account_id != null;
         public void Resetaccount_id() => __pbn__account_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__account_id;
 
-        [global::ProtoBuf.ProtoMember(8)]
+        [global::LightProto.ProtoMember(8)]
         public bool owned
         {
             get => __pbn__owned.GetValueOrDefault();
@@ -2754,9 +3010,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeowned() => __pbn__owned != null;
         public void Resetowned() => __pbn__owned = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__owned;
 
-        [global::ProtoBuf.ProtoMember(9)]
+        [global::LightProto.ProtoMember(9)]
         public uint audit_action
         {
             get => __pbn__audit_action.GetValueOrDefault();
@@ -2764,9 +3021,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeaudit_action() => __pbn__audit_action != null;
         public void Resetaudit_action() => __pbn__audit_action = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__audit_action;
 
-        [global::ProtoBuf.ProtoMember(10)]
+        [global::LightProto.ProtoMember(10)]
         public uint active_season_id
         {
             get => __pbn__active_season_id.GetValueOrDefault();
@@ -2774,16 +3032,18 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeactive_season_id() => __pbn__active_season_id != null;
         public void Resetactive_season_id() => __pbn__active_season_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__active_season_id;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class Action : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public uint action_id
             {
                 get => __pbn__action_id.GetValueOrDefault();
@@ -2791,9 +3051,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeaction_id() => __pbn__action_id != null;
             public void Resetaction_id() => __pbn__action_id = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__action_id;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             [global::System.ComponentModel.DefaultValue(1u)]
             public uint times_completed
             {
@@ -2802,20 +3063,22 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializetimes_completed() => __pbn__times_completed != null;
             public void Resettimes_completed() => __pbn__times_completed = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__times_completed;
 
         }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTAGetPeriodicResource : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint account_id
         {
             get => __pbn__account_id.GetValueOrDefault();
@@ -2823,9 +3086,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeaccount_id() => __pbn__account_id != null;
         public void Resetaccount_id() => __pbn__account_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__account_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint periodic_resource_id
         {
             get => __pbn__periodic_resource_id.GetValueOrDefault();
@@ -2833,9 +3097,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeperiodic_resource_id() => __pbn__periodic_resource_id != null;
         public void Resetperiodic_resource_id() => __pbn__periodic_resource_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__periodic_resource_id;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public uint timestamp
         {
             get => __pbn__timestamp.GetValueOrDefault();
@@ -2843,18 +3108,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializetimestamp() => __pbn__timestamp != null;
         public void Resettimestamp() => __pbn__timestamp = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__timestamp;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTAGetPeriodicResourceResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint periodic_resource_max
         {
             get => __pbn__periodic_resource_max.GetValueOrDefault();
@@ -2862,9 +3129,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeperiodic_resource_max() => __pbn__periodic_resource_max != null;
         public void Resetperiodic_resource_max() => __pbn__periodic_resource_max = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__periodic_resource_max;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint periodic_resource_used
         {
             get => __pbn__periodic_resource_used.GetValueOrDefault();
@@ -2872,33 +3140,36 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeperiodic_resource_used() => __pbn__periodic_resource_used != null;
         public void Resetperiodic_resource_used() => __pbn__periodic_resource_used = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__periodic_resource_used;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTAPeriodicResourceUpdated : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public CMsgDOTAGetPeriodicResource periodic_resource_key { get; set; }
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public CMsgDOTAGetPeriodicResourceResponse periodic_resource_value { get; set; }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTACompendiumSelection : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint selection_index
         {
             get => __pbn__selection_index.GetValueOrDefault();
@@ -2906,9 +3177,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeselection_index() => __pbn__selection_index != null;
         public void Resetselection_index() => __pbn__selection_index = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__selection_index;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint selection
         {
             get => __pbn__selection.GetValueOrDefault();
@@ -2916,9 +3188,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeselection() => __pbn__selection != null;
         public void Resetselection() => __pbn__selection = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__selection;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public uint leagueid
         {
             get => __pbn__leagueid.GetValueOrDefault();
@@ -2926,18 +3199,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeleagueid() => __pbn__leagueid != null;
         public void Resetleagueid() => __pbn__leagueid = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__leagueid;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTACompendiumSelectionResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(2u)]
         public uint eresult
         {
@@ -2946,18 +3221,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeeresult() => __pbn__eresult != null;
         public void Reseteresult() => __pbn__eresult = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__eresult;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTACompendiumRemoveAllSelections : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint leagueid
         {
             get => __pbn__leagueid.GetValueOrDefault();
@@ -2965,18 +3242,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeleagueid() => __pbn__leagueid != null;
         public void Resetleagueid() => __pbn__leagueid = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__leagueid;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTACompendiumRemoveAllSelectionsResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(2u)]
         public uint eresult
         {
@@ -2985,30 +3264,33 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeeresult() => __pbn__eresult != null;
         public void Reseteresult() => __pbn__eresult = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__eresult;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTACompendiumData : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<CMsgDOTACompendiumSelection> selections { get; } = new global::System.Collections.Generic.List<CMsgDOTACompendiumSelection>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTACompendiumDataRequest : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint account_id
         {
             get => __pbn__account_id.GetValueOrDefault();
@@ -3016,9 +3298,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeaccount_id() => __pbn__account_id != null;
         public void Resetaccount_id() => __pbn__account_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__account_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint leagueid
         {
             get => __pbn__leagueid.GetValueOrDefault();
@@ -3026,18 +3309,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeleagueid() => __pbn__leagueid != null;
         public void Resetleagueid() => __pbn__leagueid = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__leagueid;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTACompendiumDataResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint account_id
         {
             get => __pbn__account_id.GetValueOrDefault();
@@ -3045,9 +3330,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeaccount_id() => __pbn__account_id != null;
         public void Resetaccount_id() => __pbn__account_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__account_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint leagueid
         {
             get => __pbn__leagueid.GetValueOrDefault();
@@ -3055,9 +3341,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeleagueid() => __pbn__leagueid != null;
         public void Resetleagueid() => __pbn__leagueid = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__leagueid;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         [global::System.ComponentModel.DefaultValue(2u)]
         public uint result
         {
@@ -3066,21 +3353,23 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__result;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public CMsgDOTACompendiumData compendium_data { get; set; }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTAGetPlayerMatchHistory : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint account_id
         {
             get => __pbn__account_id.GetValueOrDefault();
@@ -3088,9 +3377,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeaccount_id() => __pbn__account_id != null;
         public void Resetaccount_id() => __pbn__account_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__account_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public ulong start_at_match_id
         {
             get => __pbn__start_at_match_id.GetValueOrDefault();
@@ -3098,9 +3388,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializestart_at_match_id() => __pbn__start_at_match_id != null;
         public void Resetstart_at_match_id() => __pbn__start_at_match_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__start_at_match_id;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public uint matches_requested
         {
             get => __pbn__matches_requested.GetValueOrDefault();
@@ -3108,9 +3399,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializematches_requested() => __pbn__matches_requested != null;
         public void Resetmatches_requested() => __pbn__matches_requested = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__matches_requested;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public int hero_id
         {
             get => __pbn__hero_id.GetValueOrDefault();
@@ -3118,9 +3410,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializehero_id() => __pbn__hero_id != null;
         public void Resethero_id() => __pbn__hero_id = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__hero_id;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public uint request_id
         {
             get => __pbn__request_id.GetValueOrDefault();
@@ -3128,9 +3421,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializerequest_id() => __pbn__request_id != null;
         public void Resetrequest_id() => __pbn__request_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__request_id;
 
-        [global::ProtoBuf.ProtoMember(7)]
+        [global::LightProto.ProtoMember(7)]
         public bool include_practice_matches
         {
             get => __pbn__include_practice_matches.GetValueOrDefault();
@@ -3138,9 +3432,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeinclude_practice_matches() => __pbn__include_practice_matches != null;
         public void Resetinclude_practice_matches() => __pbn__include_practice_matches = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__include_practice_matches;
 
-        [global::ProtoBuf.ProtoMember(8)]
+        [global::LightProto.ProtoMember(8)]
         public bool include_custom_games
         {
             get => __pbn__include_custom_games.GetValueOrDefault();
@@ -3148,9 +3443,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeinclude_custom_games() => __pbn__include_custom_games != null;
         public void Resetinclude_custom_games() => __pbn__include_custom_games = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__include_custom_games;
 
-        [global::ProtoBuf.ProtoMember(9)]
+        [global::LightProto.ProtoMember(9)]
         public bool include_event_games
         {
             get => __pbn__include_event_games.GetValueOrDefault();
@@ -3158,21 +3454,23 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeinclude_event_games() => __pbn__include_event_games != null;
         public void Resetinclude_event_games() => __pbn__include_event_games = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__include_event_games;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTAGetPlayerMatchHistoryResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<Match> matches { get; } = new global::System.Collections.Generic.List<Match>();
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint request_id
         {
             get => __pbn__request_id.GetValueOrDefault();
@@ -3180,16 +3478,18 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializerequest_id() => __pbn__request_id != null;
         public void Resetrequest_id() => __pbn__request_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__request_id;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class Match : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public ulong match_id
             {
                 get => __pbn__match_id.GetValueOrDefault();
@@ -3197,9 +3497,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializematch_id() => __pbn__match_id != null;
             public void Resetmatch_id() => __pbn__match_id = null;
+            [global::LightProto.ProtoIgnore]
             private ulong? __pbn__match_id;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public uint start_time
             {
                 get => __pbn__start_time.GetValueOrDefault();
@@ -3207,9 +3508,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializestart_time() => __pbn__start_time != null;
             public void Resetstart_time() => __pbn__start_time = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__start_time;
 
-            [global::ProtoBuf.ProtoMember(3)]
+            [global::LightProto.ProtoMember(3)]
             public int hero_id
             {
                 get => __pbn__hero_id.GetValueOrDefault();
@@ -3217,9 +3519,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializehero_id() => __pbn__hero_id != null;
             public void Resethero_id() => __pbn__hero_id = null;
+            [global::LightProto.ProtoIgnore]
             private int? __pbn__hero_id;
 
-            [global::ProtoBuf.ProtoMember(4)]
+            [global::LightProto.ProtoMember(4)]
             public bool winner
             {
                 get => __pbn__winner.GetValueOrDefault();
@@ -3227,9 +3530,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializewinner() => __pbn__winner != null;
             public void Resetwinner() => __pbn__winner = null;
+            [global::LightProto.ProtoIgnore]
             private bool? __pbn__winner;
 
-            [global::ProtoBuf.ProtoMember(5)]
+            [global::LightProto.ProtoMember(5)]
             public uint game_mode
             {
                 get => __pbn__game_mode.GetValueOrDefault();
@@ -3237,9 +3541,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializegame_mode() => __pbn__game_mode != null;
             public void Resetgame_mode() => __pbn__game_mode = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__game_mode;
 
-            [global::ProtoBuf.ProtoMember(6)]
+            [global::LightProto.ProtoMember(6)]
             public int rank_change
             {
                 get => __pbn__rank_change.GetValueOrDefault();
@@ -3247,9 +3552,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializerank_change() => __pbn__rank_change != null;
             public void Resetrank_change() => __pbn__rank_change = null;
+            [global::LightProto.ProtoIgnore]
             private int? __pbn__rank_change;
 
-            [global::ProtoBuf.ProtoMember(7)]
+            [global::LightProto.ProtoMember(7)]
             public uint previous_rank
             {
                 get => __pbn__previous_rank.GetValueOrDefault();
@@ -3257,9 +3563,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeprevious_rank() => __pbn__previous_rank != null;
             public void Resetprevious_rank() => __pbn__previous_rank = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__previous_rank;
 
-            [global::ProtoBuf.ProtoMember(8)]
+            [global::LightProto.ProtoMember(8)]
             public uint lobby_type
             {
                 get => __pbn__lobby_type.GetValueOrDefault();
@@ -3267,9 +3574,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializelobby_type() => __pbn__lobby_type != null;
             public void Resetlobby_type() => __pbn__lobby_type = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__lobby_type;
 
-            [global::ProtoBuf.ProtoMember(9)]
+            [global::LightProto.ProtoMember(9)]
             public bool solo_rank
             {
                 get => __pbn__solo_rank.GetValueOrDefault();
@@ -3277,9 +3585,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializesolo_rank() => __pbn__solo_rank != null;
             public void Resetsolo_rank() => __pbn__solo_rank = null;
+            [global::LightProto.ProtoIgnore]
             private bool? __pbn__solo_rank;
 
-            [global::ProtoBuf.ProtoMember(10)]
+            [global::LightProto.ProtoMember(10)]
             public bool abandon
             {
                 get => __pbn__abandon.GetValueOrDefault();
@@ -3287,9 +3596,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeabandon() => __pbn__abandon != null;
             public void Resetabandon() => __pbn__abandon = null;
+            [global::LightProto.ProtoIgnore]
             private bool? __pbn__abandon;
 
-            [global::ProtoBuf.ProtoMember(11)]
+            [global::LightProto.ProtoMember(11)]
             public uint duration
             {
                 get => __pbn__duration.GetValueOrDefault();
@@ -3297,9 +3607,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeduration() => __pbn__duration != null;
             public void Resetduration() => __pbn__duration = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__duration;
 
-            [global::ProtoBuf.ProtoMember(12)]
+            [global::LightProto.ProtoMember(12)]
             public uint engine
             {
                 get => __pbn__engine.GetValueOrDefault();
@@ -3307,9 +3618,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeengine() => __pbn__engine != null;
             public void Resetengine() => __pbn__engine = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__engine;
 
-            [global::ProtoBuf.ProtoMember(13)]
+            [global::LightProto.ProtoMember(13)]
             public bool active_plus_subscription
             {
                 get => __pbn__active_plus_subscription.GetValueOrDefault();
@@ -3317,9 +3629,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeactive_plus_subscription() => __pbn__active_plus_subscription != null;
             public void Resetactive_plus_subscription() => __pbn__active_plus_subscription = null;
+            [global::LightProto.ProtoIgnore]
             private bool? __pbn__active_plus_subscription;
 
-            [global::ProtoBuf.ProtoMember(14)]
+            [global::LightProto.ProtoMember(14)]
             public bool seasonal_rank
             {
                 get => __pbn__seasonal_rank.GetValueOrDefault();
@@ -3327,9 +3640,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeseasonal_rank() => __pbn__seasonal_rank != null;
             public void Resetseasonal_rank() => __pbn__seasonal_rank = null;
+            [global::LightProto.ProtoIgnore]
             private bool? __pbn__seasonal_rank;
 
-            [global::ProtoBuf.ProtoMember(15)]
+            [global::LightProto.ProtoMember(15)]
             public uint tourney_id
             {
                 get => __pbn__tourney_id.GetValueOrDefault();
@@ -3337,9 +3651,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializetourney_id() => __pbn__tourney_id != null;
             public void Resettourney_id() => __pbn__tourney_id = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__tourney_id;
 
-            [global::ProtoBuf.ProtoMember(16)]
+            [global::LightProto.ProtoMember(16)]
             public uint tourney_round
             {
                 get => __pbn__tourney_round.GetValueOrDefault();
@@ -3347,9 +3662,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializetourney_round() => __pbn__tourney_round != null;
             public void Resettourney_round() => __pbn__tourney_round = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__tourney_round;
 
-            [global::ProtoBuf.ProtoMember(17)]
+            [global::LightProto.ProtoMember(17)]
             public uint tourney_tier
             {
                 get => __pbn__tourney_tier.GetValueOrDefault();
@@ -3357,9 +3673,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializetourney_tier() => __pbn__tourney_tier != null;
             public void Resettourney_tier() => __pbn__tourney_tier = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__tourney_tier;
 
-            [global::ProtoBuf.ProtoMember(18)]
+            [global::LightProto.ProtoMember(18)]
             public uint tourney_division
             {
                 get => __pbn__tourney_division.GetValueOrDefault();
@@ -3367,9 +3684,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializetourney_division() => __pbn__tourney_division != null;
             public void Resettourney_division() => __pbn__tourney_division = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__tourney_division;
 
-            [global::ProtoBuf.ProtoMember(19)]
+            [global::LightProto.ProtoMember(19)]
             public uint team_id
             {
                 get => __pbn__team_id.GetValueOrDefault();
@@ -3377,9 +3695,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeteam_id() => __pbn__team_id != null;
             public void Resetteam_id() => __pbn__team_id = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__team_id;
 
-            [global::ProtoBuf.ProtoMember(20)]
+            [global::LightProto.ProtoMember(20)]
             [global::System.ComponentModel.DefaultValue("")]
             public string team_name
             {
@@ -3388,9 +3707,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeteam_name() => __pbn__team_name != null;
             public void Resetteam_name() => __pbn__team_name = null;
+            [global::LightProto.ProtoIgnore]
             private string __pbn__team_name;
 
-            [global::ProtoBuf.ProtoMember(21)]
+            [global::LightProto.ProtoMember(21)]
             public ulong ugc_team_ui_logo
             {
                 get => __pbn__ugc_team_ui_logo.GetValueOrDefault();
@@ -3398,9 +3718,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeugc_team_ui_logo() => __pbn__ugc_team_ui_logo != null;
             public void Resetugc_team_ui_logo() => __pbn__ugc_team_ui_logo = null;
+            [global::LightProto.ProtoIgnore]
             private ulong? __pbn__ugc_team_ui_logo;
 
-            [global::ProtoBuf.ProtoMember(22)]
+            [global::LightProto.ProtoMember(22)]
             public uint selected_facet
             {
                 get => __pbn__selected_facet.GetValueOrDefault();
@@ -3408,29 +3729,32 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeselected_facet() => __pbn__selected_facet != null;
             public void Resetselected_facet() => __pbn__selected_facet = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__selected_facet;
 
         }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCNotificationsRequest : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCNotifications_Notification : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public ulong id
         {
             get => __pbn__id.GetValueOrDefault();
@@ -3438,9 +3762,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeid() => __pbn__id != null;
         public void Resetid() => __pbn__id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint type
         {
             get => __pbn__type.GetValueOrDefault();
@@ -3448,9 +3773,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializetype() => __pbn__type != null;
         public void Resettype() => __pbn__type = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__type;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public uint timestamp
         {
             get => __pbn__timestamp.GetValueOrDefault();
@@ -3458,9 +3784,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializetimestamp() => __pbn__timestamp != null;
         public void Resettimestamp() => __pbn__timestamp = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__timestamp;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public uint reference_a
         {
             get => __pbn__reference_a.GetValueOrDefault();
@@ -3468,9 +3795,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializereference_a() => __pbn__reference_a != null;
         public void Resetreference_a() => __pbn__reference_a = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__reference_a;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public uint reference_b
         {
             get => __pbn__reference_b.GetValueOrDefault();
@@ -3478,9 +3806,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializereference_b() => __pbn__reference_b != null;
         public void Resetreference_b() => __pbn__reference_b = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__reference_b;
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         public uint reference_c
         {
             get => __pbn__reference_c.GetValueOrDefault();
@@ -3488,9 +3817,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializereference_c() => __pbn__reference_c != null;
         public void Resetreference_c() => __pbn__reference_c = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__reference_c;
 
-        [global::ProtoBuf.ProtoMember(7)]
+        [global::LightProto.ProtoMember(7)]
         [global::System.ComponentModel.DefaultValue("")]
         public string message
         {
@@ -3499,9 +3829,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializemessage() => __pbn__message != null;
         public void Resetmessage() => __pbn__message = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__message;
 
-        [global::ProtoBuf.ProtoMember(8)]
+        [global::LightProto.ProtoMember(8)]
         public bool unread
         {
             get => __pbn__unread.GetValueOrDefault();
@@ -3509,18 +3840,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeunread() => __pbn__unread != null;
         public void Resetunread() => __pbn__unread = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__unread;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCNotificationsUpdate : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EResult.SUCCESS)]
         public EResult result
         {
@@ -3529,12 +3862,13 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private EResult? __pbn__result;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public global::System.Collections.Generic.List<CMsgGCNotifications_Notification> notifications { get; } = new global::System.Collections.Generic.List<CMsgGCNotifications_Notification>();
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum EResult
         {
             SUCCESS = 0,
@@ -3543,35 +3877,38 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCNotificationsResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public CMsgGCNotificationsUpdate update { get; set; }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCNotificationsMarkReadRequest : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCPlayerInfoSubmit : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue("")]
         public string player_name
         {
@@ -3580,9 +3917,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeplayer_name() => __pbn__player_name != null;
         public void Resetplayer_name() => __pbn__player_name = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__player_name;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue("")]
         public string country_code
         {
@@ -3591,9 +3929,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializecountry_code() => __pbn__country_code != null;
         public void Resetcountry_code() => __pbn__country_code = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__country_code;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public uint fantasy_role
         {
             get => __pbn__fantasy_role.GetValueOrDefault();
@@ -3601,9 +3940,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializefantasy_role() => __pbn__fantasy_role != null;
         public void Resetfantasy_role() => __pbn__fantasy_role = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__fantasy_role;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public uint team_id
         {
             get => __pbn__team_id.GetValueOrDefault();
@@ -3611,9 +3951,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeteam_id() => __pbn__team_id != null;
         public void Resetteam_id() => __pbn__team_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__team_id;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         [global::System.ComponentModel.DefaultValue("")]
         public string sponsor
         {
@@ -3622,9 +3963,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializesponsor() => __pbn__sponsor != null;
         public void Resetsponsor() => __pbn__sponsor = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__sponsor;
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         public bool accepted_pro_agreement
         {
             get => __pbn__accepted_pro_agreement.GetValueOrDefault();
@@ -3632,9 +3974,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeaccepted_pro_agreement() => __pbn__accepted_pro_agreement != null;
         public void Resetaccepted_pro_agreement() => __pbn__accepted_pro_agreement = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__accepted_pro_agreement;
 
-        [global::ProtoBuf.ProtoMember(7)]
+        [global::LightProto.ProtoMember(7)]
         public uint registration_period
         {
             get => __pbn__registration_period.GetValueOrDefault();
@@ -3642,9 +3985,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeregistration_period() => __pbn__registration_period != null;
         public void Resetregistration_period() => __pbn__registration_period = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__registration_period;
 
-        [global::ProtoBuf.ProtoMember(8)]
+        [global::LightProto.ProtoMember(8)]
         [global::System.ComponentModel.DefaultValue("")]
         public string real_name
         {
@@ -3653,18 +3997,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializereal_name() => __pbn__real_name != null;
         public void Resetreal_name() => __pbn__real_name = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__real_name;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCPlayerInfoSubmitResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EResult.SUCCESS)]
         public EResult result
         {
@@ -3673,9 +4019,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private EResult? __pbn__result;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum EResult
         {
             SUCCESS = 0,
@@ -3686,14 +4033,15 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTAEmoticonAccessSDO : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint account_id
         {
             get => __pbn__account_id.GetValueOrDefault();
@@ -3701,9 +4049,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeaccount_id() => __pbn__account_id != null;
         public void Resetaccount_id() => __pbn__account_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__account_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public byte[] unlocked_emoticons
         {
             get => __pbn__unlocked_emoticons;
@@ -3711,39 +4060,43 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeunlocked_emoticons() => __pbn__unlocked_emoticons != null;
         public void Resetunlocked_emoticons() => __pbn__unlocked_emoticons = null;
+        [global::LightProto.ProtoIgnore]
         private byte[] __pbn__unlocked_emoticons;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCEmoticonDataRequest : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCToClientEmoticonData : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public CMsgDOTAEmoticonAccessSDO emoticon_access { get; set; }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCToClientTournamentItemDrop : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint item_def
         {
             get => __pbn__item_def.GetValueOrDefault();
@@ -3751,9 +4104,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeitem_def() => __pbn__item_def != null;
         public void Resetitem_def() => __pbn__item_def = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__item_def;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint event_type
         {
             get => __pbn__event_type.GetValueOrDefault();
@@ -3761,39 +4115,43 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeevent_type() => __pbn__event_type != null;
         public void Resetevent_type() => __pbn__event_type = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__event_type;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCGetAllHeroOrder : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCGetAllHeroOrderResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<int> hero_ids { get; } = new global::System.Collections.Generic.List<int>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCGetAllHeroProgress : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint account_id
         {
             get => __pbn__account_id.GetValueOrDefault();
@@ -3801,18 +4159,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeaccount_id() => __pbn__account_id != null;
         public void Resetaccount_id() => __pbn__account_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__account_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCGetAllHeroProgressResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint account_id
         {
             get => __pbn__account_id.GetValueOrDefault();
@@ -3820,9 +4180,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeaccount_id() => __pbn__account_id != null;
         public void Resetaccount_id() => __pbn__account_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__account_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public int curr_hero_id
         {
             get => __pbn__curr_hero_id.GetValueOrDefault();
@@ -3830,9 +4191,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializecurr_hero_id() => __pbn__curr_hero_id != null;
         public void Resetcurr_hero_id() => __pbn__curr_hero_id = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__curr_hero_id;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public uint laps_completed
         {
             get => __pbn__laps_completed.GetValueOrDefault();
@@ -3840,9 +4202,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializelaps_completed() => __pbn__laps_completed != null;
         public void Resetlaps_completed() => __pbn__laps_completed = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__laps_completed;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public uint curr_hero_games
         {
             get => __pbn__curr_hero_games.GetValueOrDefault();
@@ -3850,9 +4213,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializecurr_hero_games() => __pbn__curr_hero_games != null;
         public void Resetcurr_hero_games() => __pbn__curr_hero_games = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__curr_hero_games;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public uint curr_lap_time_started
         {
             get => __pbn__curr_lap_time_started.GetValueOrDefault();
@@ -3860,9 +4224,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializecurr_lap_time_started() => __pbn__curr_lap_time_started != null;
         public void Resetcurr_lap_time_started() => __pbn__curr_lap_time_started = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__curr_lap_time_started;
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         public uint curr_lap_games
         {
             get => __pbn__curr_lap_games.GetValueOrDefault();
@@ -3870,9 +4235,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializecurr_lap_games() => __pbn__curr_lap_games != null;
         public void Resetcurr_lap_games() => __pbn__curr_lap_games = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__curr_lap_games;
 
-        [global::ProtoBuf.ProtoMember(7)]
+        [global::LightProto.ProtoMember(7)]
         public uint best_lap_games
         {
             get => __pbn__best_lap_games.GetValueOrDefault();
@@ -3880,9 +4246,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializebest_lap_games() => __pbn__best_lap_games != null;
         public void Resetbest_lap_games() => __pbn__best_lap_games = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__best_lap_games;
 
-        [global::ProtoBuf.ProtoMember(8)]
+        [global::LightProto.ProtoMember(8)]
         public uint best_lap_time
         {
             get => __pbn__best_lap_time.GetValueOrDefault();
@@ -3890,9 +4257,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializebest_lap_time() => __pbn__best_lap_time != null;
         public void Resetbest_lap_time() => __pbn__best_lap_time = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__best_lap_time;
 
-        [global::ProtoBuf.ProtoMember(9)]
+        [global::LightProto.ProtoMember(9)]
         public uint lap_heroes_completed
         {
             get => __pbn__lap_heroes_completed.GetValueOrDefault();
@@ -3900,9 +4268,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializelap_heroes_completed() => __pbn__lap_heroes_completed != null;
         public void Resetlap_heroes_completed() => __pbn__lap_heroes_completed = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__lap_heroes_completed;
 
-        [global::ProtoBuf.ProtoMember(10)]
+        [global::LightProto.ProtoMember(10)]
         public uint lap_heroes_remaining
         {
             get => __pbn__lap_heroes_remaining.GetValueOrDefault();
@@ -3910,9 +4279,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializelap_heroes_remaining() => __pbn__lap_heroes_remaining != null;
         public void Resetlap_heroes_remaining() => __pbn__lap_heroes_remaining = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__lap_heroes_remaining;
 
-        [global::ProtoBuf.ProtoMember(11)]
+        [global::LightProto.ProtoMember(11)]
         public int next_hero_id
         {
             get => __pbn__next_hero_id.GetValueOrDefault();
@@ -3920,9 +4290,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializenext_hero_id() => __pbn__next_hero_id != null;
         public void Resetnext_hero_id() => __pbn__next_hero_id = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__next_hero_id;
 
-        [global::ProtoBuf.ProtoMember(12)]
+        [global::LightProto.ProtoMember(12)]
         public int prev_hero_id
         {
             get => __pbn__prev_hero_id.GetValueOrDefault();
@@ -3930,9 +4301,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeprev_hero_id() => __pbn__prev_hero_id != null;
         public void Resetprev_hero_id() => __pbn__prev_hero_id = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__prev_hero_id;
 
-        [global::ProtoBuf.ProtoMember(13)]
+        [global::LightProto.ProtoMember(13)]
         public uint prev_hero_games
         {
             get => __pbn__prev_hero_games.GetValueOrDefault();
@@ -3940,9 +4312,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeprev_hero_games() => __pbn__prev_hero_games != null;
         public void Resetprev_hero_games() => __pbn__prev_hero_games = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__prev_hero_games;
 
-        [global::ProtoBuf.ProtoMember(14)]
+        [global::LightProto.ProtoMember(14)]
         public float prev_avg_tries
         {
             get => __pbn__prev_avg_tries.GetValueOrDefault();
@@ -3950,9 +4323,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeprev_avg_tries() => __pbn__prev_avg_tries != null;
         public void Resetprev_avg_tries() => __pbn__prev_avg_tries = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__prev_avg_tries;
 
-        [global::ProtoBuf.ProtoMember(15)]
+        [global::LightProto.ProtoMember(15)]
         public float curr_avg_tries
         {
             get => __pbn__curr_avg_tries.GetValueOrDefault();
@@ -3960,9 +4334,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializecurr_avg_tries() => __pbn__curr_avg_tries != null;
         public void Resetcurr_avg_tries() => __pbn__curr_avg_tries = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__curr_avg_tries;
 
-        [global::ProtoBuf.ProtoMember(16)]
+        [global::LightProto.ProtoMember(16)]
         public float next_avg_tries
         {
             get => __pbn__next_avg_tries.GetValueOrDefault();
@@ -3970,9 +4345,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializenext_avg_tries() => __pbn__next_avg_tries != null;
         public void Resetnext_avg_tries() => __pbn__next_avg_tries = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__next_avg_tries;
 
-        [global::ProtoBuf.ProtoMember(17)]
+        [global::LightProto.ProtoMember(17)]
         public float full_lap_avg_tries
         {
             get => __pbn__full_lap_avg_tries.GetValueOrDefault();
@@ -3980,9 +4356,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializefull_lap_avg_tries() => __pbn__full_lap_avg_tries != null;
         public void Resetfull_lap_avg_tries() => __pbn__full_lap_avg_tries = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__full_lap_avg_tries;
 
-        [global::ProtoBuf.ProtoMember(18)]
+        [global::LightProto.ProtoMember(18)]
         public float curr_lap_avg_tries
         {
             get => __pbn__curr_lap_avg_tries.GetValueOrDefault();
@@ -3990,9 +4367,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializecurr_lap_avg_tries() => __pbn__curr_lap_avg_tries != null;
         public void Resetcurr_lap_avg_tries() => __pbn__curr_lap_avg_tries = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__curr_lap_avg_tries;
 
-        [global::ProtoBuf.ProtoMember(19)]
+        [global::LightProto.ProtoMember(19)]
         [global::System.ComponentModel.DefaultValue("")]
         public string profile_name
         {
@@ -4001,9 +4379,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeprofile_name() => __pbn__profile_name != null;
         public void Resetprofile_name() => __pbn__profile_name = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__profile_name;
 
-        [global::ProtoBuf.ProtoMember(20)]
+        [global::LightProto.ProtoMember(20)]
         public int start_hero_id
         {
             get => __pbn__start_hero_id.GetValueOrDefault();
@@ -4011,18 +4390,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializestart_hero_id() => __pbn__start_hero_id != null;
         public void Resetstart_hero_id() => __pbn__start_hero_id = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__start_hero_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCGetTrophyList : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint account_id
         {
             get => __pbn__account_id.GetValueOrDefault();
@@ -4030,28 +4411,31 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeaccount_id() => __pbn__account_id != null;
         public void Resetaccount_id() => __pbn__account_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__account_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCGetTrophyListResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public global::System.Collections.Generic.List<Trophy> trophies { get; } = new global::System.Collections.Generic.List<Trophy>();
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class Trophy : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public uint trophy_id
             {
                 get => __pbn__trophy_id.GetValueOrDefault();
@@ -4059,9 +4443,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializetrophy_id() => __pbn__trophy_id != null;
             public void Resettrophy_id() => __pbn__trophy_id = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__trophy_id;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public uint trophy_score
             {
                 get => __pbn__trophy_score.GetValueOrDefault();
@@ -4069,9 +4454,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializetrophy_score() => __pbn__trophy_score != null;
             public void Resettrophy_score() => __pbn__trophy_score = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__trophy_score;
 
-            [global::ProtoBuf.ProtoMember(3)]
+            [global::LightProto.ProtoMember(3)]
             public uint last_updated
             {
                 get => __pbn__last_updated.GetValueOrDefault();
@@ -4079,20 +4465,22 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializelast_updated() => __pbn__last_updated != null;
             public void Resetlast_updated() => __pbn__last_updated = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__last_updated;
 
         }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCToClientTrophyAwarded : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint trophy_id
         {
             get => __pbn__trophy_id.GetValueOrDefault();
@@ -4100,9 +4488,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializetrophy_id() => __pbn__trophy_id != null;
         public void Resettrophy_id() => __pbn__trophy_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__trophy_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint trophy_score
         {
             get => __pbn__trophy_score.GetValueOrDefault();
@@ -4110,9 +4499,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializetrophy_score() => __pbn__trophy_score != null;
         public void Resettrophy_score() => __pbn__trophy_score = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__trophy_score;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public uint trophy_old_score
         {
             get => __pbn__trophy_old_score.GetValueOrDefault();
@@ -4120,9 +4510,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializetrophy_old_score() => __pbn__trophy_old_score != null;
         public void Resettrophy_old_score() => __pbn__trophy_old_score = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__trophy_old_score;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public uint last_updated
         {
             get => __pbn__last_updated.GetValueOrDefault();
@@ -4130,18 +4521,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializelast_updated() => __pbn__last_updated != null;
         public void Resetlast_updated() => __pbn__last_updated = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__last_updated;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCRankRequest : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(ERankType.k_ERankType_Invalid)]
         public ERankType rank_type
         {
@@ -4150,18 +4543,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializerank_type() => __pbn__rank_type != null;
         public void Resetrank_type() => __pbn__rank_type = null;
+        [global::LightProto.ProtoIgnore]
         private ERankType? __pbn__rank_type;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCToClientRankResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EResultCode.k_Succeeded)]
         public EResultCode result
         {
@@ -4170,9 +4565,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private EResultCode? __pbn__result;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint rank_value
         {
             get => __pbn__rank_value.GetValueOrDefault();
@@ -4180,9 +4576,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializerank_value() => __pbn__rank_value != null;
         public void Resetrank_value() => __pbn__rank_value = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__rank_value;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public uint rank_data1
         {
             get => __pbn__rank_data1.GetValueOrDefault();
@@ -4190,9 +4587,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializerank_data1() => __pbn__rank_data1 != null;
         public void Resetrank_data1() => __pbn__rank_data1 = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__rank_data1;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public uint rank_data2
         {
             get => __pbn__rank_data2.GetValueOrDefault();
@@ -4200,9 +4598,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializerank_data2() => __pbn__rank_data2 != null;
         public void Resetrank_data2() => __pbn__rank_data2 = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__rank_data2;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public uint rank_data3
         {
             get => __pbn__rank_data3.GetValueOrDefault();
@@ -4210,9 +4609,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializerank_data3() => __pbn__rank_data3 != null;
         public void Resetrank_data3() => __pbn__rank_data3 = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__rank_data3;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum EResultCode
         {
             k_Succeeded = 0,
@@ -4222,14 +4622,15 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCToClientRankUpdate : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(ERankType.k_ERankType_Invalid)]
         public ERankType rank_type
         {
@@ -4238,21 +4639,23 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializerank_type() => __pbn__rank_type != null;
         public void Resetrank_type() => __pbn__rank_type = null;
+        [global::LightProto.ProtoIgnore]
         private ERankType? __pbn__rank_type;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public CMsgGCToClientRankResponse rank_info { get; set; }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCGetProfileCard : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint account_id
         {
             get => __pbn__account_id.GetValueOrDefault();
@@ -4260,28 +4663,31 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeaccount_id() => __pbn__account_id != null;
         public void Resetaccount_id() => __pbn__account_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__account_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCSetProfileCardSlots : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<CardSlot> slots { get; } = new global::System.Collections.Generic.List<CardSlot>();
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class CardSlot : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public uint slot_id
             {
                 get => __pbn__slot_id.GetValueOrDefault();
@@ -4289,9 +4695,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeslot_id() => __pbn__slot_id != null;
             public void Resetslot_id() => __pbn__slot_id = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__slot_id;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             [global::System.ComponentModel.DefaultValue(EProfileCardSlotType.k_EProfileCardSlotType_Empty)]
             public EProfileCardSlotType slot_type
             {
@@ -4300,9 +4707,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeslot_type() => __pbn__slot_type != null;
             public void Resetslot_type() => __pbn__slot_type = null;
+            [global::LightProto.ProtoIgnore]
             private EProfileCardSlotType? __pbn__slot_type;
 
-            [global::ProtoBuf.ProtoMember(3)]
+            [global::LightProto.ProtoMember(3)]
             public ulong slot_value
             {
                 get => __pbn__slot_value.GetValueOrDefault();
@@ -4310,29 +4718,32 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeslot_value() => __pbn__slot_value != null;
             public void Resetslot_value() => __pbn__slot_value = null;
+            [global::LightProto.ProtoIgnore]
             private ulong? __pbn__slot_value;
 
         }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCGetProfileCardStats : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCCreateHeroStatue : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public ulong source_item_id
         {
             get => __pbn__source_item_id.GetValueOrDefault();
@@ -4340,9 +4751,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializesource_item_id() => __pbn__source_item_id != null;
         public void Resetsource_item_id() => __pbn__source_item_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__source_item_id;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public int hero_id
         {
             get => __pbn__hero_id.GetValueOrDefault();
@@ -4350,9 +4762,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializehero_id() => __pbn__hero_id != null;
         public void Resethero_id() => __pbn__hero_id = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__hero_id;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         [global::System.ComponentModel.DefaultValue("")]
         public string sequence_name
         {
@@ -4361,9 +4774,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializesequence_name() => __pbn__sequence_name != null;
         public void Resetsequence_name() => __pbn__sequence_name = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__sequence_name;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public float cycle
         {
             get => __pbn__cycle.GetValueOrDefault();
@@ -4371,12 +4785,13 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializecycle() => __pbn__cycle != null;
         public void Resetcycle() => __pbn__cycle = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__cycle;
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         public global::System.Collections.Generic.List<uint> wearables { get; } = new global::System.Collections.Generic.List<uint>();
 
-        [global::ProtoBuf.ProtoMember(7)]
+        [global::LightProto.ProtoMember(7)]
         [global::System.ComponentModel.DefaultValue("")]
         public string inscription
         {
@@ -4385,12 +4800,13 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeinscription() => __pbn__inscription != null;
         public void Resetinscription() => __pbn__inscription = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__inscription;
 
-        [global::ProtoBuf.ProtoMember(8)]
+        [global::LightProto.ProtoMember(8)]
         public global::System.Collections.Generic.List<uint> styles { get; } = new global::System.Collections.Generic.List<uint>();
 
-        [global::ProtoBuf.ProtoMember(9)]
+        [global::LightProto.ProtoMember(9)]
         public ulong reforger_item_id
         {
             get => __pbn__reforger_item_id.GetValueOrDefault();
@@ -4398,9 +4814,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializereforger_item_id() => __pbn__reforger_item_id != null;
         public void Resetreforger_item_id() => __pbn__reforger_item_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__reforger_item_id;
 
-        [global::ProtoBuf.ProtoMember(10)]
+        [global::LightProto.ProtoMember(10)]
         public bool tournament_drop
         {
             get => __pbn__tournament_drop.GetValueOrDefault();
@@ -4408,18 +4825,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializetournament_drop() => __pbn__tournament_drop != null;
         public void Resettournament_drop() => __pbn__tournament_drop = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__tournament_drop;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCToClientHeroStatueCreateResult : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public ulong resulting_item_id
         {
             get => __pbn__resulting_item_id.GetValueOrDefault();
@@ -4427,18 +4846,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresulting_item_id() => __pbn__resulting_item_id != null;
         public void Resetresulting_item_id() => __pbn__resulting_item_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__resulting_item_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCPlayerStatsRequest : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint account_id
         {
             get => __pbn__account_id.GetValueOrDefault();
@@ -4446,18 +4867,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeaccount_id() => __pbn__account_id != null;
         public void Resetaccount_id() => __pbn__account_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__account_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCToClientPlayerStatsResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint account_id
         {
             get => __pbn__account_id.GetValueOrDefault();
@@ -4465,12 +4888,13 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeaccount_id() => __pbn__account_id != null;
         public void Resetaccount_id() => __pbn__account_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__account_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public global::System.Collections.Generic.List<float> player_stats { get; } = new global::System.Collections.Generic.List<float>();
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public uint match_count
         {
             get => __pbn__match_count.GetValueOrDefault();
@@ -4478,9 +4902,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializematch_count() => __pbn__match_count != null;
         public void Resetmatch_count() => __pbn__match_count = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__match_count;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public float mean_gpm
         {
             get => __pbn__mean_gpm.GetValueOrDefault();
@@ -4488,9 +4913,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializemean_gpm() => __pbn__mean_gpm != null;
         public void Resetmean_gpm() => __pbn__mean_gpm = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__mean_gpm;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public float mean_xppm
         {
             get => __pbn__mean_xppm.GetValueOrDefault();
@@ -4498,9 +4924,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializemean_xppm() => __pbn__mean_xppm != null;
         public void Resetmean_xppm() => __pbn__mean_xppm = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__mean_xppm;
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         public float mean_lasthits
         {
             get => __pbn__mean_lasthits.GetValueOrDefault();
@@ -4508,9 +4935,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializemean_lasthits() => __pbn__mean_lasthits != null;
         public void Resetmean_lasthits() => __pbn__mean_lasthits = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__mean_lasthits;
 
-        [global::ProtoBuf.ProtoMember(7)]
+        [global::LightProto.ProtoMember(7)]
         public uint rampages
         {
             get => __pbn__rampages.GetValueOrDefault();
@@ -4518,9 +4946,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializerampages() => __pbn__rampages != null;
         public void Resetrampages() => __pbn__rampages = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__rampages;
 
-        [global::ProtoBuf.ProtoMember(8)]
+        [global::LightProto.ProtoMember(8)]
         public uint triple_kills
         {
             get => __pbn__triple_kills.GetValueOrDefault();
@@ -4528,9 +4957,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializetriple_kills() => __pbn__triple_kills != null;
         public void Resettriple_kills() => __pbn__triple_kills = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__triple_kills;
 
-        [global::ProtoBuf.ProtoMember(9)]
+        [global::LightProto.ProtoMember(9)]
         public uint first_blood_claimed
         {
             get => __pbn__first_blood_claimed.GetValueOrDefault();
@@ -4538,9 +4968,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializefirst_blood_claimed() => __pbn__first_blood_claimed != null;
         public void Resetfirst_blood_claimed() => __pbn__first_blood_claimed = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__first_blood_claimed;
 
-        [global::ProtoBuf.ProtoMember(10)]
+        [global::LightProto.ProtoMember(10)]
         public uint first_blood_given
         {
             get => __pbn__first_blood_given.GetValueOrDefault();
@@ -4548,9 +4979,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializefirst_blood_given() => __pbn__first_blood_given != null;
         public void Resetfirst_blood_given() => __pbn__first_blood_given = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__first_blood_given;
 
-        [global::ProtoBuf.ProtoMember(11)]
+        [global::LightProto.ProtoMember(11)]
         public uint couriers_killed
         {
             get => __pbn__couriers_killed.GetValueOrDefault();
@@ -4558,9 +4990,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializecouriers_killed() => __pbn__couriers_killed != null;
         public void Resetcouriers_killed() => __pbn__couriers_killed = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__couriers_killed;
 
-        [global::ProtoBuf.ProtoMember(12)]
+        [global::LightProto.ProtoMember(12)]
         public uint aegises_snatched
         {
             get => __pbn__aegises_snatched.GetValueOrDefault();
@@ -4568,9 +5001,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeaegises_snatched() => __pbn__aegises_snatched != null;
         public void Resetaegises_snatched() => __pbn__aegises_snatched = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__aegises_snatched;
 
-        [global::ProtoBuf.ProtoMember(13)]
+        [global::LightProto.ProtoMember(13)]
         public uint cheeses_eaten
         {
             get => __pbn__cheeses_eaten.GetValueOrDefault();
@@ -4578,9 +5012,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializecheeses_eaten() => __pbn__cheeses_eaten != null;
         public void Resetcheeses_eaten() => __pbn__cheeses_eaten = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__cheeses_eaten;
 
-        [global::ProtoBuf.ProtoMember(14)]
+        [global::LightProto.ProtoMember(14)]
         public uint creeps_stacked
         {
             get => __pbn__creeps_stacked.GetValueOrDefault();
@@ -4588,9 +5023,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializecreeps_stacked() => __pbn__creeps_stacked != null;
         public void Resetcreeps_stacked() => __pbn__creeps_stacked = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__creeps_stacked;
 
-        [global::ProtoBuf.ProtoMember(15)]
+        [global::LightProto.ProtoMember(15)]
         public float fight_score
         {
             get => __pbn__fight_score.GetValueOrDefault();
@@ -4598,9 +5034,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializefight_score() => __pbn__fight_score != null;
         public void Resetfight_score() => __pbn__fight_score = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__fight_score;
 
-        [global::ProtoBuf.ProtoMember(16)]
+        [global::LightProto.ProtoMember(16)]
         public float farm_score
         {
             get => __pbn__farm_score.GetValueOrDefault();
@@ -4608,9 +5045,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializefarm_score() => __pbn__farm_score != null;
         public void Resetfarm_score() => __pbn__farm_score = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__farm_score;
 
-        [global::ProtoBuf.ProtoMember(17)]
+        [global::LightProto.ProtoMember(17)]
         public float support_score
         {
             get => __pbn__support_score.GetValueOrDefault();
@@ -4618,9 +5056,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializesupport_score() => __pbn__support_score != null;
         public void Resetsupport_score() => __pbn__support_score = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__support_score;
 
-        [global::ProtoBuf.ProtoMember(18)]
+        [global::LightProto.ProtoMember(18)]
         public float push_score
         {
             get => __pbn__push_score.GetValueOrDefault();
@@ -4628,9 +5067,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializepush_score() => __pbn__push_score != null;
         public void Resetpush_score() => __pbn__push_score = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__push_score;
 
-        [global::ProtoBuf.ProtoMember(19)]
+        [global::LightProto.ProtoMember(19)]
         public float versatility_score
         {
             get => __pbn__versatility_score.GetValueOrDefault();
@@ -4638,9 +5078,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeversatility_score() => __pbn__versatility_score != null;
         public void Resetversatility_score() => __pbn__versatility_score = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__versatility_score;
 
-        [global::ProtoBuf.ProtoMember(20)]
+        [global::LightProto.ProtoMember(20)]
         public float mean_networth
         {
             get => __pbn__mean_networth.GetValueOrDefault();
@@ -4648,9 +5089,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializemean_networth() => __pbn__mean_networth != null;
         public void Resetmean_networth() => __pbn__mean_networth = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__mean_networth;
 
-        [global::ProtoBuf.ProtoMember(21)]
+        [global::LightProto.ProtoMember(21)]
         public float mean_damage
         {
             get => __pbn__mean_damage.GetValueOrDefault();
@@ -4658,9 +5100,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializemean_damage() => __pbn__mean_damage != null;
         public void Resetmean_damage() => __pbn__mean_damage = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__mean_damage;
 
-        [global::ProtoBuf.ProtoMember(22)]
+        [global::LightProto.ProtoMember(22)]
         public float mean_heals
         {
             get => __pbn__mean_heals.GetValueOrDefault();
@@ -4668,9 +5111,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializemean_heals() => __pbn__mean_heals != null;
         public void Resetmean_heals() => __pbn__mean_heals = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__mean_heals;
 
-        [global::ProtoBuf.ProtoMember(23)]
+        [global::LightProto.ProtoMember(23)]
         public uint rapiers_purchased
         {
             get => __pbn__rapiers_purchased.GetValueOrDefault();
@@ -4678,27 +5122,30 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializerapiers_purchased() => __pbn__rapiers_purchased != null;
         public void Resetrapiers_purchased() => __pbn__rapiers_purchased = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__rapiers_purchased;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCCustomGamesFriendsPlayedRequest : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCToClientCustomGamesFriendsPlayedResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint account_id
         {
             get => __pbn__account_id.GetValueOrDefault();
@@ -4706,19 +5153,21 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeaccount_id() => __pbn__account_id != null;
         public void Resetaccount_id() => __pbn__account_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__account_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public global::System.Collections.Generic.List<CustomGame> games { get; } = new global::System.Collections.Generic.List<CustomGame>();
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class CustomGame : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public ulong custom_game_id
             {
                 get => __pbn__custom_game_id.GetValueOrDefault();
@@ -4726,23 +5175,25 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializecustom_game_id() => __pbn__custom_game_id != null;
             public void Resetcustom_game_id() => __pbn__custom_game_id = null;
+            [global::LightProto.ProtoIgnore]
             private ulong? __pbn__custom_game_id;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public global::System.Collections.Generic.List<uint> account_ids { get; } = new global::System.Collections.Generic.List<uint>();
 
         }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCSocialFeedPostCommentRequest : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public ulong event_id
         {
             get => __pbn__event_id.GetValueOrDefault();
@@ -4750,9 +5201,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeevent_id() => __pbn__event_id != null;
         public void Resetevent_id() => __pbn__event_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__event_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue("")]
         public string comment
         {
@@ -4761,18 +5213,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializecomment() => __pbn__comment != null;
         public void Resetcomment() => __pbn__comment = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__comment;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCToClientSocialFeedPostCommentResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public bool success
         {
             get => __pbn__success.GetValueOrDefault();
@@ -4780,18 +5234,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializesuccess() => __pbn__success != null;
         public void Resetsuccess() => __pbn__success = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__success;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCSocialFeedPostMessageRequest : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue("")]
         public string message
         {
@@ -4800,9 +5256,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializemessage() => __pbn__message != null;
         public void Resetmessage() => __pbn__message = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__message;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public ulong match_id
         {
             get => __pbn__match_id.GetValueOrDefault();
@@ -4810,9 +5267,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializematch_id() => __pbn__match_id != null;
         public void Resetmatch_id() => __pbn__match_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__match_id;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public uint match_timestamp
         {
             get => __pbn__match_timestamp.GetValueOrDefault();
@@ -4820,18 +5278,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializematch_timestamp() => __pbn__match_timestamp != null;
         public void Resetmatch_timestamp() => __pbn__match_timestamp = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__match_timestamp;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCToClientSocialFeedPostMessageResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public bool success
         {
             get => __pbn__success.GetValueOrDefault();
@@ -4839,18 +5299,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializesuccess() => __pbn__success != null;
         public void Resetsuccess() => __pbn__success = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__success;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCFriendsPlayedCustomGameRequest : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public ulong custom_game_id
         {
             get => __pbn__custom_game_id.GetValueOrDefault();
@@ -4858,18 +5320,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializecustom_game_id() => __pbn__custom_game_id != null;
         public void Resetcustom_game_id() => __pbn__custom_game_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__custom_game_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCToClientFriendsPlayedCustomGameResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public ulong custom_game_id
         {
             get => __pbn__custom_game_id.GetValueOrDefault();
@@ -4877,21 +5341,23 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializecustom_game_id() => __pbn__custom_game_id != null;
         public void Resetcustom_game_id() => __pbn__custom_game_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__custom_game_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public global::System.Collections.Generic.List<uint> account_ids { get; } = new global::System.Collections.Generic.List<uint>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTAPartyRichPresence : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong party_id
         {
             get => __pbn__party_id.GetValueOrDefault();
@@ -4899,9 +5365,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeparty_id() => __pbn__party_id != null;
         public void Resetparty_id() => __pbn__party_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__party_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue(CSODOTAParty.State.UI)]
         public CSODOTAParty.State party_state
         {
@@ -4910,9 +5377,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeparty_state() => __pbn__party_state != null;
         public void Resetparty_state() => __pbn__party_state = null;
+        [global::LightProto.ProtoIgnore]
         private CSODOTAParty.State? __pbn__party_state;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public bool open
         {
             get => __pbn__open.GetValueOrDefault();
@@ -4920,9 +5388,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeopen() => __pbn__open != null;
         public void Resetopen() => __pbn__open = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__open;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public bool low_priority
         {
             get => __pbn__low_priority.GetValueOrDefault();
@@ -4930,9 +5399,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializelow_priority() => __pbn__low_priority != null;
         public void Resetlow_priority() => __pbn__low_priority = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__low_priority;
 
-        [global::ProtoBuf.ProtoMember(7)]
+        [global::LightProto.ProtoMember(7)]
         public uint team_id
         {
             get => __pbn__team_id.GetValueOrDefault();
@@ -4940,9 +5410,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeteam_id() => __pbn__team_id != null;
         public void Resetteam_id() => __pbn__team_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__team_id;
 
-        [global::ProtoBuf.ProtoMember(8)]
+        [global::LightProto.ProtoMember(8)]
         [global::System.ComponentModel.DefaultValue("")]
         public string team_name
         {
@@ -4951,9 +5422,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeteam_name() => __pbn__team_name != null;
         public void Resetteam_name() => __pbn__team_name = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__team_name;
 
-        [global::ProtoBuf.ProtoMember(9)]
+        [global::LightProto.ProtoMember(9)]
         public ulong ugc_team_ui_logo
         {
             get => __pbn__ugc_team_ui_logo.GetValueOrDefault();
@@ -4961,22 +5433,24 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeugc_team_ui_logo() => __pbn__ugc_team_ui_logo != null;
         public void Resetugc_team_ui_logo() => __pbn__ugc_team_ui_logo = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__ugc_team_ui_logo;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public global::System.Collections.Generic.List<Member> members { get; } = new global::System.Collections.Generic.List<Member>();
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         public WeekendTourney weekend_tourney { get; set; }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class Member : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+            [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
             public ulong steam_id
             {
                 get => __pbn__steam_id.GetValueOrDefault();
@@ -4984,9 +5458,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializesteam_id() => __pbn__steam_id != null;
             public void Resetsteam_id() => __pbn__steam_id = null;
+            [global::LightProto.ProtoIgnore]
             private ulong? __pbn__steam_id;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public bool coach
             {
                 get => __pbn__coach.GetValueOrDefault();
@@ -4994,18 +5469,20 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializecoach() => __pbn__coach != null;
             public void Resetcoach() => __pbn__coach = null;
+            [global::LightProto.ProtoIgnore]
             private bool? __pbn__coach;
 
         }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class WeekendTourney : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public uint division
             {
                 get => __pbn__division.GetValueOrDefault();
@@ -5013,9 +5490,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializedivision() => __pbn__division != null;
             public void Resetdivision() => __pbn__division = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__division;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public uint skill_level
             {
                 get => __pbn__skill_level.GetValueOrDefault();
@@ -5023,9 +5501,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeskill_level() => __pbn__skill_level != null;
             public void Resetskill_level() => __pbn__skill_level = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__skill_level;
 
-            [global::ProtoBuf.ProtoMember(3)]
+            [global::LightProto.ProtoMember(3)]
             public uint round
             {
                 get => __pbn__round.GetValueOrDefault();
@@ -5033,9 +5512,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeround() => __pbn__round != null;
             public void Resetround() => __pbn__round = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__round;
 
-            [global::ProtoBuf.ProtoMember(4)]
+            [global::LightProto.ProtoMember(4)]
             public uint tournament_id
             {
                 get => __pbn__tournament_id.GetValueOrDefault();
@@ -5043,9 +5523,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializetournament_id() => __pbn__tournament_id != null;
             public void Resettournament_id() => __pbn__tournament_id = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__tournament_id;
 
-            [global::ProtoBuf.ProtoMember(5)]
+            [global::LightProto.ProtoMember(5)]
             public uint state_seq_num
             {
                 get => __pbn__state_seq_num.GetValueOrDefault();
@@ -5053,20 +5534,23 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializestate_seq_num() => __pbn__state_seq_num != null;
             public void Resetstate_seq_num() => __pbn__state_seq_num = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__state_seq_num;
 
-            [global::ProtoBuf.ProtoMember(6)]
+            [global::LightProto.ProtoMember(6)]
             [global::System.ComponentModel.DefaultValue(EWeekendTourneyRichPresenceEvent.k_EWeekendTourneyRichPresenceEvent_None)]
-            public EWeekendTourneyRichPresenceEvent @event
-            {
+            public EWeekendTourneyRichPresenceEvent event_ {
                 get => __pbn__event ?? EWeekendTourneyRichPresenceEvent.k_EWeekendTourneyRichPresenceEvent_None;
                 set => __pbn__event = value;
             }
+        [global::LightProto.ProtoIgnore]
+        public EWeekendTourneyRichPresenceEvent @event { get => event_; set => event_ = value; }
             public bool ShouldSerializeevent() => __pbn__event != null;
             public void Resetevent() => __pbn__event = null;
+            [global::LightProto.ProtoIgnore]
             private EWeekendTourneyRichPresenceEvent? __pbn__event;
 
-            [global::ProtoBuf.ProtoMember(7)]
+            [global::LightProto.ProtoMember(7)]
             public uint event_round
             {
                 get => __pbn__event_round.GetValueOrDefault();
@@ -5074,20 +5558,22 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeevent_round() => __pbn__event_round != null;
             public void Resetevent_round() => __pbn__event_round = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__event_round;
 
         }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTALobbyRichPresence : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong lobby_id
         {
             get => __pbn__lobby_id.GetValueOrDefault();
@@ -5095,9 +5581,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializelobby_id() => __pbn__lobby_id != null;
         public void Resetlobby_id() => __pbn__lobby_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__lobby_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue(CSODOTALobby.State.UI)]
         public CSODOTALobby.State lobby_state
         {
@@ -5106,9 +5593,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializelobby_state() => __pbn__lobby_state != null;
         public void Resetlobby_state() => __pbn__lobby_state = null;
+        [global::LightProto.ProtoIgnore]
         private CSODOTALobby.State? __pbn__lobby_state;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public bool password
         {
             get => __pbn__password.GetValueOrDefault();
@@ -5116,9 +5604,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializepassword() => __pbn__password != null;
         public void Resetpassword() => __pbn__password = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__password;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         [global::System.ComponentModel.DefaultValue(DOTA_GameMode.DOTA_GAMEMODE_NONE)]
         public DOTA_GameMode game_mode
         {
@@ -5127,9 +5616,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializegame_mode() => __pbn__game_mode != null;
         public void Resetgame_mode() => __pbn__game_mode = null;
+        [global::LightProto.ProtoIgnore]
         private DOTA_GameMode? __pbn__game_mode;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public uint member_count
         {
             get => __pbn__member_count.GetValueOrDefault();
@@ -5137,9 +5627,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializemember_count() => __pbn__member_count != null;
         public void Resetmember_count() => __pbn__member_count = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__member_count;
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         public uint max_member_count
         {
             get => __pbn__max_member_count.GetValueOrDefault();
@@ -5147,9 +5638,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializemax_member_count() => __pbn__max_member_count != null;
         public void Resetmax_member_count() => __pbn__max_member_count = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__max_member_count;
 
-        [global::ProtoBuf.ProtoMember(7, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(7, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong custom_game_id
         {
             get => __pbn__custom_game_id.GetValueOrDefault();
@@ -5157,9 +5649,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializecustom_game_id() => __pbn__custom_game_id != null;
         public void Resetcustom_game_id() => __pbn__custom_game_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__custom_game_id;
 
-        [global::ProtoBuf.ProtoMember(8)]
+        [global::LightProto.ProtoMember(8)]
         [global::System.ComponentModel.DefaultValue("")]
         public string name
         {
@@ -5168,9 +5661,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializename() => __pbn__name != null;
         public void Resetname() => __pbn__name = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__name;
 
-        [global::ProtoBuf.ProtoMember(9)]
+        [global::LightProto.ProtoMember(9)]
         public uint lobby_type
         {
             get => __pbn__lobby_type.GetValueOrDefault();
@@ -5178,18 +5672,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializelobby_type() => __pbn__lobby_type != null;
         public void Resetlobby_type() => __pbn__lobby_type = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__lobby_type;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTACustomGameListenServerStartedLoading : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong lobby_id
         {
             get => __pbn__lobby_id.GetValueOrDefault();
@@ -5197,9 +5693,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializelobby_id() => __pbn__lobby_id != null;
         public void Resetlobby_id() => __pbn__lobby_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__lobby_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public ulong custom_game_id
         {
             get => __pbn__custom_game_id.GetValueOrDefault();
@@ -5207,12 +5704,13 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializecustom_game_id() => __pbn__custom_game_id != null;
         public void Resetcustom_game_id() => __pbn__custom_game_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__custom_game_id;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public global::System.Collections.Generic.List<uint> lobby_members { get; } = new global::System.Collections.Generic.List<uint>();
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public uint start_time
         {
             get => __pbn__start_time.GetValueOrDefault();
@@ -5220,18 +5718,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializestart_time() => __pbn__start_time != null;
         public void Resetstart_time() => __pbn__start_time = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__start_time;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTACustomGameClientFinishedLoading : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong lobby_id
         {
             get => __pbn__lobby_id.GetValueOrDefault();
@@ -5239,9 +5739,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializelobby_id() => __pbn__lobby_id != null;
         public void Resetlobby_id() => __pbn__lobby_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__lobby_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint loading_duration
         {
             get => __pbn__loading_duration.GetValueOrDefault();
@@ -5249,9 +5750,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeloading_duration() => __pbn__loading_duration != null;
         public void Resetloading_duration() => __pbn__loading_duration = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__loading_duration;
 
-        [global::ProtoBuf.ProtoMember(3, DataFormat = global::ProtoBuf.DataFormat.ZigZag)]
+        [global::LightProto.ProtoMember(3, DataFormat = global::LightProto.DataFormat.ZigZag)]
         public int result_code
         {
             get => __pbn__result_code.GetValueOrDefault();
@@ -5259,9 +5761,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult_code() => __pbn__result_code != null;
         public void Resetresult_code() => __pbn__result_code = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__result_code;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         [global::System.ComponentModel.DefaultValue("")]
         public string result_string
         {
@@ -5270,9 +5773,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult_string() => __pbn__result_string != null;
         public void Resetresult_string() => __pbn__result_string = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__result_string;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public uint signon_states
         {
             get => __pbn__signon_states.GetValueOrDefault();
@@ -5280,9 +5784,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializesignon_states() => __pbn__signon_states != null;
         public void Resetsignon_states() => __pbn__signon_states = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__signon_states;
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         [global::System.ComponentModel.DefaultValue("")]
         public string comment
         {
@@ -5291,18 +5796,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializecomment() => __pbn__comment != null;
         public void Resetcomment() => __pbn__comment = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__comment;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCApplyGemCombiner : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public ulong item_id_1
         {
             get => __pbn__item_id_1.GetValueOrDefault();
@@ -5310,9 +5817,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeitem_id_1() => __pbn__item_id_1 != null;
         public void Resetitem_id_1() => __pbn__item_id_1 = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__item_id_1;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public ulong item_id_2
         {
             get => __pbn__item_id_2.GetValueOrDefault();
@@ -5320,39 +5828,43 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeitem_id_2() => __pbn__item_id_2 != null;
         public void Resetitem_id_2() => __pbn__item_id_2 = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__item_id_2;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCH264Unsupported : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCGetQuestProgress : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<uint> quest_ids { get; } = new global::System.Collections.Generic.List<uint>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCGetQuestProgressResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public bool success
         {
             get => __pbn__success.GetValueOrDefault();
@@ -5360,19 +5872,21 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializesuccess() => __pbn__success != null;
         public void Resetsuccess() => __pbn__success = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__success;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public global::System.Collections.Generic.List<Quest> quests { get; } = new global::System.Collections.Generic.List<Quest>();
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class Challenge : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public uint challenge_id
             {
                 get => __pbn__challenge_id.GetValueOrDefault();
@@ -5380,9 +5894,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializechallenge_id() => __pbn__challenge_id != null;
             public void Resetchallenge_id() => __pbn__challenge_id = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__challenge_id;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public uint time_completed
             {
                 get => __pbn__time_completed.GetValueOrDefault();
@@ -5390,9 +5905,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializetime_completed() => __pbn__time_completed != null;
             public void Resettime_completed() => __pbn__time_completed = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__time_completed;
 
-            [global::ProtoBuf.ProtoMember(3)]
+            [global::LightProto.ProtoMember(3)]
             public uint attempts
             {
                 get => __pbn__attempts.GetValueOrDefault();
@@ -5400,9 +5916,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeattempts() => __pbn__attempts != null;
             public void Resetattempts() => __pbn__attempts = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__attempts;
 
-            [global::ProtoBuf.ProtoMember(4)]
+            [global::LightProto.ProtoMember(4)]
             public int hero_id
             {
                 get => __pbn__hero_id.GetValueOrDefault();
@@ -5410,9 +5927,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializehero_id() => __pbn__hero_id != null;
             public void Resethero_id() => __pbn__hero_id = null;
+            [global::LightProto.ProtoIgnore]
             private int? __pbn__hero_id;
 
-            [global::ProtoBuf.ProtoMember(5)]
+            [global::LightProto.ProtoMember(5)]
             public uint template_id
             {
                 get => __pbn__template_id.GetValueOrDefault();
@@ -5420,9 +5938,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializetemplate_id() => __pbn__template_id != null;
             public void Resettemplate_id() => __pbn__template_id = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__template_id;
 
-            [global::ProtoBuf.ProtoMember(6)]
+            [global::LightProto.ProtoMember(6)]
             public uint quest_rank
             {
                 get => __pbn__quest_rank.GetValueOrDefault();
@@ -5430,18 +5949,20 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializequest_rank() => __pbn__quest_rank != null;
             public void Resetquest_rank() => __pbn__quest_rank = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__quest_rank;
 
         }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class Quest : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public uint quest_id
             {
                 get => __pbn__quest_id.GetValueOrDefault();
@@ -5449,23 +5970,25 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializequest_id() => __pbn__quest_id != null;
             public void Resetquest_id() => __pbn__quest_id = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__quest_id;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public global::System.Collections.Generic.List<CMsgClientToGCGetQuestProgressResponse.Challenge> completed_challenges { get; } = new global::System.Collections.Generic.List<CMsgClientToGCGetQuestProgressResponse.Challenge>();
 
         }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCToClientMatchSignedOut : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public ulong match_id
         {
             get => __pbn__match_id.GetValueOrDefault();
@@ -5473,18 +5996,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializematch_id() => __pbn__match_id != null;
         public void Resetmatch_id() => __pbn__match_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__match_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCGetHeroStatsHistory : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public int hero_id
         {
             get => __pbn__hero_id.GetValueOrDefault();
@@ -5492,18 +6017,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializehero_id() => __pbn__hero_id != null;
         public void Resethero_id() => __pbn__hero_id = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__hero_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCGetHeroStatsHistoryResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public int hero_id
         {
             get => __pbn__hero_id.GetValueOrDefault();
@@ -5511,12 +6038,13 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializehero_id() => __pbn__hero_id != null;
         public void Resethero_id() => __pbn__hero_id = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__hero_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public global::System.Collections.Generic.List<CMsgDOTASDOHeroStatsHistory> records { get; } = new global::System.Collections.Generic.List<CMsgDOTASDOHeroStatsHistory>();
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         [global::System.ComponentModel.DefaultValue(EResponse.k_eInternalError)]
         public EResponse result
         {
@@ -5525,9 +6053,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private EResponse? __pbn__result;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum EResponse
         {
             k_eInternalError = 0,
@@ -5538,23 +6067,25 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgPlayerConductScorecardRequest : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgPlayerConductScorecard : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint account_id
         {
             get => __pbn__account_id.GetValueOrDefault();
@@ -5562,9 +6093,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeaccount_id() => __pbn__account_id != null;
         public void Resetaccount_id() => __pbn__account_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__account_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public ulong match_id
         {
             get => __pbn__match_id.GetValueOrDefault();
@@ -5572,9 +6104,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializematch_id() => __pbn__match_id != null;
         public void Resetmatch_id() => __pbn__match_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__match_id;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public uint seq_num
         {
             get => __pbn__seq_num.GetValueOrDefault();
@@ -5582,9 +6115,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeseq_num() => __pbn__seq_num != null;
         public void Resetseq_num() => __pbn__seq_num = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__seq_num;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public uint reasons
         {
             get => __pbn__reasons.GetValueOrDefault();
@@ -5592,9 +6126,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializereasons() => __pbn__reasons != null;
         public void Resetreasons() => __pbn__reasons = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__reasons;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public uint matches_in_report
         {
             get => __pbn__matches_in_report.GetValueOrDefault();
@@ -5602,9 +6137,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializematches_in_report() => __pbn__matches_in_report != null;
         public void Resetmatches_in_report() => __pbn__matches_in_report = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__matches_in_report;
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         public uint matches_clean
         {
             get => __pbn__matches_clean.GetValueOrDefault();
@@ -5612,9 +6148,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializematches_clean() => __pbn__matches_clean != null;
         public void Resetmatches_clean() => __pbn__matches_clean = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__matches_clean;
 
-        [global::ProtoBuf.ProtoMember(7)]
+        [global::LightProto.ProtoMember(7)]
         public uint matches_reported
         {
             get => __pbn__matches_reported.GetValueOrDefault();
@@ -5622,9 +6159,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializematches_reported() => __pbn__matches_reported != null;
         public void Resetmatches_reported() => __pbn__matches_reported = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__matches_reported;
 
-        [global::ProtoBuf.ProtoMember(8)]
+        [global::LightProto.ProtoMember(8)]
         public uint matches_abandoned
         {
             get => __pbn__matches_abandoned.GetValueOrDefault();
@@ -5632,9 +6170,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializematches_abandoned() => __pbn__matches_abandoned != null;
         public void Resetmatches_abandoned() => __pbn__matches_abandoned = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__matches_abandoned;
 
-        [global::ProtoBuf.ProtoMember(9)]
+        [global::LightProto.ProtoMember(9)]
         public uint reports_count
         {
             get => __pbn__reports_count.GetValueOrDefault();
@@ -5642,9 +6181,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializereports_count() => __pbn__reports_count != null;
         public void Resetreports_count() => __pbn__reports_count = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__reports_count;
 
-        [global::ProtoBuf.ProtoMember(10)]
+        [global::LightProto.ProtoMember(10)]
         public uint reports_parties
         {
             get => __pbn__reports_parties.GetValueOrDefault();
@@ -5652,9 +6192,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializereports_parties() => __pbn__reports_parties != null;
         public void Resetreports_parties() => __pbn__reports_parties = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__reports_parties;
 
-        [global::ProtoBuf.ProtoMember(11)]
+        [global::LightProto.ProtoMember(11)]
         public uint commend_count
         {
             get => __pbn__commend_count.GetValueOrDefault();
@@ -5662,9 +6203,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializecommend_count() => __pbn__commend_count != null;
         public void Resetcommend_count() => __pbn__commend_count = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__commend_count;
 
-        [global::ProtoBuf.ProtoMember(14)]
+        [global::LightProto.ProtoMember(14)]
         public uint date
         {
             get => __pbn__date.GetValueOrDefault();
@@ -5672,9 +6214,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializedate() => __pbn__date != null;
         public void Resetdate() => __pbn__date = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__date;
 
-        [global::ProtoBuf.ProtoMember(17)]
+        [global::LightProto.ProtoMember(17)]
         public uint raw_behavior_score
         {
             get => __pbn__raw_behavior_score.GetValueOrDefault();
@@ -5682,9 +6225,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeraw_behavior_score() => __pbn__raw_behavior_score != null;
         public void Resetraw_behavior_score() => __pbn__raw_behavior_score = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__raw_behavior_score;
 
-        [global::ProtoBuf.ProtoMember(18)]
+        [global::LightProto.ProtoMember(18)]
         public uint old_raw_behavior_score
         {
             get => __pbn__old_raw_behavior_score.GetValueOrDefault();
@@ -5692,9 +6236,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeold_raw_behavior_score() => __pbn__old_raw_behavior_score != null;
         public void Resetold_raw_behavior_score() => __pbn__old_raw_behavior_score = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__old_raw_behavior_score;
 
-        [global::ProtoBuf.ProtoMember(19)]
+        [global::LightProto.ProtoMember(19)]
         public uint comms_reports
         {
             get => __pbn__comms_reports.GetValueOrDefault();
@@ -5702,9 +6247,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializecomms_reports() => __pbn__comms_reports != null;
         public void Resetcomms_reports() => __pbn__comms_reports = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__comms_reports;
 
-        [global::ProtoBuf.ProtoMember(20)]
+        [global::LightProto.ProtoMember(20)]
         public uint comms_parties
         {
             get => __pbn__comms_parties.GetValueOrDefault();
@@ -5712,9 +6258,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializecomms_parties() => __pbn__comms_parties != null;
         public void Resetcomms_parties() => __pbn__comms_parties = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__comms_parties;
 
-        [global::ProtoBuf.ProtoMember(21)]
+        [global::LightProto.ProtoMember(21)]
         [global::System.ComponentModel.DefaultValue(EBehaviorRating.k_eBehaviorGood)]
         public EBehaviorRating behavior_rating
         {
@@ -5723,9 +6270,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializebehavior_rating() => __pbn__behavior_rating != null;
         public void Resetbehavior_rating() => __pbn__behavior_rating = null;
+        [global::LightProto.ProtoIgnore]
         private EBehaviorRating? __pbn__behavior_rating;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum EBehaviorRating
         {
             k_eBehaviorGood = 0,
@@ -5735,14 +6283,15 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCWageringRequest : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint event_id
         {
             get => __pbn__event_id.GetValueOrDefault();
@@ -5750,18 +6299,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeevent_id() => __pbn__event_id != null;
         public void Resetevent_id() => __pbn__event_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__event_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCToClientWageringResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint coins_remaining
         {
             get => __pbn__coins_remaining.GetValueOrDefault();
@@ -5769,9 +6320,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializecoins_remaining() => __pbn__coins_remaining != null;
         public void Resetcoins_remaining() => __pbn__coins_remaining = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__coins_remaining;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint total_points_won
         {
             get => __pbn__total_points_won.GetValueOrDefault();
@@ -5779,9 +6331,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializetotal_points_won() => __pbn__total_points_won != null;
         public void Resettotal_points_won() => __pbn__total_points_won = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__total_points_won;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public uint total_points_wagered
         {
             get => __pbn__total_points_wagered.GetValueOrDefault();
@@ -5789,9 +6342,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializetotal_points_wagered() => __pbn__total_points_wagered != null;
         public void Resettotal_points_wagered() => __pbn__total_points_wagered = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__total_points_wagered;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public uint total_points_tipped
         {
             get => __pbn__total_points_tipped.GetValueOrDefault();
@@ -5799,9 +6353,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializetotal_points_tipped() => __pbn__total_points_tipped != null;
         public void Resettotal_points_tipped() => __pbn__total_points_tipped = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__total_points_tipped;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public uint success_rate
         {
             get => __pbn__success_rate.GetValueOrDefault();
@@ -5809,9 +6364,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializesuccess_rate() => __pbn__success_rate != null;
         public void Resetsuccess_rate() => __pbn__success_rate = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__success_rate;
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         public uint total_games_wagered
         {
             get => __pbn__total_games_wagered.GetValueOrDefault();
@@ -5819,9 +6375,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializetotal_games_wagered() => __pbn__total_games_wagered != null;
         public void Resettotal_games_wagered() => __pbn__total_games_wagered = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__total_games_wagered;
 
-        [global::ProtoBuf.ProtoMember(7)]
+        [global::LightProto.ProtoMember(7)]
         public uint coins_max
         {
             get => __pbn__coins_max.GetValueOrDefault();
@@ -5829,9 +6386,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializecoins_max() => __pbn__coins_max != null;
         public void Resetcoins_max() => __pbn__coins_max = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__coins_max;
 
-        [global::ProtoBuf.ProtoMember(8)]
+        [global::LightProto.ProtoMember(8)]
         public uint rank_wagers_remaining
         {
             get => __pbn__rank_wagers_remaining.GetValueOrDefault();
@@ -5839,9 +6397,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializerank_wagers_remaining() => __pbn__rank_wagers_remaining != null;
         public void Resetrank_wagers_remaining() => __pbn__rank_wagers_remaining = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__rank_wagers_remaining;
 
-        [global::ProtoBuf.ProtoMember(9)]
+        [global::LightProto.ProtoMember(9)]
         public uint rank_wagers_max
         {
             get => __pbn__rank_wagers_max.GetValueOrDefault();
@@ -5849,9 +6408,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializerank_wagers_max() => __pbn__rank_wagers_max != null;
         public void Resetrank_wagers_max() => __pbn__rank_wagers_max = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__rank_wagers_max;
 
-        [global::ProtoBuf.ProtoMember(10)]
+        [global::LightProto.ProtoMember(10)]
         public uint prediction_tokens_remaining
         {
             get => __pbn__prediction_tokens_remaining.GetValueOrDefault();
@@ -5859,9 +6419,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeprediction_tokens_remaining() => __pbn__prediction_tokens_remaining != null;
         public void Resetprediction_tokens_remaining() => __pbn__prediction_tokens_remaining = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__prediction_tokens_remaining;
 
-        [global::ProtoBuf.ProtoMember(11)]
+        [global::LightProto.ProtoMember(11)]
         public uint prediction_tokens_max
         {
             get => __pbn__prediction_tokens_max.GetValueOrDefault();
@@ -5869,9 +6430,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeprediction_tokens_max() => __pbn__prediction_tokens_max != null;
         public void Resetprediction_tokens_max() => __pbn__prediction_tokens_max = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__prediction_tokens_max;
 
-        [global::ProtoBuf.ProtoMember(12)]
+        [global::LightProto.ProtoMember(12)]
         public uint bounties_remaining
         {
             get => __pbn__bounties_remaining.GetValueOrDefault();
@@ -5879,9 +6441,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializebounties_remaining() => __pbn__bounties_remaining != null;
         public void Resetbounties_remaining() => __pbn__bounties_remaining = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__bounties_remaining;
 
-        [global::ProtoBuf.ProtoMember(13)]
+        [global::LightProto.ProtoMember(13)]
         public uint bounties_max
         {
             get => __pbn__bounties_max.GetValueOrDefault();
@@ -5889,18 +6452,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializebounties_max() => __pbn__bounties_max != null;
         public void Resetbounties_max() => __pbn__bounties_max = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__bounties_max;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCToClientWageringUpdate : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint event_id
         {
             get => __pbn__event_id.GetValueOrDefault();
@@ -5908,21 +6473,23 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeevent_id() => __pbn__event_id != null;
         public void Resetevent_id() => __pbn__event_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__event_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public CMsgGCToClientWageringResponse wagering_info { get; set; }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCToClientArcanaVotesUpdate : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint event_id
         {
             get => __pbn__event_id.GetValueOrDefault();
@@ -5930,43 +6497,47 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeevent_id() => __pbn__event_id != null;
         public void Resetevent_id() => __pbn__event_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__event_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public CMsgClientToGCRequestArcanaVotesRemainingResponse arcana_votes { get; set; }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCGetEventGoals : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<EEvent> event_ids { get; } = new global::System.Collections.Generic.List<EEvent>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgEventGoals : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<EventGoal> event_goals { get; } = new global::System.Collections.Generic.List<EventGoal>();
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class EventGoal : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             [global::System.ComponentModel.DefaultValue(EEvent.EVENT_ID_NONE)]
             public EEvent event_id
             {
@@ -5975,9 +6546,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeevent_id() => __pbn__event_id != null;
             public void Resetevent_id() => __pbn__event_id = null;
+            [global::LightProto.ProtoIgnore]
             private EEvent? __pbn__event_id;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public uint goal_id
             {
                 get => __pbn__goal_id.GetValueOrDefault();
@@ -5985,9 +6557,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializegoal_id() => __pbn__goal_id != null;
             public void Resetgoal_id() => __pbn__goal_id = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__goal_id;
 
-            [global::ProtoBuf.ProtoMember(3)]
+            [global::LightProto.ProtoMember(3)]
             public ulong value
             {
                 get => __pbn__value.GetValueOrDefault();
@@ -5995,20 +6568,22 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializevalue() => __pbn__value != null;
             public void Resetvalue() => __pbn__value = null;
+            [global::LightProto.ProtoIgnore]
             private ulong? __pbn__value;
 
         }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCToGCLeaguePredictions : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint league_id
         {
             get => __pbn__league_id.GetValueOrDefault();
@@ -6016,28 +6591,31 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeleague_id() => __pbn__league_id != null;
         public void Resetleague_id() => __pbn__league_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__league_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgPredictionRankings : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<Prediction> predictions { get; } = new global::System.Collections.Generic.List<Prediction>();
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class PredictionLine : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public uint answer_id
             {
                 get => __pbn__answer_id.GetValueOrDefault();
@@ -6045,9 +6623,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeanswer_id() => __pbn__answer_id != null;
             public void Resetanswer_id() => __pbn__answer_id = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__answer_id;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             [global::System.ComponentModel.DefaultValue("")]
             public string answer_name
             {
@@ -6056,9 +6635,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeanswer_name() => __pbn__answer_name != null;
             public void Resetanswer_name() => __pbn__answer_name = null;
+            [global::LightProto.ProtoIgnore]
             private string __pbn__answer_name;
 
-            [global::ProtoBuf.ProtoMember(3)]
+            [global::LightProto.ProtoMember(3)]
             public ulong answer_logo
             {
                 get => __pbn__answer_logo.GetValueOrDefault();
@@ -6066,9 +6646,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeanswer_logo() => __pbn__answer_logo != null;
             public void Resetanswer_logo() => __pbn__answer_logo = null;
+            [global::LightProto.ProtoIgnore]
             private ulong? __pbn__answer_logo;
 
-            [global::ProtoBuf.ProtoMember(4)]
+            [global::LightProto.ProtoMember(4)]
             public float answer_value
             {
                 get => __pbn__answer_value.GetValueOrDefault();
@@ -6076,18 +6657,20 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeanswer_value() => __pbn__answer_value != null;
             public void Resetanswer_value() => __pbn__answer_value = null;
+            [global::LightProto.ProtoIgnore]
             private float? __pbn__answer_value;
 
         }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class Prediction : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public uint selection_id
             {
                 get => __pbn__selection_id.GetValueOrDefault();
@@ -6095,33 +6678,36 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeselection_id() => __pbn__selection_id != null;
             public void Resetselection_id() => __pbn__selection_id = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__selection_id;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public global::System.Collections.Generic.List<CMsgPredictionRankings.PredictionLine> prediction_lines { get; } = new global::System.Collections.Generic.List<CMsgPredictionRankings.PredictionLine>();
 
         }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgPredictionResults : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<Result> results { get; } = new global::System.Collections.Generic.List<Result>();
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class ResultBreakdown : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public uint answer_selection
             {
                 get => __pbn__answer_selection.GetValueOrDefault();
@@ -6129,9 +6715,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeanswer_selection() => __pbn__answer_selection != null;
             public void Resetanswer_selection() => __pbn__answer_selection = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__answer_selection;
 
-            [global::ProtoBuf.ProtoMember(3)]
+            [global::LightProto.ProtoMember(3)]
             public float answer_value
             {
                 get => __pbn__answer_value.GetValueOrDefault();
@@ -6139,18 +6726,20 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeanswer_value() => __pbn__answer_value != null;
             public void Resetanswer_value() => __pbn__answer_value = null;
+            [global::LightProto.ProtoIgnore]
             private float? __pbn__answer_value;
 
         }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class Result : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public uint selection_id
             {
                 get => __pbn__selection_id.GetValueOrDefault();
@@ -6158,23 +6747,25 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeselection_id() => __pbn__selection_id != null;
             public void Resetselection_id() => __pbn__selection_id = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__selection_id;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public global::System.Collections.Generic.List<CMsgPredictionResults.ResultBreakdown> result_breakdown { get; } = new global::System.Collections.Generic.List<CMsgPredictionResults.ResultBreakdown>();
 
         }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCHasPlayerVotedForMVP : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public ulong match_id
         {
             get => __pbn__match_id.GetValueOrDefault();
@@ -6182,18 +6773,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializematch_id() => __pbn__match_id != null;
         public void Resetmatch_id() => __pbn__match_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__match_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCHasPlayerVotedForMVPResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public bool result
         {
             get => __pbn__result.GetValueOrDefault();
@@ -6201,18 +6794,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__result;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCVoteForMVP : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public ulong match_id
         {
             get => __pbn__match_id.GetValueOrDefault();
@@ -6220,9 +6815,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializematch_id() => __pbn__match_id != null;
         public void Resetmatch_id() => __pbn__match_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__match_id;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public uint account_id
         {
             get => __pbn__account_id.GetValueOrDefault();
@@ -6230,18 +6826,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeaccount_id() => __pbn__account_id != null;
         public void Resetaccount_id() => __pbn__account_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__account_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCVoteForMVPResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public bool result
         {
             get => __pbn__result.GetValueOrDefault();
@@ -6249,18 +6847,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__result;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCMVPVoteTimeout : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public ulong match_id
         {
             get => __pbn__match_id.GetValueOrDefault();
@@ -6268,18 +6868,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializematch_id() => __pbn__match_id != null;
         public void Resetmatch_id() => __pbn__match_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__match_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCMVPVoteTimeoutResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public bool result
         {
             get => __pbn__result.GetValueOrDefault();
@@ -6287,27 +6889,30 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__result;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCTeammateStatsRequest : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCTeammateStatsResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public bool success
         {
             get => __pbn__success.GetValueOrDefault();
@@ -6315,19 +6920,21 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializesuccess() => __pbn__success != null;
         public void Resetsuccess() => __pbn__success = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__success;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public global::System.Collections.Generic.List<TeammateStat> teammate_stats { get; } = new global::System.Collections.Generic.List<TeammateStat>();
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class TeammateStat : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public uint account_id
             {
                 get => __pbn__account_id.GetValueOrDefault();
@@ -6335,9 +6942,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeaccount_id() => __pbn__account_id != null;
             public void Resetaccount_id() => __pbn__account_id = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__account_id;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public uint games
             {
                 get => __pbn__games.GetValueOrDefault();
@@ -6345,9 +6953,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializegames() => __pbn__games != null;
             public void Resetgames() => __pbn__games = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__games;
 
-            [global::ProtoBuf.ProtoMember(3)]
+            [global::LightProto.ProtoMember(3)]
             public uint wins
             {
                 get => __pbn__wins.GetValueOrDefault();
@@ -6355,9 +6964,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializewins() => __pbn__wins != null;
             public void Resetwins() => __pbn__wins = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__wins;
 
-            [global::ProtoBuf.ProtoMember(4)]
+            [global::LightProto.ProtoMember(4)]
             public uint most_recent_game_timestamp
             {
                 get => __pbn__most_recent_game_timestamp.GetValueOrDefault();
@@ -6365,9 +6975,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializemost_recent_game_timestamp() => __pbn__most_recent_game_timestamp != null;
             public void Resetmost_recent_game_timestamp() => __pbn__most_recent_game_timestamp = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__most_recent_game_timestamp;
 
-            [global::ProtoBuf.ProtoMember(5)]
+            [global::LightProto.ProtoMember(5)]
             public ulong most_recent_game_match_id
             {
                 get => __pbn__most_recent_game_match_id.GetValueOrDefault();
@@ -6375,9 +6986,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializemost_recent_game_match_id() => __pbn__most_recent_game_match_id != null;
             public void Resetmost_recent_game_match_id() => __pbn__most_recent_game_match_id = null;
+            [global::LightProto.ProtoIgnore]
             private ulong? __pbn__most_recent_game_match_id;
 
-            [global::ProtoBuf.ProtoMember(100)]
+            [global::LightProto.ProtoMember(100)]
             public float performance
             {
                 get => __pbn__performance.GetValueOrDefault();
@@ -6385,32 +6997,35 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeperformance() => __pbn__performance != null;
             public void Resetperformance() => __pbn__performance = null;
+            [global::LightProto.ProtoIgnore]
             private float? __pbn__performance;
 
         }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCVoteForArcana : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<CMsgArcanaVoteMatchVotes> matches { get; } = new global::System.Collections.Generic.List<CMsgArcanaVoteMatchVotes>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCVoteForArcanaResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(Result.SUCCEEDED)]
         public Result result
         {
@@ -6419,9 +7034,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private Result? __pbn__result;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum Result
         {
             SUCCEEDED = 0,
@@ -6431,23 +7047,25 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCRequestArcanaVotesRemaining : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCRequestArcanaVotesRemainingResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public bool result
         {
             get => __pbn__result.GetValueOrDefault();
@@ -6455,9 +7073,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__result;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint votes_remaining
         {
             get => __pbn__votes_remaining.GetValueOrDefault();
@@ -6465,9 +7084,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializevotes_remaining() => __pbn__votes_remaining != null;
         public void Resetvotes_remaining() => __pbn__votes_remaining = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__votes_remaining;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public uint votes_total
         {
             get => __pbn__votes_total.GetValueOrDefault();
@@ -6475,21 +7095,23 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializevotes_total() => __pbn__votes_total != null;
         public void Resetvotes_total() => __pbn__votes_total = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__votes_total;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public global::System.Collections.Generic.List<CMsgArcanaVoteMatchVotes> matches_previously_voted_for { get; } = new global::System.Collections.Generic.List<CMsgArcanaVoteMatchVotes>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCRequestEventPointLogV2 : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint event_id
         {
             get => __pbn__event_id.GetValueOrDefault();
@@ -6497,18 +7119,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeevent_id() => __pbn__event_id != null;
         public void Resetevent_id() => __pbn__event_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__event_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCRequestEventPointLogResponseV2 : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public bool result
         {
             get => __pbn__result.GetValueOrDefault();
@@ -6516,9 +7140,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__result;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue(EEvent.EVENT_ID_NONE)]
         public EEvent event_id
         {
@@ -6527,19 +7152,21 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeevent_id() => __pbn__event_id != null;
         public void Resetevent_id() => __pbn__event_id = null;
+        [global::LightProto.ProtoIgnore]
         private EEvent? __pbn__event_id;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public global::System.Collections.Generic.List<LogEntry> log_entries { get; } = new global::System.Collections.Generic.List<LogEntry>();
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class LogEntry : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public uint timestamp
             {
                 get => __pbn__timestamp.GetValueOrDefault();
@@ -6547,9 +7174,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializetimestamp() => __pbn__timestamp != null;
             public void Resettimestamp() => __pbn__timestamp = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__timestamp;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public uint audit_action
             {
                 get => __pbn__audit_action.GetValueOrDefault();
@@ -6557,9 +7185,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeaudit_action() => __pbn__audit_action != null;
             public void Resetaudit_action() => __pbn__audit_action = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__audit_action;
 
-            [global::ProtoBuf.ProtoMember(3)]
+            [global::LightProto.ProtoMember(3)]
             public int event_points
             {
                 get => __pbn__event_points.GetValueOrDefault();
@@ -6567,9 +7196,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeevent_points() => __pbn__event_points != null;
             public void Resetevent_points() => __pbn__event_points = null;
+            [global::LightProto.ProtoIgnore]
             private int? __pbn__event_points;
 
-            [global::ProtoBuf.ProtoMember(4)]
+            [global::LightProto.ProtoMember(4)]
             public ulong audit_data
             {
                 get => __pbn__audit_data.GetValueOrDefault();
@@ -6577,20 +7207,22 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeaudit_data() => __pbn__audit_data != null;
             public void Resetaudit_data() => __pbn__audit_data = null;
+            [global::LightProto.ProtoIgnore]
             private ulong? __pbn__audit_data;
 
         }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCPublishUserStat : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint user_stats_event
         {
             get => __pbn__user_stats_event.GetValueOrDefault();
@@ -6598,9 +7230,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeuser_stats_event() => __pbn__user_stats_event != null;
         public void Resetuser_stats_event() => __pbn__user_stats_event = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__user_stats_event;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public ulong reference_data
         {
             get => __pbn__reference_data.GetValueOrDefault();
@@ -6608,18 +7241,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializereference_data() => __pbn__reference_data != null;
         public void Resetreference_data() => __pbn__reference_data = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__reference_data;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCRequestSlarkGameResult : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EEvent.EVENT_ID_NONE)]
         public EEvent event_id
         {
@@ -6628,9 +7263,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeevent_id() => __pbn__event_id != null;
         public void Resetevent_id() => __pbn__event_id = null;
+        [global::LightProto.ProtoIgnore]
         private EEvent? __pbn__event_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint slot_chosen
         {
             get => __pbn__slot_chosen.GetValueOrDefault();
@@ -6638,9 +7274,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeslot_chosen() => __pbn__slot_chosen != null;
         public void Resetslot_chosen() => __pbn__slot_chosen = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__slot_chosen;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public uint week
         {
             get => __pbn__week.GetValueOrDefault();
@@ -6648,18 +7285,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeweek() => __pbn__week != null;
         public void Resetweek() => __pbn__week = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__week;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCRequestSlarkGameResultResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint points_won
         {
             get => __pbn__points_won.GetValueOrDefault();
@@ -6667,9 +7306,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializepoints_won() => __pbn__points_won != null;
         public void Resetpoints_won() => __pbn__points_won = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__points_won;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public bool aura_won
         {
             get => __pbn__aura_won.GetValueOrDefault();
@@ -6677,18 +7317,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeaura_won() => __pbn__aura_won != null;
         public void Resetaura_won() => __pbn__aura_won = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__aura_won;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCToClientQuestProgressUpdated : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint quest_id
         {
             get => __pbn__quest_id.GetValueOrDefault();
@@ -6696,19 +7338,21 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializequest_id() => __pbn__quest_id != null;
         public void Resetquest_id() => __pbn__quest_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__quest_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public global::System.Collections.Generic.List<Challenge> completed_challenges { get; } = new global::System.Collections.Generic.List<Challenge>();
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class Challenge : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public uint challenge_id
             {
                 get => __pbn__challenge_id.GetValueOrDefault();
@@ -6716,9 +7360,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializechallenge_id() => __pbn__challenge_id != null;
             public void Resetchallenge_id() => __pbn__challenge_id = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__challenge_id;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public uint time_completed
             {
                 get => __pbn__time_completed.GetValueOrDefault();
@@ -6726,9 +7371,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializetime_completed() => __pbn__time_completed != null;
             public void Resettime_completed() => __pbn__time_completed = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__time_completed;
 
-            [global::ProtoBuf.ProtoMember(3)]
+            [global::LightProto.ProtoMember(3)]
             public uint attempts
             {
                 get => __pbn__attempts.GetValueOrDefault();
@@ -6736,9 +7382,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeattempts() => __pbn__attempts != null;
             public void Resetattempts() => __pbn__attempts = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__attempts;
 
-            [global::ProtoBuf.ProtoMember(4)]
+            [global::LightProto.ProtoMember(4)]
             public int hero_id
             {
                 get => __pbn__hero_id.GetValueOrDefault();
@@ -6746,9 +7393,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializehero_id() => __pbn__hero_id != null;
             public void Resethero_id() => __pbn__hero_id = null;
+            [global::LightProto.ProtoIgnore]
             private int? __pbn__hero_id;
 
-            [global::ProtoBuf.ProtoMember(5)]
+            [global::LightProto.ProtoMember(5)]
             public uint template_id
             {
                 get => __pbn__template_id.GetValueOrDefault();
@@ -6756,9 +7404,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializetemplate_id() => __pbn__template_id != null;
             public void Resettemplate_id() => __pbn__template_id = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__template_id;
 
-            [global::ProtoBuf.ProtoMember(6)]
+            [global::LightProto.ProtoMember(6)]
             public uint quest_rank
             {
                 get => __pbn__quest_rank.GetValueOrDefault();
@@ -6766,9 +7415,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializequest_rank() => __pbn__quest_rank != null;
             public void Resetquest_rank() => __pbn__quest_rank = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__quest_rank;
 
-            [global::ProtoBuf.ProtoMember(7)]
+            [global::LightProto.ProtoMember(7)]
             public uint max_quest_rank
             {
                 get => __pbn__max_quest_rank.GetValueOrDefault();
@@ -6776,20 +7426,22 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializemax_quest_rank() => __pbn__max_quest_rank != null;
             public void Resetmax_quest_rank() => __pbn__max_quest_rank = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__max_quest_rank;
 
         }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTARedeemItem : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public ulong currency_id
         {
             get => __pbn__currency_id.GetValueOrDefault();
@@ -6797,9 +7449,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializecurrency_id() => __pbn__currency_id != null;
         public void Resetcurrency_id() => __pbn__currency_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__currency_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint purchase_def
         {
             get => __pbn__purchase_def.GetValueOrDefault();
@@ -6807,9 +7460,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializepurchase_def() => __pbn__purchase_def != null;
         public void Resetpurchase_def() => __pbn__purchase_def = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__purchase_def;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public bool claim_as_points
         {
             get => __pbn__claim_as_points.GetValueOrDefault();
@@ -6817,18 +7471,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeclaim_as_points() => __pbn__claim_as_points != null;
         public void Resetclaim_as_points() => __pbn__claim_as_points = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__claim_as_points;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTARedeemItemResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EResultCode.k_Succeeded)]
         public EResultCode response
         {
@@ -6837,9 +7493,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresponse() => __pbn__response != null;
         public void Resetresponse() => __pbn__response = null;
+        [global::LightProto.ProtoIgnore]
         private EResultCode? __pbn__response;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum EResultCode
         {
             k_Succeeded = 0,
@@ -6848,14 +7505,15 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCSelectCompendiumInGamePrediction : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public ulong match_id
         {
             get => __pbn__match_id.GetValueOrDefault();
@@ -6863,12 +7521,13 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializematch_id() => __pbn__match_id != null;
         public void Resetmatch_id() => __pbn__match_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__match_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public global::System.Collections.Generic.List<Prediction> predictions { get; } = new global::System.Collections.Generic.List<Prediction>();
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public uint league_id
         {
             get => __pbn__league_id.GetValueOrDefault();
@@ -6876,16 +7535,18 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeleague_id() => __pbn__league_id != null;
         public void Resetleague_id() => __pbn__league_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__league_id;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class Prediction : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public uint prediction_id
             {
                 get => __pbn__prediction_id.GetValueOrDefault();
@@ -6893,9 +7554,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeprediction_id() => __pbn__prediction_id != null;
             public void Resetprediction_id() => __pbn__prediction_id = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__prediction_id;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public uint prediction_value
             {
                 get => __pbn__prediction_value.GetValueOrDefault();
@@ -6903,20 +7565,22 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeprediction_value() => __pbn__prediction_value != null;
             public void Resetprediction_value() => __pbn__prediction_value = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__prediction_value;
 
         }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCSelectCompendiumInGamePredictionResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EResult.SUCCESS)]
         public EResult result
         {
@@ -6925,9 +7589,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private EResult? __pbn__result;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum EResult
         {
             SUCCESS = 0,
@@ -6938,14 +7603,15 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCOpenPlayerCardPack : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public ulong player_card_pack_item_id
         {
             get => __pbn__player_card_pack_item_id.GetValueOrDefault();
@@ -6953,9 +7619,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeplayer_card_pack_item_id() => __pbn__player_card_pack_item_id != null;
         public void Resetplayer_card_pack_item_id() => __pbn__player_card_pack_item_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__player_card_pack_item_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint team_id
         {
             get => __pbn__team_id.GetValueOrDefault();
@@ -6963,9 +7630,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeteam_id() => __pbn__team_id != null;
         public void Resetteam_id() => __pbn__team_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__team_id;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public uint deprecated_league_id
         {
             get => __pbn__deprecated_league_id.GetValueOrDefault();
@@ -6973,9 +7641,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializedeprecated_league_id() => __pbn__deprecated_league_id != null;
         public void Resetdeprecated_league_id() => __pbn__deprecated_league_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__deprecated_league_id;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         [global::System.ComponentModel.DefaultValue(ELeagueRegion.LEAGUE_REGION_UNSET)]
         public ELeagueRegion region
         {
@@ -6984,18 +7653,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeregion() => __pbn__region != null;
         public void Resetregion() => __pbn__region = null;
+        [global::LightProto.ProtoIgnore]
         private ELeagueRegion? __pbn__region;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCOpenPlayerCardPackResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(Result.SUCCESS)]
         public Result result
         {
@@ -7004,12 +7675,13 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private Result? __pbn__result;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public global::System.Collections.Generic.List<ulong> player_card_item_ids { get; } = new global::System.Collections.Generic.List<ulong>();
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum Result
         {
             SUCCESS = 1,
@@ -7023,17 +7695,18 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCRecyclePlayerCard : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public global::System.Collections.Generic.List<ulong> player_card_item_ids { get; } = new global::System.Collections.Generic.List<ulong>();
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint event_id
         {
             get => __pbn__event_id.GetValueOrDefault();
@@ -7041,18 +7714,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeevent_id() => __pbn__event_id != null;
         public void Resetevent_id() => __pbn__event_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__event_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCRecyclePlayerCardResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(Result.SUCCESS)]
         public Result result
         {
@@ -7061,9 +7736,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private Result? __pbn__result;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint dust_amount
         {
             get => __pbn__dust_amount.GetValueOrDefault();
@@ -7071,9 +7747,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializedust_amount() => __pbn__dust_amount != null;
         public void Resetdust_amount() => __pbn__dust_amount = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__dust_amount;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum Result
         {
             SUCCESS = 1,
@@ -7087,14 +7764,15 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCCreatePlayerCardPack : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public ulong card_dust_item_id
         {
             get => __pbn__card_dust_item_id.GetValueOrDefault();
@@ -7102,9 +7780,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializecard_dust_item_id() => __pbn__card_dust_item_id != null;
         public void Resetcard_dust_item_id() => __pbn__card_dust_item_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__card_dust_item_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint event_id
         {
             get => __pbn__event_id.GetValueOrDefault();
@@ -7112,9 +7791,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeevent_id() => __pbn__event_id != null;
         public void Resetevent_id() => __pbn__event_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__event_id;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public bool premium_pack
         {
             get => __pbn__premium_pack.GetValueOrDefault();
@@ -7122,18 +7802,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializepremium_pack() => __pbn__premium_pack != null;
         public void Resetpremium_pack() => __pbn__premium_pack = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__premium_pack;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCCreatePlayerCardPackResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(Result.SUCCESS)]
         public Result result
         {
@@ -7142,9 +7824,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private Result? __pbn__result;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum Result
         {
             SUCCESS = 1,
@@ -7158,14 +7841,15 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCCreateTeamPlayerCardPack : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public ulong card_dust_item_id
         {
             get => __pbn__card_dust_item_id.GetValueOrDefault();
@@ -7173,9 +7857,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializecard_dust_item_id() => __pbn__card_dust_item_id != null;
         public void Resetcard_dust_item_id() => __pbn__card_dust_item_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__card_dust_item_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint event_id
         {
             get => __pbn__event_id.GetValueOrDefault();
@@ -7183,9 +7868,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeevent_id() => __pbn__event_id != null;
         public void Resetevent_id() => __pbn__event_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__event_id;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public bool premium_pack
         {
             get => __pbn__premium_pack.GetValueOrDefault();
@@ -7193,9 +7879,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializepremium_pack() => __pbn__premium_pack != null;
         public void Resetpremium_pack() => __pbn__premium_pack = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__premium_pack;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public uint team_id
         {
             get => __pbn__team_id.GetValueOrDefault();
@@ -7203,18 +7890,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeteam_id() => __pbn__team_id != null;
         public void Resetteam_id() => __pbn__team_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__team_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCCreateTeamPlayerCardPackResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(Result.SUCCESS)]
         public Result result
         {
@@ -7223,9 +7912,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private Result? __pbn__result;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum Result
         {
             SUCCESS = 1,
@@ -7239,14 +7929,15 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCToClientBattlePassRollup_International2016 : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint battle_pass_level
         {
             get => __pbn__battle_pass_level.GetValueOrDefault();
@@ -7254,40 +7945,42 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializebattle_pass_level() => __pbn__battle_pass_level != null;
         public void Resetbattle_pass_level() => __pbn__battle_pass_level = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__battle_pass_level;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public global::System.Collections.Generic.List<Questlines> questlines { get; } = new global::System.Collections.Generic.List<Questlines>();
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public Wagering wagering { get; set; }
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public Achievements achievements { get; set; }
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public BattleCup battle_cup { get; set; }
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         public Predictions predictions { get; set; }
 
-        [global::ProtoBuf.ProtoMember(7)]
+        [global::LightProto.ProtoMember(7)]
         public Bracket bracket { get; set; }
 
-        [global::ProtoBuf.ProtoMember(8)]
+        [global::LightProto.ProtoMember(8)]
         public global::System.Collections.Generic.List<PlayerCard> player_cards { get; } = new global::System.Collections.Generic.List<PlayerCard>();
 
-        [global::ProtoBuf.ProtoMember(9)]
+        [global::LightProto.ProtoMember(9)]
         public FantasyChallenge fantasy_challenge { get; set; }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class Questlines : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             [global::System.ComponentModel.DefaultValue("")]
             public string name
             {
@@ -7296,9 +7989,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializename() => __pbn__name != null;
             public void Resetname() => __pbn__name = null;
+            [global::LightProto.ProtoIgnore]
             private string __pbn__name;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public uint onestar
             {
                 get => __pbn__onestar.GetValueOrDefault();
@@ -7306,9 +8000,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeonestar() => __pbn__onestar != null;
             public void Resetonestar() => __pbn__onestar = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__onestar;
 
-            [global::ProtoBuf.ProtoMember(3)]
+            [global::LightProto.ProtoMember(3)]
             public uint twostar
             {
                 get => __pbn__twostar.GetValueOrDefault();
@@ -7316,9 +8011,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializetwostar() => __pbn__twostar != null;
             public void Resettwostar() => __pbn__twostar = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__twostar;
 
-            [global::ProtoBuf.ProtoMember(4)]
+            [global::LightProto.ProtoMember(4)]
             public uint threestar
             {
                 get => __pbn__threestar.GetValueOrDefault();
@@ -7326,9 +8022,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializethreestar() => __pbn__threestar != null;
             public void Resetthreestar() => __pbn__threestar = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__threestar;
 
-            [global::ProtoBuf.ProtoMember(5)]
+            [global::LightProto.ProtoMember(5)]
             public uint total
             {
                 get => __pbn__total.GetValueOrDefault();
@@ -7336,18 +8033,20 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializetotal() => __pbn__total != null;
             public void Resettotal() => __pbn__total = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__total;
 
         }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class Wagering : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public uint total_wagered
             {
                 get => __pbn__total_wagered.GetValueOrDefault();
@@ -7355,9 +8054,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializetotal_wagered() => __pbn__total_wagered != null;
             public void Resettotal_wagered() => __pbn__total_wagered = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__total_wagered;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public uint total_won
             {
                 get => __pbn__total_won.GetValueOrDefault();
@@ -7365,9 +8065,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializetotal_won() => __pbn__total_won != null;
             public void Resettotal_won() => __pbn__total_won = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__total_won;
 
-            [global::ProtoBuf.ProtoMember(3)]
+            [global::LightProto.ProtoMember(3)]
             public uint average_won
             {
                 get => __pbn__average_won.GetValueOrDefault();
@@ -7375,9 +8076,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeaverage_won() => __pbn__average_won != null;
             public void Resetaverage_won() => __pbn__average_won = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__average_won;
 
-            [global::ProtoBuf.ProtoMember(4)]
+            [global::LightProto.ProtoMember(4)]
             public uint success_rate
             {
                 get => __pbn__success_rate.GetValueOrDefault();
@@ -7385,9 +8087,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializesuccess_rate() => __pbn__success_rate != null;
             public void Resetsuccess_rate() => __pbn__success_rate = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__success_rate;
 
-            [global::ProtoBuf.ProtoMember(5)]
+            [global::LightProto.ProtoMember(5)]
             public uint total_tips
             {
                 get => __pbn__total_tips.GetValueOrDefault();
@@ -7395,18 +8098,20 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializetotal_tips() => __pbn__total_tips != null;
             public void Resettotal_tips() => __pbn__total_tips = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__total_tips;
 
         }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class Achievements : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public uint completed
             {
                 get => __pbn__completed.GetValueOrDefault();
@@ -7414,9 +8119,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializecompleted() => __pbn__completed != null;
             public void Resetcompleted() => __pbn__completed = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__completed;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public uint total
             {
                 get => __pbn__total.GetValueOrDefault();
@@ -7424,9 +8130,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializetotal() => __pbn__total != null;
             public void Resettotal() => __pbn__total = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__total;
 
-            [global::ProtoBuf.ProtoMember(3)]
+            [global::LightProto.ProtoMember(3)]
             public uint points
             {
                 get => __pbn__points.GetValueOrDefault();
@@ -7434,18 +8141,20 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializepoints() => __pbn__points != null;
             public void Resetpoints() => __pbn__points = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__points;
 
         }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class BattleCup : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public uint wins
             {
                 get => __pbn__wins.GetValueOrDefault();
@@ -7453,9 +8162,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializewins() => __pbn__wins != null;
             public void Resetwins() => __pbn__wins = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__wins;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public uint score
             {
                 get => __pbn__score.GetValueOrDefault();
@@ -7463,18 +8173,20 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializescore() => __pbn__score != null;
             public void Resetscore() => __pbn__score = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__score;
 
         }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class Predictions : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public uint correct
             {
                 get => __pbn__correct.GetValueOrDefault();
@@ -7482,9 +8194,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializecorrect() => __pbn__correct != null;
             public void Resetcorrect() => __pbn__correct = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__correct;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public uint total
             {
                 get => __pbn__total.GetValueOrDefault();
@@ -7492,9 +8205,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializetotal() => __pbn__total != null;
             public void Resettotal() => __pbn__total = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__total;
 
-            [global::ProtoBuf.ProtoMember(3)]
+            [global::LightProto.ProtoMember(3)]
             public uint points
             {
                 get => __pbn__points.GetValueOrDefault();
@@ -7502,18 +8216,20 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializepoints() => __pbn__points != null;
             public void Resetpoints() => __pbn__points = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__points;
 
         }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class Bracket : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public uint correct
             {
                 get => __pbn__correct.GetValueOrDefault();
@@ -7521,9 +8237,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializecorrect() => __pbn__correct != null;
             public void Resetcorrect() => __pbn__correct = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__correct;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public uint points
             {
                 get => __pbn__points.GetValueOrDefault();
@@ -7531,18 +8248,20 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializepoints() => __pbn__points != null;
             public void Resetpoints() => __pbn__points = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__points;
 
         }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class PlayerCard : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public uint account_id
             {
                 get => __pbn__account_id.GetValueOrDefault();
@@ -7550,9 +8269,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeaccount_id() => __pbn__account_id != null;
             public void Resetaccount_id() => __pbn__account_id = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__account_id;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public uint quality
             {
                 get => __pbn__quality.GetValueOrDefault();
@@ -7560,18 +8280,20 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializequality() => __pbn__quality != null;
             public void Resetquality() => __pbn__quality = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__quality;
 
         }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class FantasyChallenge : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public float total_score
             {
                 get => __pbn__total_score.GetValueOrDefault();
@@ -7579,9 +8301,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializetotal_score() => __pbn__total_score != null;
             public void Resettotal_score() => __pbn__total_score = null;
+            [global::LightProto.ProtoIgnore]
             private float? __pbn__total_score;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public float percentile
             {
                 get => __pbn__percentile.GetValueOrDefault();
@@ -7589,20 +8312,22 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializepercentile() => __pbn__percentile != null;
             public void Resetpercentile() => __pbn__percentile = null;
+            [global::LightProto.ProtoIgnore]
             private float? __pbn__percentile;
 
         }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCToClientBattlePassRollup_Fall2016 : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint battle_pass_level
         {
             get => __pbn__battle_pass_level.GetValueOrDefault();
@@ -7610,40 +8335,42 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializebattle_pass_level() => __pbn__battle_pass_level != null;
         public void Resetbattle_pass_level() => __pbn__battle_pass_level = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__battle_pass_level;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public global::System.Collections.Generic.List<Questlines> questlines { get; } = new global::System.Collections.Generic.List<Questlines>();
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public Wagering wagering { get; set; }
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public Achievements achievements { get; set; }
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public BattleCup battle_cup { get; set; }
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         public Predictions predictions { get; set; }
 
-        [global::ProtoBuf.ProtoMember(7)]
+        [global::LightProto.ProtoMember(7)]
         public Bracket bracket { get; set; }
 
-        [global::ProtoBuf.ProtoMember(8)]
+        [global::LightProto.ProtoMember(8)]
         public global::System.Collections.Generic.List<PlayerCard> player_cards { get; } = new global::System.Collections.Generic.List<PlayerCard>();
 
-        [global::ProtoBuf.ProtoMember(9)]
+        [global::LightProto.ProtoMember(9)]
         public FantasyChallenge fantasy_challenge { get; set; }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class Questlines : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             [global::System.ComponentModel.DefaultValue("")]
             public string name
             {
@@ -7652,9 +8379,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializename() => __pbn__name != null;
             public void Resetname() => __pbn__name = null;
+            [global::LightProto.ProtoIgnore]
             private string __pbn__name;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public uint onestar
             {
                 get => __pbn__onestar.GetValueOrDefault();
@@ -7662,9 +8390,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeonestar() => __pbn__onestar != null;
             public void Resetonestar() => __pbn__onestar = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__onestar;
 
-            [global::ProtoBuf.ProtoMember(3)]
+            [global::LightProto.ProtoMember(3)]
             public uint twostar
             {
                 get => __pbn__twostar.GetValueOrDefault();
@@ -7672,9 +8401,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializetwostar() => __pbn__twostar != null;
             public void Resettwostar() => __pbn__twostar = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__twostar;
 
-            [global::ProtoBuf.ProtoMember(4)]
+            [global::LightProto.ProtoMember(4)]
             public uint threestar
             {
                 get => __pbn__threestar.GetValueOrDefault();
@@ -7682,9 +8412,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializethreestar() => __pbn__threestar != null;
             public void Resetthreestar() => __pbn__threestar = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__threestar;
 
-            [global::ProtoBuf.ProtoMember(5)]
+            [global::LightProto.ProtoMember(5)]
             public uint total
             {
                 get => __pbn__total.GetValueOrDefault();
@@ -7692,18 +8423,20 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializetotal() => __pbn__total != null;
             public void Resettotal() => __pbn__total = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__total;
 
         }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class Wagering : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public uint total_wagered
             {
                 get => __pbn__total_wagered.GetValueOrDefault();
@@ -7711,9 +8444,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializetotal_wagered() => __pbn__total_wagered != null;
             public void Resettotal_wagered() => __pbn__total_wagered = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__total_wagered;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public uint total_won
             {
                 get => __pbn__total_won.GetValueOrDefault();
@@ -7721,9 +8455,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializetotal_won() => __pbn__total_won != null;
             public void Resettotal_won() => __pbn__total_won = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__total_won;
 
-            [global::ProtoBuf.ProtoMember(3)]
+            [global::LightProto.ProtoMember(3)]
             public uint average_won
             {
                 get => __pbn__average_won.GetValueOrDefault();
@@ -7731,9 +8466,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeaverage_won() => __pbn__average_won != null;
             public void Resetaverage_won() => __pbn__average_won = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__average_won;
 
-            [global::ProtoBuf.ProtoMember(4)]
+            [global::LightProto.ProtoMember(4)]
             public uint success_rate
             {
                 get => __pbn__success_rate.GetValueOrDefault();
@@ -7741,9 +8477,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializesuccess_rate() => __pbn__success_rate != null;
             public void Resetsuccess_rate() => __pbn__success_rate = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__success_rate;
 
-            [global::ProtoBuf.ProtoMember(5)]
+            [global::LightProto.ProtoMember(5)]
             public uint total_tips
             {
                 get => __pbn__total_tips.GetValueOrDefault();
@@ -7751,18 +8488,20 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializetotal_tips() => __pbn__total_tips != null;
             public void Resettotal_tips() => __pbn__total_tips = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__total_tips;
 
         }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class Achievements : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public uint completed
             {
                 get => __pbn__completed.GetValueOrDefault();
@@ -7770,9 +8509,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializecompleted() => __pbn__completed != null;
             public void Resetcompleted() => __pbn__completed = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__completed;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public uint total
             {
                 get => __pbn__total.GetValueOrDefault();
@@ -7780,9 +8520,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializetotal() => __pbn__total != null;
             public void Resettotal() => __pbn__total = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__total;
 
-            [global::ProtoBuf.ProtoMember(3)]
+            [global::LightProto.ProtoMember(3)]
             public uint points
             {
                 get => __pbn__points.GetValueOrDefault();
@@ -7790,18 +8531,20 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializepoints() => __pbn__points != null;
             public void Resetpoints() => __pbn__points = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__points;
 
         }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class BattleCup : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public uint wins
             {
                 get => __pbn__wins.GetValueOrDefault();
@@ -7809,9 +8552,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializewins() => __pbn__wins != null;
             public void Resetwins() => __pbn__wins = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__wins;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public uint score
             {
                 get => __pbn__score.GetValueOrDefault();
@@ -7819,18 +8563,20 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializescore() => __pbn__score != null;
             public void Resetscore() => __pbn__score = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__score;
 
         }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class Predictions : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public uint correct
             {
                 get => __pbn__correct.GetValueOrDefault();
@@ -7838,9 +8584,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializecorrect() => __pbn__correct != null;
             public void Resetcorrect() => __pbn__correct = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__correct;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public uint total
             {
                 get => __pbn__total.GetValueOrDefault();
@@ -7848,9 +8595,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializetotal() => __pbn__total != null;
             public void Resettotal() => __pbn__total = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__total;
 
-            [global::ProtoBuf.ProtoMember(3)]
+            [global::LightProto.ProtoMember(3)]
             public uint points
             {
                 get => __pbn__points.GetValueOrDefault();
@@ -7858,18 +8606,20 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializepoints() => __pbn__points != null;
             public void Resetpoints() => __pbn__points = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__points;
 
         }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class Bracket : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public uint correct
             {
                 get => __pbn__correct.GetValueOrDefault();
@@ -7877,9 +8627,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializecorrect() => __pbn__correct != null;
             public void Resetcorrect() => __pbn__correct = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__correct;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public uint points
             {
                 get => __pbn__points.GetValueOrDefault();
@@ -7887,18 +8638,20 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializepoints() => __pbn__points != null;
             public void Resetpoints() => __pbn__points = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__points;
 
         }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class PlayerCard : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public uint account_id
             {
                 get => __pbn__account_id.GetValueOrDefault();
@@ -7906,9 +8659,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeaccount_id() => __pbn__account_id != null;
             public void Resetaccount_id() => __pbn__account_id = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__account_id;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public uint quality
             {
                 get => __pbn__quality.GetValueOrDefault();
@@ -7916,18 +8670,20 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializequality() => __pbn__quality != null;
             public void Resetquality() => __pbn__quality = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__quality;
 
         }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class FantasyChallenge : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public float total_score
             {
                 get => __pbn__total_score.GetValueOrDefault();
@@ -7935,9 +8691,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializetotal_score() => __pbn__total_score != null;
             public void Resettotal_score() => __pbn__total_score = null;
+            [global::LightProto.ProtoIgnore]
             private float? __pbn__total_score;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public float percentile
             {
                 get => __pbn__percentile.GetValueOrDefault();
@@ -7945,20 +8702,22 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializepercentile() => __pbn__percentile != null;
             public void Resetpercentile() => __pbn__percentile = null;
+            [global::LightProto.ProtoIgnore]
             private float? __pbn__percentile;
 
         }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCToClientBattlePassRollup_Winter2017 : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint battle_pass_level
         {
             get => __pbn__battle_pass_level.GetValueOrDefault();
@@ -7966,40 +8725,42 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializebattle_pass_level() => __pbn__battle_pass_level != null;
         public void Resetbattle_pass_level() => __pbn__battle_pass_level = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__battle_pass_level;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public global::System.Collections.Generic.List<Questlines> questlines { get; } = new global::System.Collections.Generic.List<Questlines>();
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public Wagering wagering { get; set; }
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public Achievements achievements { get; set; }
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public BattleCup battle_cup { get; set; }
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         public Predictions predictions { get; set; }
 
-        [global::ProtoBuf.ProtoMember(7)]
+        [global::LightProto.ProtoMember(7)]
         public Bracket bracket { get; set; }
 
-        [global::ProtoBuf.ProtoMember(8)]
+        [global::LightProto.ProtoMember(8)]
         public global::System.Collections.Generic.List<PlayerCard> player_cards { get; } = new global::System.Collections.Generic.List<PlayerCard>();
 
-        [global::ProtoBuf.ProtoMember(9)]
+        [global::LightProto.ProtoMember(9)]
         public FantasyChallenge fantasy_challenge { get; set; }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class Questlines : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             [global::System.ComponentModel.DefaultValue("")]
             public string name
             {
@@ -8008,9 +8769,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializename() => __pbn__name != null;
             public void Resetname() => __pbn__name = null;
+            [global::LightProto.ProtoIgnore]
             private string __pbn__name;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public uint onestar
             {
                 get => __pbn__onestar.GetValueOrDefault();
@@ -8018,9 +8780,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeonestar() => __pbn__onestar != null;
             public void Resetonestar() => __pbn__onestar = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__onestar;
 
-            [global::ProtoBuf.ProtoMember(3)]
+            [global::LightProto.ProtoMember(3)]
             public uint twostar
             {
                 get => __pbn__twostar.GetValueOrDefault();
@@ -8028,9 +8791,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializetwostar() => __pbn__twostar != null;
             public void Resettwostar() => __pbn__twostar = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__twostar;
 
-            [global::ProtoBuf.ProtoMember(4)]
+            [global::LightProto.ProtoMember(4)]
             public uint threestar
             {
                 get => __pbn__threestar.GetValueOrDefault();
@@ -8038,9 +8802,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializethreestar() => __pbn__threestar != null;
             public void Resetthreestar() => __pbn__threestar = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__threestar;
 
-            [global::ProtoBuf.ProtoMember(5)]
+            [global::LightProto.ProtoMember(5)]
             public uint total
             {
                 get => __pbn__total.GetValueOrDefault();
@@ -8048,18 +8813,20 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializetotal() => __pbn__total != null;
             public void Resettotal() => __pbn__total = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__total;
 
         }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class Wagering : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public uint total_wagered
             {
                 get => __pbn__total_wagered.GetValueOrDefault();
@@ -8067,9 +8834,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializetotal_wagered() => __pbn__total_wagered != null;
             public void Resettotal_wagered() => __pbn__total_wagered = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__total_wagered;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public uint total_won
             {
                 get => __pbn__total_won.GetValueOrDefault();
@@ -8077,9 +8845,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializetotal_won() => __pbn__total_won != null;
             public void Resettotal_won() => __pbn__total_won = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__total_won;
 
-            [global::ProtoBuf.ProtoMember(3)]
+            [global::LightProto.ProtoMember(3)]
             public uint average_won
             {
                 get => __pbn__average_won.GetValueOrDefault();
@@ -8087,9 +8856,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeaverage_won() => __pbn__average_won != null;
             public void Resetaverage_won() => __pbn__average_won = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__average_won;
 
-            [global::ProtoBuf.ProtoMember(4)]
+            [global::LightProto.ProtoMember(4)]
             public uint success_rate
             {
                 get => __pbn__success_rate.GetValueOrDefault();
@@ -8097,9 +8867,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializesuccess_rate() => __pbn__success_rate != null;
             public void Resetsuccess_rate() => __pbn__success_rate = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__success_rate;
 
-            [global::ProtoBuf.ProtoMember(5)]
+            [global::LightProto.ProtoMember(5)]
             public uint total_tips
             {
                 get => __pbn__total_tips.GetValueOrDefault();
@@ -8107,18 +8878,20 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializetotal_tips() => __pbn__total_tips != null;
             public void Resettotal_tips() => __pbn__total_tips = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__total_tips;
 
         }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class Achievements : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public uint completed
             {
                 get => __pbn__completed.GetValueOrDefault();
@@ -8126,9 +8899,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializecompleted() => __pbn__completed != null;
             public void Resetcompleted() => __pbn__completed = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__completed;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public uint total
             {
                 get => __pbn__total.GetValueOrDefault();
@@ -8136,9 +8910,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializetotal() => __pbn__total != null;
             public void Resettotal() => __pbn__total = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__total;
 
-            [global::ProtoBuf.ProtoMember(3)]
+            [global::LightProto.ProtoMember(3)]
             public uint points
             {
                 get => __pbn__points.GetValueOrDefault();
@@ -8146,18 +8921,20 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializepoints() => __pbn__points != null;
             public void Resetpoints() => __pbn__points = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__points;
 
         }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class BattleCup : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public uint wins
             {
                 get => __pbn__wins.GetValueOrDefault();
@@ -8165,9 +8942,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializewins() => __pbn__wins != null;
             public void Resetwins() => __pbn__wins = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__wins;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public uint score
             {
                 get => __pbn__score.GetValueOrDefault();
@@ -8175,18 +8953,20 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializescore() => __pbn__score != null;
             public void Resetscore() => __pbn__score = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__score;
 
         }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class Predictions : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public uint correct
             {
                 get => __pbn__correct.GetValueOrDefault();
@@ -8194,9 +8974,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializecorrect() => __pbn__correct != null;
             public void Resetcorrect() => __pbn__correct = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__correct;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public uint total
             {
                 get => __pbn__total.GetValueOrDefault();
@@ -8204,9 +8985,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializetotal() => __pbn__total != null;
             public void Resettotal() => __pbn__total = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__total;
 
-            [global::ProtoBuf.ProtoMember(3)]
+            [global::LightProto.ProtoMember(3)]
             public uint points
             {
                 get => __pbn__points.GetValueOrDefault();
@@ -8214,18 +8996,20 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializepoints() => __pbn__points != null;
             public void Resetpoints() => __pbn__points = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__points;
 
         }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class Bracket : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public uint correct
             {
                 get => __pbn__correct.GetValueOrDefault();
@@ -8233,9 +9017,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializecorrect() => __pbn__correct != null;
             public void Resetcorrect() => __pbn__correct = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__correct;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public uint points
             {
                 get => __pbn__points.GetValueOrDefault();
@@ -8243,18 +9028,20 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializepoints() => __pbn__points != null;
             public void Resetpoints() => __pbn__points = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__points;
 
         }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class PlayerCard : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public uint account_id
             {
                 get => __pbn__account_id.GetValueOrDefault();
@@ -8262,9 +9049,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeaccount_id() => __pbn__account_id != null;
             public void Resetaccount_id() => __pbn__account_id = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__account_id;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public uint quality
             {
                 get => __pbn__quality.GetValueOrDefault();
@@ -8272,18 +9060,20 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializequality() => __pbn__quality != null;
             public void Resetquality() => __pbn__quality = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__quality;
 
         }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class FantasyChallenge : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public float total_score
             {
                 get => __pbn__total_score.GetValueOrDefault();
@@ -8291,9 +9081,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializetotal_score() => __pbn__total_score != null;
             public void Resettotal_score() => __pbn__total_score = null;
+            [global::LightProto.ProtoIgnore]
             private float? __pbn__total_score;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public float percentile
             {
                 get => __pbn__percentile.GetValueOrDefault();
@@ -8301,20 +9092,22 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializepercentile() => __pbn__percentile != null;
             public void Resetpercentile() => __pbn__percentile = null;
+            [global::LightProto.ProtoIgnore]
             private float? __pbn__percentile;
 
         }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCToClientBattlePassRollup_TI7 : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint battle_pass_level
         {
             get => __pbn__battle_pass_level.GetValueOrDefault();
@@ -8322,40 +9115,42 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializebattle_pass_level() => __pbn__battle_pass_level != null;
         public void Resetbattle_pass_level() => __pbn__battle_pass_level = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__battle_pass_level;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public global::System.Collections.Generic.List<Questlines> questlines { get; } = new global::System.Collections.Generic.List<Questlines>();
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public Wagering wagering { get; set; }
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public Achievements achievements { get; set; }
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public BattleCup battle_cup { get; set; }
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         public Predictions predictions { get; set; }
 
-        [global::ProtoBuf.ProtoMember(7)]
+        [global::LightProto.ProtoMember(7)]
         public Bracket bracket { get; set; }
 
-        [global::ProtoBuf.ProtoMember(8)]
+        [global::LightProto.ProtoMember(8)]
         public global::System.Collections.Generic.List<PlayerCard> player_cards { get; } = new global::System.Collections.Generic.List<PlayerCard>();
 
-        [global::ProtoBuf.ProtoMember(9)]
+        [global::LightProto.ProtoMember(9)]
         public FantasyChallenge fantasy_challenge { get; set; }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class Questlines : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             [global::System.ComponentModel.DefaultValue("")]
             public string name
             {
@@ -8364,9 +9159,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializename() => __pbn__name != null;
             public void Resetname() => __pbn__name = null;
+            [global::LightProto.ProtoIgnore]
             private string __pbn__name;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public uint onestar
             {
                 get => __pbn__onestar.GetValueOrDefault();
@@ -8374,9 +9170,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeonestar() => __pbn__onestar != null;
             public void Resetonestar() => __pbn__onestar = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__onestar;
 
-            [global::ProtoBuf.ProtoMember(3)]
+            [global::LightProto.ProtoMember(3)]
             public uint twostar
             {
                 get => __pbn__twostar.GetValueOrDefault();
@@ -8384,9 +9181,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializetwostar() => __pbn__twostar != null;
             public void Resettwostar() => __pbn__twostar = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__twostar;
 
-            [global::ProtoBuf.ProtoMember(4)]
+            [global::LightProto.ProtoMember(4)]
             public uint threestar
             {
                 get => __pbn__threestar.GetValueOrDefault();
@@ -8394,9 +9192,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializethreestar() => __pbn__threestar != null;
             public void Resetthreestar() => __pbn__threestar = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__threestar;
 
-            [global::ProtoBuf.ProtoMember(5)]
+            [global::LightProto.ProtoMember(5)]
             public uint total
             {
                 get => __pbn__total.GetValueOrDefault();
@@ -8404,18 +9203,20 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializetotal() => __pbn__total != null;
             public void Resettotal() => __pbn__total = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__total;
 
         }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class Wagering : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public uint total_wagered
             {
                 get => __pbn__total_wagered.GetValueOrDefault();
@@ -8423,9 +9224,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializetotal_wagered() => __pbn__total_wagered != null;
             public void Resettotal_wagered() => __pbn__total_wagered = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__total_wagered;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public uint total_won
             {
                 get => __pbn__total_won.GetValueOrDefault();
@@ -8433,9 +9235,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializetotal_won() => __pbn__total_won != null;
             public void Resettotal_won() => __pbn__total_won = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__total_won;
 
-            [global::ProtoBuf.ProtoMember(3)]
+            [global::LightProto.ProtoMember(3)]
             public uint average_won
             {
                 get => __pbn__average_won.GetValueOrDefault();
@@ -8443,9 +9246,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeaverage_won() => __pbn__average_won != null;
             public void Resetaverage_won() => __pbn__average_won = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__average_won;
 
-            [global::ProtoBuf.ProtoMember(4)]
+            [global::LightProto.ProtoMember(4)]
             public uint success_rate
             {
                 get => __pbn__success_rate.GetValueOrDefault();
@@ -8453,9 +9257,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializesuccess_rate() => __pbn__success_rate != null;
             public void Resetsuccess_rate() => __pbn__success_rate = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__success_rate;
 
-            [global::ProtoBuf.ProtoMember(5)]
+            [global::LightProto.ProtoMember(5)]
             public uint total_tips
             {
                 get => __pbn__total_tips.GetValueOrDefault();
@@ -8463,18 +9268,20 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializetotal_tips() => __pbn__total_tips != null;
             public void Resettotal_tips() => __pbn__total_tips = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__total_tips;
 
         }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class Achievements : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public uint completed
             {
                 get => __pbn__completed.GetValueOrDefault();
@@ -8482,9 +9289,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializecompleted() => __pbn__completed != null;
             public void Resetcompleted() => __pbn__completed = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__completed;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public uint total
             {
                 get => __pbn__total.GetValueOrDefault();
@@ -8492,9 +9300,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializetotal() => __pbn__total != null;
             public void Resettotal() => __pbn__total = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__total;
 
-            [global::ProtoBuf.ProtoMember(3)]
+            [global::LightProto.ProtoMember(3)]
             public uint points
             {
                 get => __pbn__points.GetValueOrDefault();
@@ -8502,18 +9311,20 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializepoints() => __pbn__points != null;
             public void Resetpoints() => __pbn__points = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__points;
 
         }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class BattleCup : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public uint wins
             {
                 get => __pbn__wins.GetValueOrDefault();
@@ -8521,9 +9332,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializewins() => __pbn__wins != null;
             public void Resetwins() => __pbn__wins = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__wins;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public uint score
             {
                 get => __pbn__score.GetValueOrDefault();
@@ -8531,18 +9343,20 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializescore() => __pbn__score != null;
             public void Resetscore() => __pbn__score = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__score;
 
         }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class Predictions : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public uint correct
             {
                 get => __pbn__correct.GetValueOrDefault();
@@ -8550,9 +9364,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializecorrect() => __pbn__correct != null;
             public void Resetcorrect() => __pbn__correct = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__correct;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public uint total
             {
                 get => __pbn__total.GetValueOrDefault();
@@ -8560,9 +9375,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializetotal() => __pbn__total != null;
             public void Resettotal() => __pbn__total = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__total;
 
-            [global::ProtoBuf.ProtoMember(3)]
+            [global::LightProto.ProtoMember(3)]
             public uint points
             {
                 get => __pbn__points.GetValueOrDefault();
@@ -8570,18 +9386,20 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializepoints() => __pbn__points != null;
             public void Resetpoints() => __pbn__points = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__points;
 
         }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class Bracket : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public uint correct
             {
                 get => __pbn__correct.GetValueOrDefault();
@@ -8589,9 +9407,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializecorrect() => __pbn__correct != null;
             public void Resetcorrect() => __pbn__correct = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__correct;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public uint points
             {
                 get => __pbn__points.GetValueOrDefault();
@@ -8599,18 +9418,20 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializepoints() => __pbn__points != null;
             public void Resetpoints() => __pbn__points = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__points;
 
         }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class PlayerCard : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public uint account_id
             {
                 get => __pbn__account_id.GetValueOrDefault();
@@ -8618,9 +9439,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeaccount_id() => __pbn__account_id != null;
             public void Resetaccount_id() => __pbn__account_id = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__account_id;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public uint quality
             {
                 get => __pbn__quality.GetValueOrDefault();
@@ -8628,18 +9450,20 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializequality() => __pbn__quality != null;
             public void Resetquality() => __pbn__quality = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__quality;
 
         }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class FantasyChallenge : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public float total_score
             {
                 get => __pbn__total_score.GetValueOrDefault();
@@ -8647,9 +9471,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializetotal_score() => __pbn__total_score != null;
             public void Resettotal_score() => __pbn__total_score = null;
+            [global::LightProto.ProtoIgnore]
             private float? __pbn__total_score;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public float percentile
             {
                 get => __pbn__percentile.GetValueOrDefault();
@@ -8657,20 +9482,22 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializepercentile() => __pbn__percentile != null;
             public void Resetpercentile() => __pbn__percentile = null;
+            [global::LightProto.ProtoIgnore]
             private float? __pbn__percentile;
 
         }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCToClientBattlePassRollup_TI8 : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint battle_pass_level
         {
             get => __pbn__battle_pass_level.GetValueOrDefault();
@@ -8678,37 +9505,39 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializebattle_pass_level() => __pbn__battle_pass_level != null;
         public void Resetbattle_pass_level() => __pbn__battle_pass_level = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__battle_pass_level;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public CavernCrawl cavern_crawl { get; set; }
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public Wagering wagering { get; set; }
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public Achievements achievements { get; set; }
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         public Predictions predictions { get; set; }
 
-        [global::ProtoBuf.ProtoMember(7)]
+        [global::LightProto.ProtoMember(7)]
         public Bracket bracket { get; set; }
 
-        [global::ProtoBuf.ProtoMember(8)]
+        [global::LightProto.ProtoMember(8)]
         public global::System.Collections.Generic.List<PlayerCard> player_cards { get; } = new global::System.Collections.Generic.List<PlayerCard>();
 
-        [global::ProtoBuf.ProtoMember(9)]
+        [global::LightProto.ProtoMember(9)]
         public FantasyChallenge fantasy_challenge { get; set; }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class CavernCrawl : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public uint rooms_cleared
             {
                 get => __pbn__rooms_cleared.GetValueOrDefault();
@@ -8716,9 +9545,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializerooms_cleared() => __pbn__rooms_cleared != null;
             public void Resetrooms_cleared() => __pbn__rooms_cleared = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__rooms_cleared;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public bool carry_completed
             {
                 get => __pbn__carry_completed.GetValueOrDefault();
@@ -8726,9 +9556,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializecarry_completed() => __pbn__carry_completed != null;
             public void Resetcarry_completed() => __pbn__carry_completed = null;
+            [global::LightProto.ProtoIgnore]
             private bool? __pbn__carry_completed;
 
-            [global::ProtoBuf.ProtoMember(3)]
+            [global::LightProto.ProtoMember(3)]
             public bool support_completed
             {
                 get => __pbn__support_completed.GetValueOrDefault();
@@ -8736,9 +9567,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializesupport_completed() => __pbn__support_completed != null;
             public void Resetsupport_completed() => __pbn__support_completed = null;
+            [global::LightProto.ProtoIgnore]
             private bool? __pbn__support_completed;
 
-            [global::ProtoBuf.ProtoMember(4)]
+            [global::LightProto.ProtoMember(4)]
             public bool utility_completed
             {
                 get => __pbn__utility_completed.GetValueOrDefault();
@@ -8746,18 +9578,20 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeutility_completed() => __pbn__utility_completed != null;
             public void Resetutility_completed() => __pbn__utility_completed = null;
+            [global::LightProto.ProtoIgnore]
             private bool? __pbn__utility_completed;
 
         }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class Wagering : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public uint total_wagered
             {
                 get => __pbn__total_wagered.GetValueOrDefault();
@@ -8765,9 +9599,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializetotal_wagered() => __pbn__total_wagered != null;
             public void Resettotal_wagered() => __pbn__total_wagered = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__total_wagered;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public uint total_won
             {
                 get => __pbn__total_won.GetValueOrDefault();
@@ -8775,9 +9610,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializetotal_won() => __pbn__total_won != null;
             public void Resettotal_won() => __pbn__total_won = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__total_won;
 
-            [global::ProtoBuf.ProtoMember(3)]
+            [global::LightProto.ProtoMember(3)]
             public uint average_won
             {
                 get => __pbn__average_won.GetValueOrDefault();
@@ -8785,9 +9621,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeaverage_won() => __pbn__average_won != null;
             public void Resetaverage_won() => __pbn__average_won = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__average_won;
 
-            [global::ProtoBuf.ProtoMember(4)]
+            [global::LightProto.ProtoMember(4)]
             public uint success_rate
             {
                 get => __pbn__success_rate.GetValueOrDefault();
@@ -8795,9 +9632,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializesuccess_rate() => __pbn__success_rate != null;
             public void Resetsuccess_rate() => __pbn__success_rate = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__success_rate;
 
-            [global::ProtoBuf.ProtoMember(5)]
+            [global::LightProto.ProtoMember(5)]
             public uint total_tips
             {
                 get => __pbn__total_tips.GetValueOrDefault();
@@ -8805,18 +9643,20 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializetotal_tips() => __pbn__total_tips != null;
             public void Resettotal_tips() => __pbn__total_tips = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__total_tips;
 
         }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class Achievements : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public uint completed
             {
                 get => __pbn__completed.GetValueOrDefault();
@@ -8824,9 +9664,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializecompleted() => __pbn__completed != null;
             public void Resetcompleted() => __pbn__completed = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__completed;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public uint total
             {
                 get => __pbn__total.GetValueOrDefault();
@@ -8834,9 +9675,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializetotal() => __pbn__total != null;
             public void Resettotal() => __pbn__total = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__total;
 
-            [global::ProtoBuf.ProtoMember(3)]
+            [global::LightProto.ProtoMember(3)]
             public uint points
             {
                 get => __pbn__points.GetValueOrDefault();
@@ -8844,18 +9686,20 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializepoints() => __pbn__points != null;
             public void Resetpoints() => __pbn__points = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__points;
 
         }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class Predictions : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public uint correct
             {
                 get => __pbn__correct.GetValueOrDefault();
@@ -8863,9 +9707,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializecorrect() => __pbn__correct != null;
             public void Resetcorrect() => __pbn__correct = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__correct;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public uint total
             {
                 get => __pbn__total.GetValueOrDefault();
@@ -8873,9 +9718,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializetotal() => __pbn__total != null;
             public void Resettotal() => __pbn__total = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__total;
 
-            [global::ProtoBuf.ProtoMember(3)]
+            [global::LightProto.ProtoMember(3)]
             public uint points
             {
                 get => __pbn__points.GetValueOrDefault();
@@ -8883,18 +9729,20 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializepoints() => __pbn__points != null;
             public void Resetpoints() => __pbn__points = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__points;
 
         }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class Bracket : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public uint correct
             {
                 get => __pbn__correct.GetValueOrDefault();
@@ -8902,9 +9750,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializecorrect() => __pbn__correct != null;
             public void Resetcorrect() => __pbn__correct = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__correct;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public uint points
             {
                 get => __pbn__points.GetValueOrDefault();
@@ -8912,18 +9761,20 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializepoints() => __pbn__points != null;
             public void Resetpoints() => __pbn__points = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__points;
 
         }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class PlayerCard : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public uint account_id
             {
                 get => __pbn__account_id.GetValueOrDefault();
@@ -8931,9 +9782,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeaccount_id() => __pbn__account_id != null;
             public void Resetaccount_id() => __pbn__account_id = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__account_id;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public uint quality
             {
                 get => __pbn__quality.GetValueOrDefault();
@@ -8941,18 +9793,20 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializequality() => __pbn__quality != null;
             public void Resetquality() => __pbn__quality = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__quality;
 
         }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class FantasyChallenge : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public float total_score
             {
                 get => __pbn__total_score.GetValueOrDefault();
@@ -8960,9 +9814,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializetotal_score() => __pbn__total_score != null;
             public void Resettotal_score() => __pbn__total_score = null;
+            [global::LightProto.ProtoIgnore]
             private float? __pbn__total_score;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public float percentile
             {
                 get => __pbn__percentile.GetValueOrDefault();
@@ -8970,20 +9825,22 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializepercentile() => __pbn__percentile != null;
             public void Resetpercentile() => __pbn__percentile = null;
+            [global::LightProto.ProtoIgnore]
             private float? __pbn__percentile;
 
         }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCToClientBattlePassRollup_TI9 : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint battle_pass_level
         {
             get => __pbn__battle_pass_level.GetValueOrDefault();
@@ -8991,18 +9848,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializebattle_pass_level() => __pbn__battle_pass_level != null;
         public void Resetbattle_pass_level() => __pbn__battle_pass_level = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__battle_pass_level;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCToClientBattlePassRollup_TI10 : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint battle_pass_level
         {
             get => __pbn__battle_pass_level.GetValueOrDefault();
@@ -9010,18 +9869,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializebattle_pass_level() => __pbn__battle_pass_level != null;
         public void Resetbattle_pass_level() => __pbn__battle_pass_level = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__battle_pass_level;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCToClientBattlePassRollupRequest : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint event_id
         {
             get => __pbn__event_id.GetValueOrDefault();
@@ -9029,9 +9890,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeevent_id() => __pbn__event_id != null;
         public void Resetevent_id() => __pbn__event_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__event_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint account_id
         {
             get => __pbn__account_id.GetValueOrDefault();
@@ -9039,48 +9901,51 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeaccount_id() => __pbn__account_id != null;
         public void Resetaccount_id() => __pbn__account_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__account_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCToClientBattlePassRollupResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public CMsgGCToClientBattlePassRollup_International2016 event_ti6 { get; set; }
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public CMsgGCToClientBattlePassRollup_Fall2016 event_fall2016 { get; set; }
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public CMsgGCToClientBattlePassRollup_Winter2017 event_winter2017 { get; set; }
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public CMsgGCToClientBattlePassRollup_TI7 event_ti7 { get; set; }
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public CMsgGCToClientBattlePassRollup_TI8 event_ti8 { get; set; }
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         public CMsgGCToClientBattlePassRollup_TI9 event_ti9 { get; set; }
 
-        [global::ProtoBuf.ProtoMember(7)]
+        [global::LightProto.ProtoMember(7)]
         public CMsgGCToClientBattlePassRollup_TI10 event_ti10 { get; set; }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCToClientBattlePassRollupListRequest : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint account_id
         {
             get => __pbn__account_id.GetValueOrDefault();
@@ -9088,28 +9953,31 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeaccount_id() => __pbn__account_id != null;
         public void Resetaccount_id() => __pbn__account_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__account_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCToClientBattlePassRollupListResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<EventInfo> event_info { get; } = new global::System.Collections.Generic.List<EventInfo>();
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class EventInfo : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public uint event_id
             {
                 get => __pbn__event_id.GetValueOrDefault();
@@ -9117,9 +9985,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeevent_id() => __pbn__event_id != null;
             public void Resetevent_id() => __pbn__event_id = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__event_id;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public uint level
             {
                 get => __pbn__level.GetValueOrDefault();
@@ -9127,20 +9996,22 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializelevel() => __pbn__level != null;
             public void Resetlevel() => __pbn__level = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__level;
 
         }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCTransferSeasonalMMRRequest : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public bool is_party
         {
             get => __pbn__is_party.GetValueOrDefault();
@@ -9148,18 +10019,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeis_party() => __pbn__is_party != null;
         public void Resetis_party() => __pbn__is_party = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_party;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCTransferSeasonalMMRResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public bool success
         {
             get => __pbn__success.GetValueOrDefault();
@@ -9167,18 +10040,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializesuccess() => __pbn__success != null;
         public void Resetsuccess() => __pbn__success = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__success;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCToClientPlaytestStatus : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public bool active
         {
             get => __pbn__active.GetValueOrDefault();
@@ -9186,18 +10061,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeactive() => __pbn__active != null;
         public void Resetactive() => __pbn__active = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__active;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCJoinPlaytest : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint client_version
         {
             get => __pbn__client_version.GetValueOrDefault();
@@ -9205,18 +10082,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeclient_version() => __pbn__client_version != null;
         public void Resetclient_version() => __pbn__client_version = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__client_version;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCJoinPlaytestResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue("")]
         public string error
         {
@@ -9225,18 +10104,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeerror() => __pbn__error != null;
         public void Reseterror() => __pbn__error = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__error;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTASetFavoriteTeam : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint team_id
         {
             get => __pbn__team_id.GetValueOrDefault();
@@ -9244,9 +10125,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeteam_id() => __pbn__team_id != null;
         public void Resetteam_id() => __pbn__team_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__team_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint event_id
         {
             get => __pbn__event_id.GetValueOrDefault();
@@ -9254,21 +10136,23 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeevent_id() => __pbn__event_id != null;
         public void Resetevent_id() => __pbn__event_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__event_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTATriviaCurrentQuestions : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<CMsgDOTATriviaQuestion> questions { get; } = new global::System.Collections.Generic.List<CMsgDOTATriviaQuestion>();
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public bool trivia_enabled
         {
             get => __pbn__trivia_enabled.GetValueOrDefault();
@@ -9276,18 +10160,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializetrivia_enabled() => __pbn__trivia_enabled != null;
         public void Resettrivia_enabled() => __pbn__trivia_enabled = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__trivia_enabled;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTASubmitTriviaQuestionAnswer : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint question_id
         {
             get => __pbn__question_id.GetValueOrDefault();
@@ -9295,9 +10181,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializequestion_id() => __pbn__question_id != null;
         public void Resetquestion_id() => __pbn__question_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__question_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint answer_index
         {
             get => __pbn__answer_index.GetValueOrDefault();
@@ -9305,18 +10192,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeanswer_index() => __pbn__answer_index != null;
         public void Resetanswer_index() => __pbn__answer_index = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__answer_index;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTASubmitTriviaQuestionAnswerResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EDOTATriviaAnswerResult.k_EDOTATriviaAnswerResult_Success)]
         public EDOTATriviaAnswerResult result
         {
@@ -9325,27 +10214,30 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private EDOTATriviaAnswerResult? __pbn__result;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTAStartTriviaSession : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTAStartTriviaSessionResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public bool trivia_enabled
         {
             get => __pbn__trivia_enabled.GetValueOrDefault();
@@ -9353,9 +10245,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializetrivia_enabled() => __pbn__trivia_enabled != null;
         public void Resettrivia_enabled() => __pbn__trivia_enabled = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__trivia_enabled;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint current_timestamp
         {
             get => __pbn__current_timestamp.GetValueOrDefault();
@@ -9363,27 +10256,30 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializecurrent_timestamp() => __pbn__current_timestamp != null;
         public void Resetcurrent_timestamp() => __pbn__current_timestamp = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__current_timestamp;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTAAnchorPhoneNumberRequest : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTAAnchorPhoneNumberResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(Result.SUCCESS)]
         public Result result
         {
@@ -9392,9 +10288,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private Result? __pbn__result;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum Result
         {
             SUCCESS = 0,
@@ -9407,23 +10304,25 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTAUnanchorPhoneNumberRequest : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTAUnanchorPhoneNumberResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(Result.SUCCESS)]
         public Result result
         {
@@ -9432,9 +10331,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private Result? __pbn__result;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum Result
         {
             SUCCESS = 0,
@@ -9443,14 +10343,15 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCToClientCommendNotification : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint commender_account_id
         {
             get => __pbn__commender_account_id.GetValueOrDefault();
@@ -9458,9 +10359,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializecommender_account_id() => __pbn__commender_account_id != null;
         public void Resetcommender_account_id() => __pbn__commender_account_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__commender_account_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue("")]
         public string commender_name
         {
@@ -9469,9 +10371,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializecommender_name() => __pbn__commender_name != null;
         public void Resetcommender_name() => __pbn__commender_name = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__commender_name;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public uint flags
         {
             get => __pbn__flags.GetValueOrDefault();
@@ -9479,9 +10382,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeflags() => __pbn__flags != null;
         public void Resetflags() => __pbn__flags = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__flags;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public int commender_hero_id
         {
             get => __pbn__commender_hero_id.GetValueOrDefault();
@@ -9489,18 +10393,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializecommender_hero_id() => __pbn__commender_hero_id != null;
         public void Resetcommender_hero_id() => __pbn__commender_hero_id = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__commender_hero_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTAClientToGCQuickStatsRequest : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint player_account_id
         {
             get => __pbn__player_account_id.GetValueOrDefault();
@@ -9508,9 +10414,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeplayer_account_id() => __pbn__player_account_id != null;
         public void Resetplayer_account_id() => __pbn__player_account_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__player_account_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public int hero_id
         {
             get => __pbn__hero_id.GetValueOrDefault();
@@ -9518,9 +10425,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializehero_id() => __pbn__hero_id != null;
         public void Resethero_id() => __pbn__hero_id = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__hero_id;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         [global::System.ComponentModel.DefaultValue(-1)]
         public int item_id
         {
@@ -9529,9 +10437,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeitem_id() => __pbn__item_id != null;
         public void Resetitem_id() => __pbn__item_id = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__item_id;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public uint league_id
         {
             get => __pbn__league_id.GetValueOrDefault();
@@ -9539,46 +10448,49 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeleague_id() => __pbn__league_id != null;
         public void Resetleague_id() => __pbn__league_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__league_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTAClientToGCQuickStatsResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public CMsgDOTAClientToGCQuickStatsRequest original_request { get; set; }
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public SimpleStats hero_stats { get; set; }
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public SimpleStats item_stats { get; set; }
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public SimpleStats item_hero_stats { get; set; }
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public SimpleStats item_player_stats { get; set; }
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         public SimpleStats hero_player_stats { get; set; }
 
-        [global::ProtoBuf.ProtoMember(7)]
+        [global::LightProto.ProtoMember(7)]
         public SimpleStats full_set_stats { get; set; }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class SimpleStats : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public float win_percent
             {
                 get => __pbn__win_percent.GetValueOrDefault();
@@ -9586,9 +10498,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializewin_percent() => __pbn__win_percent != null;
             public void Resetwin_percent() => __pbn__win_percent = null;
+            [global::LightProto.ProtoIgnore]
             private float? __pbn__win_percent;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public float pick_percent
             {
                 get => __pbn__pick_percent.GetValueOrDefault();
@@ -9596,9 +10509,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializepick_percent() => __pbn__pick_percent != null;
             public void Resetpick_percent() => __pbn__pick_percent = null;
+            [global::LightProto.ProtoIgnore]
             private float? __pbn__pick_percent;
 
-            [global::ProtoBuf.ProtoMember(3)]
+            [global::LightProto.ProtoMember(3)]
             public uint win_count
             {
                 get => __pbn__win_count.GetValueOrDefault();
@@ -9606,9 +10520,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializewin_count() => __pbn__win_count != null;
             public void Resetwin_count() => __pbn__win_count = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__win_count;
 
-            [global::ProtoBuf.ProtoMember(4)]
+            [global::LightProto.ProtoMember(4)]
             public uint pick_count
             {
                 get => __pbn__pick_count.GetValueOrDefault();
@@ -9616,20 +10531,22 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializepick_count() => __pbn__pick_count != null;
             public void Resetpick_count() => __pbn__pick_count = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__pick_count;
 
         }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTASelectionPriorityChoiceRequest : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(DOTASelectionPriorityChoice.k_DOTASelectionPriorityChoice_Invalid)]
         public DOTASelectionPriorityChoice choice
         {
@@ -9638,18 +10555,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializechoice() => __pbn__choice != null;
         public void Resetchoice() => __pbn__choice = null;
+        [global::LightProto.ProtoIgnore]
         private DOTASelectionPriorityChoice? __pbn__choice;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTASelectionPriorityChoiceResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(Result.SUCCESS)]
         public Result result
         {
@@ -9658,9 +10577,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private Result? __pbn__result;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum Result
         {
             SUCCESS = 0,
@@ -9669,14 +10589,15 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTAGameAutographReward : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue("")]
         public string badge_id
         {
@@ -9685,18 +10606,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializebadge_id() => __pbn__badge_id != null;
         public void Resetbadge_id() => __pbn__badge_id = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__badge_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTAGameAutographRewardResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(Result.SUCCESS)]
         public Result result
         {
@@ -9705,9 +10628,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private Result? __pbn__result;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum Result
         {
             SUCCESS = 0,
@@ -9716,23 +10640,25 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTADestroyLobbyRequest : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTADestroyLobbyResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(Result.SUCCESS)]
         public Result result
         {
@@ -9741,9 +10667,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private Result? __pbn__result;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum Result
         {
             SUCCESS = 0,
@@ -9752,35 +10679,38 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTAGetRecentPlayTimeFriendsRequest : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTAGetRecentPlayTimeFriendsResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public global::System.Collections.Generic.List<uint> account_ids { get; } = new global::System.Collections.Generic.List<uint>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgPurchaseItemWithEventPoints : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint item_def
         {
             get => __pbn__item_def.GetValueOrDefault();
@@ -9788,9 +10718,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeitem_def() => __pbn__item_def != null;
         public void Resetitem_def() => __pbn__item_def = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__item_def;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint quantity
         {
             get => __pbn__quantity.GetValueOrDefault();
@@ -9798,9 +10729,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializequantity() => __pbn__quantity != null;
         public void Resetquantity() => __pbn__quantity = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__quantity;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         [global::System.ComponentModel.DefaultValue(EEvent.EVENT_ID_NONE)]
         public EEvent event_id
         {
@@ -9809,9 +10741,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeevent_id() => __pbn__event_id != null;
         public void Resetevent_id() => __pbn__event_id = null;
+        [global::LightProto.ProtoIgnore]
         private EEvent? __pbn__event_id;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public bool use_premium_points
         {
             get => __pbn__use_premium_points.GetValueOrDefault();
@@ -9819,18 +10752,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeuse_premium_points() => __pbn__use_premium_points != null;
         public void Resetuse_premium_points() => __pbn__use_premium_points = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__use_premium_points;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgPurchaseItemWithEventPointsResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(Result.SUCCESS)]
         public Result result
         {
@@ -9839,9 +10774,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private Result? __pbn__result;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum Result
         {
             SUCCESS = 0,
@@ -9862,14 +10798,15 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgPurchaseHeroRandomRelic : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public int hero_id
         {
             get => __pbn__hero_id.GetValueOrDefault();
@@ -9877,9 +10814,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializehero_id() => __pbn__hero_id != null;
         public void Resethero_id() => __pbn__hero_id = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__hero_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue(EHeroRelicRarity.HERO_RELIC_RARITY_INVALID)]
         public EHeroRelicRarity relic_rarity
         {
@@ -9888,18 +10826,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializerelic_rarity() => __pbn__relic_rarity != null;
         public void Resetrelic_rarity() => __pbn__relic_rarity = null;
+        [global::LightProto.ProtoIgnore]
         private EHeroRelicRarity? __pbn__relic_rarity;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgPurchaseHeroRandomRelicResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EPurchaseHeroRelicResult.k_EPurchaseHeroRelicResult_Success)]
         public EPurchaseHeroRelicResult result
         {
@@ -9908,9 +10848,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private EPurchaseHeroRelicResult? __pbn__result;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint kill_eater_type
         {
             get => __pbn__kill_eater_type.GetValueOrDefault();
@@ -9918,18 +10859,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializekill_eater_type() => __pbn__kill_eater_type != null;
         public void Resetkill_eater_type() => __pbn__kill_eater_type = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__kill_eater_type;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCRequestPlusWeeklyChallengeResult : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EEvent.EVENT_ID_NONE)]
         public EEvent event_id
         {
@@ -9938,9 +10881,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeevent_id() => __pbn__event_id != null;
         public void Resetevent_id() => __pbn__event_id = null;
+        [global::LightProto.ProtoIgnore]
         private EEvent? __pbn__event_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint week
         {
             get => __pbn__week.GetValueOrDefault();
@@ -9948,27 +10892,30 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeweek() => __pbn__week != null;
         public void Resetweek() => __pbn__week = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__week;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCRequestPlusWeeklyChallengeResultResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgProfileRequest : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint account_id
         {
             get => __pbn__account_id.GetValueOrDefault();
@@ -9976,33 +10923,35 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeaccount_id() => __pbn__account_id != null;
         public void Resetaccount_id() => __pbn__account_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__account_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgProfileResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public CSOEconItem background_item { get; set; }
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public global::System.Collections.Generic.List<FeaturedHero> featured_heroes { get; } = new global::System.Collections.Generic.List<FeaturedHero>();
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public global::System.Collections.Generic.List<MatchInfo> recent_matches { get; } = new global::System.Collections.Generic.List<MatchInfo>();
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public global::System.Collections.Generic.List<CMsgSuccessfulHero> successful_heroes { get; } = new global::System.Collections.Generic.List<CMsgSuccessfulHero>();
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public CMsgRecentMatchInfo recent_match_details { get; set; }
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         [global::System.ComponentModel.DefaultValue(EResponse.k_eInternalError)]
         public EResponse result
         {
@@ -10011,19 +10960,21 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private EResponse? __pbn__result;
 
-        [global::ProtoBuf.ProtoMember(7)]
+        [global::LightProto.ProtoMember(7)]
         public CMsgStickerbookPage stickerbook_page { get; set; }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class FeaturedHero : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public int hero_id
             {
                 get => __pbn__hero_id.GetValueOrDefault();
@@ -10031,12 +10982,13 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializehero_id() => __pbn__hero_id != null;
             public void Resethero_id() => __pbn__hero_id = null;
+            [global::LightProto.ProtoIgnore]
             private int? __pbn__hero_id;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public global::System.Collections.Generic.List<CSOEconItem> equipped_econ_items { get; } = new global::System.Collections.Generic.List<CSOEconItem>();
 
-            [global::ProtoBuf.ProtoMember(3)]
+            [global::LightProto.ProtoMember(3)]
             public bool manually_set
             {
                 get => __pbn__manually_set.GetValueOrDefault();
@@ -10044,9 +10996,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializemanually_set() => __pbn__manually_set != null;
             public void Resetmanually_set() => __pbn__manually_set = null;
+            [global::LightProto.ProtoIgnore]
             private bool? __pbn__manually_set;
 
-            [global::ProtoBuf.ProtoMember(4)]
+            [global::LightProto.ProtoMember(4)]
             public uint plus_hero_xp
             {
                 get => __pbn__plus_hero_xp.GetValueOrDefault();
@@ -10054,21 +11007,23 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeplus_hero_xp() => __pbn__plus_hero_xp != null;
             public void Resetplus_hero_xp() => __pbn__plus_hero_xp = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__plus_hero_xp;
 
-            [global::ProtoBuf.ProtoMember(5)]
+            [global::LightProto.ProtoMember(5)]
             public CSOEconItem plus_hero_relics_item { get; set; }
 
         }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class MatchInfo : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public ulong match_id
             {
                 get => __pbn__match_id.GetValueOrDefault();
@@ -10076,9 +11031,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializematch_id() => __pbn__match_id != null;
             public void Resetmatch_id() => __pbn__match_id = null;
+            [global::LightProto.ProtoIgnore]
             private ulong? __pbn__match_id;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public uint match_timestamp
             {
                 get => __pbn__match_timestamp.GetValueOrDefault();
@@ -10086,9 +11042,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializematch_timestamp() => __pbn__match_timestamp != null;
             public void Resetmatch_timestamp() => __pbn__match_timestamp = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__match_timestamp;
 
-            [global::ProtoBuf.ProtoMember(3, DataFormat = global::ProtoBuf.DataFormat.ZigZag)]
+            [global::LightProto.ProtoMember(3, DataFormat = global::LightProto.DataFormat.ZigZag)]
             public int performance_rating
             {
                 get => __pbn__performance_rating.GetValueOrDefault();
@@ -10096,9 +11053,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeperformance_rating() => __pbn__performance_rating != null;
             public void Resetperformance_rating() => __pbn__performance_rating = null;
+            [global::LightProto.ProtoIgnore]
             private int? __pbn__performance_rating;
 
-            [global::ProtoBuf.ProtoMember(4)]
+            [global::LightProto.ProtoMember(4)]
             public int hero_id
             {
                 get => __pbn__hero_id.GetValueOrDefault();
@@ -10106,9 +11064,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializehero_id() => __pbn__hero_id != null;
             public void Resethero_id() => __pbn__hero_id = null;
+            [global::LightProto.ProtoIgnore]
             private int? __pbn__hero_id;
 
-            [global::ProtoBuf.ProtoMember(5)]
+            [global::LightProto.ProtoMember(5)]
             public bool won_match
             {
                 get => __pbn__won_match.GetValueOrDefault();
@@ -10116,11 +11075,12 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializewon_match() => __pbn__won_match != null;
             public void Resetwon_match() => __pbn__won_match = null;
+            [global::LightProto.ProtoIgnore]
             private bool? __pbn__won_match;
 
         }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum EResponse
         {
             k_eInternalError = 0,
@@ -10131,14 +11091,15 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgProfileUpdate : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public ulong background_item_id
         {
             get => __pbn__background_item_id.GetValueOrDefault();
@@ -10146,21 +11107,23 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializebackground_item_id() => __pbn__background_item_id != null;
         public void Resetbackground_item_id() => __pbn__background_item_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__background_item_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public global::System.Collections.Generic.List<int> featured_hero_ids { get; } = new global::System.Collections.Generic.List<int>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgProfileUpdateResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(Result.SUCCESS)]
         public Result result
         {
@@ -10169,9 +11132,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private Result? __pbn__result;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum Result
         {
             SUCCESS = 0,
@@ -10183,14 +11147,15 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgTalentWinRates : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint last_run
         {
             get => __pbn__last_run.GetValueOrDefault();
@@ -10198,9 +11163,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializelast_run() => __pbn__last_run != null;
         public void Resetlast_run() => __pbn__last_run = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__last_run;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue(-1)]
         public int ability_id
         {
@@ -10209,9 +11175,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeability_id() => __pbn__ability_id != null;
         public void Resetability_id() => __pbn__ability_id = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__ability_id;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public uint game_count
         {
             get => __pbn__game_count.GetValueOrDefault();
@@ -10219,9 +11186,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializegame_count() => __pbn__game_count != null;
         public void Resetgame_count() => __pbn__game_count = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__game_count;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public uint win_count
         {
             get => __pbn__win_count.GetValueOrDefault();
@@ -10229,18 +11197,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializewin_count() => __pbn__win_count != null;
         public void Resetwin_count() => __pbn__win_count = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__win_count;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGlobalHeroAverages : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint last_run
         {
             get => __pbn__last_run.GetValueOrDefault();
@@ -10248,9 +11218,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializelast_run() => __pbn__last_run != null;
         public void Resetlast_run() => __pbn__last_run = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__last_run;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public uint avg_gold_per_min
         {
             get => __pbn__avg_gold_per_min.GetValueOrDefault();
@@ -10258,9 +11229,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeavg_gold_per_min() => __pbn__avg_gold_per_min != null;
         public void Resetavg_gold_per_min() => __pbn__avg_gold_per_min = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__avg_gold_per_min;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public uint avg_xp_per_min
         {
             get => __pbn__avg_xp_per_min.GetValueOrDefault();
@@ -10268,9 +11240,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeavg_xp_per_min() => __pbn__avg_xp_per_min != null;
         public void Resetavg_xp_per_min() => __pbn__avg_xp_per_min = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__avg_xp_per_min;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public uint avg_kills
         {
             get => __pbn__avg_kills.GetValueOrDefault();
@@ -10278,9 +11251,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeavg_kills() => __pbn__avg_kills != null;
         public void Resetavg_kills() => __pbn__avg_kills = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__avg_kills;
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         public uint avg_deaths
         {
             get => __pbn__avg_deaths.GetValueOrDefault();
@@ -10288,9 +11262,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeavg_deaths() => __pbn__avg_deaths != null;
         public void Resetavg_deaths() => __pbn__avg_deaths = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__avg_deaths;
 
-        [global::ProtoBuf.ProtoMember(7)]
+        [global::LightProto.ProtoMember(7)]
         public uint avg_assists
         {
             get => __pbn__avg_assists.GetValueOrDefault();
@@ -10298,9 +11273,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeavg_assists() => __pbn__avg_assists != null;
         public void Resetavg_assists() => __pbn__avg_assists = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__avg_assists;
 
-        [global::ProtoBuf.ProtoMember(8)]
+        [global::LightProto.ProtoMember(8)]
         public uint avg_last_hits
         {
             get => __pbn__avg_last_hits.GetValueOrDefault();
@@ -10308,9 +11284,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeavg_last_hits() => __pbn__avg_last_hits != null;
         public void Resetavg_last_hits() => __pbn__avg_last_hits = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__avg_last_hits;
 
-        [global::ProtoBuf.ProtoMember(9)]
+        [global::LightProto.ProtoMember(9)]
         public uint avg_denies
         {
             get => __pbn__avg_denies.GetValueOrDefault();
@@ -10318,9 +11295,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeavg_denies() => __pbn__avg_denies != null;
         public void Resetavg_denies() => __pbn__avg_denies = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__avg_denies;
 
-        [global::ProtoBuf.ProtoMember(10)]
+        [global::LightProto.ProtoMember(10)]
         public uint avg_net_worth
         {
             get => __pbn__avg_net_worth.GetValueOrDefault();
@@ -10328,18 +11306,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeavg_net_worth() => __pbn__avg_net_worth != null;
         public void Resetavg_net_worth() => __pbn__avg_net_worth = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__avg_net_worth;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgHeroGlobalDataRequest : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public int hero_id
         {
             get => __pbn__hero_id.GetValueOrDefault();
@@ -10347,18 +11327,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializehero_id() => __pbn__hero_id != null;
         public void Resethero_id() => __pbn__hero_id = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__hero_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgHeroGlobalDataResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public int hero_id
         {
             get => __pbn__hero_id.GetValueOrDefault();
@@ -10366,19 +11348,21 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializehero_id() => __pbn__hero_id != null;
         public void Resethero_id() => __pbn__hero_id = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__hero_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public global::System.Collections.Generic.List<HeroDataPerRankChunk> hero_data_per_chunk { get; } = new global::System.Collections.Generic.List<HeroDataPerRankChunk>();
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class GraphData : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public uint day
             {
                 get => __pbn__day.GetValueOrDefault();
@@ -10386,9 +11370,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeday() => __pbn__day != null;
             public void Resetday() => __pbn__day = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__day;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public float win_percent
             {
                 get => __pbn__win_percent.GetValueOrDefault();
@@ -10396,9 +11381,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializewin_percent() => __pbn__win_percent != null;
             public void Resetwin_percent() => __pbn__win_percent = null;
+            [global::LightProto.ProtoIgnore]
             private float? __pbn__win_percent;
 
-            [global::ProtoBuf.ProtoMember(3)]
+            [global::LightProto.ProtoMember(3)]
             public float pick_percent
             {
                 get => __pbn__pick_percent.GetValueOrDefault();
@@ -10406,9 +11392,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializepick_percent() => __pbn__pick_percent != null;
             public void Resetpick_percent() => __pbn__pick_percent = null;
+            [global::LightProto.ProtoIgnore]
             private float? __pbn__pick_percent;
 
-            [global::ProtoBuf.ProtoMember(4)]
+            [global::LightProto.ProtoMember(4)]
             public float ban_percent
             {
                 get => __pbn__ban_percent.GetValueOrDefault();
@@ -10416,18 +11403,20 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeban_percent() => __pbn__ban_percent != null;
             public void Resetban_percent() => __pbn__ban_percent = null;
+            [global::LightProto.ProtoIgnore]
             private float? __pbn__ban_percent;
 
         }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class WeekData : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public uint week
             {
                 get => __pbn__week.GetValueOrDefault();
@@ -10435,9 +11424,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeweek() => __pbn__week != null;
             public void Resetweek() => __pbn__week = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__week;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public float win_percent
             {
                 get => __pbn__win_percent.GetValueOrDefault();
@@ -10445,9 +11435,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializewin_percent() => __pbn__win_percent != null;
             public void Resetwin_percent() => __pbn__win_percent = null;
+            [global::LightProto.ProtoIgnore]
             private float? __pbn__win_percent;
 
-            [global::ProtoBuf.ProtoMember(3)]
+            [global::LightProto.ProtoMember(3)]
             public float pick_percent
             {
                 get => __pbn__pick_percent.GetValueOrDefault();
@@ -10455,9 +11446,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializepick_percent() => __pbn__pick_percent != null;
             public void Resetpick_percent() => __pbn__pick_percent = null;
+            [global::LightProto.ProtoIgnore]
             private float? __pbn__pick_percent;
 
-            [global::ProtoBuf.ProtoMember(4)]
+            [global::LightProto.ProtoMember(4)]
             public float ban_percent
             {
                 get => __pbn__ban_percent.GetValueOrDefault();
@@ -10465,18 +11457,20 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeban_percent() => __pbn__ban_percent != null;
             public void Resetban_percent() => __pbn__ban_percent = null;
+            [global::LightProto.ProtoIgnore]
             private float? __pbn__ban_percent;
 
         }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class HeroDataPerRankChunk : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public uint rank_chunk
             {
                 get => __pbn__rank_chunk.GetValueOrDefault();
@@ -10484,54 +11478,58 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializerank_chunk() => __pbn__rank_chunk != null;
             public void Resetrank_chunk() => __pbn__rank_chunk = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__rank_chunk;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public global::System.Collections.Generic.List<CMsgTalentWinRates> talent_win_rates { get; } = new global::System.Collections.Generic.List<CMsgTalentWinRates>();
 
-            [global::ProtoBuf.ProtoMember(3)]
+            [global::LightProto.ProtoMember(3)]
             public CMsgGlobalHeroAverages hero_averages { get; set; }
 
-            [global::ProtoBuf.ProtoMember(4)]
+            [global::LightProto.ProtoMember(4)]
             public global::System.Collections.Generic.List<CMsgHeroGlobalDataResponse.GraphData> graph_data { get; } = new global::System.Collections.Generic.List<CMsgHeroGlobalDataResponse.GraphData>();
 
-            [global::ProtoBuf.ProtoMember(5)]
+            [global::LightProto.ProtoMember(5)]
             public global::System.Collections.Generic.List<CMsgHeroGlobalDataResponse.WeekData> week_data { get; } = new global::System.Collections.Generic.List<CMsgHeroGlobalDataResponse.WeekData>();
 
         }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgHeroGlobalDataAllHeroes : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<CMsgHeroGlobalDataResponse> heroes { get; } = new global::System.Collections.Generic.List<CMsgHeroGlobalDataResponse>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgHeroGlobalDataHeroesAlliesAndEnemies : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<RankedHeroData> ranked_hero_data { get; } = new global::System.Collections.Generic.List<RankedHeroData>();
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class HeroData : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public int hero_id
             {
                 get => __pbn__hero_id.GetValueOrDefault();
@@ -10539,9 +11537,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializehero_id() => __pbn__hero_id != null;
             public void Resethero_id() => __pbn__hero_id = null;
+            [global::LightProto.ProtoIgnore]
             private int? __pbn__hero_id;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public uint win_rate
             {
                 get => __pbn__win_rate.GetValueOrDefault();
@@ -10549,9 +11548,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializewin_rate() => __pbn__win_rate != null;
             public void Resetwin_rate() => __pbn__win_rate = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__win_rate;
 
-            [global::ProtoBuf.ProtoMember(3)]
+            [global::LightProto.ProtoMember(3)]
             public int first_other_hero_id
             {
                 get => __pbn__first_other_hero_id.GetValueOrDefault();
@@ -10559,24 +11559,26 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializefirst_other_hero_id() => __pbn__first_other_hero_id != null;
             public void Resetfirst_other_hero_id() => __pbn__first_other_hero_id = null;
+            [global::LightProto.ProtoIgnore]
             private int? __pbn__first_other_hero_id;
 
-            [global::ProtoBuf.ProtoMember(5)]
+            [global::LightProto.ProtoMember(5)]
             public global::System.Collections.Generic.List<uint> ally_win_rate { get; } = new global::System.Collections.Generic.List<uint>();
 
-            [global::ProtoBuf.ProtoMember(6)]
+            [global::LightProto.ProtoMember(6)]
             public global::System.Collections.Generic.List<uint> enemy_win_rate { get; } = new global::System.Collections.Generic.List<uint>();
 
         }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class RankedHeroData : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public uint rank
             {
                 get => __pbn__rank.GetValueOrDefault();
@@ -10584,23 +11586,25 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializerank() => __pbn__rank != null;
             public void Resetrank() => __pbn__rank = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__rank;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public global::System.Collections.Generic.List<CMsgHeroGlobalDataHeroesAlliesAndEnemies.HeroData> hero_data { get; } = new global::System.Collections.Generic.List<CMsgHeroGlobalDataHeroesAlliesAndEnemies.HeroData>();
 
         }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgPrivateMetadataKeyRequest : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public ulong match_id
         {
             get => __pbn__match_id.GetValueOrDefault();
@@ -10608,18 +11612,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializematch_id() => __pbn__match_id != null;
         public void Resetmatch_id() => __pbn__match_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__match_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgPrivateMetadataKeyResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint private_key
         {
             get => __pbn__private_key.GetValueOrDefault();
@@ -10627,18 +11633,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeprivate_key() => __pbn__private_key != null;
         public void Resetprivate_key() => __pbn__private_key = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__private_key;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgActivatePlusFreeTrialResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(Result.SUCCESS)]
         public Result result
         {
@@ -10647,9 +11655,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private Result? __pbn__result;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum Result
         {
             SUCCESS = 0,
@@ -10661,14 +11670,15 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCToClientCavernCrawlMapPathCompleted : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint event_id
         {
             get => __pbn__event_id.GetValueOrDefault();
@@ -10676,9 +11686,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeevent_id() => __pbn__event_id != null;
         public void Resetevent_id() => __pbn__event_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__event_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public int hero_id_completed
         {
             get => __pbn__hero_id_completed.GetValueOrDefault();
@@ -10686,12 +11697,13 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializehero_id_completed() => __pbn__hero_id_completed != null;
         public void Resethero_id_completed() => __pbn__hero_id_completed = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__hero_id_completed;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public global::System.Collections.Generic.List<CompletedPathInfo> completed_paths { get; } = new global::System.Collections.Generic.List<CompletedPathInfo>();
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         [global::System.ComponentModel.DefaultValue(255u)]
         public uint map_variant
         {
@@ -10700,16 +11712,18 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializemap_variant() => __pbn__map_variant != null;
         public void Resetmap_variant() => __pbn__map_variant = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__map_variant;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class CompletedPathInfo : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             [global::System.ComponentModel.DefaultValue(255u)]
             public uint path_id_completed
             {
@@ -10718,9 +11732,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializepath_id_completed() => __pbn__path_id_completed != null;
             public void Resetpath_id_completed() => __pbn__path_id_completed = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__path_id_completed;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public bool received_ultra_rare_reward
             {
                 get => __pbn__received_ultra_rare_reward.GetValueOrDefault();
@@ -10728,9 +11743,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializereceived_ultra_rare_reward() => __pbn__received_ultra_rare_reward != null;
             public void Resetreceived_ultra_rare_reward() => __pbn__received_ultra_rare_reward = null;
+            [global::LightProto.ProtoIgnore]
             private bool? __pbn__received_ultra_rare_reward;
 
-            [global::ProtoBuf.ProtoMember(3)]
+            [global::LightProto.ProtoMember(3)]
             public bool half_completed
             {
                 get => __pbn__half_completed.GetValueOrDefault();
@@ -10738,20 +11754,22 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializehalf_completed() => __pbn__half_completed != null;
             public void Resethalf_completed() => __pbn__half_completed = null;
+            [global::LightProto.ProtoIgnore]
             private bool? __pbn__half_completed;
 
         }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCToClientCavernCrawlMapUpdated : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint event_id
         {
             get => __pbn__event_id.GetValueOrDefault();
@@ -10759,18 +11777,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeevent_id() => __pbn__event_id != null;
         public void Resetevent_id() => __pbn__event_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__event_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCCavernCrawlClaimRoom : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint event_id
         {
             get => __pbn__event_id.GetValueOrDefault();
@@ -10778,9 +11798,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeevent_id() => __pbn__event_id != null;
         public void Resetevent_id() => __pbn__event_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__event_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue(255u)]
         public uint room_id
         {
@@ -10789,9 +11810,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeroom_id() => __pbn__room_id != null;
         public void Resetroom_id() => __pbn__room_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__room_id;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         [global::System.ComponentModel.DefaultValue(255u)]
         public uint map_variant
         {
@@ -10800,18 +11822,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializemap_variant() => __pbn__map_variant != null;
         public void Resetmap_variant() => __pbn__map_variant = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__map_variant;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCCavernCrawlClaimRoomResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(Result.SUCCESS)]
         public Result result
         {
@@ -10820,9 +11844,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private Result? __pbn__result;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum Result
         {
             SUCCESS = 0,
@@ -10832,14 +11857,15 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCCavernCrawlUseItemOnRoom : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint event_id
         {
             get => __pbn__event_id.GetValueOrDefault();
@@ -10847,9 +11873,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeevent_id() => __pbn__event_id != null;
         public void Resetevent_id() => __pbn__event_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__event_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue(255u)]
         public uint room_id
         {
@@ -10858,9 +11885,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeroom_id() => __pbn__room_id != null;
         public void Resetroom_id() => __pbn__room_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__room_id;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public uint item_type
         {
             get => __pbn__item_type.GetValueOrDefault();
@@ -10868,9 +11896,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeitem_type() => __pbn__item_type != null;
         public void Resetitem_type() => __pbn__item_type = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__item_type;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         [global::System.ComponentModel.DefaultValue(255u)]
         public uint map_variant
         {
@@ -10879,18 +11908,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializemap_variant() => __pbn__map_variant != null;
         public void Resetmap_variant() => __pbn__map_variant = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__map_variant;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCCavernCrawlUseItemOnRoomResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(Result.SUCCESS)]
         public Result result
         {
@@ -10899,9 +11930,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private Result? __pbn__result;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum Result
         {
             SUCCESS = 0,
@@ -10911,14 +11943,15 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCCavernCrawlUseItemOnPath : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint event_id
         {
             get => __pbn__event_id.GetValueOrDefault();
@@ -10926,9 +11959,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeevent_id() => __pbn__event_id != null;
         public void Resetevent_id() => __pbn__event_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__event_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue(255u)]
         public uint path_id
         {
@@ -10937,9 +11971,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializepath_id() => __pbn__path_id != null;
         public void Resetpath_id() => __pbn__path_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__path_id;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public uint item_type
         {
             get => __pbn__item_type.GetValueOrDefault();
@@ -10947,9 +11982,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeitem_type() => __pbn__item_type != null;
         public void Resetitem_type() => __pbn__item_type = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__item_type;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         [global::System.ComponentModel.DefaultValue(255u)]
         public uint map_variant
         {
@@ -10958,18 +11994,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializemap_variant() => __pbn__map_variant != null;
         public void Resetmap_variant() => __pbn__map_variant = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__map_variant;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCCavernCrawlUseItemOnPathResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(Result.SUCCESS)]
         public Result result
         {
@@ -10978,9 +12016,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private Result? __pbn__result;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum Result
         {
             SUCCESS = 0,
@@ -10990,14 +12029,15 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCCavernCrawlRequestMapState : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint event_id
         {
             get => __pbn__event_id.GetValueOrDefault();
@@ -11005,18 +12045,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeevent_id() => __pbn__event_id != null;
         public void Resetevent_id() => __pbn__event_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__event_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCCavernCrawlRequestMapStateResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(Result.SUCCESS)]
         public Result result
         {
@@ -11025,9 +12067,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private Result? __pbn__result;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint available_map_variants_mask
         {
             get => __pbn__available_map_variants_mask.GetValueOrDefault();
@@ -11035,22 +12078,24 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeavailable_map_variants_mask() => __pbn__available_map_variants_mask != null;
         public void Resetavailable_map_variants_mask() => __pbn__available_map_variants_mask = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__available_map_variants_mask;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public global::System.Collections.Generic.List<InventoryItem> inventory_item { get; } = new global::System.Collections.Generic.List<InventoryItem>();
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public global::System.Collections.Generic.List<MapVariant> map_variants { get; } = new global::System.Collections.Generic.List<MapVariant>();
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class SwappedChallenge : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             [global::System.ComponentModel.DefaultValue(255u)]
             public uint path_id_1
             {
@@ -11059,9 +12104,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializepath_id_1() => __pbn__path_id_1 != null;
             public void Resetpath_id_1() => __pbn__path_id_1 = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__path_id_1;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             [global::System.ComponentModel.DefaultValue(255u)]
             public uint path_id_2
             {
@@ -11070,18 +12116,20 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializepath_id_2() => __pbn__path_id_2 != null;
             public void Resetpath_id_2() => __pbn__path_id_2 = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__path_id_2;
 
         }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class InventoryItem : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public uint item_type
             {
                 get => __pbn__item_type.GetValueOrDefault();
@@ -11089,9 +12137,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeitem_type() => __pbn__item_type != null;
             public void Resetitem_type() => __pbn__item_type = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__item_type;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public uint count
             {
                 get => __pbn__count.GetValueOrDefault();
@@ -11099,18 +12148,20 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializecount() => __pbn__count != null;
             public void Resetcount() => __pbn__count = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__count;
 
         }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class TreasureMap : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             [global::System.ComponentModel.DefaultValue(255u)]
             public uint map_room_id
             {
@@ -11119,9 +12170,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializemap_room_id() => __pbn__map_room_id != null;
             public void Resetmap_room_id() => __pbn__map_room_id = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__map_room_id;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             [global::System.ComponentModel.DefaultValue(255u)]
             public uint revealed_room_id
             {
@@ -11130,18 +12182,20 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializerevealed_room_id() => __pbn__revealed_room_id != null;
             public void Resetrevealed_room_id() => __pbn__revealed_room_id = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__revealed_room_id;
 
         }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class MapVariant : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             [global::System.ComponentModel.DefaultValue(255u)]
             public uint map_variant
             {
@@ -11150,9 +12204,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializemap_variant() => __pbn__map_variant != null;
             public void Resetmap_variant() => __pbn__map_variant = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__map_variant;
 
-            [global::ProtoBuf.ProtoMember(2, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+            [global::LightProto.ProtoMember(2, DataFormat = global::LightProto.DataFormat.FixedSize)]
             public ulong claimed_rooms_1
             {
                 get => __pbn__claimed_rooms_1.GetValueOrDefault();
@@ -11160,9 +12215,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeclaimed_rooms_1() => __pbn__claimed_rooms_1 != null;
             public void Resetclaimed_rooms_1() => __pbn__claimed_rooms_1 = null;
+            [global::LightProto.ProtoIgnore]
             private ulong? __pbn__claimed_rooms_1;
 
-            [global::ProtoBuf.ProtoMember(3, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+            [global::LightProto.ProtoMember(3, DataFormat = global::LightProto.DataFormat.FixedSize)]
             public ulong claimed_rooms_2
             {
                 get => __pbn__claimed_rooms_2.GetValueOrDefault();
@@ -11170,9 +12226,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeclaimed_rooms_2() => __pbn__claimed_rooms_2 != null;
             public void Resetclaimed_rooms_2() => __pbn__claimed_rooms_2 = null;
+            [global::LightProto.ProtoIgnore]
             private ulong? __pbn__claimed_rooms_2;
 
-            [global::ProtoBuf.ProtoMember(4, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+            [global::LightProto.ProtoMember(4, DataFormat = global::LightProto.DataFormat.FixedSize)]
             public ulong revealed_rooms_1
             {
                 get => __pbn__revealed_rooms_1.GetValueOrDefault();
@@ -11180,9 +12237,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializerevealed_rooms_1() => __pbn__revealed_rooms_1 != null;
             public void Resetrevealed_rooms_1() => __pbn__revealed_rooms_1 = null;
+            [global::LightProto.ProtoIgnore]
             private ulong? __pbn__revealed_rooms_1;
 
-            [global::ProtoBuf.ProtoMember(5, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+            [global::LightProto.ProtoMember(5, DataFormat = global::LightProto.DataFormat.FixedSize)]
             public ulong revealed_rooms_2
             {
                 get => __pbn__revealed_rooms_2.GetValueOrDefault();
@@ -11190,9 +12248,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializerevealed_rooms_2() => __pbn__revealed_rooms_2 != null;
             public void Resetrevealed_rooms_2() => __pbn__revealed_rooms_2 = null;
+            [global::LightProto.ProtoIgnore]
             private ulong? __pbn__revealed_rooms_2;
 
-            [global::ProtoBuf.ProtoMember(6, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+            [global::LightProto.ProtoMember(6, DataFormat = global::LightProto.DataFormat.FixedSize)]
             public ulong completed_paths_1
             {
                 get => __pbn__completed_paths_1.GetValueOrDefault();
@@ -11200,9 +12259,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializecompleted_paths_1() => __pbn__completed_paths_1 != null;
             public void Resetcompleted_paths_1() => __pbn__completed_paths_1 = null;
+            [global::LightProto.ProtoIgnore]
             private ulong? __pbn__completed_paths_1;
 
-            [global::ProtoBuf.ProtoMember(7, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+            [global::LightProto.ProtoMember(7, DataFormat = global::LightProto.DataFormat.FixedSize)]
             public ulong completed_paths_2
             {
                 get => __pbn__completed_paths_2.GetValueOrDefault();
@@ -11210,9 +12270,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializecompleted_paths_2() => __pbn__completed_paths_2 != null;
             public void Resetcompleted_paths_2() => __pbn__completed_paths_2 = null;
+            [global::LightProto.ProtoIgnore]
             private ulong? __pbn__completed_paths_2;
 
-            [global::ProtoBuf.ProtoMember(8, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+            [global::LightProto.ProtoMember(8, DataFormat = global::LightProto.DataFormat.FixedSize)]
             public ulong completed_paths_3
             {
                 get => __pbn__completed_paths_3.GetValueOrDefault();
@@ -11220,9 +12281,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializecompleted_paths_3() => __pbn__completed_paths_3 != null;
             public void Resetcompleted_paths_3() => __pbn__completed_paths_3 = null;
+            [global::LightProto.ProtoIgnore]
             private ulong? __pbn__completed_paths_3;
 
-            [global::ProtoBuf.ProtoMember(9, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+            [global::LightProto.ProtoMember(9, DataFormat = global::LightProto.DataFormat.FixedSize)]
             public ulong completed_paths_4
             {
                 get => __pbn__completed_paths_4.GetValueOrDefault();
@@ -11230,9 +12292,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializecompleted_paths_4() => __pbn__completed_paths_4 != null;
             public void Resetcompleted_paths_4() => __pbn__completed_paths_4 = null;
+            [global::LightProto.ProtoIgnore]
             private ulong? __pbn__completed_paths_4;
 
-            [global::ProtoBuf.ProtoMember(10, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+            [global::LightProto.ProtoMember(10, DataFormat = global::LightProto.DataFormat.FixedSize)]
             public ulong half_completed_paths_1
             {
                 get => __pbn__half_completed_paths_1.GetValueOrDefault();
@@ -11240,9 +12303,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializehalf_completed_paths_1() => __pbn__half_completed_paths_1 != null;
             public void Resethalf_completed_paths_1() => __pbn__half_completed_paths_1 = null;
+            [global::LightProto.ProtoIgnore]
             private ulong? __pbn__half_completed_paths_1;
 
-            [global::ProtoBuf.ProtoMember(11, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+            [global::LightProto.ProtoMember(11, DataFormat = global::LightProto.DataFormat.FixedSize)]
             public ulong half_completed_paths_2
             {
                 get => __pbn__half_completed_paths_2.GetValueOrDefault();
@@ -11250,9 +12314,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializehalf_completed_paths_2() => __pbn__half_completed_paths_2 != null;
             public void Resethalf_completed_paths_2() => __pbn__half_completed_paths_2 = null;
+            [global::LightProto.ProtoIgnore]
             private ulong? __pbn__half_completed_paths_2;
 
-            [global::ProtoBuf.ProtoMember(12, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+            [global::LightProto.ProtoMember(12, DataFormat = global::LightProto.DataFormat.FixedSize)]
             public ulong half_completed_paths_3
             {
                 get => __pbn__half_completed_paths_3.GetValueOrDefault();
@@ -11260,9 +12325,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializehalf_completed_paths_3() => __pbn__half_completed_paths_3 != null;
             public void Resethalf_completed_paths_3() => __pbn__half_completed_paths_3 = null;
+            [global::LightProto.ProtoIgnore]
             private ulong? __pbn__half_completed_paths_3;
 
-            [global::ProtoBuf.ProtoMember(13, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+            [global::LightProto.ProtoMember(13, DataFormat = global::LightProto.DataFormat.FixedSize)]
             public ulong half_completed_paths_4
             {
                 get => __pbn__half_completed_paths_4.GetValueOrDefault();
@@ -11270,12 +12336,13 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializehalf_completed_paths_4() => __pbn__half_completed_paths_4 != null;
             public void Resethalf_completed_paths_4() => __pbn__half_completed_paths_4 = null;
+            [global::LightProto.ProtoIgnore]
             private ulong? __pbn__half_completed_paths_4;
 
-            [global::ProtoBuf.ProtoMember(14)]
+            [global::LightProto.ProtoMember(14)]
             public global::System.Collections.Generic.List<CMsgClientToGCCavernCrawlRequestMapStateResponse.SwappedChallenge> swapped_challenge { get; } = new global::System.Collections.Generic.List<CMsgClientToGCCavernCrawlRequestMapStateResponse.SwappedChallenge>();
 
-            [global::ProtoBuf.ProtoMember(15)]
+            [global::LightProto.ProtoMember(15)]
             [global::System.ComponentModel.DefaultValue(255u)]
             public uint ultra_rare_reward_room_number
             {
@@ -11284,14 +12351,15 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeultra_rare_reward_room_number() => __pbn__ultra_rare_reward_room_number != null;
             public void Resetultra_rare_reward_room_number() => __pbn__ultra_rare_reward_room_number = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__ultra_rare_reward_room_number;
 
-            [global::ProtoBuf.ProtoMember(16)]
+            [global::LightProto.ProtoMember(16)]
             public global::System.Collections.Generic.List<CMsgClientToGCCavernCrawlRequestMapStateResponse.TreasureMap> treasure_map { get; } = new global::System.Collections.Generic.List<CMsgClientToGCCavernCrawlRequestMapStateResponse.TreasureMap>();
 
         }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum Result
         {
             SUCCESS = 0,
@@ -11301,14 +12369,15 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCCavernCrawlGetClaimedRoomCount : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint event_id
         {
             get => __pbn__event_id.GetValueOrDefault();
@@ -11316,18 +12385,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeevent_id() => __pbn__event_id != null;
         public void Resetevent_id() => __pbn__event_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__event_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCCavernCrawlGetClaimedRoomCountResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(Result.SUCCESS)]
         public Result result
         {
@@ -11336,12 +12407,13 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private Result? __pbn__result;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public global::System.Collections.Generic.List<MapVariant> map_variants { get; } = new global::System.Collections.Generic.List<MapVariant>();
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public uint available_map_variants_mask
         {
             get => __pbn__available_map_variants_mask.GetValueOrDefault();
@@ -11349,16 +12421,18 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeavailable_map_variants_mask() => __pbn__available_map_variants_mask != null;
         public void Resetavailable_map_variants_mask() => __pbn__available_map_variants_mask = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__available_map_variants_mask;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class MapVariant : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             [global::System.ComponentModel.DefaultValue(255u)]
             public uint map_variant
             {
@@ -11367,9 +12441,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializemap_variant() => __pbn__map_variant != null;
             public void Resetmap_variant() => __pbn__map_variant = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__map_variant;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public uint count
             {
                 get => __pbn__count.GetValueOrDefault();
@@ -11377,11 +12452,12 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializecount() => __pbn__count != null;
             public void Resetcount() => __pbn__count = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__count;
 
         }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum Result
         {
             SUCCESS = 0,
@@ -11391,24 +12467,26 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTAMutationList : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<Mutation> mutations { get; } = new global::System.Collections.Generic.List<Mutation>();
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class Mutation : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public uint id
             {
                 get => __pbn__id.GetValueOrDefault();
@@ -11416,9 +12494,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeid() => __pbn__id != null;
             public void Resetid() => __pbn__id = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__id;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             [global::System.ComponentModel.DefaultValue("")]
             public string name
             {
@@ -11427,9 +12506,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializename() => __pbn__name != null;
             public void Resetname() => __pbn__name = null;
+            [global::LightProto.ProtoIgnore]
             private string __pbn__name;
 
-            [global::ProtoBuf.ProtoMember(3)]
+            [global::LightProto.ProtoMember(3)]
             [global::System.ComponentModel.DefaultValue("")]
             public string description
             {
@@ -11438,20 +12518,22 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializedescription() => __pbn__description != null;
             public void Resetdescription() => __pbn__description = null;
+            [global::LightProto.ProtoIgnore]
             private string __pbn__description;
 
         }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgEventTipsSummaryRequest : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EEvent.EVENT_ID_NONE)]
         public EEvent event_id
         {
@@ -11460,9 +12542,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeevent_id() => __pbn__event_id != null;
         public void Resetevent_id() => __pbn__event_id = null;
+        [global::LightProto.ProtoIgnore]
         private EEvent? __pbn__event_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint account_id
         {
             get => __pbn__account_id.GetValueOrDefault();
@@ -11470,18 +12553,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeaccount_id() => __pbn__account_id != null;
         public void Resetaccount_id() => __pbn__account_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__account_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgEventTipsSummaryResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public bool result
         {
             get => __pbn__result.GetValueOrDefault();
@@ -11489,19 +12574,21 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__result;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public global::System.Collections.Generic.List<Tipper> tips_received { get; } = new global::System.Collections.Generic.List<Tipper>();
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class Tipper : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public uint tipper_account_id
             {
                 get => __pbn__tipper_account_id.GetValueOrDefault();
@@ -11509,9 +12596,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializetipper_account_id() => __pbn__tipper_account_id != null;
             public void Resettipper_account_id() => __pbn__tipper_account_id = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__tipper_account_id;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             [global::System.ComponentModel.DefaultValue(1u)]
             public uint tip_count
             {
@@ -11520,20 +12608,22 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializetip_count() => __pbn__tip_count != null;
             public void Resettip_count() => __pbn__tip_count = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__tip_count;
 
         }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgSocialFeedRequest : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint account_id
         {
             get => __pbn__account_id.GetValueOrDefault();
@@ -11541,9 +12631,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeaccount_id() => __pbn__account_id != null;
         public void Resetaccount_id() => __pbn__account_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__account_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public bool self_only
         {
             get => __pbn__self_only.GetValueOrDefault();
@@ -11551,18 +12642,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeself_only() => __pbn__self_only != null;
         public void Resetself_only() => __pbn__self_only = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__self_only;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgSocialFeedResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(Result.SUCCESS)]
         public Result result
         {
@@ -11571,19 +12664,21 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private Result? __pbn__result;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public global::System.Collections.Generic.List<FeedEvent> feed_events { get; } = new global::System.Collections.Generic.List<FeedEvent>();
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class FeedEvent : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public ulong feed_event_id
             {
                 get => __pbn__feed_event_id.GetValueOrDefault();
@@ -11591,9 +12686,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializefeed_event_id() => __pbn__feed_event_id != null;
             public void Resetfeed_event_id() => __pbn__feed_event_id = null;
+            [global::LightProto.ProtoIgnore]
             private ulong? __pbn__feed_event_id;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public uint account_id
             {
                 get => __pbn__account_id.GetValueOrDefault();
@@ -11601,9 +12697,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeaccount_id() => __pbn__account_id != null;
             public void Resetaccount_id() => __pbn__account_id = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__account_id;
 
-            [global::ProtoBuf.ProtoMember(3)]
+            [global::LightProto.ProtoMember(3)]
             public uint timestamp
             {
                 get => __pbn__timestamp.GetValueOrDefault();
@@ -11611,9 +12708,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializetimestamp() => __pbn__timestamp != null;
             public void Resettimestamp() => __pbn__timestamp = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__timestamp;
 
-            [global::ProtoBuf.ProtoMember(4)]
+            [global::LightProto.ProtoMember(4)]
             public uint comment_count
             {
                 get => __pbn__comment_count.GetValueOrDefault();
@@ -11621,9 +12719,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializecomment_count() => __pbn__comment_count != null;
             public void Resetcomment_count() => __pbn__comment_count = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__comment_count;
 
-            [global::ProtoBuf.ProtoMember(5)]
+            [global::LightProto.ProtoMember(5)]
             public uint event_type
             {
                 get => __pbn__event_type.GetValueOrDefault();
@@ -11631,9 +12730,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeevent_type() => __pbn__event_type != null;
             public void Resetevent_type() => __pbn__event_type = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__event_type;
 
-            [global::ProtoBuf.ProtoMember(6)]
+            [global::LightProto.ProtoMember(6)]
             public uint event_sub_type
             {
                 get => __pbn__event_sub_type.GetValueOrDefault();
@@ -11641,9 +12741,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeevent_sub_type() => __pbn__event_sub_type != null;
             public void Resetevent_sub_type() => __pbn__event_sub_type = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__event_sub_type;
 
-            [global::ProtoBuf.ProtoMember(7)]
+            [global::LightProto.ProtoMember(7)]
             public ulong param_big_int_1
             {
                 get => __pbn__param_big_int_1.GetValueOrDefault();
@@ -11651,9 +12752,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeparam_big_int_1() => __pbn__param_big_int_1 != null;
             public void Resetparam_big_int_1() => __pbn__param_big_int_1 = null;
+            [global::LightProto.ProtoIgnore]
             private ulong? __pbn__param_big_int_1;
 
-            [global::ProtoBuf.ProtoMember(8)]
+            [global::LightProto.ProtoMember(8)]
             public uint param_int_1
             {
                 get => __pbn__param_int_1.GetValueOrDefault();
@@ -11661,9 +12763,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeparam_int_1() => __pbn__param_int_1 != null;
             public void Resetparam_int_1() => __pbn__param_int_1 = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__param_int_1;
 
-            [global::ProtoBuf.ProtoMember(9)]
+            [global::LightProto.ProtoMember(9)]
             public uint param_int_2
             {
                 get => __pbn__param_int_2.GetValueOrDefault();
@@ -11671,9 +12774,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeparam_int_2() => __pbn__param_int_2 != null;
             public void Resetparam_int_2() => __pbn__param_int_2 = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__param_int_2;
 
-            [global::ProtoBuf.ProtoMember(10)]
+            [global::LightProto.ProtoMember(10)]
             public uint param_int_3
             {
                 get => __pbn__param_int_3.GetValueOrDefault();
@@ -11681,9 +12785,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeparam_int_3() => __pbn__param_int_3 != null;
             public void Resetparam_int_3() => __pbn__param_int_3 = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__param_int_3;
 
-            [global::ProtoBuf.ProtoMember(11)]
+            [global::LightProto.ProtoMember(11)]
             [global::System.ComponentModel.DefaultValue("")]
             public string param_string
             {
@@ -11692,11 +12797,12 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeparam_string() => __pbn__param_string != null;
             public void Resetparam_string() => __pbn__param_string = null;
+            [global::LightProto.ProtoIgnore]
             private string __pbn__param_string;
 
         }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum Result
         {
             SUCCESS = 0,
@@ -11709,14 +12815,15 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgSocialFeedCommentsRequest : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public ulong feed_event_id
         {
             get => __pbn__feed_event_id.GetValueOrDefault();
@@ -11724,18 +12831,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializefeed_event_id() => __pbn__feed_event_id != null;
         public void Resetfeed_event_id() => __pbn__feed_event_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__feed_event_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgSocialFeedCommentsResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(Result.SUCCESS)]
         public Result result
         {
@@ -11744,19 +12853,21 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private Result? __pbn__result;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public global::System.Collections.Generic.List<FeedComment> feed_comments { get; } = new global::System.Collections.Generic.List<FeedComment>();
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class FeedComment : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public uint commenter_account_id
             {
                 get => __pbn__commenter_account_id.GetValueOrDefault();
@@ -11764,9 +12875,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializecommenter_account_id() => __pbn__commenter_account_id != null;
             public void Resetcommenter_account_id() => __pbn__commenter_account_id = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__commenter_account_id;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public uint timestamp
             {
                 get => __pbn__timestamp.GetValueOrDefault();
@@ -11774,9 +12886,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializetimestamp() => __pbn__timestamp != null;
             public void Resettimestamp() => __pbn__timestamp = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__timestamp;
 
-            [global::ProtoBuf.ProtoMember(3)]
+            [global::LightProto.ProtoMember(3)]
             [global::System.ComponentModel.DefaultValue("")]
             public string comment_text
             {
@@ -11785,11 +12898,12 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializecomment_text() => __pbn__comment_text != null;
             public void Resetcomment_text() => __pbn__comment_text = null;
+            [global::LightProto.ProtoIgnore]
             private string __pbn__comment_text;
 
         }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum Result
         {
             SUCCESS = 0,
@@ -11799,14 +12913,15 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCPlayerCardSpecificPurchaseRequest : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint player_account_id
         {
             get => __pbn__player_account_id.GetValueOrDefault();
@@ -11814,9 +12929,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeplayer_account_id() => __pbn__player_account_id != null;
         public void Resetplayer_account_id() => __pbn__player_account_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__player_account_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint event_id
         {
             get => __pbn__event_id.GetValueOrDefault();
@@ -11824,9 +12940,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeevent_id() => __pbn__event_id != null;
         public void Resetevent_id() => __pbn__event_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__event_id;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public ulong card_dust_item_id
         {
             get => __pbn__card_dust_item_id.GetValueOrDefault();
@@ -11834,18 +12951,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializecard_dust_item_id() => __pbn__card_dust_item_id != null;
         public void Resetcard_dust_item_id() => __pbn__card_dust_item_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__card_dust_item_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCPlayerCardSpecificPurchaseResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(Result.SUCCESS)]
         public Result result
         {
@@ -11854,9 +12973,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private Result? __pbn__result;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public ulong item_id
         {
             get => __pbn__item_id.GetValueOrDefault();
@@ -11864,9 +12984,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeitem_id() => __pbn__item_id != null;
         public void Resetitem_id() => __pbn__item_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__item_id;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum Result
         {
             SUCCESS = 1,
@@ -11879,14 +13000,15 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCRequestContestVotes : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint contest_id
         {
             get => __pbn__contest_id.GetValueOrDefault();
@@ -11894,18 +13016,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializecontest_id() => __pbn__contest_id != null;
         public void Resetcontest_id() => __pbn__contest_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__contest_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCRequestContestVotesResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EResponse.k_eInternalError)]
         public EResponse result
         {
@@ -11914,19 +13038,21 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private EResponse? __pbn__result;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public global::System.Collections.Generic.List<ItemVote> votes { get; } = new global::System.Collections.Generic.List<ItemVote>();
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class ItemVote : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public ulong contest_item_id
             {
                 get => __pbn__contest_item_id.GetValueOrDefault();
@@ -11934,9 +13060,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializecontest_item_id() => __pbn__contest_item_id != null;
             public void Resetcontest_item_id() => __pbn__contest_item_id = null;
+            [global::LightProto.ProtoIgnore]
             private ulong? __pbn__contest_item_id;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public int vote
             {
                 get => __pbn__vote.GetValueOrDefault();
@@ -11944,11 +13071,12 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializevote() => __pbn__vote != null;
             public void Resetvote() => __pbn__vote = null;
+            [global::LightProto.ProtoIgnore]
             private int? __pbn__vote;
 
         }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum EResponse
         {
             k_eInternalError = 0,
@@ -11959,14 +13087,15 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCRecordContestVote : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint contest_id
         {
             get => __pbn__contest_id.GetValueOrDefault();
@@ -11974,9 +13103,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializecontest_id() => __pbn__contest_id != null;
         public void Resetcontest_id() => __pbn__contest_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__contest_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public ulong contest_item_id
         {
             get => __pbn__contest_item_id.GetValueOrDefault();
@@ -11984,9 +13114,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializecontest_item_id() => __pbn__contest_item_id != null;
         public void Resetcontest_item_id() => __pbn__contest_item_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__contest_item_id;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public int vote
         {
             get => __pbn__vote.GetValueOrDefault();
@@ -11994,18 +13125,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializevote() => __pbn__vote != null;
         public void Resetvote() => __pbn__vote = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__vote;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCToClientRecordContestVoteResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EResult.SUCCESS)]
         public EResult eresult
         {
@@ -12014,9 +13147,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeeresult() => __pbn__eresult != null;
         public void Reseteresult() => __pbn__eresult = null;
+        [global::LightProto.ProtoIgnore]
         private EResult? __pbn__eresult;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum EResult
         {
             SUCCESS = 0,
@@ -12029,14 +13163,15 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDevGrantEventPoints : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EEvent.EVENT_ID_NONE)]
         public EEvent event_id
         {
@@ -12045,9 +13180,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeevent_id() => __pbn__event_id != null;
         public void Resetevent_id() => __pbn__event_id = null;
+        [global::LightProto.ProtoIgnore]
         private EEvent? __pbn__event_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint event_points
         {
             get => __pbn__event_points.GetValueOrDefault();
@@ -12055,9 +13191,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeevent_points() => __pbn__event_points != null;
         public void Resetevent_points() => __pbn__event_points = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__event_points;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public uint premium_points
         {
             get => __pbn__premium_points.GetValueOrDefault();
@@ -12065,18 +13202,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializepremium_points() => __pbn__premium_points != null;
         public void Resetpremium_points() => __pbn__premium_points = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__premium_points;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDevGrantEventPointsResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EDevEventRequestResult.k_EDevEventRequestResult_Success)]
         public EDevEventRequestResult result
         {
@@ -12085,18 +13224,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private EDevEventRequestResult? __pbn__result;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDevGrantEventAction : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EEvent.EVENT_ID_NONE)]
         public EEvent event_id
         {
@@ -12105,9 +13246,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeevent_id() => __pbn__event_id != null;
         public void Resetevent_id() => __pbn__event_id = null;
+        [global::LightProto.ProtoIgnore]
         private EEvent? __pbn__event_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint action_id
         {
             get => __pbn__action_id.GetValueOrDefault();
@@ -12115,9 +13257,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeaction_id() => __pbn__action_id != null;
         public void Resetaction_id() => __pbn__action_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__action_id;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public uint action_score
         {
             get => __pbn__action_score.GetValueOrDefault();
@@ -12125,18 +13268,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeaction_score() => __pbn__action_score != null;
         public void Resetaction_score() => __pbn__action_score = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__action_score;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDevGrantEventActionResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EDevEventRequestResult.k_EDevEventRequestResult_Success)]
         public EDevEventRequestResult result
         {
@@ -12145,18 +13290,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private EDevEventRequestResult? __pbn__result;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDevDeleteEventActions : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EEvent.EVENT_ID_NONE)]
         public EEvent event_id
         {
@@ -12165,9 +13312,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeevent_id() => __pbn__event_id != null;
         public void Resetevent_id() => __pbn__event_id = null;
+        [global::LightProto.ProtoIgnore]
         private EEvent? __pbn__event_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint start_action_id
         {
             get => __pbn__start_action_id.GetValueOrDefault();
@@ -12175,9 +13323,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializestart_action_id() => __pbn__start_action_id != null;
         public void Resetstart_action_id() => __pbn__start_action_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__start_action_id;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public uint end_action_id
         {
             get => __pbn__end_action_id.GetValueOrDefault();
@@ -12185,9 +13334,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeend_action_id() => __pbn__end_action_id != null;
         public void Resetend_action_id() => __pbn__end_action_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__end_action_id;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public bool remove_audit
         {
             get => __pbn__remove_audit.GetValueOrDefault();
@@ -12195,18 +13345,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeremove_audit() => __pbn__remove_audit != null;
         public void Resetremove_audit() => __pbn__remove_audit = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__remove_audit;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDevDeleteEventActionsResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EDevEventRequestResult.k_EDevEventRequestResult_Success)]
         public EDevEventRequestResult result
         {
@@ -12215,18 +13367,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private EDevEventRequestResult? __pbn__result;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDevResetEventState : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EEvent.EVENT_ID_NONE)]
         public EEvent event_id
         {
@@ -12235,9 +13389,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeevent_id() => __pbn__event_id != null;
         public void Resetevent_id() => __pbn__event_id = null;
+        [global::LightProto.ProtoIgnore]
         private EEvent? __pbn__event_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public bool remove_audit
         {
             get => __pbn__remove_audit.GetValueOrDefault();
@@ -12245,18 +13400,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeremove_audit() => __pbn__remove_audit != null;
         public void Resetremove_audit() => __pbn__remove_audit = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__remove_audit;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDevResetEventStateResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EDevEventRequestResult.k_EDevEventRequestResult_Success)]
         public EDevEventRequestResult result
         {
@@ -12265,27 +13422,30 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private EDevEventRequestResult? __pbn__result;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDevReloadAllEvents : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDevReloadAllEventsResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EDevEventRequestResult.k_EDevEventRequestResult_Success)]
         public EDevEventRequestResult result
         {
@@ -12294,18 +13454,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private EDevEventRequestResult? __pbn__result;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgConsumeEventSupportGrantItem : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public ulong item_id
         {
             get => __pbn__item_id.GetValueOrDefault();
@@ -12313,18 +13475,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeitem_id() => __pbn__item_id != null;
         public void Resetitem_id() => __pbn__item_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__item_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgConsumeEventSupportGrantItemResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(ESupportEventRequestResult.k_ESupportEventRequestResult_Success)]
         public ESupportEventRequestResult result
         {
@@ -12333,27 +13497,30 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private ESupportEventRequestResult? __pbn__result;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCGetFilteredPlayers : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCToClientGetFilteredPlayersResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(Result.SUCCESS)]
         public Result result
         {
@@ -12362,12 +13529,13 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private Result? __pbn__result;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public global::System.Collections.Generic.List<CFilterEntry> filtered_players { get; } = new global::System.Collections.Generic.List<CFilterEntry>();
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public int base_slots
         {
             get => __pbn__base_slots.GetValueOrDefault();
@@ -12375,9 +13543,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializebase_slots() => __pbn__base_slots != null;
         public void Resetbase_slots() => __pbn__base_slots = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__base_slots;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public int additional_slots
         {
             get => __pbn__additional_slots.GetValueOrDefault();
@@ -12385,9 +13554,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeadditional_slots() => __pbn__additional_slots != null;
         public void Resetadditional_slots() => __pbn__additional_slots = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__additional_slots;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public int next_slot_cost
         {
             get => __pbn__next_slot_cost.GetValueOrDefault();
@@ -12395,16 +13565,18 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializenext_slot_cost() => __pbn__next_slot_cost != null;
         public void Resetnext_slot_cost() => __pbn__next_slot_cost = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__next_slot_cost;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class CFilterEntry : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+            [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
             public uint account_id
             {
                 get => __pbn__account_id.GetValueOrDefault();
@@ -12412,9 +13584,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeaccount_id() => __pbn__account_id != null;
             public void Resetaccount_id() => __pbn__account_id = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__account_id;
 
-            [global::ProtoBuf.ProtoMember(2, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+            [global::LightProto.ProtoMember(2, DataFormat = global::LightProto.DataFormat.FixedSize)]
             public uint time_added
             {
                 get => __pbn__time_added.GetValueOrDefault();
@@ -12422,9 +13595,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializetime_added() => __pbn__time_added != null;
             public void Resettime_added() => __pbn__time_added = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__time_added;
 
-            [global::ProtoBuf.ProtoMember(3, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+            [global::LightProto.ProtoMember(3, DataFormat = global::LightProto.DataFormat.FixedSize)]
             public uint time_expires
             {
                 get => __pbn__time_expires.GetValueOrDefault();
@@ -12432,9 +13606,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializetime_expires() => __pbn__time_expires != null;
             public void Resettime_expires() => __pbn__time_expires = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__time_expires;
 
-            [global::ProtoBuf.ProtoMember(4)]
+            [global::LightProto.ProtoMember(4)]
             [global::System.ComponentModel.DefaultValue("")]
             public string note
             {
@@ -12443,11 +13618,12 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializenote() => __pbn__note != null;
             public void Resetnote() => __pbn__note = null;
+            [global::LightProto.ProtoIgnore]
             private string __pbn__note;
 
         }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum Result
         {
             SUCCESS = 0,
@@ -12456,14 +13632,15 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCRemoveFilteredPlayer : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public uint account_id_to_remove
         {
             get => __pbn__account_id_to_remove.GetValueOrDefault();
@@ -12471,18 +13648,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeaccount_id_to_remove() => __pbn__account_id_to_remove != null;
         public void Resetaccount_id_to_remove() => __pbn__account_id_to_remove = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__account_id_to_remove;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCToClientRemoveFilteredPlayerResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(Result.SUCCESS)]
         public Result result
         {
@@ -12491,9 +13670,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private Result? __pbn__result;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum Result
         {
             SUCCESS = 0,
@@ -12502,14 +13682,15 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCPurchaseFilteredPlayerSlot : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public int additional_slots_current
         {
             get => __pbn__additional_slots_current.GetValueOrDefault();
@@ -12517,18 +13698,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeadditional_slots_current() => __pbn__additional_slots_current != null;
         public void Resetadditional_slots_current() => __pbn__additional_slots_current = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__additional_slots_current;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCToClientPurchaseFilteredPlayerSlotResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(Result.SUCCESS)]
         public Result result
         {
@@ -12537,9 +13720,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private Result? __pbn__result;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public int additional_slots
         {
             get => __pbn__additional_slots.GetValueOrDefault();
@@ -12547,9 +13731,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeadditional_slots() => __pbn__additional_slots != null;
         public void Resetadditional_slots() => __pbn__additional_slots = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__additional_slots;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public int next_slot_cost
         {
             get => __pbn__next_slot_cost.GetValueOrDefault();
@@ -12557,9 +13742,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializenext_slot_cost() => __pbn__next_slot_cost != null;
         public void Resetnext_slot_cost() => __pbn__next_slot_cost = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__next_slot_cost;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum Result
         {
             SUCCESS = 0,
@@ -12570,14 +13756,15 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCUpdateFilteredPlayerNote : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public uint target_account_id
         {
             get => __pbn__target_account_id.GetValueOrDefault();
@@ -12585,9 +13772,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializetarget_account_id() => __pbn__target_account_id != null;
         public void Resettarget_account_id() => __pbn__target_account_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__target_account_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue("")]
         public string new_note
         {
@@ -12596,18 +13784,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializenew_note() => __pbn__new_note != null;
         public void Resetnew_note() => __pbn__new_note = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__new_note;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCToClientUpdateFilteredPlayerNoteResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(Result.SUCCESS)]
         public Result result
         {
@@ -12616,9 +13806,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private Result? __pbn__result;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum Result
         {
             SUCCESS = 0,
@@ -12628,14 +13819,15 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgPartySearchPlayer : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public uint account_id
         {
             get => __pbn__account_id.GetValueOrDefault();
@@ -12643,9 +13835,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeaccount_id() => __pbn__account_id != null;
         public void Resetaccount_id() => __pbn__account_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__account_id;
 
-        [global::ProtoBuf.ProtoMember(2, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(2, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong match_id
         {
             get => __pbn__match_id.GetValueOrDefault();
@@ -12653,9 +13846,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializematch_id() => __pbn__match_id != null;
         public void Resetmatch_id() => __pbn__match_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__match_id;
 
-        [global::ProtoBuf.ProtoMember(3, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(3, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public uint creation_time
         {
             get => __pbn__creation_time.GetValueOrDefault();
@@ -12663,30 +13857,33 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializecreation_time() => __pbn__creation_time != null;
         public void Resetcreation_time() => __pbn__creation_time = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__creation_time;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCToClientPlayerBeaconState : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<int> num_active_beacons { get; } = new global::System.Collections.Generic.List<int>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCToClientPartyBeaconUpdate : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public bool beacon_added
         {
             get => __pbn__beacon_added.GetValueOrDefault();
@@ -12694,9 +13891,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializebeacon_added() => __pbn__beacon_added != null;
         public void Resetbeacon_added() => __pbn__beacon_added = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__beacon_added;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public int beacon_type
         {
             get => __pbn__beacon_type.GetValueOrDefault();
@@ -12704,9 +13902,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializebeacon_type() => __pbn__beacon_type != null;
         public void Resetbeacon_type() => __pbn__beacon_type = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__beacon_type;
 
-        [global::ProtoBuf.ProtoMember(3, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(3, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public uint account_id
         {
             get => __pbn__account_id.GetValueOrDefault();
@@ -12714,18 +13913,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeaccount_id() => __pbn__account_id != null;
         public void Resetaccount_id() => __pbn__account_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__account_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCUpdatePartyBeacon : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(Action.ON)]
         public Action action
         {
@@ -12734,9 +13935,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeaction() => __pbn__action != null;
         public void Resetaction() => __pbn__action = null;
+        [global::LightProto.ProtoIgnore]
         private Action? __pbn__action;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum Action
         {
             ON = 0,
@@ -12745,23 +13947,25 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCRequestActiveBeaconParties : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCToClientRequestActiveBeaconPartiesResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EResponse.SUCCESS)]
         public EResponse response
         {
@@ -12770,12 +13974,13 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresponse() => __pbn__response != null;
         public void Resetresponse() => __pbn__response = null;
+        [global::LightProto.ProtoIgnore]
         private EResponse? __pbn__response;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public global::System.Collections.Generic.List<CPartySearchClientParty> active_parties { get; } = new global::System.Collections.Generic.List<CPartySearchClientParty>();
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum EResponse
         {
             SUCCESS = 0,
@@ -12785,14 +13990,15 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCJoinPartyFromBeacon : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong party_id
         {
             get => __pbn__party_id.GetValueOrDefault();
@@ -12800,9 +14006,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeparty_id() => __pbn__party_id != null;
         public void Resetparty_id() => __pbn__party_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__party_id;
 
-        [global::ProtoBuf.ProtoMember(2, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(2, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public uint account_id
         {
             get => __pbn__account_id.GetValueOrDefault();
@@ -12810,9 +14017,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeaccount_id() => __pbn__account_id != null;
         public void Resetaccount_id() => __pbn__account_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__account_id;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public int beacon_type
         {
             get => __pbn__beacon_type.GetValueOrDefault();
@@ -12820,18 +14028,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializebeacon_type() => __pbn__beacon_type != null;
         public void Resetbeacon_type() => __pbn__beacon_type = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__beacon_type;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCToClientJoinPartyFromBeaconResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EResponse.SUCCESS)]
         public EResponse response
         {
@@ -12840,9 +14050,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresponse() => __pbn__response != null;
         public void Resetresponse() => __pbn__response = null;
+        [global::LightProto.ProtoIgnore]
         private EResponse? __pbn__response;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum EResponse
         {
             SUCCESS = 0,
@@ -12853,14 +14064,15 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCManageFavorites : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(Action.ADD)]
         public Action action
         {
@@ -12869,9 +14081,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeaction() => __pbn__action != null;
         public void Resetaction() => __pbn__action = null;
+        [global::LightProto.ProtoIgnore]
         private Action? __pbn__action;
 
-        [global::ProtoBuf.ProtoMember(2, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(2, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public uint account_id
         {
             get => __pbn__account_id.GetValueOrDefault();
@@ -12879,9 +14092,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeaccount_id() => __pbn__account_id != null;
         public void Resetaccount_id() => __pbn__account_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__account_id;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         [global::System.ComponentModel.DefaultValue("")]
         public string favorite_name
         {
@@ -12890,9 +14104,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializefavorite_name() => __pbn__favorite_name != null;
         public void Resetfavorite_name() => __pbn__favorite_name = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__favorite_name;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public bool invite_response
         {
             get => __pbn__invite_response.GetValueOrDefault();
@@ -12900,9 +14115,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeinvite_response() => __pbn__invite_response != null;
         public void Resetinvite_response() => __pbn__invite_response = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__invite_response;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public bool from_friendlist
         {
             get => __pbn__from_friendlist.GetValueOrDefault();
@@ -12910,9 +14126,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializefrom_friendlist() => __pbn__from_friendlist != null;
         public void Resetfrom_friendlist() => __pbn__from_friendlist = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__from_friendlist;
 
-        [global::ProtoBuf.ProtoMember(6, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(6, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong lobby_id
         {
             get => __pbn__lobby_id.GetValueOrDefault();
@@ -12920,9 +14137,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializelobby_id() => __pbn__lobby_id != null;
         public void Resetlobby_id() => __pbn__lobby_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__lobby_id;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum Action
         {
             ADD = 0,
@@ -12931,14 +14149,15 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCToClientManageFavoritesResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EResponse.SUCCESS)]
         public EResponse response
         {
@@ -12947,9 +14166,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresponse() => __pbn__response != null;
         public void Resetresponse() => __pbn__response = null;
+        [global::LightProto.ProtoIgnore]
         private EResponse? __pbn__response;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue("")]
         public string debug_message
         {
@@ -12958,12 +14178,13 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializedebug_message() => __pbn__debug_message != null;
         public void Resetdebug_message() => __pbn__debug_message = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__debug_message;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public CMsgPartySearchPlayer player { get; set; }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum EResponse
         {
             SUCCESS = 0,
@@ -12976,14 +14197,15 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCGetFavoritePlayers : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public ulong pagination_key
         {
             get => __pbn__pagination_key.GetValueOrDefault();
@@ -12991,9 +14213,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializepagination_key() => __pbn__pagination_key != null;
         public void Resetpagination_key() => __pbn__pagination_key = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__pagination_key;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public int pagination_count
         {
             get => __pbn__pagination_count.GetValueOrDefault();
@@ -13001,18 +14224,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializepagination_count() => __pbn__pagination_count != null;
         public void Resetpagination_count() => __pbn__pagination_count = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__pagination_count;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCToClientGetFavoritePlayersResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EResponse.SUCCESS)]
         public EResponse response
         {
@@ -13021,12 +14246,13 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresponse() => __pbn__response != null;
         public void Resetresponse() => __pbn__response = null;
+        [global::LightProto.ProtoIgnore]
         private EResponse? __pbn__response;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public global::System.Collections.Generic.List<CMsgPartySearchPlayer> players { get; } = new global::System.Collections.Generic.List<CMsgPartySearchPlayer>();
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public ulong next_pagination_key
         {
             get => __pbn__next_pagination_key.GetValueOrDefault();
@@ -13034,9 +14260,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializenext_pagination_key() => __pbn__next_pagination_key != null;
         public void Resetnext_pagination_key() => __pbn__next_pagination_key = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__next_pagination_key;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum EResponse
         {
             SUCCESS = 0,
@@ -13045,14 +14272,15 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCToClientPartySearchInvite : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public uint account_id
         {
             get => __pbn__account_id.GetValueOrDefault();
@@ -13060,43 +14288,47 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeaccount_id() => __pbn__account_id != null;
         public void Resetaccount_id() => __pbn__account_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__account_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCVerifyFavoritePlayers : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public global::System.Collections.Generic.List<uint> account_ids { get; } = new global::System.Collections.Generic.List<uint>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCToClientVerifyFavoritePlayersResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<Result> results { get; } = new global::System.Collections.Generic.List<Result>();
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class Result : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public CMsgPartySearchPlayer player { get; set; }
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public bool is_favorite
             {
                 get => __pbn__is_favorite.GetValueOrDefault();
@@ -13104,20 +14336,22 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeis_favorite() => __pbn__is_favorite != null;
             public void Resetis_favorite() => __pbn__is_favorite = null;
+            [global::LightProto.ProtoIgnore]
             private bool? __pbn__is_favorite;
 
         }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCRequestPlayerRecentAccomplishments : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint account_id
         {
             get => __pbn__account_id.GetValueOrDefault();
@@ -13125,18 +14359,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeaccount_id() => __pbn__account_id != null;
         public void Resetaccount_id() => __pbn__account_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__account_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCRequestPlayerRecentAccomplishmentsResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EResponse.k_eInternalError)]
         public EResponse result
         {
@@ -13145,12 +14381,13 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private EResponse? __pbn__result;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public CMsgPlayerRecentAccomplishments player_accomplishments { get; set; }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum EResponse
         {
             k_eInternalError = 0,
@@ -13161,14 +14398,15 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCRequestPlayerHeroRecentAccomplishments : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint account_id
         {
             get => __pbn__account_id.GetValueOrDefault();
@@ -13176,9 +14414,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeaccount_id() => __pbn__account_id != null;
         public void Resetaccount_id() => __pbn__account_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__account_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public int hero_id
         {
             get => __pbn__hero_id.GetValueOrDefault();
@@ -13186,18 +14425,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializehero_id() => __pbn__hero_id != null;
         public void Resethero_id() => __pbn__hero_id = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__hero_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCRequestPlayerHeroRecentAccomplishmentsResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EResponse.k_eInternalError)]
         public EResponse result
         {
@@ -13206,12 +14447,13 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private EResponse? __pbn__result;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public CMsgPlayerHeroRecentAccomplishments hero_accomplishments { get; set; }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum EResponse
         {
             k_eInternalError = 0,
@@ -13222,14 +14464,15 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCSubmitPlayerMatchSurvey : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public ulong match_id
         {
             get => __pbn__match_id.GetValueOrDefault();
@@ -13237,9 +14480,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializematch_id() => __pbn__match_id != null;
         public void Resetmatch_id() => __pbn__match_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__match_id;
 
-        [global::ProtoBuf.ProtoMember(3, DataFormat = global::ProtoBuf.DataFormat.ZigZag)]
+        [global::LightProto.ProtoMember(3, DataFormat = global::LightProto.DataFormat.ZigZag)]
         public int rating
         {
             get => __pbn__rating.GetValueOrDefault();
@@ -13247,9 +14491,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializerating() => __pbn__rating != null;
         public void Resetrating() => __pbn__rating = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__rating;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public uint flags
         {
             get => __pbn__flags.GetValueOrDefault();
@@ -13257,18 +14502,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeflags() => __pbn__flags != null;
         public void Resetflags() => __pbn__flags = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__flags;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCSubmitPlayerMatchSurveyResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EResponse.k_eInternalError)]
         public EResponse eresult
         {
@@ -13277,9 +14524,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeeresult() => __pbn__eresult != null;
         public void Reseteresult() => __pbn__eresult = null;
+        [global::LightProto.ProtoIgnore]
         private EResponse? __pbn__eresult;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint account_id
         {
             get => __pbn__account_id.GetValueOrDefault();
@@ -13287,9 +14535,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeaccount_id() => __pbn__account_id != null;
         public void Resetaccount_id() => __pbn__account_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__account_id;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum EResponse
         {
             k_eInternalError = 0,
@@ -13302,23 +14551,25 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCToClientVACReminder : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCUnderDraftRequest : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint account_id
         {
             get => __pbn__account_id.GetValueOrDefault();
@@ -13326,9 +14577,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeaccount_id() => __pbn__account_id != null;
         public void Resetaccount_id() => __pbn__account_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__account_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint event_id
         {
             get => __pbn__event_id.GetValueOrDefault();
@@ -13336,18 +14588,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeevent_id() => __pbn__event_id != null;
         public void Resetevent_id() => __pbn__event_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__event_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCUnderDraftResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EUnderDraftResponse.k_eInternalError)]
         public EUnderDraftResponse result
         {
@@ -13356,9 +14610,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private EUnderDraftResponse? __pbn__result;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint account_id
         {
             get => __pbn__account_id.GetValueOrDefault();
@@ -13366,9 +14621,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeaccount_id() => __pbn__account_id != null;
         public void Resetaccount_id() => __pbn__account_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__account_id;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public uint event_id
         {
             get => __pbn__event_id.GetValueOrDefault();
@@ -13376,21 +14632,23 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeevent_id() => __pbn__event_id != null;
         public void Resetevent_id() => __pbn__event_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__event_id;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public CMsgUnderDraftData draft_data { get; set; }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCUnderDraftReroll : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint event_id
         {
             get => __pbn__event_id.GetValueOrDefault();
@@ -13398,18 +14656,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeevent_id() => __pbn__event_id != null;
         public void Resetevent_id() => __pbn__event_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__event_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCUnderDraftRerollResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EUnderDraftResponse.k_eInternalError)]
         public EUnderDraftResponse result
         {
@@ -13418,9 +14678,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private EUnderDraftResponse? __pbn__result;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint event_id
         {
             get => __pbn__event_id.GetValueOrDefault();
@@ -13428,21 +14689,23 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeevent_id() => __pbn__event_id != null;
         public void Resetevent_id() => __pbn__event_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__event_id;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public CMsgUnderDraftData draft_data { get; set; }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCUnderDraftBuy : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint event_id
         {
             get => __pbn__event_id.GetValueOrDefault();
@@ -13450,9 +14713,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeevent_id() => __pbn__event_id != null;
         public void Resetevent_id() => __pbn__event_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__event_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint slot_id
         {
             get => __pbn__slot_id.GetValueOrDefault();
@@ -13460,18 +14724,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeslot_id() => __pbn__slot_id != null;
         public void Resetslot_id() => __pbn__slot_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__slot_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCToClientGuildUnderDraftGoldUpdated : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint event_id
         {
             get => __pbn__event_id.GetValueOrDefault();
@@ -13479,18 +14745,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeevent_id() => __pbn__event_id != null;
         public void Resetevent_id() => __pbn__event_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__event_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCUnderDraftBuyResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EUnderDraftResponse.k_eInternalError)]
         public EUnderDraftResponse result
         {
@@ -13499,9 +14767,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private EUnderDraftResponse? __pbn__result;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint event_id
         {
             get => __pbn__event_id.GetValueOrDefault();
@@ -13509,9 +14778,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeevent_id() => __pbn__event_id != null;
         public void Resetevent_id() => __pbn__event_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__event_id;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public uint slot_id
         {
             get => __pbn__slot_id.GetValueOrDefault();
@@ -13519,21 +14789,23 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeslot_id() => __pbn__slot_id != null;
         public void Resetslot_id() => __pbn__slot_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__slot_id;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public CMsgUnderDraftData draft_data { get; set; }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCUnderDraftRollBackBench : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint event_id
         {
             get => __pbn__event_id.GetValueOrDefault();
@@ -13541,18 +14813,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeevent_id() => __pbn__event_id != null;
         public void Resetevent_id() => __pbn__event_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__event_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCUnderDraftRollBackBenchResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EUnderDraftResponse.k_eInternalError)]
         public EUnderDraftResponse result
         {
@@ -13561,9 +14835,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private EUnderDraftResponse? __pbn__result;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint event_id
         {
             get => __pbn__event_id.GetValueOrDefault();
@@ -13571,21 +14846,23 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeevent_id() => __pbn__event_id != null;
         public void Resetevent_id() => __pbn__event_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__event_id;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public CMsgUnderDraftData draft_data { get; set; }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCUnderDraftSell : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint event_id
         {
             get => __pbn__event_id.GetValueOrDefault();
@@ -13593,9 +14870,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeevent_id() => __pbn__event_id != null;
         public void Resetevent_id() => __pbn__event_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__event_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint slot_id
         {
             get => __pbn__slot_id.GetValueOrDefault();
@@ -13603,18 +14881,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeslot_id() => __pbn__slot_id != null;
         public void Resetslot_id() => __pbn__slot_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__slot_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCUnderDraftSellResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EUnderDraftResponse.k_eInternalError)]
         public EUnderDraftResponse result
         {
@@ -13623,9 +14903,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private EUnderDraftResponse? __pbn__result;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint event_id
         {
             get => __pbn__event_id.GetValueOrDefault();
@@ -13633,9 +14914,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeevent_id() => __pbn__event_id != null;
         public void Resetevent_id() => __pbn__event_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__event_id;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public uint slot_id
         {
             get => __pbn__slot_id.GetValueOrDefault();
@@ -13643,21 +14925,23 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeslot_id() => __pbn__slot_id != null;
         public void Resetslot_id() => __pbn__slot_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__slot_id;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public CMsgUnderDraftData draft_data { get; set; }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCUnderDraftRedeemReward : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint event_id
         {
             get => __pbn__event_id.GetValueOrDefault();
@@ -13665,9 +14949,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeevent_id() => __pbn__event_id != null;
         public void Resetevent_id() => __pbn__event_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__event_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint action_id
         {
             get => __pbn__action_id.GetValueOrDefault();
@@ -13675,18 +14960,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeaction_id() => __pbn__action_id != null;
         public void Resetaction_id() => __pbn__action_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__action_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCUnderDraftRedeemRewardResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EUnderDraftResponse.k_eInternalError)]
         public EUnderDraftResponse result
         {
@@ -13695,18 +14982,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private EUnderDraftResponse? __pbn__result;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCSubmitDraftTriviaMatchAnswer : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public bool chose_radiant_as_winner
         {
             get => __pbn__chose_radiant_as_winner.GetValueOrDefault();
@@ -13714,9 +15003,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializechose_radiant_as_winner() => __pbn__chose_radiant_as_winner != null;
         public void Resetchose_radiant_as_winner() => __pbn__chose_radiant_as_winner = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__chose_radiant_as_winner;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint event_id
         {
             get => __pbn__event_id.GetValueOrDefault();
@@ -13724,9 +15014,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeevent_id() => __pbn__event_id != null;
         public void Resetevent_id() => __pbn__event_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__event_id;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public uint end_time
         {
             get => __pbn__end_time.GetValueOrDefault();
@@ -13734,18 +15025,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeend_time() => __pbn__end_time != null;
         public void Resetend_time() => __pbn__end_time = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__end_time;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCSubmitDraftTriviaMatchAnswerResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EDOTADraftTriviaAnswerResult.k_EDOTADraftTriviaAnswerResult_Success)]
         public EDOTADraftTriviaAnswerResult result
         {
@@ -13754,18 +15047,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private EDOTADraftTriviaAnswerResult? __pbn__result;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDraftTriviaVoteCount : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint total_votes
         {
             get => __pbn__total_votes.GetValueOrDefault();
@@ -13773,9 +15068,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializetotal_votes() => __pbn__total_votes != null;
         public void Resettotal_votes() => __pbn__total_votes = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__total_votes;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint radiant_votes
         {
             get => __pbn__radiant_votes.GetValueOrDefault();
@@ -13783,9 +15079,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeradiant_votes() => __pbn__radiant_votes != null;
         public void Resetradiant_votes() => __pbn__radiant_votes = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__radiant_votes;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public uint dire_votes
         {
             get => __pbn__dire_votes.GetValueOrDefault();
@@ -13793,27 +15090,30 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializedire_votes() => __pbn__dire_votes != null;
         public void Resetdire_votes() => __pbn__dire_votes = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__dire_votes;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCRequestReporterUpdates : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCRequestReporterUpdatesResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EResponse.k_eInternalError)]
         public EResponse enum_result
         {
@@ -13822,12 +15122,13 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeenum_result() => __pbn__enum_result != null;
         public void Resetenum_result() => __pbn__enum_result = null;
+        [global::LightProto.ProtoIgnore]
         private EResponse? __pbn__enum_result;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public global::System.Collections.Generic.List<ReporterUpdate> updates { get; } = new global::System.Collections.Generic.List<ReporterUpdate>();
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public int num_reported
         {
             get => __pbn__num_reported.GetValueOrDefault();
@@ -13835,9 +15136,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializenum_reported() => __pbn__num_reported != null;
         public void Resetnum_reported() => __pbn__num_reported = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__num_reported;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public int num_no_action_taken
         {
             get => __pbn__num_no_action_taken.GetValueOrDefault();
@@ -13845,16 +15147,18 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializenum_no_action_taken() => __pbn__num_no_action_taken != null;
         public void Resetnum_no_action_taken() => __pbn__num_no_action_taken = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__num_no_action_taken;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class ReporterUpdate : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public ulong match_id
             {
                 get => __pbn__match_id.GetValueOrDefault();
@@ -13862,9 +15166,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializematch_id() => __pbn__match_id != null;
             public void Resetmatch_id() => __pbn__match_id = null;
+            [global::LightProto.ProtoIgnore]
             private ulong? __pbn__match_id;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public int hero_id
             {
                 get => __pbn__hero_id.GetValueOrDefault();
@@ -13872,9 +15177,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializehero_id() => __pbn__hero_id != null;
             public void Resethero_id() => __pbn__hero_id = null;
+            [global::LightProto.ProtoIgnore]
             private int? __pbn__hero_id;
 
-            [global::ProtoBuf.ProtoMember(3)]
+            [global::LightProto.ProtoMember(3)]
             public uint report_reason
             {
                 get => __pbn__report_reason.GetValueOrDefault();
@@ -13882,9 +15188,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializereport_reason() => __pbn__report_reason != null;
             public void Resetreport_reason() => __pbn__report_reason = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__report_reason;
 
-            [global::ProtoBuf.ProtoMember(4)]
+            [global::LightProto.ProtoMember(4)]
             public uint timestamp
             {
                 get => __pbn__timestamp.GetValueOrDefault();
@@ -13892,11 +15199,12 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializetimestamp() => __pbn__timestamp != null;
             public void Resettimestamp() => __pbn__timestamp = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__timestamp;
 
         }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum EResponse
         {
             k_eInternalError = 0,
@@ -13910,35 +15218,38 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCAcknowledgeReporterUpdates : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<ulong> match_ids { get; } = new global::System.Collections.Generic.List<ulong>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCRecalibrateMMR : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCRecalibrateMMRResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EResponse.k_eInternalError)]
         public EResponse result
         {
@@ -13947,9 +15258,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private EResponse? __pbn__result;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum EResponse
         {
             k_eInternalError = 0,
@@ -13963,14 +15275,15 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTAPostGameItemAwardNotification : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint receiver_account_id
         {
             get => __pbn__receiver_account_id.GetValueOrDefault();
@@ -13978,12 +15291,13 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializereceiver_account_id() => __pbn__receiver_account_id != null;
         public void Resetreceiver_account_id() => __pbn__receiver_account_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__receiver_account_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public global::System.Collections.Generic.List<uint> item_def_index { get; } = new global::System.Collections.Generic.List<uint>();
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public uint action_id
         {
             get => __pbn__action_id.GetValueOrDefault();
@@ -13991,27 +15305,30 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeaction_id() => __pbn__action_id != null;
         public void Resetaction_id() => __pbn__action_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__action_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCGetOWMatchDetails : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCGetOWMatchDetailsResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EResponse.k_eInternalError)]
         public EResponse result
         {
@@ -14020,9 +15337,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private EResponse? __pbn__result;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public ulong overwatch_replay_id
         {
             get => __pbn__overwatch_replay_id.GetValueOrDefault();
@@ -14030,9 +15348,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeoverwatch_replay_id() => __pbn__overwatch_replay_id != null;
         public void Resetoverwatch_replay_id() => __pbn__overwatch_replay_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__overwatch_replay_id;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public ulong decryption_key
         {
             get => __pbn__decryption_key.GetValueOrDefault();
@@ -14040,9 +15359,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializedecryption_key() => __pbn__decryption_key != null;
         public void Resetdecryption_key() => __pbn__decryption_key = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__decryption_key;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public uint cluster
         {
             get => __pbn__cluster.GetValueOrDefault();
@@ -14050,9 +15370,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializecluster() => __pbn__cluster != null;
         public void Resetcluster() => __pbn__cluster = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__cluster;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public uint overwatch_salt
         {
             get => __pbn__overwatch_salt.GetValueOrDefault();
@@ -14060,9 +15381,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeoverwatch_salt() => __pbn__overwatch_salt != null;
         public void Resetoverwatch_salt() => __pbn__overwatch_salt = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__overwatch_salt;
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         public uint target_player_slot
         {
             get => __pbn__target_player_slot.GetValueOrDefault();
@@ -14070,12 +15392,13 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializetarget_player_slot() => __pbn__target_player_slot != null;
         public void Resettarget_player_slot() => __pbn__target_player_slot = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__target_player_slot;
 
-        [global::ProtoBuf.ProtoMember(7)]
+        [global::LightProto.ProtoMember(7)]
         public global::System.Collections.Generic.List<Marker> markers { get; } = new global::System.Collections.Generic.List<Marker>();
 
-        [global::ProtoBuf.ProtoMember(8)]
+        [global::LightProto.ProtoMember(8)]
         [global::System.ComponentModel.DefaultValue(EOverwatchReportReason.k_EOverwatchReportReason_Unknown)]
         public EOverwatchReportReason report_reason
         {
@@ -14084,9 +15407,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializereport_reason() => __pbn__report_reason != null;
         public void Resetreport_reason() => __pbn__report_reason = null;
+        [global::LightProto.ProtoIgnore]
         private EOverwatchReportReason? __pbn__report_reason;
 
-        [global::ProtoBuf.ProtoMember(9)]
+        [global::LightProto.ProtoMember(9)]
         public int target_hero_id
         {
             get => __pbn__target_hero_id.GetValueOrDefault();
@@ -14094,9 +15418,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializetarget_hero_id() => __pbn__target_hero_id != null;
         public void Resettarget_hero_id() => __pbn__target_hero_id = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__target_hero_id;
 
-        [global::ProtoBuf.ProtoMember(10)]
+        [global::LightProto.ProtoMember(10)]
         public uint rank_tier
         {
             get => __pbn__rank_tier.GetValueOrDefault();
@@ -14104,9 +15429,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializerank_tier() => __pbn__rank_tier != null;
         public void Resetrank_tier() => __pbn__rank_tier = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__rank_tier;
 
-        [global::ProtoBuf.ProtoMember(11)]
+        [global::LightProto.ProtoMember(11)]
         public uint lane_selection_flags
         {
             get => __pbn__lane_selection_flags.GetValueOrDefault();
@@ -14114,16 +15440,18 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializelane_selection_flags() => __pbn__lane_selection_flags != null;
         public void Resetlane_selection_flags() => __pbn__lane_selection_flags = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__lane_selection_flags;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class Marker : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public uint start_game_time_s
             {
                 get => __pbn__start_game_time_s.GetValueOrDefault();
@@ -14131,9 +15459,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializestart_game_time_s() => __pbn__start_game_time_s != null;
             public void Resetstart_game_time_s() => __pbn__start_game_time_s = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__start_game_time_s;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public uint end_game_time_s
             {
                 get => __pbn__end_game_time_s.GetValueOrDefault();
@@ -14141,11 +15470,12 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeend_game_time_s() => __pbn__end_game_time_s != null;
             public void Resetend_game_time_s() => __pbn__end_game_time_s = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__end_game_time_s;
 
         }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum EResponse
         {
             k_eInternalError = 0,
@@ -14158,14 +15488,15 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCSubmitOWConviction : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public ulong overwatch_replay_id
         {
             get => __pbn__overwatch_replay_id.GetValueOrDefault();
@@ -14173,9 +15504,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeoverwatch_replay_id() => __pbn__overwatch_replay_id != null;
         public void Resetoverwatch_replay_id() => __pbn__overwatch_replay_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__overwatch_replay_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint target_player_slot
         {
             get => __pbn__target_player_slot.GetValueOrDefault();
@@ -14183,9 +15515,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializetarget_player_slot() => __pbn__target_player_slot != null;
         public void Resettarget_player_slot() => __pbn__target_player_slot = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__target_player_slot;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         [global::System.ComponentModel.DefaultValue(EOverwatchConviction.k_EOverwatchConviction_None)]
         public EOverwatchConviction cheating_conviction
         {
@@ -14194,9 +15527,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializecheating_conviction() => __pbn__cheating_conviction != null;
         public void Resetcheating_conviction() => __pbn__cheating_conviction = null;
+        [global::LightProto.ProtoIgnore]
         private EOverwatchConviction? __pbn__cheating_conviction;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         [global::System.ComponentModel.DefaultValue(EOverwatchConviction.k_EOverwatchConviction_None)]
         public EOverwatchConviction griefing_conviction
         {
@@ -14205,18 +15539,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializegriefing_conviction() => __pbn__griefing_conviction != null;
         public void Resetgriefing_conviction() => __pbn__griefing_conviction = null;
+        [global::LightProto.ProtoIgnore]
         private EOverwatchConviction? __pbn__griefing_conviction;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCSubmitOWConvictionResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EResponse.k_eInternalError)]
         public EResponse result
         {
@@ -14225,9 +15561,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private EResponse? __pbn__result;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public ulong overwatch_replay_id
         {
             get => __pbn__overwatch_replay_id.GetValueOrDefault();
@@ -14235,9 +15572,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeoverwatch_replay_id() => __pbn__overwatch_replay_id != null;
         public void Resetoverwatch_replay_id() => __pbn__overwatch_replay_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__overwatch_replay_id;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum EResponse
         {
             k_eInternalError = 0,
@@ -14252,23 +15590,25 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCChinaSSAURLRequest : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCChinaSSAURLResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue("")]
         public string agreement_url
         {
@@ -14277,27 +15617,30 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeagreement_url() => __pbn__agreement_url != null;
         public void Resetagreement_url() => __pbn__agreement_url = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__agreement_url;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCChinaSSAAcceptedRequest : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCChinaSSAAcceptedResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public bool agreement_accepted
         {
             get => __pbn__agreement_accepted.GetValueOrDefault();
@@ -14305,18 +15648,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeagreement_accepted() => __pbn__agreement_accepted != null;
         public void Resetagreement_accepted() => __pbn__agreement_accepted = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__agreement_accepted;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCToClientOverwatchCasesAvailable : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public uint expire_time
         {
             get => __pbn__expire_time.GetValueOrDefault();
@@ -14324,18 +15669,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeexpire_time() => __pbn__expire_time != null;
         public void Resetexpire_time() => __pbn__expire_time = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__expire_time;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCStartWatchingOverwatch : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public ulong overwatch_replay_id
         {
             get => __pbn__overwatch_replay_id.GetValueOrDefault();
@@ -14343,9 +15690,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeoverwatch_replay_id() => __pbn__overwatch_replay_id != null;
         public void Resetoverwatch_replay_id() => __pbn__overwatch_replay_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__overwatch_replay_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint target_player_slot
         {
             get => __pbn__target_player_slot.GetValueOrDefault();
@@ -14353,18 +15701,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializetarget_player_slot() => __pbn__target_player_slot != null;
         public void Resettarget_player_slot() => __pbn__target_player_slot = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__target_player_slot;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCStopWatchingOverwatch : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public ulong overwatch_replay_id
         {
             get => __pbn__overwatch_replay_id.GetValueOrDefault();
@@ -14372,9 +15722,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeoverwatch_replay_id() => __pbn__overwatch_replay_id != null;
         public void Resetoverwatch_replay_id() => __pbn__overwatch_replay_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__overwatch_replay_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint target_player_slot
         {
             get => __pbn__target_player_slot.GetValueOrDefault();
@@ -14382,18 +15733,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializetarget_player_slot() => __pbn__target_player_slot != null;
         public void Resettarget_player_slot() => __pbn__target_player_slot = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__target_player_slot;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCOverwatchReplayError : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public ulong overwatch_replay_id
         {
             get => __pbn__overwatch_replay_id.GetValueOrDefault();
@@ -14401,27 +15754,30 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeoverwatch_replay_id() => __pbn__overwatch_replay_id != null;
         public void Resetoverwatch_replay_id() => __pbn__overwatch_replay_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__overwatch_replay_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCGetDPCFavorites : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCGetDPCFavoritesResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EResponse.k_eInternalError)]
         public EResponse result
         {
@@ -14430,19 +15786,21 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private EResponse? __pbn__result;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public global::System.Collections.Generic.List<Favorite> favorites { get; } = new global::System.Collections.Generic.List<Favorite>();
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class Favorite : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             [global::System.ComponentModel.DefaultValue(EDPCFavoriteType.FAVORITE_TYPE_ALL)]
             public EDPCFavoriteType favorite_type
             {
@@ -14451,9 +15809,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializefavorite_type() => __pbn__favorite_type != null;
             public void Resetfavorite_type() => __pbn__favorite_type = null;
+            [global::LightProto.ProtoIgnore]
             private EDPCFavoriteType? __pbn__favorite_type;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public uint favorite_id
             {
                 get => __pbn__favorite_id.GetValueOrDefault();
@@ -14461,11 +15820,12 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializefavorite_id() => __pbn__favorite_id != null;
             public void Resetfavorite_id() => __pbn__favorite_id = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__favorite_id;
 
         }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum EResponse
         {
             k_eInternalError = 0,
@@ -14478,14 +15838,15 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCSetDPCFavoriteState : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EDPCFavoriteType.FAVORITE_TYPE_ALL)]
         public EDPCFavoriteType favorite_type
         {
@@ -14494,9 +15855,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializefavorite_type() => __pbn__favorite_type != null;
         public void Resetfavorite_type() => __pbn__favorite_type = null;
+        [global::LightProto.ProtoIgnore]
         private EDPCFavoriteType? __pbn__favorite_type;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint favorite_id
         {
             get => __pbn__favorite_id.GetValueOrDefault();
@@ -14504,9 +15866,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializefavorite_id() => __pbn__favorite_id != null;
         public void Resetfavorite_id() => __pbn__favorite_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__favorite_id;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public bool enabled
         {
             get => __pbn__enabled.GetValueOrDefault();
@@ -14514,18 +15877,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeenabled() => __pbn__enabled != null;
         public void Resetenabled() => __pbn__enabled = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__enabled;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCSetDPCFavoriteStateResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EResponse.k_eInternalError)]
         public EResponse result
         {
@@ -14534,9 +15899,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private EResponse? __pbn__result;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum EResponse
         {
             k_eInternalError = 0,
@@ -14552,14 +15918,15 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCSetEventActiveSeasonID : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint event_id
         {
             get => __pbn__event_id.GetValueOrDefault();
@@ -14567,9 +15934,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeevent_id() => __pbn__event_id != null;
         public void Resetevent_id() => __pbn__event_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__event_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint active_season_id
         {
             get => __pbn__active_season_id.GetValueOrDefault();
@@ -14577,18 +15945,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeactive_season_id() => __pbn__active_season_id != null;
         public void Resetactive_season_id() => __pbn__active_season_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__active_season_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCSetEventActiveSeasonIDResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EResponse.k_eInternalError)]
         public EResponse result
         {
@@ -14597,9 +15967,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private EResponse? __pbn__result;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum EResponse
         {
             k_eInternalError = 0,
@@ -14613,14 +15984,15 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCPurchaseLabyrinthBlessings : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EEvent.EVENT_ID_NONE)]
         public EEvent event_id
         {
@@ -14629,12 +16001,13 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeevent_id() => __pbn__event_id != null;
         public void Resetevent_id() => __pbn__event_id = null;
+        [global::LightProto.ProtoIgnore]
         private EEvent? __pbn__event_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public global::System.Collections.Generic.List<int> blessing_ids { get; } = new global::System.Collections.Generic.List<int>();
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public bool debug
         {
             get => __pbn__debug.GetValueOrDefault();
@@ -14642,9 +16015,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializedebug() => __pbn__debug != null;
         public void Resetdebug() => __pbn__debug = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__debug;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public bool debug_remove
         {
             get => __pbn__debug_remove.GetValueOrDefault();
@@ -14652,18 +16026,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializedebug_remove() => __pbn__debug_remove != null;
         public void Resetdebug_remove() => __pbn__debug_remove = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__debug_remove;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCPurchaseLabyrinthBlessingsResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EResponse.k_eInternalError)]
         public EResponse result
         {
@@ -14672,9 +16048,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private EResponse? __pbn__result;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum EResponse
         {
             k_eInternalError = 0,
@@ -14687,14 +16064,15 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCGetStickerbookRequest : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint account_id
         {
             get => __pbn__account_id.GetValueOrDefault();
@@ -14702,18 +16080,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeaccount_id() => __pbn__account_id != null;
         public void Resetaccount_id() => __pbn__account_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__account_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCGetStickerbookResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EResponse.k_eInternalError)]
         public EResponse response
         {
@@ -14722,12 +16102,13 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresponse() => __pbn__response != null;
         public void Resetresponse() => __pbn__response = null;
+        [global::LightProto.ProtoIgnore]
         private EResponse? __pbn__response;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public CMsgStickerbook stickerbook { get; set; }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum EResponse
         {
             k_eInternalError = 0,
@@ -14739,14 +16120,15 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCCreateStickerbookPageRequest : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint team_id
         {
             get => __pbn__team_id.GetValueOrDefault();
@@ -14754,9 +16136,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeteam_id() => __pbn__team_id != null;
         public void Resetteam_id() => __pbn__team_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__team_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue(EEvent.EVENT_ID_NONE)]
         public EEvent event_id
         {
@@ -14765,9 +16148,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeevent_id() => __pbn__event_id != null;
         public void Resetevent_id() => __pbn__event_id = null;
+        [global::LightProto.ProtoIgnore]
         private EEvent? __pbn__event_id;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         [global::System.ComponentModel.DefaultValue(EStickerbookPageType.STICKER_PAGE_GENERIC)]
         public EStickerbookPageType page_type
         {
@@ -14776,18 +16160,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializepage_type() => __pbn__page_type != null;
         public void Resetpage_type() => __pbn__page_type = null;
+        [global::LightProto.ProtoIgnore]
         private EStickerbookPageType? __pbn__page_type;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCCreateStickerbookPageResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EResponse.k_eInternalError)]
         public EResponse response
         {
@@ -14796,9 +16182,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresponse() => __pbn__response != null;
         public void Resetresponse() => __pbn__response = null;
+        [global::LightProto.ProtoIgnore]
         private EResponse? __pbn__response;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint page_number
         {
             get => __pbn__page_number.GetValueOrDefault();
@@ -14806,9 +16193,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializepage_number() => __pbn__page_number != null;
         public void Resetpage_number() => __pbn__page_number = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__page_number;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum EResponse
         {
             k_eInternalError = 0,
@@ -14820,14 +16208,15 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCDeleteStickerbookPageRequest : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint page_num
         {
             get => __pbn__page_num.GetValueOrDefault();
@@ -14835,9 +16224,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializepage_num() => __pbn__page_num != null;
         public void Resetpage_num() => __pbn__page_num = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__page_num;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint sticker_count
         {
             get => __pbn__sticker_count.GetValueOrDefault();
@@ -14845,9 +16235,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializesticker_count() => __pbn__sticker_count != null;
         public void Resetsticker_count() => __pbn__sticker_count = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__sticker_count;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public uint sticker_max
         {
             get => __pbn__sticker_max.GetValueOrDefault();
@@ -14855,18 +16246,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializesticker_max() => __pbn__sticker_max != null;
         public void Resetsticker_max() => __pbn__sticker_max = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__sticker_max;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCDeleteStickerbookPageResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EResponse.k_eInternalError)]
         public EResponse response
         {
@@ -14875,9 +16268,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresponse() => __pbn__response != null;
         public void Resetresponse() => __pbn__response = null;
+        [global::LightProto.ProtoIgnore]
         private EResponse? __pbn__response;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum EResponse
         {
             k_eInternalError = 0,
@@ -14891,24 +16285,26 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCPlaceStickersRequest : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<StickerItem> sticker_items { get; } = new global::System.Collections.Generic.List<StickerItem>();
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class StickerItem : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public uint page_num
             {
                 get => __pbn__page_num.GetValueOrDefault();
@@ -14916,23 +16312,25 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializepage_num() => __pbn__page_num != null;
             public void Resetpage_num() => __pbn__page_num = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__page_num;
 
-            [global::ProtoBuf.ProtoMember(3)]
+            [global::LightProto.ProtoMember(3)]
             public CMsgStickerbookSticker sticker { get; set; }
 
         }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCPlaceStickersResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EResponse.k_eInternalError)]
         public EResponse response
         {
@@ -14941,9 +16339,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresponse() => __pbn__response != null;
         public void Resetresponse() => __pbn__response = null;
+        [global::LightProto.ProtoIgnore]
         private EResponse? __pbn__response;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum EResponse
         {
             k_eInternalError = 0,
@@ -14959,24 +16358,26 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCPlaceCollectionStickersRequest : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<Slot> slots { get; } = new global::System.Collections.Generic.List<Slot>();
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class Slot : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public uint page_num
             {
                 get => __pbn__page_num.GetValueOrDefault();
@@ -14984,9 +16385,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializepage_num() => __pbn__page_num != null;
             public void Resetpage_num() => __pbn__page_num = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__page_num;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public uint slot
             {
                 get => __pbn__slot.GetValueOrDefault();
@@ -14994,9 +16396,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeslot() => __pbn__slot != null;
             public void Resetslot() => __pbn__slot = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__slot;
 
-            [global::ProtoBuf.ProtoMember(3)]
+            [global::LightProto.ProtoMember(3)]
             public ulong new_item_id
             {
                 get => __pbn__new_item_id.GetValueOrDefault();
@@ -15004,9 +16407,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializenew_item_id() => __pbn__new_item_id != null;
             public void Resetnew_item_id() => __pbn__new_item_id = null;
+            [global::LightProto.ProtoIgnore]
             private ulong? __pbn__new_item_id;
 
-            [global::ProtoBuf.ProtoMember(4)]
+            [global::LightProto.ProtoMember(4)]
             public uint old_item_def_id
             {
                 get => __pbn__old_item_def_id.GetValueOrDefault();
@@ -15014,9 +16418,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeold_item_def_id() => __pbn__old_item_def_id != null;
             public void Resetold_item_def_id() => __pbn__old_item_def_id = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__old_item_def_id;
 
-            [global::ProtoBuf.ProtoMember(5)]
+            [global::LightProto.ProtoMember(5)]
             public uint old_quality
             {
                 get => __pbn__old_quality.GetValueOrDefault();
@@ -15024,20 +16429,22 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeold_quality() => __pbn__old_quality != null;
             public void Resetold_quality() => __pbn__old_quality = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__old_quality;
 
         }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCPlaceCollectionStickersResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EResponse.k_eInternalError)]
         public EResponse response
         {
@@ -15046,9 +16453,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresponse() => __pbn__response != null;
         public void Resetresponse() => __pbn__response = null;
+        [global::LightProto.ProtoIgnore]
         private EResponse? __pbn__response;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum EResponse
         {
             k_eInternalError = 0,
@@ -15066,26 +16474,28 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCOrderStickerbookTeamPageRequest : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public CMsgStickerbookTeamPageOrderSequence page_order_sequence { get; set; }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCOrderStickerbookTeamPageResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EResponse.k_eInternalError)]
         public EResponse response
         {
@@ -15094,9 +16504,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresponse() => __pbn__response != null;
         public void Resetresponse() => __pbn__response = null;
+        [global::LightProto.ProtoIgnore]
         private EResponse? __pbn__response;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum EResponse
         {
             k_eInternalError = 0,
@@ -15109,14 +16520,15 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCSetHeroSticker : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public int hero_id
         {
             get => __pbn__hero_id.GetValueOrDefault();
@@ -15124,9 +16536,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializehero_id() => __pbn__hero_id != null;
         public void Resethero_id() => __pbn__hero_id = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__hero_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public ulong new_item_id
         {
             get => __pbn__new_item_id.GetValueOrDefault();
@@ -15134,9 +16547,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializenew_item_id() => __pbn__new_item_id != null;
         public void Resetnew_item_id() => __pbn__new_item_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__new_item_id;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public ulong old_item_id
         {
             get => __pbn__old_item_id.GetValueOrDefault();
@@ -15144,18 +16558,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeold_item_id() => __pbn__old_item_id != null;
         public void Resetold_item_id() => __pbn__old_item_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__old_item_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCSetHeroStickerResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EResponse.k_eInternalError)]
         public EResponse response
         {
@@ -15164,9 +16580,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresponse() => __pbn__response != null;
         public void Resetresponse() => __pbn__response = null;
+        [global::LightProto.ProtoIgnore]
         private EResponse? __pbn__response;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum EResponse
         {
             k_eInternalError = 0,
@@ -15180,23 +16597,25 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCGetHeroStickers : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCGetHeroStickersResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EResponse.k_eInternalError)]
         public EResponse response
         {
@@ -15205,12 +16624,13 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresponse() => __pbn__response != null;
         public void Resetresponse() => __pbn__response = null;
+        [global::LightProto.ProtoIgnore]
         private EResponse? __pbn__response;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public CMsgStickerHeroes sticker_heroes { get; set; }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum EResponse
         {
             k_eInternalError = 0,
@@ -15221,14 +16641,15 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCSetFavoritePage : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint page_num
         {
             get => __pbn__page_num.GetValueOrDefault();
@@ -15236,9 +16657,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializepage_num() => __pbn__page_num != null;
         public void Resetpage_num() => __pbn__page_num = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__page_num;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public bool clear
         {
             get => __pbn__clear.GetValueOrDefault();
@@ -15246,18 +16668,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeclear() => __pbn__clear != null;
         public void Resetclear() => __pbn__clear = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__clear;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCSetFavoritePageResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EResponse.k_eInternalError)]
         public EResponse response
         {
@@ -15266,9 +16690,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresponse() => __pbn__response != null;
         public void Resetresponse() => __pbn__response = null;
+        [global::LightProto.ProtoIgnore]
         private EResponse? __pbn__response;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum EResponse
         {
             k_eInternalError = 0,
@@ -15280,14 +16705,15 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCClaimSwag : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EEvent.EVENT_ID_NONE)]
         public EEvent event_id
         {
@@ -15296,9 +16722,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeevent_id() => __pbn__event_id != null;
         public void Resetevent_id() => __pbn__event_id = null;
+        [global::LightProto.ProtoIgnore]
         private EEvent? __pbn__event_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint action_id
         {
             get => __pbn__action_id.GetValueOrDefault();
@@ -15306,9 +16733,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeaction_id() => __pbn__action_id != null;
         public void Resetaction_id() => __pbn__action_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__action_id;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public uint data
         {
             get => __pbn__data.GetValueOrDefault();
@@ -15316,18 +16744,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializedata() => __pbn__data != null;
         public void Resetdata() => __pbn__data = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__data;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCClaimSwagResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EResponse.k_eInternalError)]
         public EResponse response
         {
@@ -15336,9 +16766,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresponse() => __pbn__response != null;
         public void Resetresponse() => __pbn__response = null;
+        [global::LightProto.ProtoIgnore]
         private EResponse? __pbn__response;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum EResponse
         {
             k_eInternalError = 0,
@@ -15355,14 +16786,15 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCCollectorsCacheAvailableDataRequest : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint contest_id
         {
             get => __pbn__contest_id.GetValueOrDefault();
@@ -15370,28 +16802,31 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializecontest_id() => __pbn__contest_id != null;
         public void Resetcontest_id() => __pbn__contest_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__contest_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCToClientCollectorsCacheAvailableDataResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<Vote> votes { get; } = new global::System.Collections.Generic.List<Vote>();
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class Vote : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public uint item_def
             {
                 get => __pbn__item_def.GetValueOrDefault();
@@ -15399,9 +16834,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeitem_def() => __pbn__item_def != null;
             public void Resetitem_def() => __pbn__item_def = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__item_def;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             [global::System.ComponentModel.DefaultValue(EVoteType.k_eUp)]
             public EVoteType vote_type
             {
@@ -15410,9 +16846,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializevote_type() => __pbn__vote_type != null;
             public void Resetvote_type() => __pbn__vote_type = null;
+            [global::LightProto.ProtoIgnore]
             private EVoteType? __pbn__vote_type;
 
-            [global::ProtoBuf.ProtoContract()]
+            [global::LightProto.ProtoContract()]
             public enum EVoteType
             {
                 k_eUp = 0,
@@ -15423,26 +16860,28 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCUploadMatchClip : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public CMatchClip match_clip { get; set; }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCToClientUploadMatchClipResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EResponse.k_eInternalError)]
         public EResponse response
         {
@@ -15451,9 +16890,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresponse() => __pbn__response != null;
         public void Resetresponse() => __pbn__response = null;
+        [global::LightProto.ProtoIgnore]
         private EResponse? __pbn__response;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum EResponse
         {
             k_eInternalError = 0,
@@ -15464,23 +16904,25 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCMapStatsRequest : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCToClientMapStatsResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EResponse.k_eInternalError)]
         public EResponse response
         {
@@ -15489,15 +16931,16 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresponse() => __pbn__response != null;
         public void Resetresponse() => __pbn__response = null;
+        [global::LightProto.ProtoIgnore]
         private EResponse? __pbn__response;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public CMsgMapStatsSnapshot personal_stats { get; set; }
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public CMsgGlobalMapStats global_stats { get; set; }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum EResponse
         {
             k_eInternalError = 0,
@@ -15506,14 +16949,15 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgRoadToTIAssignedQuest : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint quest_id
         {
             get => __pbn__quest_id.GetValueOrDefault();
@@ -15521,9 +16965,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializequest_id() => __pbn__quest_id != null;
         public void Resetquest_id() => __pbn__quest_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__quest_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint difficulty
         {
             get => __pbn__difficulty.GetValueOrDefault();
@@ -15531,9 +16976,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializedifficulty() => __pbn__difficulty != null;
         public void Resetdifficulty() => __pbn__difficulty = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__difficulty;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public uint progress_flags
         {
             get => __pbn__progress_flags.GetValueOrDefault();
@@ -15541,9 +16987,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeprogress_flags() => __pbn__progress_flags != null;
         public void Resetprogress_flags() => __pbn__progress_flags = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__progress_flags;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public uint half_credit_flags
         {
             get => __pbn__half_credit_flags.GetValueOrDefault();
@@ -15551,9 +16998,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializehalf_credit_flags() => __pbn__half_credit_flags != null;
         public void Resethalf_credit_flags() => __pbn__half_credit_flags = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__half_credit_flags;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public bool completed
         {
             get => __pbn__completed.GetValueOrDefault();
@@ -15561,30 +17009,33 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializecompleted() => __pbn__completed != null;
         public void Resetcompleted() => __pbn__completed = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__completed;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgRoadToTIUserData : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<CMsgRoadToTIAssignedQuest> quests { get; } = new global::System.Collections.Generic.List<CMsgRoadToTIAssignedQuest>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCRoadToTIGetQuests : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint event_id
         {
             get => __pbn__event_id.GetValueOrDefault();
@@ -15592,18 +17043,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeevent_id() => __pbn__event_id != null;
         public void Resetevent_id() => __pbn__event_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__event_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCRoadToTIGetQuestsResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EResponse.k_eInternalError)]
         public EResponse response
         {
@@ -15612,12 +17065,13 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresponse() => __pbn__response != null;
         public void Resetresponse() => __pbn__response = null;
+        [global::LightProto.ProtoIgnore]
         private EResponse? __pbn__response;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public CMsgRoadToTIUserData quest_data { get; set; }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum EResponse
         {
             k_eInternalError = 0,
@@ -15630,14 +17084,15 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCRoadToTIGetActiveQuest : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint event_id
         {
             get => __pbn__event_id.GetValueOrDefault();
@@ -15645,18 +17100,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeevent_id() => __pbn__event_id != null;
         public void Resetevent_id() => __pbn__event_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__event_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCRoadToTIGetActiveQuestResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EResponse.k_eInternalError)]
         public EResponse response
         {
@@ -15665,12 +17122,13 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresponse() => __pbn__response != null;
         public void Resetresponse() => __pbn__response = null;
+        [global::LightProto.ProtoIgnore]
         private EResponse? __pbn__response;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public CMsgRoadToTIAssignedQuest quest_data { get; set; }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum EResponse
         {
             k_eInternalError = 0,
@@ -15684,14 +17142,15 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCToClientRoadToTIQuestDataUpdated : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint event_id
         {
             get => __pbn__event_id.GetValueOrDefault();
@@ -15699,21 +17158,23 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeevent_id() => __pbn__event_id != null;
         public void Resetevent_id() => __pbn__event_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__event_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public CMsgRoadToTIUserData quest_data { get; set; }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCRoadToTIUseItem : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint event_id
         {
             get => __pbn__event_id.GetValueOrDefault();
@@ -15721,9 +17182,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeevent_id() => __pbn__event_id != null;
         public void Resetevent_id() => __pbn__event_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__event_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint item_type
         {
             get => __pbn__item_type.GetValueOrDefault();
@@ -15731,9 +17193,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeitem_type() => __pbn__item_type != null;
         public void Resetitem_type() => __pbn__item_type = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__item_type;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public uint hero_index
         {
             get => __pbn__hero_index.GetValueOrDefault();
@@ -15741,18 +17204,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializehero_index() => __pbn__hero_index != null;
         public void Resethero_index() => __pbn__hero_index = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__hero_index;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCRoadToTIUseItemResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EResponse.k_eInternalError)]
         public EResponse response
         {
@@ -15761,9 +17226,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresponse() => __pbn__response != null;
         public void Resetresponse() => __pbn__response = null;
+        [global::LightProto.ProtoIgnore]
         private EResponse? __pbn__response;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum EResponse
         {
             k_eInternalError = 0,
@@ -15777,14 +17243,15 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCRoadToTIDevForceQuest : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint event_id
         {
             get => __pbn__event_id.GetValueOrDefault();
@@ -15792,9 +17259,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeevent_id() => __pbn__event_id != null;
         public void Resetevent_id() => __pbn__event_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__event_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public bool force_match_type
         {
             get => __pbn__force_match_type.GetValueOrDefault();
@@ -15802,9 +17270,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeforce_match_type() => __pbn__force_match_type != null;
         public void Resetforce_match_type() => __pbn__force_match_type = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__force_match_type;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public uint force_id
         {
             get => __pbn__force_id.GetValueOrDefault();
@@ -15812,21 +17281,23 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeforce_id() => __pbn__force_id != null;
         public void Resetforce_id() => __pbn__force_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__force_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgLobbyRoadToTIMatchQuestData : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public CMsgRoadToTIAssignedQuest quest_data { get; set; }
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint quest_period
         {
             get => __pbn__quest_period.GetValueOrDefault();
@@ -15834,9 +17305,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializequest_period() => __pbn__quest_period != null;
         public void Resetquest_period() => __pbn__quest_period = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__quest_period;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public uint quest_number
         {
             get => __pbn__quest_number.GetValueOrDefault();
@@ -15844,18 +17316,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializequest_number() => __pbn__quest_number != null;
         public void Resetquest_number() => __pbn__quest_number = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__quest_number;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCNewBloomGift : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint defindex
         {
             get => __pbn__defindex.GetValueOrDefault();
@@ -15863,9 +17337,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializedefindex() => __pbn__defindex != null;
         public void Resetdefindex() => __pbn__defindex = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__defindex;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public ulong lobby_id
         {
             get => __pbn__lobby_id.GetValueOrDefault();
@@ -15873,21 +17348,23 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializelobby_id() => __pbn__lobby_id != null;
         public void Resetlobby_id() => __pbn__lobby_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__lobby_id;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public global::System.Collections.Generic.List<uint> target_account_ids { get; } = new global::System.Collections.Generic.List<uint>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCNewBloomGiftResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(ENewBloomGiftingResponse.kENewBloomGifting_UnknownFailure)]
         public ENewBloomGiftingResponse result
         {
@@ -15896,33 +17373,36 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private ENewBloomGiftingResponse? __pbn__result;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public global::System.Collections.Generic.List<uint> received_account_ids { get; } = new global::System.Collections.Generic.List<uint>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCSetBannedHeroes : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<int> banned_hero_ids { get; } = new global::System.Collections.Generic.List<int>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCUpdateComicBookStats : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint comic_id
         {
             get => __pbn__comic_id.GetValueOrDefault();
@@ -15930,22 +17410,24 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializecomic_id() => __pbn__comic_id != null;
         public void Resetcomic_id() => __pbn__comic_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__comic_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public global::System.Collections.Generic.List<SingleStat> stats { get; } = new global::System.Collections.Generic.List<SingleStat>();
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public LanguageStats language_stats { get; set; }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class SingleStat : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             [global::System.ComponentModel.DefaultValue(CMsgClientToGCUpdateComicBookStat_Type.CMsgClientToGCUpdateComicBookStat_Type_HighestPageRead)]
             public CMsgClientToGCUpdateComicBookStat_Type stat_type
             {
@@ -15954,9 +17436,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializestat_type() => __pbn__stat_type != null;
             public void Resetstat_type() => __pbn__stat_type = null;
+            [global::LightProto.ProtoIgnore]
             private CMsgClientToGCUpdateComicBookStat_Type? __pbn__stat_type;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public uint stat_value
             {
                 get => __pbn__stat_value.GetValueOrDefault();
@@ -15964,18 +17447,20 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializestat_value() => __pbn__stat_value != null;
             public void Resetstat_value() => __pbn__stat_value = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__stat_value;
 
         }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class LanguageStats : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public uint comic_id
             {
                 get => __pbn__comic_id.GetValueOrDefault();
@@ -15983,9 +17468,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializecomic_id() => __pbn__comic_id != null;
             public void Resetcomic_id() => __pbn__comic_id = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__comic_id;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public uint client_language
             {
                 get => __pbn__client_language.GetValueOrDefault();
@@ -15993,9 +17479,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeclient_language() => __pbn__client_language != null;
             public void Resetclient_language() => __pbn__client_language = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__client_language;
 
-            [global::ProtoBuf.ProtoMember(3)]
+            [global::LightProto.ProtoMember(3)]
             public uint client_comic_language
             {
                 get => __pbn__client_comic_language.GetValueOrDefault();
@@ -16003,20 +17490,22 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializeclient_comic_language() => __pbn__client_comic_language != null;
             public void Resetclient_comic_language() => __pbn__client_comic_language = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__client_comic_language;
 
         }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCRankedPlayerInfoSubmit : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue("")]
         public string name
         {
@@ -16025,18 +17514,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializename() => __pbn__name != null;
         public void Resetname() => __pbn__name = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__name;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCRankedPlayerInfoSubmitResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EResult.SUCCESS)]
         public EResult result
         {
@@ -16045,9 +17536,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private EResult? __pbn__result;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum EResult
         {
             SUCCESS = 0,
@@ -16056,14 +17548,15 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTAClaimGatedEvent : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EEvent.EVENT_ID_NONE)]
         public EEvent event_id
         {
@@ -16072,18 +17565,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeevent_id() => __pbn__event_id != null;
         public void Resetevent_id() => __pbn__event_id = null;
+        [global::LightProto.ProtoIgnore]
         private EEvent? __pbn__event_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgDOTAClaimGatedEventResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(ResultCode.Success)]
         public ResultCode result
         {
@@ -16092,9 +17587,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private ResultCode? __pbn__result;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum ResultCode
         {
             Success = 0,
@@ -16108,14 +17604,15 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCGetEventRanking : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EEvent.EVENT_ID_NONE)]
         public EEvent event_id
         {
@@ -16124,9 +17621,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeevent_id() => __pbn__event_id != null;
         public void Resetevent_id() => __pbn__event_id = null;
+        [global::LightProto.ProtoIgnore]
         private EEvent? __pbn__event_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint account_id
         {
             get => __pbn__account_id.GetValueOrDefault();
@@ -16134,18 +17632,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeaccount_id() => __pbn__account_id != null;
         public void Resetaccount_id() => __pbn__account_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__account_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCGetEventRankingResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EEvent.EVENT_ID_NONE)]
         public EEvent event_id
         {
@@ -16154,9 +17654,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeevent_id() => __pbn__event_id != null;
         public void Resetevent_id() => __pbn__event_id = null;
+        [global::LightProto.ProtoIgnore]
         private EEvent? __pbn__event_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint account_id
         {
             get => __pbn__account_id.GetValueOrDefault();
@@ -16164,9 +17665,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeaccount_id() => __pbn__account_id != null;
         public void Resetaccount_id() => __pbn__account_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__account_id;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public float score
         {
             get => __pbn__score.GetValueOrDefault();
@@ -16174,9 +17676,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializescore() => __pbn__score != null;
         public void Resetscore() => __pbn__score = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__score;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public float percentile
         {
             get => __pbn__percentile.GetValueOrDefault();
@@ -16184,9 +17687,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializepercentile() => __pbn__percentile != null;
         public void Resetpercentile() => __pbn__percentile = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__percentile;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public uint final_rank_bucket
         {
             get => __pbn__final_rank_bucket.GetValueOrDefault();
@@ -16194,18 +17698,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializefinal_rank_bucket() => __pbn__final_rank_bucket != null;
         public void Resetfinal_rank_bucket() => __pbn__final_rank_bucket = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__final_rank_bucket;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCGetEventCoupon : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EEvent.EVENT_ID_NONE)]
         public EEvent event_id
         {
@@ -16214,21 +17720,23 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeevent_id() => __pbn__event_id != null;
         public void Resetevent_id() => __pbn__event_id = null;
+        [global::LightProto.ProtoIgnore]
         private EEvent? __pbn__event_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public global::System.Collections.Generic.List<uint> coupon_ids { get; } = new global::System.Collections.Generic.List<uint>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCGetEventCouponResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(ResultCode.Success)]
         public ResultCode result
         {
@@ -16237,9 +17745,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private ResultCode? __pbn__result;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue(EEvent.EVENT_ID_NONE)]
         public EEvent event_id
         {
@@ -16248,19 +17757,21 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeevent_id() => __pbn__event_id != null;
         public void Resetevent_id() => __pbn__event_id = null;
+        [global::LightProto.ProtoIgnore]
         private EEvent? __pbn__event_id;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public global::System.Collections.Generic.List<Coupon> coupons { get; } = new global::System.Collections.Generic.List<Coupon>();
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class Coupon : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public uint coupon_id
             {
                 get => __pbn__coupon_id.GetValueOrDefault();
@@ -16268,9 +17779,10 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializecoupon_id() => __pbn__coupon_id != null;
             public void Resetcoupon_id() => __pbn__coupon_id = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__coupon_id;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             [global::System.ComponentModel.DefaultValue("")]
             public string coupon_code
             {
@@ -16279,11 +17791,12 @@ namespace SteamKit2.GC.Dota.Internal
             }
             public bool ShouldSerializecoupon_code() => __pbn__coupon_code != null;
             public void Resetcoupon_code() => __pbn__coupon_code = null;
+            [global::LightProto.ProtoIgnore]
             private string __pbn__coupon_code;
 
         }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum ResultCode
         {
             Success = 0,
@@ -16297,14 +17810,15 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCConvertEventPoints : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EEvent.EVENT_ID_NONE)]
         public EEvent event_id_points_to_buy
         {
@@ -16313,9 +17827,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeevent_id_points_to_buy() => __pbn__event_id_points_to_buy != null;
         public void Resetevent_id_points_to_buy() => __pbn__event_id_points_to_buy = null;
+        [global::LightProto.ProtoIgnore]
         private EEvent? __pbn__event_id_points_to_buy;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue(EEvent.EVENT_ID_NONE)]
         public EEvent event_id_points_to_spend
         {
@@ -16324,9 +17839,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeevent_id_points_to_spend() => __pbn__event_id_points_to_spend != null;
         public void Resetevent_id_points_to_spend() => __pbn__event_id_points_to_spend = null;
+        [global::LightProto.ProtoIgnore]
         private EEvent? __pbn__event_id_points_to_spend;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public uint num_points_to_buy
         {
             get => __pbn__num_points_to_buy.GetValueOrDefault();
@@ -16334,9 +17850,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializenum_points_to_buy() => __pbn__num_points_to_buy != null;
         public void Resetnum_points_to_buy() => __pbn__num_points_to_buy = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__num_points_to_buy;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public uint num_points_to_spend
         {
             get => __pbn__num_points_to_spend.GetValueOrDefault();
@@ -16344,18 +17861,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializenum_points_to_spend() => __pbn__num_points_to_spend != null;
         public void Resetnum_points_to_spend() => __pbn__num_points_to_spend = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__num_points_to_spend;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCConvertEventPointsResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(ResultCode.Success)]
         public ResultCode result
         {
@@ -16364,9 +17883,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresult() => __pbn__result != null;
         public void Resetresult() => __pbn__result = null;
+        [global::LightProto.ProtoIgnore]
         private ResultCode? __pbn__result;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum ResultCode
         {
             Success = 0,
@@ -16379,14 +17899,15 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCInviteToDemoMode : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong server_id
         {
             get => __pbn__server_id.GetValueOrDefault();
@@ -16394,9 +17915,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeserver_id() => __pbn__server_id != null;
         public void Resetserver_id() => __pbn__server_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__server_id;
 
-        [global::ProtoBuf.ProtoMember(2, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(2, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong invited_player_id
         {
             get => __pbn__invited_player_id.GetValueOrDefault();
@@ -16404,18 +17926,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeinvited_player_id() => __pbn__invited_player_id != null;
         public void Resetinvited_player_id() => __pbn__invited_player_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__invited_player_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCToClientInviteToDemoMode : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong server_id
         {
             get => __pbn__server_id.GetValueOrDefault();
@@ -16423,9 +17947,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeserver_id() => __pbn__server_id != null;
         public void Resetserver_id() => __pbn__server_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__server_id;
 
-        [global::ProtoBuf.ProtoMember(2, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(2, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong from_player
         {
             get => __pbn__from_player.GetValueOrDefault();
@@ -16433,9 +17958,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializefrom_player() => __pbn__from_player != null;
         public void Resetfrom_player() => __pbn__from_player = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__from_player;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public bool party_invite
         {
             get => __pbn__party_invite.GetValueOrDefault();
@@ -16443,11 +17969,12 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeparty_invite() => __pbn__party_invite != null;
         public void Resetparty_invite() => __pbn__party_invite = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__party_invite;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum CMsgDOTARequestMatches_SkillLevel
     {
         CMsgDOTARequestMatches_SkillLevel_Any = 0,
@@ -16456,14 +17983,14 @@ namespace SteamKit2.GC.Dota.Internal
         CMsgDOTARequestMatches_SkillLevel_VeryHigh = 3,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum DOTA_WatchReplayType
     {
         DOTA_WATCH_REPLAY_NORMAL = 0,
         DOTA_WATCH_REPLAY_HIGHLIGHTS = 1,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EItemEditorReservationResult
     {
         k_EItemEditorReservationResult_OK = 1,
@@ -16472,7 +17999,7 @@ namespace SteamKit2.GC.Dota.Internal
         k_EItemEditorReservationResult_TimedOut = 4,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EWeekendTourneyRichPresenceEvent
     {
         k_EWeekendTourneyRichPresenceEvent_None = 0,
@@ -16481,7 +18008,7 @@ namespace SteamKit2.GC.Dota.Internal
         k_EWeekendTourneyRichPresenceEvent_Eliminated = 3,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EDOTATriviaAnswerResult
     {
         k_EDOTATriviaAnswerResult_Success = 0,
@@ -16492,7 +18019,7 @@ namespace SteamKit2.GC.Dota.Internal
         k_EDOTATriviaAnswerResult_TriviaDisabled = 5,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EPurchaseHeroRelicResult
     {
         k_EPurchaseHeroRelicResult_Success = 0,
@@ -16505,7 +18032,7 @@ namespace SteamKit2.GC.Dota.Internal
         k_EPurchaseHeroRelicResult_InvalidRarity = 7,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EDevEventRequestResult
     {
         k_EDevEventRequestResult_Success = 0,
@@ -16517,7 +18044,7 @@ namespace SteamKit2.GC.Dota.Internal
         k_EDevEventRequestResult_SDOLoadFailure = 6,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum ESupportEventRequestResult
     {
         k_ESupportEventRequestResult_Success = 0,
@@ -16536,7 +18063,7 @@ namespace SteamKit2.GC.Dota.Internal
         k_ESupportEventRequestResult_TransactionFailed = 13,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EUnderDraftResponse
     {
         k_eInternalError = 0,
@@ -16553,7 +18080,7 @@ namespace SteamKit2.GC.Dota.Internal
         k_eCantRollBack = 11,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EDOTADraftTriviaAnswerResult
     {
         k_EDOTADraftTriviaAnswerResult_Success = 0,
@@ -16564,7 +18091,7 @@ namespace SteamKit2.GC.Dota.Internal
         k_EDOTADraftTriviaAnswerResult_GCDown = 5,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum CMsgClientToGCUpdateComicBookStat_Type
     {
         CMsgClientToGCUpdateComicBookStat_Type_HighestPageRead = 1,

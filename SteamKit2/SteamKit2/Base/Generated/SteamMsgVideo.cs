@@ -9,14 +9,15 @@
 namespace SteamKit2.Internal
 {
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CVideo_ClientGetVideoURL_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public ulong video_id
         {
             get => __pbn__video_id.GetValueOrDefault();
@@ -24,9 +25,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializevideo_id() => __pbn__video_id != null;
         public void Resetvideo_id() => __pbn__video_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__video_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint client_cellid
         {
             get => __pbn__client_cellid.GetValueOrDefault();
@@ -34,18 +36,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeclient_cellid() => __pbn__client_cellid != null;
         public void Resetclient_cellid() => __pbn__client_cellid = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__client_cellid;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CVideo_ClientGetVideoURL_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public ulong video_id
         {
             get => __pbn__video_id.GetValueOrDefault();
@@ -53,9 +57,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializevideo_id() => __pbn__video_id != null;
         public void Resetvideo_id() => __pbn__video_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__video_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue("")]
         public string video_url
         {
@@ -64,18 +69,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializevideo_url() => __pbn__video_url != null;
         public void Resetvideo_url() => __pbn__video_url = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__video_url;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class VideoBookmark : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint app_id
         {
             get => __pbn__app_id.GetValueOrDefault();
@@ -83,9 +90,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeapp_id() => __pbn__app_id != null;
         public void Resetapp_id() => __pbn__app_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__app_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint playback_position_in_seconds
         {
             get => __pbn__playback_position_in_seconds.GetValueOrDefault();
@@ -93,9 +101,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeplayback_position_in_seconds() => __pbn__playback_position_in_seconds != null;
         public void Resetplayback_position_in_seconds() => __pbn__playback_position_in_seconds = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__playback_position_in_seconds;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public ulong video_track_id
         {
             get => __pbn__video_track_id.GetValueOrDefault();
@@ -103,9 +112,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializevideo_track_id() => __pbn__video_track_id != null;
         public void Resetvideo_track_id() => __pbn__video_track_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__video_track_id;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public ulong audio_track_id
         {
             get => __pbn__audio_track_id.GetValueOrDefault();
@@ -113,9 +123,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeaudio_track_id() => __pbn__audio_track_id != null;
         public void Resetaudio_track_id() => __pbn__audio_track_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__audio_track_id;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public ulong timedtext_track_id
         {
             get => __pbn__timedtext_track_id.GetValueOrDefault();
@@ -123,9 +134,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializetimedtext_track_id() => __pbn__timedtext_track_id != null;
         public void Resettimedtext_track_id() => __pbn__timedtext_track_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__timedtext_track_id;
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         public uint last_modified
         {
             get => __pbn__last_modified.GetValueOrDefault();
@@ -133,9 +145,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializelast_modified() => __pbn__last_modified != null;
         public void Resetlast_modified() => __pbn__last_modified = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__last_modified;
 
-        [global::ProtoBuf.ProtoMember(7)]
+        [global::LightProto.ProtoMember(7)]
         [global::System.ComponentModel.DefaultValue(false)]
         public bool hide_from_watch_history
         {
@@ -144,9 +157,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializehide_from_watch_history() => __pbn__hide_from_watch_history != null;
         public void Resethide_from_watch_history() => __pbn__hide_from_watch_history = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__hide_from_watch_history;
 
-        [global::ProtoBuf.ProtoMember(8)]
+        [global::LightProto.ProtoMember(8)]
         [global::System.ComponentModel.DefaultValue(false)]
         public bool hide_from_library
         {
@@ -155,33 +169,36 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializehide_from_library() => __pbn__hide_from_library != null;
         public void Resethide_from_library() => __pbn__hide_from_library = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__hide_from_library;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CVideo_SetVideoBookmark_Notification : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<VideoBookmark> bookmarks { get; } = new global::System.Collections.Generic.List<VideoBookmark>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CVideo_GetVideoBookmarks_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<uint> appids { get; } = new global::System.Collections.Generic.List<uint>();
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint updated_since
         {
             get => __pbn__updated_since.GetValueOrDefault();
@@ -189,30 +206,33 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeupdated_since() => __pbn__updated_since != null;
         public void Resetupdated_since() => __pbn__updated_since = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__updated_since;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CVideo_GetVideoBookmarks_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<VideoBookmark> bookmarks { get; } = new global::System.Collections.Generic.List<VideoBookmark>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CVideo_UnlockedH264_Notification : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public byte[] encryption_key
         {
             get => __pbn__encryption_key;
@@ -220,18 +240,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeencryption_key() => __pbn__encryption_key != null;
         public void Resetencryption_key() => __pbn__encryption_key = null;
+        [global::LightProto.ProtoIgnore]
         private byte[] __pbn__encryption_key;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CFovasVideo_ClientGetOPFSettings_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint app_id
         {
             get => __pbn__app_id.GetValueOrDefault();
@@ -239,9 +261,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeapp_id() => __pbn__app_id != null;
         public void Resetapp_id() => __pbn__app_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__app_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint client_cellid
         {
             get => __pbn__client_cellid.GetValueOrDefault();
@@ -249,18 +272,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeclient_cellid() => __pbn__client_cellid != null;
         public void Resetclient_cellid() => __pbn__client_cellid = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__client_cellid;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CFovasVideo_ClientGetOPFSettings_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint app_id
         {
             get => __pbn__app_id.GetValueOrDefault();
@@ -268,9 +293,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeapp_id() => __pbn__app_id != null;
         public void Resetapp_id() => __pbn__app_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__app_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue("")]
         public string opf_settings
         {
@@ -279,12 +305,14 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeopf_settings() => __pbn__opf_settings != null;
         public void Resetopf_settings() => __pbn__opf_settings = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__opf_settings;
 
     }
 
     public class Video : SteamUnifiedMessages.UnifiedService
     {
+        [global::LightProto.ProtoIgnore]
         public override string ServiceName { get; } = "Video";
 
         public AsyncJob<SteamUnifiedMessages.ServiceMethodResponse<CVideo_ClientGetVideoURL_Response>> ClientGetVideoURL( CVideo_ClientGetVideoURL_Request request )
@@ -328,6 +356,7 @@ namespace SteamKit2.Internal
 
     public class VideoClient : SteamUnifiedMessages.UnifiedService
     {
+        [global::LightProto.ProtoIgnore]
         public override string ServiceName { get; } = "VideoClient";
 
         public void NotifyUnlockedH264(CVideo_UnlockedH264_Notification request )
@@ -352,6 +381,7 @@ namespace SteamKit2.Internal
 
     public class FovasVideo : SteamUnifiedMessages.UnifiedService
     {
+        [global::LightProto.ProtoIgnore]
         public override string ServiceName { get; } = "FovasVideo";
 
         public AsyncJob<SteamUnifiedMessages.ServiceMethodResponse<CFovasVideo_ClientGetOPFSettings_Response>> ClientGetOPFSettings( CFovasVideo_ClientGetOPFSettings_Request request )

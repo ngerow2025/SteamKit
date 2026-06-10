@@ -1,4 +1,4 @@
-﻿/*
+/*
  * This file is subject to the terms and conditions defined in
  * file 'license.txt', which is part of this source code package.
  */
@@ -6,7 +6,7 @@
 
 using System;
 using System.IO;
-using ProtoBuf;
+using LightProto;
 using SteamKit2.Internal;
 using CMsgProtoBufHeader = SteamKit2.GC.Internal.CMsgProtoBufHeader;
 using MsgGCHdr = SteamKit2.Internal.MsgGCHdr;
@@ -19,7 +19,7 @@ namespace SteamKit2.GC
     /// </summary>
     /// <typeparam name="TBody">The body type of this message.</typeparam>
     public sealed class ClientGCMsgProtobuf<TBody> : GCMsgBase<MsgGCHdrProtoBuf>
-        where TBody : IExtensible, new()
+        where TBody : IExtensible, LightProto.IProtoParser<TBody>, new()
     {
         /// <summary>
         /// Gets a value indicating whether this gc message is protobuf backed.

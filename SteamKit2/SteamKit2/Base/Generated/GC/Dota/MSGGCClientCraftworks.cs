@@ -9,26 +9,28 @@
 namespace SteamKit2.GC.Dota.Internal
 {
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgCraftworksUserData : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public CMsgCraftworksComponents component_inventory { get; set; }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCCraftworksGetUserData : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint craftworks_id
         {
             get => __pbn__craftworks_id.GetValueOrDefault();
@@ -36,18 +38,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializecraftworks_id() => __pbn__craftworks_id != null;
         public void Resetcraftworks_id() => __pbn__craftworks_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__craftworks_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCCraftworksGetUserDataResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EResponse.k_eInternalError)]
         public EResponse response
         {
@@ -56,12 +60,13 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresponse() => __pbn__response != null;
         public void Resetresponse() => __pbn__response = null;
+        [global::LightProto.ProtoIgnore]
         private EResponse? __pbn__response;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public CMsgCraftworksUserData user_data { get; set; }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum EResponse
         {
             k_eInternalError = 0,
@@ -75,14 +80,15 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgGCToClientCraftworksUserDataUpdated : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint craftworks_id
         {
             get => __pbn__craftworks_id.GetValueOrDefault();
@@ -90,21 +96,23 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializecraftworks_id() => __pbn__craftworks_id != null;
         public void Resetcraftworks_id() => __pbn__craftworks_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__craftworks_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public CMsgCraftworksUserData user_data { get; set; }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCCraftworksCraftRecipe : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint craftworks_id
         {
             get => __pbn__craftworks_id.GetValueOrDefault();
@@ -112,9 +120,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializecraftworks_id() => __pbn__craftworks_id != null;
         public void Resetcraftworks_id() => __pbn__craftworks_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__craftworks_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public ulong recipe_id
         {
             get => __pbn__recipe_id.GetValueOrDefault();
@@ -122,18 +131,20 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializerecipe_id() => __pbn__recipe_id != null;
         public void Resetrecipe_id() => __pbn__recipe_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__recipe_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCCraftworksCraftRecipeResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EResponse.k_eInternalError)]
         public EResponse response
         {
@@ -142,12 +153,13 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresponse() => __pbn__response != null;
         public void Resetresponse() => __pbn__response = null;
+        [global::LightProto.ProtoIgnore]
         private EResponse? __pbn__response;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public CMsgDOTAClaimEventActionResponse claim_response { get; set; }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum EResponse
         {
             k_eInternalError = 0,
@@ -165,14 +177,15 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCCraftworksDevModifyComponents : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint craftworks_id
         {
             get => __pbn__craftworks_id.GetValueOrDefault();
@@ -180,12 +193,13 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializecraftworks_id() => __pbn__craftworks_id != null;
         public void Resetcraftworks_id() => __pbn__craftworks_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__craftworks_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public CMsgCraftworksComponents components { get; set; }
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         [global::System.ComponentModel.DefaultValue(EOperation.k_eAddComponents)]
         public EOperation operation
         {
@@ -194,9 +208,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeoperation() => __pbn__operation != null;
         public void Resetoperation() => __pbn__operation = null;
+        [global::LightProto.ProtoIgnore]
         private EOperation? __pbn__operation;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum EOperation
         {
             k_eAddComponents = 1,
@@ -205,14 +220,15 @@ namespace SteamKit2.GC.Dota.Internal
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgClientToGCCraftworksDevModifyComponentsResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EResponse.k_eInternalError)]
         public EResponse response
         {
@@ -221,9 +237,10 @@ namespace SteamKit2.GC.Dota.Internal
         }
         public bool ShouldSerializeresponse() => __pbn__response != null;
         public void Resetresponse() => __pbn__response = null;
+        [global::LightProto.ProtoIgnore]
         private EResponse? __pbn__response;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public enum EResponse
         {
             k_eInternalError = 0,

@@ -9,14 +9,15 @@
 namespace SteamKit2.WebUI.Internal
 {
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CUserGameNote : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue("")]
         public string id
         {
@@ -25,9 +26,10 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializeid() => __pbn__id != null;
         public void Resetid() => __pbn__id = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint appid
         {
             get => __pbn__appid.GetValueOrDefault();
@@ -35,9 +37,10 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializeappid() => __pbn__appid != null;
         public void Resetappid() => __pbn__appid = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__appid;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         [global::System.ComponentModel.DefaultValue("")]
         public string shortcut_name
         {
@@ -46,9 +49,10 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializeshortcut_name() => __pbn__shortcut_name != null;
         public void Resetshortcut_name() => __pbn__shortcut_name = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__shortcut_name;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public uint shortcutid
         {
             get => __pbn__shortcutid.GetValueOrDefault();
@@ -56,9 +60,10 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializeshortcutid() => __pbn__shortcutid != null;
         public void Resetshortcutid() => __pbn__shortcutid = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__shortcutid;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public uint ordinal
         {
             get => __pbn__ordinal.GetValueOrDefault();
@@ -66,9 +71,10 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializeordinal() => __pbn__ordinal != null;
         public void Resetordinal() => __pbn__ordinal = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__ordinal;
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         public uint time_created
         {
             get => __pbn__time_created.GetValueOrDefault();
@@ -76,9 +82,10 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializetime_created() => __pbn__time_created != null;
         public void Resettime_created() => __pbn__time_created = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__time_created;
 
-        [global::ProtoBuf.ProtoMember(7)]
+        [global::LightProto.ProtoMember(7)]
         public uint time_modified
         {
             get => __pbn__time_modified.GetValueOrDefault();
@@ -86,9 +93,10 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializetime_modified() => __pbn__time_modified != null;
         public void Resettime_modified() => __pbn__time_modified = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__time_modified;
 
-        [global::ProtoBuf.ProtoMember(8)]
+        [global::LightProto.ProtoMember(8)]
         [global::System.ComponentModel.DefaultValue("")]
         public string title
         {
@@ -97,9 +105,10 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializetitle() => __pbn__title != null;
         public void Resettitle() => __pbn__title = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__title;
 
-        [global::ProtoBuf.ProtoMember(9)]
+        [global::LightProto.ProtoMember(9)]
         [global::System.ComponentModel.DefaultValue("")]
         public string content
         {
@@ -108,18 +117,20 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializecontent() => __pbn__content != null;
         public void Resetcontent() => __pbn__content = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__content;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CUserGameNotes_DeleteNote_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint appid
         {
             get => __pbn__appid.GetValueOrDefault();
@@ -127,9 +138,10 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializeappid() => __pbn__appid != null;
         public void Resetappid() => __pbn__appid = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__appid;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue("")]
         public string shortcut_name
         {
@@ -138,9 +150,10 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializeshortcut_name() => __pbn__shortcut_name != null;
         public void Resetshortcut_name() => __pbn__shortcut_name = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__shortcut_name;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public uint shortcutid
         {
             get => __pbn__shortcutid.GetValueOrDefault();
@@ -148,9 +161,10 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializeshortcutid() => __pbn__shortcutid != null;
         public void Resetshortcutid() => __pbn__shortcutid = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__shortcutid;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         [global::System.ComponentModel.DefaultValue("")]
         public string note_id
         {
@@ -159,48 +173,53 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializenote_id() => __pbn__note_id != null;
         public void Resetnote_id() => __pbn__note_id = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__note_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CUserGameNotes_DeleteNote_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CUserGameNotes_GetGamesWithNotes_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CUserGameNotes_GetGamesWithNotes_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<CUserGameNotes_GetGamesWithNotes_Response_GameWithNotes> games_with_notes { get; } = new global::System.Collections.Generic.List<CUserGameNotes_GetGamesWithNotes_Response_GameWithNotes>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CUserGameNotes_GetGamesWithNotes_Response_GameWithNotes : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint appid
         {
             get => __pbn__appid.GetValueOrDefault();
@@ -208,9 +227,10 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializeappid() => __pbn__appid != null;
         public void Resetappid() => __pbn__appid = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__appid;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint shortcutid
         {
             get => __pbn__shortcutid.GetValueOrDefault();
@@ -218,9 +238,10 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializeshortcutid() => __pbn__shortcutid != null;
         public void Resetshortcutid() => __pbn__shortcutid = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__shortcutid;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         [global::System.ComponentModel.DefaultValue("")]
         public string shortcut_name
         {
@@ -229,9 +250,10 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializeshortcut_name() => __pbn__shortcut_name != null;
         public void Resetshortcut_name() => __pbn__shortcut_name = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__shortcut_name;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public uint last_modified
         {
             get => __pbn__last_modified.GetValueOrDefault();
@@ -239,9 +261,10 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializelast_modified() => __pbn__last_modified != null;
         public void Resetlast_modified() => __pbn__last_modified = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__last_modified;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public uint note_count
         {
             get => __pbn__note_count.GetValueOrDefault();
@@ -249,18 +272,20 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializenote_count() => __pbn__note_count != null;
         public void Resetnote_count() => __pbn__note_count = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__note_count;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CUserGameNotes_GetNotesForGame_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint appid
         {
             get => __pbn__appid.GetValueOrDefault();
@@ -268,9 +293,10 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializeappid() => __pbn__appid != null;
         public void Resetappid() => __pbn__appid = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__appid;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue("")]
         public string shortcut_name
         {
@@ -279,9 +305,10 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializeshortcut_name() => __pbn__shortcut_name != null;
         public void Resetshortcut_name() => __pbn__shortcut_name = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__shortcut_name;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public uint shortcutid
         {
             get => __pbn__shortcutid.GetValueOrDefault();
@@ -289,9 +316,10 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializeshortcutid() => __pbn__shortcutid != null;
         public void Resetshortcutid() => __pbn__shortcutid = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__shortcutid;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public bool include_content
         {
             get => __pbn__include_content.GetValueOrDefault();
@@ -299,30 +327,33 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializeinclude_content() => __pbn__include_content != null;
         public void Resetinclude_content() => __pbn__include_content = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__include_content;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CUserGameNotes_GetNotesForGame_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<CUserGameNote> notes { get; } = new global::System.Collections.Generic.List<CUserGameNote>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CUserGameNotes_SaveNote_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint appid
         {
             get => __pbn__appid.GetValueOrDefault();
@@ -330,9 +361,10 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializeappid() => __pbn__appid != null;
         public void Resetappid() => __pbn__appid = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__appid;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue("")]
         public string shortcut_name
         {
@@ -341,9 +373,10 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializeshortcut_name() => __pbn__shortcut_name != null;
         public void Resetshortcut_name() => __pbn__shortcut_name = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__shortcut_name;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public uint shortcutid
         {
             get => __pbn__shortcutid.GetValueOrDefault();
@@ -351,9 +384,10 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializeshortcutid() => __pbn__shortcutid != null;
         public void Resetshortcutid() => __pbn__shortcutid = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__shortcutid;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         [global::System.ComponentModel.DefaultValue("")]
         public string note_id
         {
@@ -362,9 +396,10 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializenote_id() => __pbn__note_id != null;
         public void Resetnote_id() => __pbn__note_id = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__note_id;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public bool create_new
         {
             get => __pbn__create_new.GetValueOrDefault();
@@ -372,9 +407,10 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializecreate_new() => __pbn__create_new != null;
         public void Resetcreate_new() => __pbn__create_new = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__create_new;
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         [global::System.ComponentModel.DefaultValue("")]
         public string title
         {
@@ -383,9 +419,10 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializetitle() => __pbn__title != null;
         public void Resettitle() => __pbn__title = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__title;
 
-        [global::ProtoBuf.ProtoMember(7)]
+        [global::LightProto.ProtoMember(7)]
         [global::System.ComponentModel.DefaultValue("")]
         public string content
         {
@@ -394,18 +431,20 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializecontent() => __pbn__content != null;
         public void Resetcontent() => __pbn__content = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__content;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CUserGameNotes_SaveNote_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue("")]
         public string note_id
         {
@@ -414,12 +453,14 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializenote_id() => __pbn__note_id != null;
         public void Resetnote_id() => __pbn__note_id = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__note_id;
 
     }
 
     public class UserGameNotes : SteamUnifiedMessages.UnifiedService
     {
+        [global::LightProto.ProtoIgnore]
         public override string ServiceName { get; } = "UserGameNotes";
 
         public AsyncJob<SteamUnifiedMessages.ServiceMethodResponse<CUserGameNotes_DeleteNote_Response>> DeleteNote( CUserGameNotes_DeleteNote_Request request )

@@ -1,9 +1,9 @@
-﻿using ProtoBuf;
+using LightProto;
 
 namespace SteamKit2.Discovery
 {
     [ProtoContract]
-    class BasicServerListProto
+    partial class BasicServerListProto
     {
         [ProtoMember( 1 )]
         public string Address { get; set; } = string.Empty;
@@ -18,6 +18,7 @@ namespace SteamKit2.Discovery
             set => protocolTypes = value;
         }
 
+        [ProtoIgnore]
         ProtocolTypes? protocolTypes;
     }
 }

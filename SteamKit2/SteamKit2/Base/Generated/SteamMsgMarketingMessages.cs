@@ -9,14 +9,15 @@
 namespace SteamKit2.Internal
 {
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMarketingMessages_GetActiveMarketingMessages_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue("")]
         public string country
         {
@@ -25,9 +26,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializecountry() => __pbn__country != null;
         public void Resetcountry() => __pbn__country = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__country;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public bool anonymous_user
         {
             get => __pbn__anonymous_user.GetValueOrDefault();
@@ -35,18 +37,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeanonymous_user() => __pbn__anonymous_user != null;
         public void Resetanonymous_user() => __pbn__anonymous_user = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__anonymous_user;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMarketingMessageProto : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong gid
         {
             get => __pbn__gid.GetValueOrDefault();
@@ -54,9 +58,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializegid() => __pbn__gid != null;
         public void Resetgid() => __pbn__gid = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__gid;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue("")]
         public string title
         {
@@ -65,9 +70,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializetitle() => __pbn__title != null;
         public void Resettitle() => __pbn__title = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__title;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         [global::System.ComponentModel.DefaultValue(EMarketingMessageType.k_EMarketingMessageInvalid)]
         public EMarketingMessageType type
         {
@@ -76,9 +82,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializetype() => __pbn__type != null;
         public void Resettype() => __pbn__type = null;
+        [global::LightProto.ProtoIgnore]
         private EMarketingMessageType? __pbn__type;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         [global::System.ComponentModel.DefaultValue(EMarketingMessageVisibility.k_EMarketingMessageVisibleBeta)]
         public EMarketingMessageVisibility visibility
         {
@@ -87,9 +94,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializevisibility() => __pbn__visibility != null;
         public void Resetvisibility() => __pbn__visibility = null;
+        [global::LightProto.ProtoIgnore]
         private EMarketingMessageVisibility? __pbn__visibility;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public uint priority
         {
             get => __pbn__priority.GetValueOrDefault();
@@ -97,9 +105,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializepriority() => __pbn__priority != null;
         public void Resetpriority() => __pbn__priority = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__priority;
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         [global::System.ComponentModel.DefaultValue(EMarketingMessageAssociationType.k_EMarketingMessageNoAssociation)]
         public EMarketingMessageAssociationType association_type
         {
@@ -108,9 +117,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeassociation_type() => __pbn__association_type != null;
         public void Resetassociation_type() => __pbn__association_type = null;
+        [global::LightProto.ProtoIgnore]
         private EMarketingMessageAssociationType? __pbn__association_type;
 
-        [global::ProtoBuf.ProtoMember(7)]
+        [global::LightProto.ProtoMember(7)]
         public uint associated_id
         {
             get => __pbn__associated_id.GetValueOrDefault();
@@ -118,9 +128,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeassociated_id() => __pbn__associated_id != null;
         public void Resetassociated_id() => __pbn__associated_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__associated_id;
 
-        [global::ProtoBuf.ProtoMember(8)]
+        [global::LightProto.ProtoMember(8)]
         [global::System.ComponentModel.DefaultValue("")]
         public string associated_name
         {
@@ -129,9 +140,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeassociated_name() => __pbn__associated_name != null;
         public void Resetassociated_name() => __pbn__associated_name = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__associated_name;
 
-        [global::ProtoBuf.ProtoMember(9)]
+        [global::LightProto.ProtoMember(9)]
         public uint start_date
         {
             get => __pbn__start_date.GetValueOrDefault();
@@ -139,9 +151,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializestart_date() => __pbn__start_date != null;
         public void Resetstart_date() => __pbn__start_date = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__start_date;
 
-        [global::ProtoBuf.ProtoMember(10)]
+        [global::LightProto.ProtoMember(10)]
         public uint end_date
         {
             get => __pbn__end_date.GetValueOrDefault();
@@ -149,9 +162,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeend_date() => __pbn__end_date != null;
         public void Resetend_date() => __pbn__end_date = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__end_date;
 
-        [global::ProtoBuf.ProtoMember(11)]
+        [global::LightProto.ProtoMember(11)]
         [global::System.ComponentModel.DefaultValue("")]
         public string country_allow
         {
@@ -160,9 +174,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializecountry_allow() => __pbn__country_allow != null;
         public void Resetcountry_allow() => __pbn__country_allow = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__country_allow;
 
-        [global::ProtoBuf.ProtoMember(12)]
+        [global::LightProto.ProtoMember(12)]
         [global::System.ComponentModel.DefaultValue("")]
         public string country_deny
         {
@@ -171,9 +186,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializecountry_deny() => __pbn__country_deny != null;
         public void Resetcountry_deny() => __pbn__country_deny = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__country_deny;
 
-        [global::ProtoBuf.ProtoMember(13)]
+        [global::LightProto.ProtoMember(13)]
         public bool ownership_restrictions_overridden
         {
             get => __pbn__ownership_restrictions_overridden.GetValueOrDefault();
@@ -181,9 +197,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeownership_restrictions_overridden() => __pbn__ownership_restrictions_overridden != null;
         public void Resetownership_restrictions_overridden() => __pbn__ownership_restrictions_overridden = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__ownership_restrictions_overridden;
 
-        [global::ProtoBuf.ProtoMember(14)]
+        [global::LightProto.ProtoMember(14)]
         public uint must_own_appid
         {
             get => __pbn__must_own_appid.GetValueOrDefault();
@@ -191,9 +208,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializemust_own_appid() => __pbn__must_own_appid != null;
         public void Resetmust_own_appid() => __pbn__must_own_appid = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__must_own_appid;
 
-        [global::ProtoBuf.ProtoMember(15)]
+        [global::LightProto.ProtoMember(15)]
         public uint must_not_own_appid
         {
             get => __pbn__must_not_own_appid.GetValueOrDefault();
@@ -201,9 +219,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializemust_not_own_appid() => __pbn__must_not_own_appid != null;
         public void Resetmust_not_own_appid() => __pbn__must_not_own_appid = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__must_not_own_appid;
 
-        [global::ProtoBuf.ProtoMember(16)]
+        [global::LightProto.ProtoMember(16)]
         public uint must_own_packageid
         {
             get => __pbn__must_own_packageid.GetValueOrDefault();
@@ -211,9 +230,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializemust_own_packageid() => __pbn__must_own_packageid != null;
         public void Resetmust_own_packageid() => __pbn__must_own_packageid = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__must_own_packageid;
 
-        [global::ProtoBuf.ProtoMember(17)]
+        [global::LightProto.ProtoMember(17)]
         public uint must_not_own_packageid
         {
             get => __pbn__must_not_own_packageid.GetValueOrDefault();
@@ -221,9 +241,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializemust_not_own_packageid() => __pbn__must_not_own_packageid != null;
         public void Resetmust_not_own_packageid() => __pbn__must_not_own_packageid = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__must_not_own_packageid;
 
-        [global::ProtoBuf.ProtoMember(18)]
+        [global::LightProto.ProtoMember(18)]
         public uint must_have_launched_appid
         {
             get => __pbn__must_have_launched_appid.GetValueOrDefault();
@@ -231,9 +252,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializemust_have_launched_appid() => __pbn__must_have_launched_appid != null;
         public void Resetmust_have_launched_appid() => __pbn__must_have_launched_appid = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__must_have_launched_appid;
 
-        [global::ProtoBuf.ProtoMember(19)]
+        [global::LightProto.ProtoMember(19)]
         [global::System.ComponentModel.DefaultValue("")]
         public string additional_restrictions
         {
@@ -242,9 +264,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeadditional_restrictions() => __pbn__additional_restrictions != null;
         public void Resetadditional_restrictions() => __pbn__additional_restrictions = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__additional_restrictions;
 
-        [global::ProtoBuf.ProtoMember(20)]
+        [global::LightProto.ProtoMember(20)]
         [global::System.ComponentModel.DefaultValue("")]
         public string template_type
         {
@@ -253,9 +276,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializetemplate_type() => __pbn__template_type != null;
         public void Resettemplate_type() => __pbn__template_type = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__template_type;
 
-        [global::ProtoBuf.ProtoMember(21)]
+        [global::LightProto.ProtoMember(21)]
         [global::System.ComponentModel.DefaultValue("")]
         public string template_vars
         {
@@ -264,9 +288,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializetemplate_vars() => __pbn__template_vars != null;
         public void Resettemplate_vars() => __pbn__template_vars = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__template_vars;
 
-        [global::ProtoBuf.ProtoMember(22)]
+        [global::LightProto.ProtoMember(22)]
         public uint flags
         {
             get => __pbn__flags.GetValueOrDefault();
@@ -274,9 +299,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeflags() => __pbn__flags != null;
         public void Resetflags() => __pbn__flags = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__flags;
 
-        [global::ProtoBuf.ProtoMember(23)]
+        [global::LightProto.ProtoMember(23)]
         [global::System.ComponentModel.DefaultValue("")]
         public string creator_name
         {
@@ -285,9 +311,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializecreator_name() => __pbn__creator_name != null;
         public void Resetcreator_name() => __pbn__creator_name = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__creator_name;
 
-        [global::ProtoBuf.ProtoMember(24)]
+        [global::LightProto.ProtoMember(24)]
         [global::System.ComponentModel.DefaultValue("")]
         public string template_vars_json
         {
@@ -296,9 +323,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializetemplate_vars_json() => __pbn__template_vars_json != null;
         public void Resettemplate_vars_json() => __pbn__template_vars_json = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__template_vars_json;
 
-        [global::ProtoBuf.ProtoMember(25)]
+        [global::LightProto.ProtoMember(25)]
         [global::System.ComponentModel.DefaultValue("")]
         public string additional_restrictions_json
         {
@@ -307,21 +335,23 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeadditional_restrictions_json() => __pbn__additional_restrictions_json != null;
         public void Resetadditional_restrictions_json() => __pbn__additional_restrictions_json = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__additional_restrictions_json;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMarketingMessages_GetActiveMarketingMessages_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<CMarketingMessageProto> messages { get; } = new global::System.Collections.Generic.List<CMarketingMessageProto>();
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint time_next_message_age
         {
             get => __pbn__time_next_message_age.GetValueOrDefault();
@@ -329,18 +359,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializetime_next_message_age() => __pbn__time_next_message_age != null;
         public void Resettime_next_message_age() => __pbn__time_next_message_age = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__time_next_message_age;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMarketingMessages_GetPastMarketingMessages_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint start_past_days
         {
             get => __pbn__start_past_days.GetValueOrDefault();
@@ -348,9 +380,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializestart_past_days() => __pbn__start_past_days != null;
         public void Resetstart_past_days() => __pbn__start_past_days = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__start_past_days;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint upto_past_days
         {
             get => __pbn__upto_past_days.GetValueOrDefault();
@@ -358,30 +391,33 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeupto_past_days() => __pbn__upto_past_days != null;
         public void Resetupto_past_days() => __pbn__upto_past_days = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__upto_past_days;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMarketingMessages_GetPastMarketingMessages_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<CMarketingMessageProto> messages { get; } = new global::System.Collections.Generic.List<CMarketingMessageProto>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMarketingMessages_GetMarketingMessagesForUser_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public bool include_seen_messages
         {
             get => __pbn__include_seen_messages.GetValueOrDefault();
@@ -389,9 +425,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeinclude_seen_messages() => __pbn__include_seen_messages != null;
         public void Resetinclude_seen_messages() => __pbn__include_seen_messages = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__include_seen_messages;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue("")]
         public string country_code
         {
@@ -400,9 +437,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializecountry_code() => __pbn__country_code != null;
         public void Resetcountry_code() => __pbn__country_code = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__country_code;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public int elanguage
         {
             get => __pbn__elanguage.GetValueOrDefault();
@@ -410,9 +448,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeelanguage() => __pbn__elanguage != null;
         public void Resetelanguage() => __pbn__elanguage = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__elanguage;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public int operating_system
         {
             get => __pbn__operating_system.GetValueOrDefault();
@@ -420,9 +459,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeoperating_system() => __pbn__operating_system != null;
         public void Resetoperating_system() => __pbn__operating_system = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__operating_system;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public int client_package_version
         {
             get => __pbn__client_package_version.GetValueOrDefault();
@@ -430,24 +470,26 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeclient_package_version() => __pbn__client_package_version != null;
         public void Resetclient_package_version() => __pbn__client_package_version = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__client_package_version;
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         public StoreBrowseContext context { get; set; }
 
-        [global::ProtoBuf.ProtoMember(7)]
+        [global::LightProto.ProtoMember(7)]
         public StoreBrowseItemDataRequest data_request { get; set; }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CDisplayMarketingMessage : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong gid
         {
             get => __pbn__gid.GetValueOrDefault();
@@ -455,9 +497,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializegid() => __pbn__gid != null;
         public void Resetgid() => __pbn__gid = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__gid;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue("")]
         public string title
         {
@@ -466,9 +509,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializetitle() => __pbn__title != null;
         public void Resettitle() => __pbn__title = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__title;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         [global::System.ComponentModel.DefaultValue(EMarketingMessageType.k_EMarketingMessageInvalid)]
         public EMarketingMessageType type
         {
@@ -477,15 +521,16 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializetype() => __pbn__type != null;
         public void Resettype() => __pbn__type = null;
+        [global::LightProto.ProtoIgnore]
         private EMarketingMessageType? __pbn__type;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public StoreItemID associated_item_id { get; set; }
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public StoreItem associated_item { get; set; }
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         [global::System.ComponentModel.DefaultValue("")]
         public string associated_name
         {
@@ -494,9 +539,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeassociated_name() => __pbn__associated_name != null;
         public void Resetassociated_name() => __pbn__associated_name = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__associated_name;
 
-        [global::ProtoBuf.ProtoMember(10)]
+        [global::LightProto.ProtoMember(10)]
         [global::System.ComponentModel.DefaultValue("")]
         public string template_type
         {
@@ -505,9 +551,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializetemplate_type() => __pbn__template_type != null;
         public void Resettemplate_type() => __pbn__template_type = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__template_type;
 
-        [global::ProtoBuf.ProtoMember(11)]
+        [global::LightProto.ProtoMember(11)]
         [global::System.ComponentModel.DefaultValue("")]
         public string template_vars_json
         {
@@ -516,28 +563,31 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializetemplate_vars_json() => __pbn__template_vars_json != null;
         public void Resettemplate_vars_json() => __pbn__template_vars_json = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__template_vars_json;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMarketingMessages_GetMarketingMessagesForUser_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<MarketingMessageForUser> messages { get; } = new global::System.Collections.Generic.List<MarketingMessageForUser>();
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class MarketingMessageForUser : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public bool already_seen
             {
                 get => __pbn__already_seen.GetValueOrDefault();
@@ -545,23 +595,25 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializealready_seen() => __pbn__already_seen != null;
             public void Resetalready_seen() => __pbn__already_seen = null;
+            [global::LightProto.ProtoIgnore]
             private bool? __pbn__already_seen;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public CDisplayMarketingMessage message { get; set; }
 
         }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMarketingMessages_DoesUserHavePendingMarketingMessages_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue("")]
         public string country_code
         {
@@ -570,9 +622,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializecountry_code() => __pbn__country_code != null;
         public void Resetcountry_code() => __pbn__country_code = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__country_code;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public int elanguage
         {
             get => __pbn__elanguage.GetValueOrDefault();
@@ -580,9 +633,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeelanguage() => __pbn__elanguage != null;
         public void Resetelanguage() => __pbn__elanguage = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__elanguage;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public int operating_system
         {
             get => __pbn__operating_system.GetValueOrDefault();
@@ -590,9 +644,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeoperating_system() => __pbn__operating_system != null;
         public void Resetoperating_system() => __pbn__operating_system = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__operating_system;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public int client_package_version
         {
             get => __pbn__client_package_version.GetValueOrDefault();
@@ -600,18 +655,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeclient_package_version() => __pbn__client_package_version != null;
         public void Resetclient_package_version() => __pbn__client_package_version = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__client_package_version;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMarketingMessages_DoesUserHavePendingMarketingMessages_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public bool has_pending_messages
         {
             get => __pbn__has_pending_messages.GetValueOrDefault();
@@ -619,9 +676,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializehas_pending_messages() => __pbn__has_pending_messages != null;
         public void Resethas_pending_messages() => __pbn__has_pending_messages = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__has_pending_messages;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public int pending_message_count
         {
             get => __pbn__pending_message_count.GetValueOrDefault();
@@ -629,18 +687,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializepending_message_count() => __pbn__pending_message_count != null;
         public void Resetpending_message_count() => __pbn__pending_message_count = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__pending_message_count;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMarketingMessages_GetDisplayMarketingMessage_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong gid
         {
             get => __pbn__gid.GetValueOrDefault();
@@ -648,36 +708,39 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializegid() => __pbn__gid != null;
         public void Resetgid() => __pbn__gid = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__gid;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public StoreBrowseContext context { get; set; }
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public StoreBrowseItemDataRequest data_request { get; set; }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMarketingMessages_GetDisplayMarketingMessage_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public CDisplayMarketingMessage message { get; set; }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMarketingMessages_MarkMessageSeen_Notification : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong gid
         {
             get => __pbn__gid.GetValueOrDefault();
@@ -685,9 +748,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializegid() => __pbn__gid != null;
         public void Resetgid() => __pbn__gid = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__gid;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue(0u)]
         public uint display_index
         {
@@ -696,9 +760,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializedisplay_index() => __pbn__display_index != null;
         public void Resetdisplay_index() => __pbn__display_index = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__display_index;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         [global::System.ComponentModel.DefaultValue(EMarketingMessageTemplateType.k_EMarketingMessageTemplate_Unknown)]
         public EMarketingMessageTemplateType template_type
         {
@@ -707,18 +772,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializetemplate_type() => __pbn__template_type != null;
         public void Resettemplate_type() => __pbn__template_type = null;
+        [global::LightProto.ProtoIgnore]
         private EMarketingMessageTemplateType? __pbn__template_type;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMarketingMessages_MarkMessageClicked_Notification : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong gid
         {
             get => __pbn__gid.GetValueOrDefault();
@@ -726,9 +793,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializegid() => __pbn__gid != null;
         public void Resetgid() => __pbn__gid = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__gid;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue(0u)]
         public uint display_index
         {
@@ -737,9 +805,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializedisplay_index() => __pbn__display_index != null;
         public void Resetdisplay_index() => __pbn__display_index = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__display_index;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         [global::System.ComponentModel.DefaultValue(EMarketingMessageTemplateType.k_EMarketingMessageTemplate_Unknown)]
         public EMarketingMessageTemplateType template_type
         {
@@ -748,9 +817,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializetemplate_type() => __pbn__template_type != null;
         public void Resettemplate_type() => __pbn__template_type = null;
+        [global::LightProto.ProtoIgnore]
         private EMarketingMessageTemplateType? __pbn__template_type;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         [global::System.ComponentModel.DefaultValue(EMarketingMessageClickLocation.k_EMarketingMessageClickLocation_Unknown)]
         public EMarketingMessageClickLocation click_location
         {
@@ -759,18 +829,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeclick_location() => __pbn__click_location != null;
         public void Resetclick_location() => __pbn__click_location = null;
+        [global::LightProto.ProtoIgnore]
         private EMarketingMessageClickLocation? __pbn__click_location;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMarketingMessages_GetMarketingMessage_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong gid
         {
             get => __pbn__gid.GetValueOrDefault();
@@ -778,33 +850,36 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializegid() => __pbn__gid != null;
         public void Resetgid() => __pbn__gid = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__gid;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMarketingMessages_GetMarketingMessage_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public CMarketingMessageProto message { get; set; }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMarketingMessages_CreateMarketingMessage_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public CMarketingMessageProto message { get; set; }
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public bool from_json
         {
             get => __pbn__from_json.GetValueOrDefault();
@@ -812,18 +887,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializefrom_json() => __pbn__from_json != null;
         public void Resetfrom_json() => __pbn__from_json = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__from_json;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMarketingMessages_CreateMarketingMessage_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong gid
         {
             get => __pbn__gid.GetValueOrDefault();
@@ -831,18 +908,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializegid() => __pbn__gid != null;
         public void Resetgid() => __pbn__gid = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__gid;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMarketingMessages_UpdateMarketingMessage_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong gid
         {
             get => __pbn__gid.GetValueOrDefault();
@@ -850,12 +929,13 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializegid() => __pbn__gid != null;
         public void Resetgid() => __pbn__gid = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__gid;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public CMarketingMessageProto message { get; set; }
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public bool from_json
         {
             get => __pbn__from_json.GetValueOrDefault();
@@ -863,27 +943,30 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializefrom_json() => __pbn__from_json != null;
         public void Resetfrom_json() => __pbn__from_json = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__from_json;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMarketingMessages_UpdateMarketingMessage_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMarketingMessages_DeleteMarketingMessage_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong gid
         {
             get => __pbn__gid.GetValueOrDefault();
@@ -891,27 +974,30 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializegid() => __pbn__gid != null;
         public void Resetgid() => __pbn__gid = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__gid;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMarketingMessages_DeleteMarketingMessage_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMarketingMessages_FindMarketingMessages_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EMarketingMessageLookupType.k_EMarketingMessageLookupInvalid)]
         public EMarketingMessageLookupType lookup_type
         {
@@ -920,9 +1006,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializelookup_type() => __pbn__lookup_type != null;
         public void Resetlookup_type() => __pbn__lookup_type = null;
+        [global::LightProto.ProtoIgnore]
         private EMarketingMessageLookupType? __pbn__lookup_type;
 
-        [global::ProtoBuf.ProtoMember(2, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(2, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong gid
         {
             get => __pbn__gid.GetValueOrDefault();
@@ -930,9 +1017,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializegid() => __pbn__gid != null;
         public void Resetgid() => __pbn__gid = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__gid;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         [global::System.ComponentModel.DefaultValue(EMarketingMessageType.k_EMarketingMessageInvalid)]
         public EMarketingMessageType message_type
         {
@@ -941,12 +1029,13 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializemessage_type() => __pbn__message_type != null;
         public void Resetmessage_type() => __pbn__message_type = null;
+        [global::LightProto.ProtoIgnore]
         private EMarketingMessageType? __pbn__message_type;
 
-        [global::ProtoBuf.ProtoMember(4, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(4, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public global::System.Collections.Generic.List<ulong> gidlist { get; } = new global::System.Collections.Generic.List<ulong>();
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         [global::System.ComponentModel.DefaultValue("")]
         public string title
         {
@@ -955,30 +1044,33 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializetitle() => __pbn__title != null;
         public void Resettitle() => __pbn__title = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__title;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMarketingMessages_FindMarketingMessages_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<CMarketingMessageProto> messages { get; } = new global::System.Collections.Generic.List<CMarketingMessageProto>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMarketingMessages_GetMarketingMessageViewerStats_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong gid
         {
             get => __pbn__gid.GetValueOrDefault();
@@ -986,18 +1078,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializegid() => __pbn__gid != null;
         public void Resetgid() => __pbn__gid = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__gid;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMarketingMessageHourlyStats : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint rt_time_hour
         {
             get => __pbn__rt_time_hour.GetValueOrDefault();
@@ -1005,9 +1099,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializert_time_hour() => __pbn__rt_time_hour != null;
         public void Resetrt_time_hour() => __pbn__rt_time_hour = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__rt_time_hour;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint seen_count
         {
             get => __pbn__seen_count.GetValueOrDefault();
@@ -1015,9 +1110,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeseen_count() => __pbn__seen_count != null;
         public void Resetseen_count() => __pbn__seen_count = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__seen_count;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         [global::System.ComponentModel.DefaultValue(EMarketingMessageTemplateType.k_EMarketingMessageTemplate_Unknown)]
         public EMarketingMessageTemplateType template_type
         {
@@ -1026,9 +1122,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializetemplate_type() => __pbn__template_type != null;
         public void Resettemplate_type() => __pbn__template_type = null;
+        [global::LightProto.ProtoIgnore]
         private EMarketingMessageTemplateType? __pbn__template_type;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public uint display_index
         {
             get => __pbn__display_index.GetValueOrDefault();
@@ -1036,30 +1133,33 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializedisplay_index() => __pbn__display_index != null;
         public void Resetdisplay_index() => __pbn__display_index = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__display_index;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMarketingMessages_GetMarketingMessageViewerStats_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<CMarketingMessageHourlyStats> stats { get; } = new global::System.Collections.Generic.List<CMarketingMessageHourlyStats>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMarketingMessages_GetMarketingMessagesViewerRangeStats_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint rt_start_time
         {
             get => __pbn__rt_start_time.GetValueOrDefault();
@@ -1067,9 +1167,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializert_start_time() => __pbn__rt_start_time != null;
         public void Resetrt_start_time() => __pbn__rt_start_time = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__rt_start_time;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint rt_end_time
         {
             get => __pbn__rt_end_time.GetValueOrDefault();
@@ -1077,18 +1178,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializert_end_time() => __pbn__rt_end_time != null;
         public void Resetrt_end_time() => __pbn__rt_end_time = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__rt_end_time;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMarketingMessageClickedHourlyStats : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint rt_time_hour
         {
             get => __pbn__rt_time_hour.GetValueOrDefault();
@@ -1096,9 +1199,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializert_time_hour() => __pbn__rt_time_hour != null;
         public void Resetrt_time_hour() => __pbn__rt_time_hour = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__rt_time_hour;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint clicked_count
         {
             get => __pbn__clicked_count.GetValueOrDefault();
@@ -1106,9 +1210,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeclicked_count() => __pbn__clicked_count != null;
         public void Resetclicked_count() => __pbn__clicked_count = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__clicked_count;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public uint display_index
         {
             get => __pbn__display_index.GetValueOrDefault();
@@ -1116,9 +1221,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializedisplay_index() => __pbn__display_index != null;
         public void Resetdisplay_index() => __pbn__display_index = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__display_index;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         [global::System.ComponentModel.DefaultValue(EMarketingMessageTemplateType.k_EMarketingMessageTemplate_Unknown)]
         public EMarketingMessageTemplateType template_type
         {
@@ -1127,9 +1233,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializetemplate_type() => __pbn__template_type != null;
         public void Resettemplate_type() => __pbn__template_type = null;
+        [global::LightProto.ProtoIgnore]
         private EMarketingMessageTemplateType? __pbn__template_type;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         [global::System.ComponentModel.DefaultValue(EMarketingMessageClickLocation.k_EMarketingMessageClickLocation_Unknown)]
         public EMarketingMessageClickLocation click_location
         {
@@ -1138,33 +1245,36 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeclick_location() => __pbn__click_location != null;
         public void Resetclick_location() => __pbn__click_location = null;
+        [global::LightProto.ProtoIgnore]
         private EMarketingMessageClickLocation? __pbn__click_location;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMarketingMessages_GetMarketingMessagesViewerRangeStats_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<CMarketingMessageHourlyStats> stats { get; } = new global::System.Collections.Generic.List<CMarketingMessageHourlyStats>();
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public global::System.Collections.Generic.List<CMarketingMessageClickedHourlyStats> clicked_stats { get; } = new global::System.Collections.Generic.List<CMarketingMessageClickedHourlyStats>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMarketingMessages_GetMarketingMessageClickedStats_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong gid
         {
             get => __pbn__gid.GetValueOrDefault();
@@ -1172,30 +1282,33 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializegid() => __pbn__gid != null;
         public void Resetgid() => __pbn__gid = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__gid;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMarketingMessages_GetMarketingMessageClickedStats_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<CMarketingMessageClickedHourlyStats> stats { get; } = new global::System.Collections.Generic.List<CMarketingMessageClickedHourlyStats>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMarketingMessages_GetPartnerReadyToPublishMessages_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint partnerid
         {
             get => __pbn__partnerid.GetValueOrDefault();
@@ -1203,30 +1316,33 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializepartnerid() => __pbn__partnerid != null;
         public void Resetpartnerid() => __pbn__partnerid = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__partnerid;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMarketingMessages_GetPartnerReadyToPublishMessages_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<CDisplayMarketingMessage> messages { get; } = new global::System.Collections.Generic.List<CDisplayMarketingMessage>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMarketingMessages_PartnerPublishMessage_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong gid
         {
             get => __pbn__gid.GetValueOrDefault();
@@ -1234,9 +1350,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializegid() => __pbn__gid != null;
         public void Resetgid() => __pbn__gid = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__gid;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint partnerid
         {
             get => __pbn__partnerid.GetValueOrDefault();
@@ -1244,27 +1361,30 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializepartnerid() => __pbn__partnerid != null;
         public void Resetpartnerid() => __pbn__partnerid = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__partnerid;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMarketingMessages_PartnerPublishMessage_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMarketingMessages_GetPartnerMessagePreview_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong gid
         {
             get => __pbn__gid.GetValueOrDefault();
@@ -1272,9 +1392,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializegid() => __pbn__gid != null;
         public void Resetgid() => __pbn__gid = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__gid;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint partnerid
         {
             get => __pbn__partnerid.GetValueOrDefault();
@@ -1282,30 +1403,33 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializepartnerid() => __pbn__partnerid != null;
         public void Resetpartnerid() => __pbn__partnerid = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__partnerid;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMarketingMessages_GetPartnerMessagePreview_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public CMarketingMessageProto message { get; set; }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMarketingMessage_GetMarketingMessagesForPartner_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint partnerid
         {
             get => __pbn__partnerid.GetValueOrDefault();
@@ -1313,47 +1437,51 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializepartnerid() => __pbn__partnerid != null;
         public void Resetpartnerid() => __pbn__partnerid = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__partnerid;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMarketingMessage_GetMarketingMessagesForPartner_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<CMarketingMessageProto> messages { get; } = new global::System.Collections.Generic.List<CMarketingMessageProto>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMarketingMessage_GetMarketingMessagesForApps_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<uint> appids { get; } = new global::System.Collections.Generic.List<uint>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMarketingMessage_GetMarketingMessagesForApps_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<CMarketingMessageProto> messages { get; } = new global::System.Collections.Generic.List<CMarketingMessageProto>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EMarketingMessageType
     {
         k_EMarketingMessageInvalid = 0,
@@ -1375,7 +1503,7 @@ namespace SteamKit2.Internal
         k_EMarketingMessagePlaytestAvailable = 16,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EMarketingMessageVisibility
     {
         k_EMarketingMessageVisibleBeta = 1,
@@ -1383,7 +1511,7 @@ namespace SteamKit2.Internal
         k_EMarketingMessageVisibleApprovedForPublish = 3,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EMarketingMessageAssociationType
     {
         k_EMarketingMessageNoAssociation = 0,
@@ -1394,7 +1522,7 @@ namespace SteamKit2.Internal
         k_EMarketingMessageBundleAssociation = 5,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EMarketingMessageTemplateType
     {
         k_EMarketingMessageTemplate_Unknown = 0,
@@ -1408,7 +1536,7 @@ namespace SteamKit2.Internal
         k_EMarketingMessageTemplate_MAX = 8,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EMarketingMessageClickLocation
     {
         k_EMarketingMessageClickLocation_Unknown = 0,
@@ -1420,7 +1548,7 @@ namespace SteamKit2.Internal
         k_EMarketingMessageClickLocation_PartnerEvent = 6,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EMarketingMessageLookupType
     {
         k_EMarketingMessageLookupInvalid = 0,
@@ -1432,6 +1560,7 @@ namespace SteamKit2.Internal
 
     public class MarketingMessages : SteamUnifiedMessages.UnifiedService
     {
+        [global::LightProto.ProtoIgnore]
         public override string ServiceName { get; } = "MarketingMessages";
 
         public AsyncJob<SteamUnifiedMessages.ServiceMethodResponse<CMarketingMessages_GetActiveMarketingMessages_Response>> GetActiveMarketingMessages( CMarketingMessages_GetActiveMarketingMessages_Request request )

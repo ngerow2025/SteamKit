@@ -9,14 +9,15 @@
 namespace SteamKit2.Internal
 {
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class Offline_Ticket : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public byte[] encrypted_ticket
         {
             get => __pbn__encrypted_ticket;
@@ -24,9 +25,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeencrypted_ticket() => __pbn__encrypted_ticket != null;
         public void Resetencrypted_ticket() => __pbn__encrypted_ticket = null;
+        [global::LightProto.ProtoIgnore]
         private byte[] __pbn__encrypted_ticket;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public byte[] signature
         {
             get => __pbn__signature;
@@ -34,9 +36,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializesignature() => __pbn__signature != null;
         public void Resetsignature() => __pbn__signature = null;
+        [global::LightProto.ProtoIgnore]
         private byte[] __pbn__signature;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public int kdf1
         {
             get => __pbn__kdf1.GetValueOrDefault();
@@ -44,9 +47,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializekdf1() => __pbn__kdf1 != null;
         public void Resetkdf1() => __pbn__kdf1 = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__kdf1;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public byte[] salt1
         {
             get => __pbn__salt1;
@@ -54,9 +58,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializesalt1() => __pbn__salt1 != null;
         public void Resetsalt1() => __pbn__salt1 = null;
+        [global::LightProto.ProtoIgnore]
         private byte[] __pbn__salt1;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public int kdf2
         {
             get => __pbn__kdf2.GetValueOrDefault();
@@ -64,9 +69,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializekdf2() => __pbn__kdf2 != null;
         public void Resetkdf2() => __pbn__kdf2 = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__kdf2;
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         public byte[] salt2
         {
             get => __pbn__salt2;
@@ -74,6 +80,7 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializesalt2() => __pbn__salt2 != null;
         public void Resetsalt2() => __pbn__salt2 = null;
+        [global::LightProto.ProtoIgnore]
         private byte[] __pbn__salt2;
 
     }

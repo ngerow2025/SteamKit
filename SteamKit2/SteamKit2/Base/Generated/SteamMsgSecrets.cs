@@ -9,14 +9,15 @@
 namespace SteamKit2.Internal
 {
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CKeyEscrow_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public byte[] rsa_oaep_sha_ticket
         {
             get => __pbn__rsa_oaep_sha_ticket;
@@ -24,9 +25,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializersa_oaep_sha_ticket() => __pbn__rsa_oaep_sha_ticket != null;
         public void Resetrsa_oaep_sha_ticket() => __pbn__rsa_oaep_sha_ticket = null;
+        [global::LightProto.ProtoIgnore]
         private byte[] __pbn__rsa_oaep_sha_ticket;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public byte[] password
         {
             get => __pbn__password;
@@ -34,9 +36,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializepassword() => __pbn__password != null;
         public void Resetpassword() => __pbn__password = null;
+        [global::LightProto.ProtoIgnore]
         private byte[] __pbn__password;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         [global::System.ComponentModel.DefaultValue(EKeyEscrowUsage.k_EKeyEscrowUsageStreamingDevice)]
         public EKeyEscrowUsage usage
         {
@@ -45,9 +48,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeusage() => __pbn__usage != null;
         public void Resetusage() => __pbn__usage = null;
+        [global::LightProto.ProtoIgnore]
         private EKeyEscrowUsage? __pbn__usage;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         [global::System.ComponentModel.DefaultValue("")]
         public string device_name
         {
@@ -56,18 +60,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializedevice_name() => __pbn__device_name != null;
         public void Resetdevice_name() => __pbn__device_name = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__device_name;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CKeyEscrow_Ticket : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public byte[] password
         {
             get => __pbn__password;
@@ -75,9 +81,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializepassword() => __pbn__password != null;
         public void Resetpassword() => __pbn__password = null;
+        [global::LightProto.ProtoIgnore]
         private byte[] __pbn__password;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public ulong identifier
         {
             get => __pbn__identifier.GetValueOrDefault();
@@ -85,9 +92,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeidentifier() => __pbn__identifier != null;
         public void Resetidentifier() => __pbn__identifier = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__identifier;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public byte[] payload
         {
             get => __pbn__payload;
@@ -95,9 +103,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializepayload() => __pbn__payload != null;
         public void Resetpayload() => __pbn__payload = null;
+        [global::LightProto.ProtoIgnore]
         private byte[] __pbn__payload;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public uint timestamp
         {
             get => __pbn__timestamp.GetValueOrDefault();
@@ -105,9 +114,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializetimestamp() => __pbn__timestamp != null;
         public void Resettimestamp() => __pbn__timestamp = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__timestamp;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         [global::System.ComponentModel.DefaultValue(EKeyEscrowUsage.k_EKeyEscrowUsageStreamingDevice)]
         public EKeyEscrowUsage usage
         {
@@ -116,9 +126,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeusage() => __pbn__usage != null;
         public void Resetusage() => __pbn__usage = null;
+        [global::LightProto.ProtoIgnore]
         private EKeyEscrowUsage? __pbn__usage;
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         [global::System.ComponentModel.DefaultValue("")]
         public string device_name
         {
@@ -127,9 +138,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializedevice_name() => __pbn__device_name != null;
         public void Resetdevice_name() => __pbn__device_name = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__device_name;
 
-        [global::ProtoBuf.ProtoMember(7)]
+        [global::LightProto.ProtoMember(7)]
         [global::System.ComponentModel.DefaultValue("")]
         public string device_model
         {
@@ -138,9 +150,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializedevice_model() => __pbn__device_model != null;
         public void Resetdevice_model() => __pbn__device_model = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__device_model;
 
-        [global::ProtoBuf.ProtoMember(8)]
+        [global::LightProto.ProtoMember(8)]
         [global::System.ComponentModel.DefaultValue("")]
         public string device_serial
         {
@@ -149,9 +162,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializedevice_serial() => __pbn__device_serial != null;
         public void Resetdevice_serial() => __pbn__device_serial = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__device_serial;
 
-        [global::ProtoBuf.ProtoMember(9)]
+        [global::LightProto.ProtoMember(9)]
         public uint device_provisioning_id
         {
             get => __pbn__device_provisioning_id.GetValueOrDefault();
@@ -159,23 +173,25 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializedevice_provisioning_id() => __pbn__device_provisioning_id != null;
         public void Resetdevice_provisioning_id() => __pbn__device_provisioning_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__device_provisioning_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CKeyEscrow_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public CKeyEscrow_Ticket ticket { get; set; }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EKeyEscrowUsage
     {
         k_EKeyEscrowUsageStreamingDevice = 0,
@@ -183,6 +199,7 @@ namespace SteamKit2.Internal
 
     public class Secrets : SteamUnifiedMessages.UnifiedService
     {
+        [global::LightProto.ProtoIgnore]
         public override string ServiceName { get; } = "Secrets";
 
         public AsyncJob<SteamUnifiedMessages.ServiceMethodResponse<CKeyEscrow_Response>> KeyEscrow( CKeyEscrow_Request request )

@@ -9,14 +9,15 @@
 namespace SteamKit2.GC.Deadlock.Internal
 {
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CMsgProtoBufHeader : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong client_steam_id
         {
             get => __pbn__client_steam_id.GetValueOrDefault();
@@ -24,9 +25,10 @@ namespace SteamKit2.GC.Deadlock.Internal
         }
         public bool ShouldSerializeclient_steam_id() => __pbn__client_steam_id != null;
         public void Resetclient_steam_id() => __pbn__client_steam_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__client_steam_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public int client_session_id
         {
             get => __pbn__client_session_id.GetValueOrDefault();
@@ -34,9 +36,10 @@ namespace SteamKit2.GC.Deadlock.Internal
         }
         public bool ShouldSerializeclient_session_id() => __pbn__client_session_id != null;
         public void Resetclient_session_id() => __pbn__client_session_id = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__client_session_id;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public uint source_app_id
         {
             get => __pbn__source_app_id.GetValueOrDefault();
@@ -44,9 +47,10 @@ namespace SteamKit2.GC.Deadlock.Internal
         }
         public bool ShouldSerializesource_app_id() => __pbn__source_app_id != null;
         public void Resetsource_app_id() => __pbn__source_app_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__source_app_id;
 
-        [global::ProtoBuf.ProtoMember(10, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(10, DataFormat = global::LightProto.DataFormat.FixedSize)]
         [global::System.ComponentModel.DefaultValue(typeof(ulong), "18446744073709551615")]
         public ulong job_id_source
         {
@@ -55,9 +59,10 @@ namespace SteamKit2.GC.Deadlock.Internal
         }
         public bool ShouldSerializejob_id_source() => __pbn__job_id_source != null;
         public void Resetjob_id_source() => __pbn__job_id_source = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__job_id_source;
 
-        [global::ProtoBuf.ProtoMember(11, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(11, DataFormat = global::LightProto.DataFormat.FixedSize)]
         [global::System.ComponentModel.DefaultValue(typeof(ulong), "18446744073709551615")]
         public ulong job_id_target
         {
@@ -66,9 +71,10 @@ namespace SteamKit2.GC.Deadlock.Internal
         }
         public bool ShouldSerializejob_id_target() => __pbn__job_id_target != null;
         public void Resetjob_id_target() => __pbn__job_id_target = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__job_id_target;
 
-        [global::ProtoBuf.ProtoMember(12)]
+        [global::LightProto.ProtoMember(12)]
         [global::System.ComponentModel.DefaultValue("")]
         public string target_job_name
         {
@@ -77,9 +83,10 @@ namespace SteamKit2.GC.Deadlock.Internal
         }
         public bool ShouldSerializetarget_job_name() => __pbn__target_job_name != null;
         public void Resettarget_job_name() => __pbn__target_job_name = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__target_job_name;
 
-        [global::ProtoBuf.ProtoMember(13)]
+        [global::LightProto.ProtoMember(13)]
         [global::System.ComponentModel.DefaultValue(2)]
         public int eresult
         {
@@ -88,9 +95,10 @@ namespace SteamKit2.GC.Deadlock.Internal
         }
         public bool ShouldSerializeeresult() => __pbn__eresult != null;
         public void Reseteresult() => __pbn__eresult = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__eresult;
 
-        [global::ProtoBuf.ProtoMember(14)]
+        [global::LightProto.ProtoMember(14)]
         [global::System.ComponentModel.DefaultValue("")]
         public string error_message
         {
@@ -99,9 +107,10 @@ namespace SteamKit2.GC.Deadlock.Internal
         }
         public bool ShouldSerializeerror_message() => __pbn__error_message != null;
         public void Reseterror_message() => __pbn__error_message = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__error_message;
 
-        [global::ProtoBuf.ProtoMember(200)]
+        [global::LightProto.ProtoMember(200)]
         [global::System.ComponentModel.DefaultValue(GCProtoBufMsgSrc.GCProtoBufMsgSrc_Unspecified)]
         public GCProtoBufMsgSrc gc_msg_src
         {
@@ -110,9 +119,10 @@ namespace SteamKit2.GC.Deadlock.Internal
         }
         public bool ShouldSerializegc_msg_src() => __pbn__gc_msg_src != null;
         public void Resetgc_msg_src() => __pbn__gc_msg_src = null;
+        [global::LightProto.ProtoIgnore]
         private GCProtoBufMsgSrc? __pbn__gc_msg_src;
 
-        [global::ProtoBuf.ProtoMember(201)]
+        [global::LightProto.ProtoMember(201)]
         [global::System.ComponentModel.DefaultValue(-1)]
         public int gc_dir_index_source
         {
@@ -121,18 +131,20 @@ namespace SteamKit2.GC.Deadlock.Internal
         }
         public bool ShouldSerializegc_dir_index_source() => __pbn__gc_dir_index_source != null;
         public void Resetgc_dir_index_source() => __pbn__gc_dir_index_source = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__gc_dir_index_source;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CGCSystemMsg_GetAccountDetails : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong steamid
         {
             get => __pbn__steamid.GetValueOrDefault();
@@ -140,9 +152,10 @@ namespace SteamKit2.GC.Deadlock.Internal
         }
         public bool ShouldSerializesteamid() => __pbn__steamid != null;
         public void Resetsteamid() => __pbn__steamid = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__steamid;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint appid
         {
             get => __pbn__appid.GetValueOrDefault();
@@ -150,18 +163,20 @@ namespace SteamKit2.GC.Deadlock.Internal
         }
         public bool ShouldSerializeappid() => __pbn__appid != null;
         public void Resetappid() => __pbn__appid = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__appid;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CGCSystemMsg_GetAccountDetails_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(2u)]
         public uint eresult_deprecated
         {
@@ -170,9 +185,10 @@ namespace SteamKit2.GC.Deadlock.Internal
         }
         public bool ShouldSerializeeresult_deprecated() => __pbn__eresult_deprecated != null;
         public void Reseteresult_deprecated() => __pbn__eresult_deprecated = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__eresult_deprecated;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue("")]
         public string account_name
         {
@@ -181,9 +197,10 @@ namespace SteamKit2.GC.Deadlock.Internal
         }
         public bool ShouldSerializeaccount_name() => __pbn__account_name != null;
         public void Resetaccount_name() => __pbn__account_name = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__account_name;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         [global::System.ComponentModel.DefaultValue("")]
         public string persona_name
         {
@@ -192,9 +209,10 @@ namespace SteamKit2.GC.Deadlock.Internal
         }
         public bool ShouldSerializepersona_name() => __pbn__persona_name != null;
         public void Resetpersona_name() => __pbn__persona_name = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__persona_name;
 
-        [global::ProtoBuf.ProtoMember(26)]
+        [global::LightProto.ProtoMember(26)]
         public bool is_profile_created
         {
             get => __pbn__is_profile_created.GetValueOrDefault();
@@ -202,9 +220,10 @@ namespace SteamKit2.GC.Deadlock.Internal
         }
         public bool ShouldSerializeis_profile_created() => __pbn__is_profile_created != null;
         public void Resetis_profile_created() => __pbn__is_profile_created = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_profile_created;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public bool is_profile_public
         {
             get => __pbn__is_profile_public.GetValueOrDefault();
@@ -212,9 +231,10 @@ namespace SteamKit2.GC.Deadlock.Internal
         }
         public bool ShouldSerializeis_profile_public() => __pbn__is_profile_public != null;
         public void Resetis_profile_public() => __pbn__is_profile_public = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_profile_public;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public bool is_inventory_public
         {
             get => __pbn__is_inventory_public.GetValueOrDefault();
@@ -222,9 +242,10 @@ namespace SteamKit2.GC.Deadlock.Internal
         }
         public bool ShouldSerializeis_inventory_public() => __pbn__is_inventory_public != null;
         public void Resetis_inventory_public() => __pbn__is_inventory_public = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_inventory_public;
 
-        [global::ProtoBuf.ProtoMember(7)]
+        [global::LightProto.ProtoMember(7)]
         public bool is_vac_banned
         {
             get => __pbn__is_vac_banned.GetValueOrDefault();
@@ -232,9 +253,10 @@ namespace SteamKit2.GC.Deadlock.Internal
         }
         public bool ShouldSerializeis_vac_banned() => __pbn__is_vac_banned != null;
         public void Resetis_vac_banned() => __pbn__is_vac_banned = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_vac_banned;
 
-        [global::ProtoBuf.ProtoMember(8)]
+        [global::LightProto.ProtoMember(8)]
         public bool is_cyber_cafe
         {
             get => __pbn__is_cyber_cafe.GetValueOrDefault();
@@ -242,9 +264,10 @@ namespace SteamKit2.GC.Deadlock.Internal
         }
         public bool ShouldSerializeis_cyber_cafe() => __pbn__is_cyber_cafe != null;
         public void Resetis_cyber_cafe() => __pbn__is_cyber_cafe = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_cyber_cafe;
 
-        [global::ProtoBuf.ProtoMember(9)]
+        [global::LightProto.ProtoMember(9)]
         public bool is_school_account
         {
             get => __pbn__is_school_account.GetValueOrDefault();
@@ -252,9 +275,10 @@ namespace SteamKit2.GC.Deadlock.Internal
         }
         public bool ShouldSerializeis_school_account() => __pbn__is_school_account != null;
         public void Resetis_school_account() => __pbn__is_school_account = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_school_account;
 
-        [global::ProtoBuf.ProtoMember(10)]
+        [global::LightProto.ProtoMember(10)]
         public bool is_limited
         {
             get => __pbn__is_limited.GetValueOrDefault();
@@ -262,9 +286,10 @@ namespace SteamKit2.GC.Deadlock.Internal
         }
         public bool ShouldSerializeis_limited() => __pbn__is_limited != null;
         public void Resetis_limited() => __pbn__is_limited = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_limited;
 
-        [global::ProtoBuf.ProtoMember(11)]
+        [global::LightProto.ProtoMember(11)]
         public bool is_subscribed
         {
             get => __pbn__is_subscribed.GetValueOrDefault();
@@ -272,9 +297,10 @@ namespace SteamKit2.GC.Deadlock.Internal
         }
         public bool ShouldSerializeis_subscribed() => __pbn__is_subscribed != null;
         public void Resetis_subscribed() => __pbn__is_subscribed = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_subscribed;
 
-        [global::ProtoBuf.ProtoMember(12)]
+        [global::LightProto.ProtoMember(12)]
         public uint package
         {
             get => __pbn__package.GetValueOrDefault();
@@ -282,9 +308,10 @@ namespace SteamKit2.GC.Deadlock.Internal
         }
         public bool ShouldSerializepackage() => __pbn__package != null;
         public void Resetpackage() => __pbn__package = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__package;
 
-        [global::ProtoBuf.ProtoMember(13)]
+        [global::LightProto.ProtoMember(13)]
         public bool is_free_trial_account
         {
             get => __pbn__is_free_trial_account.GetValueOrDefault();
@@ -292,9 +319,10 @@ namespace SteamKit2.GC.Deadlock.Internal
         }
         public bool ShouldSerializeis_free_trial_account() => __pbn__is_free_trial_account != null;
         public void Resetis_free_trial_account() => __pbn__is_free_trial_account = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_free_trial_account;
 
-        [global::ProtoBuf.ProtoMember(14)]
+        [global::LightProto.ProtoMember(14)]
         public uint free_trial_expiration
         {
             get => __pbn__free_trial_expiration.GetValueOrDefault();
@@ -302,9 +330,10 @@ namespace SteamKit2.GC.Deadlock.Internal
         }
         public bool ShouldSerializefree_trial_expiration() => __pbn__free_trial_expiration != null;
         public void Resetfree_trial_expiration() => __pbn__free_trial_expiration = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__free_trial_expiration;
 
-        [global::ProtoBuf.ProtoMember(15)]
+        [global::LightProto.ProtoMember(15)]
         public bool is_low_violence
         {
             get => __pbn__is_low_violence.GetValueOrDefault();
@@ -312,9 +341,10 @@ namespace SteamKit2.GC.Deadlock.Internal
         }
         public bool ShouldSerializeis_low_violence() => __pbn__is_low_violence != null;
         public void Resetis_low_violence() => __pbn__is_low_violence = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_low_violence;
 
-        [global::ProtoBuf.ProtoMember(16)]
+        [global::LightProto.ProtoMember(16)]
         public bool is_account_locked_down
         {
             get => __pbn__is_account_locked_down.GetValueOrDefault();
@@ -322,9 +352,10 @@ namespace SteamKit2.GC.Deadlock.Internal
         }
         public bool ShouldSerializeis_account_locked_down() => __pbn__is_account_locked_down != null;
         public void Resetis_account_locked_down() => __pbn__is_account_locked_down = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_account_locked_down;
 
-        [global::ProtoBuf.ProtoMember(17)]
+        [global::LightProto.ProtoMember(17)]
         public bool is_community_banned
         {
             get => __pbn__is_community_banned.GetValueOrDefault();
@@ -332,9 +363,10 @@ namespace SteamKit2.GC.Deadlock.Internal
         }
         public bool ShouldSerializeis_community_banned() => __pbn__is_community_banned != null;
         public void Resetis_community_banned() => __pbn__is_community_banned = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_community_banned;
 
-        [global::ProtoBuf.ProtoMember(18)]
+        [global::LightProto.ProtoMember(18)]
         public bool is_trade_banned
         {
             get => __pbn__is_trade_banned.GetValueOrDefault();
@@ -342,9 +374,10 @@ namespace SteamKit2.GC.Deadlock.Internal
         }
         public bool ShouldSerializeis_trade_banned() => __pbn__is_trade_banned != null;
         public void Resetis_trade_banned() => __pbn__is_trade_banned = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_trade_banned;
 
-        [global::ProtoBuf.ProtoMember(19)]
+        [global::LightProto.ProtoMember(19)]
         public uint trade_ban_expiration
         {
             get => __pbn__trade_ban_expiration.GetValueOrDefault();
@@ -352,9 +385,10 @@ namespace SteamKit2.GC.Deadlock.Internal
         }
         public bool ShouldSerializetrade_ban_expiration() => __pbn__trade_ban_expiration != null;
         public void Resettrade_ban_expiration() => __pbn__trade_ban_expiration = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__trade_ban_expiration;
 
-        [global::ProtoBuf.ProtoMember(20)]
+        [global::LightProto.ProtoMember(20)]
         public uint accountid
         {
             get => __pbn__accountid.GetValueOrDefault();
@@ -362,9 +396,10 @@ namespace SteamKit2.GC.Deadlock.Internal
         }
         public bool ShouldSerializeaccountid() => __pbn__accountid != null;
         public void Resetaccountid() => __pbn__accountid = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__accountid;
 
-        [global::ProtoBuf.ProtoMember(21)]
+        [global::LightProto.ProtoMember(21)]
         public uint suspension_end_time
         {
             get => __pbn__suspension_end_time.GetValueOrDefault();
@@ -372,9 +407,10 @@ namespace SteamKit2.GC.Deadlock.Internal
         }
         public bool ShouldSerializesuspension_end_time() => __pbn__suspension_end_time != null;
         public void Resetsuspension_end_time() => __pbn__suspension_end_time = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__suspension_end_time;
 
-        [global::ProtoBuf.ProtoMember(22)]
+        [global::LightProto.ProtoMember(22)]
         [global::System.ComponentModel.DefaultValue("")]
         public string currency
         {
@@ -383,9 +419,10 @@ namespace SteamKit2.GC.Deadlock.Internal
         }
         public bool ShouldSerializecurrency() => __pbn__currency != null;
         public void Resetcurrency() => __pbn__currency = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__currency;
 
-        [global::ProtoBuf.ProtoMember(23)]
+        [global::LightProto.ProtoMember(23)]
         public uint steam_level
         {
             get => __pbn__steam_level.GetValueOrDefault();
@@ -393,9 +430,10 @@ namespace SteamKit2.GC.Deadlock.Internal
         }
         public bool ShouldSerializesteam_level() => __pbn__steam_level != null;
         public void Resetsteam_level() => __pbn__steam_level = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__steam_level;
 
-        [global::ProtoBuf.ProtoMember(24)]
+        [global::LightProto.ProtoMember(24)]
         public uint friend_count
         {
             get => __pbn__friend_count.GetValueOrDefault();
@@ -403,9 +441,10 @@ namespace SteamKit2.GC.Deadlock.Internal
         }
         public bool ShouldSerializefriend_count() => __pbn__friend_count != null;
         public void Resetfriend_count() => __pbn__friend_count = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__friend_count;
 
-        [global::ProtoBuf.ProtoMember(25)]
+        [global::LightProto.ProtoMember(25)]
         public uint account_creation_time
         {
             get => __pbn__account_creation_time.GetValueOrDefault();
@@ -413,9 +452,10 @@ namespace SteamKit2.GC.Deadlock.Internal
         }
         public bool ShouldSerializeaccount_creation_time() => __pbn__account_creation_time != null;
         public void Resetaccount_creation_time() => __pbn__account_creation_time = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__account_creation_time;
 
-        [global::ProtoBuf.ProtoMember(27)]
+        [global::LightProto.ProtoMember(27)]
         public bool is_steamguard_enabled
         {
             get => __pbn__is_steamguard_enabled.GetValueOrDefault();
@@ -423,9 +463,10 @@ namespace SteamKit2.GC.Deadlock.Internal
         }
         public bool ShouldSerializeis_steamguard_enabled() => __pbn__is_steamguard_enabled != null;
         public void Resetis_steamguard_enabled() => __pbn__is_steamguard_enabled = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_steamguard_enabled;
 
-        [global::ProtoBuf.ProtoMember(28)]
+        [global::LightProto.ProtoMember(28)]
         public bool is_phone_verified
         {
             get => __pbn__is_phone_verified.GetValueOrDefault();
@@ -433,9 +474,10 @@ namespace SteamKit2.GC.Deadlock.Internal
         }
         public bool ShouldSerializeis_phone_verified() => __pbn__is_phone_verified != null;
         public void Resetis_phone_verified() => __pbn__is_phone_verified = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_phone_verified;
 
-        [global::ProtoBuf.ProtoMember(29)]
+        [global::LightProto.ProtoMember(29)]
         public bool is_two_factor_auth_enabled
         {
             get => __pbn__is_two_factor_auth_enabled.GetValueOrDefault();
@@ -443,9 +485,10 @@ namespace SteamKit2.GC.Deadlock.Internal
         }
         public bool ShouldSerializeis_two_factor_auth_enabled() => __pbn__is_two_factor_auth_enabled != null;
         public void Resetis_two_factor_auth_enabled() => __pbn__is_two_factor_auth_enabled = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_two_factor_auth_enabled;
 
-        [global::ProtoBuf.ProtoMember(30)]
+        [global::LightProto.ProtoMember(30)]
         public uint two_factor_enabled_time
         {
             get => __pbn__two_factor_enabled_time.GetValueOrDefault();
@@ -453,9 +496,10 @@ namespace SteamKit2.GC.Deadlock.Internal
         }
         public bool ShouldSerializetwo_factor_enabled_time() => __pbn__two_factor_enabled_time != null;
         public void Resettwo_factor_enabled_time() => __pbn__two_factor_enabled_time = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__two_factor_enabled_time;
 
-        [global::ProtoBuf.ProtoMember(31)]
+        [global::LightProto.ProtoMember(31)]
         public uint phone_verification_time
         {
             get => __pbn__phone_verification_time.GetValueOrDefault();
@@ -463,9 +507,10 @@ namespace SteamKit2.GC.Deadlock.Internal
         }
         public bool ShouldSerializephone_verification_time() => __pbn__phone_verification_time != null;
         public void Resetphone_verification_time() => __pbn__phone_verification_time = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__phone_verification_time;
 
-        [global::ProtoBuf.ProtoMember(33)]
+        [global::LightProto.ProtoMember(33)]
         public ulong phone_id
         {
             get => __pbn__phone_id.GetValueOrDefault();
@@ -473,9 +518,10 @@ namespace SteamKit2.GC.Deadlock.Internal
         }
         public bool ShouldSerializephone_id() => __pbn__phone_id != null;
         public void Resetphone_id() => __pbn__phone_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__phone_id;
 
-        [global::ProtoBuf.ProtoMember(34)]
+        [global::LightProto.ProtoMember(34)]
         public bool is_phone_identifying
         {
             get => __pbn__is_phone_identifying.GetValueOrDefault();
@@ -483,9 +529,10 @@ namespace SteamKit2.GC.Deadlock.Internal
         }
         public bool ShouldSerializeis_phone_identifying() => __pbn__is_phone_identifying != null;
         public void Resetis_phone_identifying() => __pbn__is_phone_identifying = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_phone_identifying;
 
-        [global::ProtoBuf.ProtoMember(35)]
+        [global::LightProto.ProtoMember(35)]
         public uint rt_identity_linked
         {
             get => __pbn__rt_identity_linked.GetValueOrDefault();
@@ -493,9 +540,10 @@ namespace SteamKit2.GC.Deadlock.Internal
         }
         public bool ShouldSerializert_identity_linked() => __pbn__rt_identity_linked != null;
         public void Resetrt_identity_linked() => __pbn__rt_identity_linked = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__rt_identity_linked;
 
-        [global::ProtoBuf.ProtoMember(36)]
+        [global::LightProto.ProtoMember(36)]
         public uint rt_birth_date
         {
             get => __pbn__rt_birth_date.GetValueOrDefault();
@@ -503,9 +551,10 @@ namespace SteamKit2.GC.Deadlock.Internal
         }
         public bool ShouldSerializert_birth_date() => __pbn__rt_birth_date != null;
         public void Resetrt_birth_date() => __pbn__rt_birth_date = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__rt_birth_date;
 
-        [global::ProtoBuf.ProtoMember(37)]
+        [global::LightProto.ProtoMember(37)]
         [global::System.ComponentModel.DefaultValue("")]
         public string txn_country_code
         {
@@ -514,9 +563,10 @@ namespace SteamKit2.GC.Deadlock.Internal
         }
         public bool ShouldSerializetxn_country_code() => __pbn__txn_country_code != null;
         public void Resettxn_country_code() => __pbn__txn_country_code = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__txn_country_code;
 
-        [global::ProtoBuf.ProtoMember(38)]
+        [global::LightProto.ProtoMember(38)]
         public bool has_accepted_china_ssa
         {
             get => __pbn__has_accepted_china_ssa.GetValueOrDefault();
@@ -524,9 +574,10 @@ namespace SteamKit2.GC.Deadlock.Internal
         }
         public bool ShouldSerializehas_accepted_china_ssa() => __pbn__has_accepted_china_ssa != null;
         public void Resethas_accepted_china_ssa() => __pbn__has_accepted_china_ssa = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__has_accepted_china_ssa;
 
-        [global::ProtoBuf.ProtoMember(39)]
+        [global::LightProto.ProtoMember(39)]
         public bool is_banned_steam_china
         {
             get => __pbn__is_banned_steam_china.GetValueOrDefault();
@@ -534,18 +585,20 @@ namespace SteamKit2.GC.Deadlock.Internal
         }
         public bool ShouldSerializeis_banned_steam_china() => __pbn__is_banned_steam_china != null;
         public void Resetis_banned_steam_china() => __pbn__is_banned_steam_china = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__is_banned_steam_china;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CIPLocationInfo : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint ip
         {
             get => __pbn__ip.GetValueOrDefault();
@@ -553,9 +606,10 @@ namespace SteamKit2.GC.Deadlock.Internal
         }
         public bool ShouldSerializeip() => __pbn__ip != null;
         public void Resetip() => __pbn__ip = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__ip;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public float latitude
         {
             get => __pbn__latitude.GetValueOrDefault();
@@ -563,9 +617,10 @@ namespace SteamKit2.GC.Deadlock.Internal
         }
         public bool ShouldSerializelatitude() => __pbn__latitude != null;
         public void Resetlatitude() => __pbn__latitude = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__latitude;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public float longitude
         {
             get => __pbn__longitude.GetValueOrDefault();
@@ -573,9 +628,10 @@ namespace SteamKit2.GC.Deadlock.Internal
         }
         public bool ShouldSerializelongitude() => __pbn__longitude != null;
         public void Resetlongitude() => __pbn__longitude = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__longitude;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         [global::System.ComponentModel.DefaultValue("")]
         public string country
         {
@@ -584,9 +640,10 @@ namespace SteamKit2.GC.Deadlock.Internal
         }
         public bool ShouldSerializecountry() => __pbn__country != null;
         public void Resetcountry() => __pbn__country = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__country;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         [global::System.ComponentModel.DefaultValue("")]
         public string state
         {
@@ -595,9 +652,10 @@ namespace SteamKit2.GC.Deadlock.Internal
         }
         public bool ShouldSerializestate() => __pbn__state != null;
         public void Resetstate() => __pbn__state = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__state;
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         [global::System.ComponentModel.DefaultValue("")]
         public string city
         {
@@ -606,23 +664,25 @@ namespace SteamKit2.GC.Deadlock.Internal
         }
         public bool ShouldSerializecity() => __pbn__city != null;
         public void Resetcity() => __pbn__city = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__city;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CGCMsgGetIPLocationResponse : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<CIPLocationInfo> infos { get; } = new global::System.Collections.Generic.List<CIPLocationInfo>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EGCPlatform
     {
         k_eGCPlatform_None = 0,
@@ -633,7 +693,7 @@ namespace SteamKit2.GC.Deadlock.Internal
         k_eGCPlatform_iOS = 5,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum GCProtoBufMsgSrc
     {
         GCProtoBufMsgSrc_Unspecified = 0,

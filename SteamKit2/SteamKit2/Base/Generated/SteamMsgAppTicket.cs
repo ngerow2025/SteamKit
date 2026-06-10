@@ -9,14 +9,15 @@
 namespace SteamKit2.Internal
 {
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class EncryptedAppTicket : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint ticket_version_no
         {
             get => __pbn__ticket_version_no.GetValueOrDefault();
@@ -24,9 +25,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeticket_version_no() => __pbn__ticket_version_no != null;
         public void Resetticket_version_no() => __pbn__ticket_version_no = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__ticket_version_no;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint crc_encryptedticket
         {
             get => __pbn__crc_encryptedticket.GetValueOrDefault();
@@ -34,9 +36,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializecrc_encryptedticket() => __pbn__crc_encryptedticket != null;
         public void Resetcrc_encryptedticket() => __pbn__crc_encryptedticket = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__crc_encryptedticket;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public uint cb_encrypteduserdata
         {
             get => __pbn__cb_encrypteduserdata.GetValueOrDefault();
@@ -44,9 +47,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializecb_encrypteduserdata() => __pbn__cb_encrypteduserdata != null;
         public void Resetcb_encrypteduserdata() => __pbn__cb_encrypteduserdata = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__cb_encrypteduserdata;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public uint cb_encrypted_appownershipticket
         {
             get => __pbn__cb_encrypted_appownershipticket.GetValueOrDefault();
@@ -54,9 +58,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializecb_encrypted_appownershipticket() => __pbn__cb_encrypted_appownershipticket != null;
         public void Resetcb_encrypted_appownershipticket() => __pbn__cb_encrypted_appownershipticket = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__cb_encrypted_appownershipticket;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public byte[] encrypted_ticket
         {
             get => __pbn__encrypted_ticket;
@@ -64,6 +69,7 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeencrypted_ticket() => __pbn__encrypted_ticket != null;
         public void Resetencrypted_ticket() => __pbn__encrypted_ticket = null;
+        [global::LightProto.ProtoIgnore]
         private byte[] __pbn__encrypted_ticket;
 
     }

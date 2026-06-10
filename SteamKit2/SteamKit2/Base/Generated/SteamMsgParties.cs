@@ -9,14 +9,15 @@
 namespace SteamKit2.Internal
 {
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CParties_JoinParty_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong steamid
         {
             get => __pbn__steamid.GetValueOrDefault();
@@ -24,9 +25,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializesteamid() => __pbn__steamid != null;
         public void Resetsteamid() => __pbn__steamid = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__steamid;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public ulong beacon_id
         {
             get => __pbn__beacon_id.GetValueOrDefault();
@@ -34,18 +36,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializebeacon_id() => __pbn__beacon_id != null;
         public void Resetbeacon_id() => __pbn__beacon_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__beacon_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CParties_JoinParty_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public ulong beacon_id
         {
             get => __pbn__beacon_id.GetValueOrDefault();
@@ -53,9 +57,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializebeacon_id() => __pbn__beacon_id != null;
         public void Resetbeacon_id() => __pbn__beacon_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__beacon_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue("")]
         public string connect_string
         {
@@ -64,18 +69,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeconnect_string() => __pbn__connect_string != null;
         public void Resetconnect_string() => __pbn__connect_string = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__connect_string;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CParties_BeaconLocation : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint location_type
         {
             get => __pbn__location_type.GetValueOrDefault();
@@ -83,9 +90,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializelocation_type() => __pbn__location_type != null;
         public void Resetlocation_type() => __pbn__location_type = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__location_type;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public ulong location_id
         {
             get => __pbn__location_id.GetValueOrDefault();
@@ -93,18 +101,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializelocation_id() => __pbn__location_id != null;
         public void Resetlocation_id() => __pbn__location_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__location_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CParties_CreateBeacon_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint appid
         {
             get => __pbn__appid.GetValueOrDefault();
@@ -112,9 +122,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeappid() => __pbn__appid != null;
         public void Resetappid() => __pbn__appid = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__appid;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint num_open_slots
         {
             get => __pbn__num_open_slots.GetValueOrDefault();
@@ -122,12 +133,13 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializenum_open_slots() => __pbn__num_open_slots != null;
         public void Resetnum_open_slots() => __pbn__num_open_slots = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__num_open_slots;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public global::System.Collections.Generic.List<CParties_BeaconLocation> locations { get; } = new global::System.Collections.Generic.List<CParties_BeaconLocation>();
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         [global::System.ComponentModel.DefaultValue("")]
         public string connect_string
         {
@@ -136,9 +148,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeconnect_string() => __pbn__connect_string != null;
         public void Resetconnect_string() => __pbn__connect_string = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__connect_string;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         [global::System.ComponentModel.DefaultValue("")]
         public string metadata
         {
@@ -147,18 +160,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializemetadata() => __pbn__metadata != null;
         public void Resetmetadata() => __pbn__metadata = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__metadata;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CParties_CreateBeacon_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public ulong beacon_id
         {
             get => __pbn__beacon_id.GetValueOrDefault();
@@ -166,18 +181,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializebeacon_id() => __pbn__beacon_id != null;
         public void Resetbeacon_id() => __pbn__beacon_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__beacon_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CParties_OnReservationCompleted_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public ulong beacon_id
         {
             get => __pbn__beacon_id.GetValueOrDefault();
@@ -185,9 +202,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializebeacon_id() => __pbn__beacon_id != null;
         public void Resetbeacon_id() => __pbn__beacon_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__beacon_id;
 
-        [global::ProtoBuf.ProtoMember(2, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(2, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong user_steamid
         {
             get => __pbn__user_steamid.GetValueOrDefault();
@@ -195,18 +213,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeuser_steamid() => __pbn__user_steamid != null;
         public void Resetuser_steamid() => __pbn__user_steamid = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__user_steamid;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CParties_OnReservationCompleted_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public ulong beacon_id
         {
             get => __pbn__beacon_id.GetValueOrDefault();
@@ -214,18 +234,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializebeacon_id() => __pbn__beacon_id != null;
         public void Resetbeacon_id() => __pbn__beacon_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__beacon_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CParties_CancelReservation_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public ulong beacon_id
         {
             get => __pbn__beacon_id.GetValueOrDefault();
@@ -233,9 +255,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializebeacon_id() => __pbn__beacon_id != null;
         public void Resetbeacon_id() => __pbn__beacon_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__beacon_id;
 
-        [global::ProtoBuf.ProtoMember(2, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(2, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong user_steamid
         {
             get => __pbn__user_steamid.GetValueOrDefault();
@@ -243,18 +266,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeuser_steamid() => __pbn__user_steamid != null;
         public void Resetuser_steamid() => __pbn__user_steamid = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__user_steamid;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CParties_CancelReservation_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public ulong beacon_id
         {
             get => __pbn__beacon_id.GetValueOrDefault();
@@ -262,18 +287,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializebeacon_id() => __pbn__beacon_id != null;
         public void Resetbeacon_id() => __pbn__beacon_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__beacon_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CParties_ChangeNumOpenSlots_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public ulong beacon_id
         {
             get => __pbn__beacon_id.GetValueOrDefault();
@@ -281,9 +308,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializebeacon_id() => __pbn__beacon_id != null;
         public void Resetbeacon_id() => __pbn__beacon_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__beacon_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint num_open_slots
         {
             get => __pbn__num_open_slots.GetValueOrDefault();
@@ -291,18 +319,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializenum_open_slots() => __pbn__num_open_slots != null;
         public void Resetnum_open_slots() => __pbn__num_open_slots = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__num_open_slots;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CParties_ChangeNumOpenSlots_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public ulong beacon_id
         {
             get => __pbn__beacon_id.GetValueOrDefault();
@@ -310,18 +340,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializebeacon_id() => __pbn__beacon_id != null;
         public void Resetbeacon_id() => __pbn__beacon_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__beacon_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CParties_DestroyBeacon_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public ulong beacon_id
         {
             get => __pbn__beacon_id.GetValueOrDefault();
@@ -329,18 +361,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializebeacon_id() => __pbn__beacon_id != null;
         public void Resetbeacon_id() => __pbn__beacon_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__beacon_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CParties_DestroyBeacon_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public ulong beacon_id
         {
             get => __pbn__beacon_id.GetValueOrDefault();
@@ -348,12 +382,14 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializebeacon_id() => __pbn__beacon_id != null;
         public void Resetbeacon_id() => __pbn__beacon_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__beacon_id;
 
     }
 
     public class Parties : SteamUnifiedMessages.UnifiedService
     {
+        [global::LightProto.ProtoIgnore]
         public override string ServiceName { get; } = "Parties";
 
         public AsyncJob<SteamUnifiedMessages.ServiceMethodResponse<CParties_JoinParty_Response>> JoinParty( CParties_JoinParty_Request request )

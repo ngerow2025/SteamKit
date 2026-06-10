@@ -11,6 +11,7 @@ namespace SteamKit2.Internal
 
     public class RemoteClient : SteamUnifiedMessages.UnifiedService
     {
+        [global::LightProto.ProtoIgnore]
         public override string ServiceName { get; } = "RemoteClient";
 
         public AsyncJob<SteamUnifiedMessages.ServiceMethodResponse<CRemoteClient_GetPairingInfo_Response>> GetPairingInfo( CRemoteClient_GetPairingInfo_Request request )
@@ -142,6 +143,7 @@ namespace SteamKit2.Internal
 
     public class RemoteClientSteamClient : SteamUnifiedMessages.UnifiedService
     {
+        [global::LightProto.ProtoIgnore]
         public override string ServiceName { get; } = "RemoteClientSteamClient";
 
         public void NotifyRegisterStatusUpdate(CRemoteClient_RegisterStatusUpdate_Notification request )

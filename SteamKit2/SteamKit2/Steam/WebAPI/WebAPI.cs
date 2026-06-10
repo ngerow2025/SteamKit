@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Dynamic;
@@ -236,6 +236,7 @@ namespace SteamKit2
             /// <exception cref="WebAPIRequestException">A network error occurred when performing the request.</exception>
             /// <exception cref="ProtoException">An error occurred when parsing the response from the WebAPI.</exception>
             public async Task<T> CallProtobufAsync<T>( HttpMethod method, string func, int version = 1, Dictionary<string, object?>? args = null )
+                where T : LightProto.IProtoParser<T>
             {
                 var response = await CallAsyncInternal( method, func, version, args, "protobuf_raw" ).ConfigureAwait( false );
 
@@ -262,8 +263,8 @@ namespace SteamKit2
             /// <exception cref="WebAPIRequestException">A network error occurred when performing the request.</exception>
             /// <exception cref="ProtoException">An error occurred when parsing the response from the WebAPI.</exception>
             public async Task<WebAPIResponse<TResponse>> CallProtobufAsync<TResponse, TRequest>( HttpMethod method, string func, TRequest request, int version = 1, Dictionary<string, object?>? extraArgs = null )
-                where TResponse : IExtensible, new()
-                where TRequest : IExtensible, new()
+                where TResponse : IExtensible, LightProto.IProtoParser<TResponse>, new()
+                where TRequest : IExtensible, LightProto.IProtoParser<TRequest>, new()
             {
                 ArgumentNullException.ThrowIfNull( method );
 

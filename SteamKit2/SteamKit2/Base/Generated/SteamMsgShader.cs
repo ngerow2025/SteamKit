@@ -9,23 +9,25 @@
 namespace SteamKit2.Internal
 {
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CShader_GetShaderReportingCadence_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CShader_GetShaderReportingCadence_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public ulong rereport_time_threshold
         {
             get => __pbn__rereport_time_threshold.GetValueOrDefault();
@@ -33,9 +35,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializerereport_time_threshold() => __pbn__rereport_time_threshold != null;
         public void Resetrereport_time_threshold() => __pbn__rereport_time_threshold = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__rereport_time_threshold;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint percent_to_rereport
         {
             get => __pbn__percent_to_rereport.GetValueOrDefault();
@@ -43,18 +46,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializepercent_to_rereport() => __pbn__percent_to_rereport != null;
         public void Resetpercent_to_rereport() => __pbn__percent_to_rereport = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__percent_to_rereport;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CShader_RegisterShader_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint appid
         {
             get => __pbn__appid.GetValueOrDefault();
@@ -62,9 +67,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeappid() => __pbn__appid != null;
         public void Resetappid() => __pbn__appid = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__appid;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue("")]
         public string gpu_desc
         {
@@ -73,9 +79,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializegpu_desc() => __pbn__gpu_desc != null;
         public void Resetgpu_desc() => __pbn__gpu_desc = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__gpu_desc;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         [global::System.ComponentModel.DefaultValue("")]
         public string driver_desc
         {
@@ -84,19 +91,21 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializedriver_desc() => __pbn__driver_desc != null;
         public void Resetdriver_desc() => __pbn__driver_desc = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__driver_desc;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public global::System.Collections.Generic.List<Shader> shaders { get; } = new global::System.Collections.Generic.List<Shader>();
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class Shader : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public byte[] cache_key_sha
             {
                 get => __pbn__cache_key_sha;
@@ -104,9 +113,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializecache_key_sha() => __pbn__cache_key_sha != null;
             public void Resetcache_key_sha() => __pbn__cache_key_sha = null;
+            [global::LightProto.ProtoIgnore]
             private byte[] __pbn__cache_key_sha;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public byte[] shader_code_sha
             {
                 get => __pbn__shader_code_sha;
@@ -114,32 +124,35 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializeshader_code_sha() => __pbn__shader_code_sha != null;
             public void Resetshader_code_sha() => __pbn__shader_code_sha = null;
+            [global::LightProto.ProtoIgnore]
             private byte[] __pbn__shader_code_sha;
 
         }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CShader_RegisterShader_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<uint> requested_codeids { get; } = new global::System.Collections.Generic.List<uint>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CShader_SendShader_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint appid
         {
             get => __pbn__appid.GetValueOrDefault();
@@ -147,19 +160,21 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeappid() => __pbn__appid != null;
         public void Resetappid() => __pbn__appid = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__appid;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public global::System.Collections.Generic.List<ShaderCode> shaders { get; } = new global::System.Collections.Generic.List<ShaderCode>();
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class ShaderCode : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public byte[] shader_code_sha
             {
                 get => __pbn__shader_code_sha;
@@ -167,9 +182,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializeshader_code_sha() => __pbn__shader_code_sha != null;
             public void Resetshader_code_sha() => __pbn__shader_code_sha = null;
+            [global::LightProto.ProtoIgnore]
             private byte[] __pbn__shader_code_sha;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public byte[] shader_code
             {
                 get => __pbn__shader_code;
@@ -177,29 +193,32 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializeshader_code() => __pbn__shader_code != null;
             public void Resetshader_code() => __pbn__shader_code = null;
+            [global::LightProto.ProtoIgnore]
             private byte[] __pbn__shader_code;
 
         }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CShader_SendShader_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CShader_GetBucketManifest_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint appid
         {
             get => __pbn__appid.GetValueOrDefault();
@@ -207,9 +226,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeappid() => __pbn__appid != null;
         public void Resetappid() => __pbn__appid = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__appid;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue("")]
         public string gpu_desc
         {
@@ -218,9 +238,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializegpu_desc() => __pbn__gpu_desc != null;
         public void Resetgpu_desc() => __pbn__gpu_desc = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__gpu_desc;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         [global::System.ComponentModel.DefaultValue("")]
         public string driver_desc
         {
@@ -229,18 +250,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializedriver_desc() => __pbn__driver_desc != null;
         public void Resetdriver_desc() => __pbn__driver_desc = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__driver_desc;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CShader_GetBucketManifest_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public ulong manifestid
         {
             get => __pbn__manifestid.GetValueOrDefault();
@@ -248,9 +271,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializemanifestid() => __pbn__manifestid != null;
         public void Resetmanifestid() => __pbn__manifestid = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__manifestid;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public ulong depotsize
         {
             get => __pbn__depotsize.GetValueOrDefault();
@@ -258,9 +282,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializedepotsize() => __pbn__depotsize != null;
         public void Resetdepotsize() => __pbn__depotsize = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__depotsize;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public ulong bucketid
         {
             get => __pbn__bucketid.GetValueOrDefault();
@@ -268,18 +293,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializebucketid() => __pbn__bucketid != null;
         public void Resetbucketid() => __pbn__bucketid = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__bucketid;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CShader_GetStaleBucket_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue("")]
         public string gpu_desc
         {
@@ -288,9 +315,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializegpu_desc() => __pbn__gpu_desc != null;
         public void Resetgpu_desc() => __pbn__gpu_desc = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__gpu_desc;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue("")]
         public string driver_desc
         {
@@ -299,18 +327,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializedriver_desc() => __pbn__driver_desc != null;
         public void Resetdriver_desc() => __pbn__driver_desc = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__driver_desc;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CShader_GetStaleBucket_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public ulong bucketid
         {
             get => __pbn__bucketid.GetValueOrDefault();
@@ -318,9 +348,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializebucketid() => __pbn__bucketid != null;
         public void Resetbucketid() => __pbn__bucketid = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__bucketid;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint appid
         {
             get => __pbn__appid.GetValueOrDefault();
@@ -328,9 +359,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeappid() => __pbn__appid != null;
         public void Resetappid() => __pbn__appid = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__appid;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public ulong manifestid
         {
             get => __pbn__manifestid.GetValueOrDefault();
@@ -338,9 +370,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializemanifestid() => __pbn__manifestid != null;
         public void Resetmanifestid() => __pbn__manifestid = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__manifestid;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         [global::System.ComponentModel.DefaultValue("")]
         public string gpu_desc
         {
@@ -349,9 +382,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializegpu_desc() => __pbn__gpu_desc != null;
         public void Resetgpu_desc() => __pbn__gpu_desc = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__gpu_desc;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         [global::System.ComponentModel.DefaultValue("")]
         public string driver_desc
         {
@@ -360,9 +394,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializedriver_desc() => __pbn__driver_desc != null;
         public void Resetdriver_desc() => __pbn__driver_desc = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__driver_desc;
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         public byte[] depot_encryption_key
         {
             get => __pbn__depot_encryption_key;
@@ -370,18 +405,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializedepot_encryption_key() => __pbn__depot_encryption_key != null;
         public void Resetdepot_encryption_key() => __pbn__depot_encryption_key = null;
+        [global::LightProto.ProtoIgnore]
         private byte[] __pbn__depot_encryption_key;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CShader_ReportExternalBuild_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint appid
         {
             get => __pbn__appid.GetValueOrDefault();
@@ -389,9 +426,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeappid() => __pbn__appid != null;
         public void Resetappid() => __pbn__appid = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__appid;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue("")]
         public string gpu_desc
         {
@@ -400,9 +438,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializegpu_desc() => __pbn__gpu_desc != null;
         public void Resetgpu_desc() => __pbn__gpu_desc = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__gpu_desc;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         [global::System.ComponentModel.DefaultValue("")]
         public string driver_desc
         {
@@ -411,9 +450,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializedriver_desc() => __pbn__driver_desc != null;
         public void Resetdriver_desc() => __pbn__driver_desc = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__driver_desc;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public ulong manifestid
         {
             get => __pbn__manifestid.GetValueOrDefault();
@@ -421,9 +461,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializemanifestid() => __pbn__manifestid != null;
         public void Resetmanifestid() => __pbn__manifestid = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__manifestid;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         [global::System.ComponentModel.DefaultValue("")]
         public string source_gpu_desc
         {
@@ -432,9 +473,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializesource_gpu_desc() => __pbn__source_gpu_desc != null;
         public void Resetsource_gpu_desc() => __pbn__source_gpu_desc = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__source_gpu_desc;
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         [global::System.ComponentModel.DefaultValue("")]
         public string source_driver_desc
         {
@@ -443,9 +485,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializesource_driver_desc() => __pbn__source_driver_desc != null;
         public void Resetsource_driver_desc() => __pbn__source_driver_desc = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__source_driver_desc;
 
-        [global::ProtoBuf.ProtoMember(7)]
+        [global::LightProto.ProtoMember(7)]
         public ulong depotsize
         {
             get => __pbn__depotsize.GetValueOrDefault();
@@ -453,21 +496,24 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializedepotsize() => __pbn__depotsize != null;
         public void Resetdepotsize() => __pbn__depotsize = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__depotsize;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CShader_ReportExternalBuild_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
     }
 
     public class Shader : SteamUnifiedMessages.UnifiedService
     {
+        [global::LightProto.ProtoIgnore]
         public override string ServiceName { get; } = "Shader";
 
         public AsyncJob<SteamUnifiedMessages.ServiceMethodResponse<CShader_GetShaderReportingCadence_Response>> GetShaderReportingCadence( CShader_GetShaderReportingCadence_Request request )

@@ -9,14 +9,15 @@
 namespace SteamKit2.Internal
 {
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class LobbyMatchmakingLegacy_GetLobbyStatus_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint app_id
         {
             get => __pbn__app_id.GetValueOrDefault();
@@ -24,9 +25,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeapp_id() => __pbn__app_id != null;
         public void Resetapp_id() => __pbn__app_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__app_id;
 
-        [global::ProtoBuf.ProtoMember(2, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(2, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong steamid_lobby
         {
             get => __pbn__steamid_lobby.GetValueOrDefault();
@@ -34,9 +36,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializesteamid_lobby() => __pbn__steamid_lobby != null;
         public void Resetsteamid_lobby() => __pbn__steamid_lobby = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__steamid_lobby;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public bool claim_ownership
         {
             get => __pbn__claim_ownership.GetValueOrDefault();
@@ -44,9 +47,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeclaim_ownership() => __pbn__claim_ownership != null;
         public void Resetclaim_ownership() => __pbn__claim_ownership = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__claim_ownership;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public bool claim_membership
         {
             get => __pbn__claim_membership.GetValueOrDefault();
@@ -54,9 +58,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeclaim_membership() => __pbn__claim_membership != null;
         public void Resetclaim_membership() => __pbn__claim_membership = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__claim_membership;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public uint version_num
         {
             get => __pbn__version_num.GetValueOrDefault();
@@ -64,18 +69,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeversion_num() => __pbn__version_num != null;
         public void Resetversion_num() => __pbn__version_num = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__version_num;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class LobbyMatchmakingLegacy_GetLobbyStatus_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint app_id
         {
             get => __pbn__app_id.GetValueOrDefault();
@@ -83,9 +90,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeapp_id() => __pbn__app_id != null;
         public void Resetapp_id() => __pbn__app_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__app_id;
 
-        [global::ProtoBuf.ProtoMember(2, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(2, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong steamid_lobby
         {
             get => __pbn__steamid_lobby.GetValueOrDefault();
@@ -93,9 +101,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializesteamid_lobby() => __pbn__steamid_lobby != null;
         public void Resetsteamid_lobby() => __pbn__steamid_lobby = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__steamid_lobby;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         [global::System.ComponentModel.DefaultValue(ELobbyStatus.k_ELobbyStatusInvalid)]
         public ELobbyStatus lobby_status
         {
@@ -104,11 +113,12 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializelobby_status() => __pbn__lobby_status != null;
         public void Resetlobby_status() => __pbn__lobby_status = null;
+        [global::LightProto.ProtoIgnore]
         private ELobbyStatus? __pbn__lobby_status;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum ELobbyStatus
     {
         k_ELobbyStatusInvalid = 0,
@@ -119,6 +129,7 @@ namespace SteamKit2.Internal
 
     public class LobbyMatchmakingLegacy : SteamUnifiedMessages.UnifiedService
     {
+        [global::LightProto.ProtoIgnore]
         public override string ServiceName { get; } = "LobbyMatchmakingLegacy";
 
         public AsyncJob<SteamUnifiedMessages.ServiceMethodResponse<LobbyMatchmakingLegacy_GetLobbyStatus_Response>> GetLobbyStatus( LobbyMatchmakingLegacy_GetLobbyStatus_Request request )

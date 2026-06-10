@@ -9,14 +9,15 @@
 namespace SteamKit2.WebUI.Internal
 {
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CStoreQuery_GetItemByUserCombinedTagsPriority_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(0)]
         public int sort
         {
@@ -25,9 +26,10 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializesort() => __pbn__sort != null;
         public void Resetsort() => __pbn__sort = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__sort;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint max_items
         {
             get => __pbn__max_items.GetValueOrDefault();
@@ -35,9 +37,10 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializemax_items() => __pbn__max_items != null;
         public void Resetmax_items() => __pbn__max_items = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__max_items;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public bool randomize
         {
             get => __pbn__randomize.GetValueOrDefault();
@@ -45,9 +48,10 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializerandomize() => __pbn__randomize != null;
         public void Resetrandomize() => __pbn__randomize = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__randomize;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         [global::System.ComponentModel.DefaultValue(false)]
         public bool include_packages
         {
@@ -56,9 +60,10 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializeinclude_packages() => __pbn__include_packages != null;
         public void Resetinclude_packages() => __pbn__include_packages = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__include_packages;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         [global::System.ComponentModel.DefaultValue(false)]
         public bool include_bundles
         {
@@ -67,60 +72,64 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializeinclude_bundles() => __pbn__include_bundles != null;
         public void Resetinclude_bundles() => __pbn__include_bundles = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__include_bundles;
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         public CStorePageFilter filters { get; set; }
 
-        [global::ProtoBuf.ProtoMember(7)]
+        [global::LightProto.ProtoMember(7)]
         public StoreBrowseContext context { get; set; }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CStoreQuery_GetItemByUserCombinedTagsPriority_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<uint> tagid { get; } = new global::System.Collections.Generic.List<uint>();
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public global::System.Collections.Generic.List<StoreItemID> store_item_ids { get; } = new global::System.Collections.Generic.List<StoreItemID>();
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public global::System.Collections.Generic.List<string> tag_name { get; } = new global::System.Collections.Generic.List<string>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CStoreQuery_GetItemsByUserRecommendedTags_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public CStorePageFilter filters { get; set; }
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public StoreBrowseContext context { get; set; }
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         public global::System.Collections.Generic.List<CStoreQuery_GetItemsByUserRecommendedTags_Request_Section> sections { get; } = new global::System.Collections.Generic.List<CStoreQuery_GetItemsByUserRecommendedTags_Request_Section>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CStoreQuery_GetItemsByUserRecommendedTags_Request_Section : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(0)]
         public int sort
         {
@@ -129,9 +138,10 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializesort() => __pbn__sort != null;
         public void Resetsort() => __pbn__sort = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__sort;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint min_items
         {
             get => __pbn__min_items.GetValueOrDefault();
@@ -139,9 +149,10 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializemin_items() => __pbn__min_items != null;
         public void Resetmin_items() => __pbn__min_items = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__min_items;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public bool randomize
         {
             get => __pbn__randomize.GetValueOrDefault();
@@ -149,9 +160,10 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializerandomize() => __pbn__randomize != null;
         public void Resetrandomize() => __pbn__randomize = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__randomize;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         [global::System.ComponentModel.DefaultValue(false)]
         public bool include_packages
         {
@@ -160,9 +172,10 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializeinclude_packages() => __pbn__include_packages != null;
         public void Resetinclude_packages() => __pbn__include_packages = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__include_packages;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         [global::System.ComponentModel.DefaultValue(false)]
         public bool include_bundles
         {
@@ -171,30 +184,33 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializeinclude_bundles() => __pbn__include_bundles != null;
         public void Resetinclude_bundles() => __pbn__include_bundles = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__include_bundles;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CStoreQuery_GetItemsByUserRecommendedTags_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<CStoreQuery_GetItemsByUserRecommendedTags_Response_Section> sections { get; } = new global::System.Collections.Generic.List<CStoreQuery_GetItemsByUserRecommendedTags_Response_Section>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CStoreQuery_GetItemsByUserRecommendedTags_Response_Section : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint tagid
         {
             get => __pbn__tagid.GetValueOrDefault();
@@ -202,12 +218,13 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializetagid() => __pbn__tagid != null;
         public void Resettagid() => __pbn__tagid = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__tagid;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public global::System.Collections.Generic.List<StoreItemID> store_item_ids { get; } = new global::System.Collections.Generic.List<StoreItemID>();
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         [global::System.ComponentModel.DefaultValue("")]
         public string tag_name
         {
@@ -216,18 +233,20 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializetag_name() => __pbn__tag_name != null;
         public void Resettag_name() => __pbn__tag_name = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__tag_name;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CStoreQuery_MoreLikeThis_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue("")]
         public string query_name
         {
@@ -236,18 +255,19 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializequery_name() => __pbn__query_name != null;
         public void Resetquery_name() => __pbn__query_name = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__query_name;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public StoreBrowseContext context { get; set; }
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public StoreBrowseItemDataRequest data_request { get; set; }
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public StoreItemID item_id { get; set; }
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         [global::System.ComponentModel.DefaultValue(20)]
         public int count
         {
@@ -256,24 +276,26 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializecount() => __pbn__count != null;
         public void Resetcount() => __pbn__count = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__count;
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         public CStoreQueryFilters filters { get; set; }
 
-        [global::ProtoBuf.ProtoMember(7)]
+        [global::LightProto.ProtoMember(7)]
         public CStoreQuery_MoreLikeThis_Request_MoreLikeThisOptions options { get; set; }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CStoreQuery_MoreLikeThis_Request_MoreLikeThisOptions : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(90f)]
         public float tag_weight
         {
@@ -282,36 +304,39 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializetag_weight() => __pbn__tag_weight != null;
         public void Resettag_weight() => __pbn__tag_weight = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__tag_weight;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CStoreQuery_MoreLikeThis_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public CStoreQueryResultMetadata metadata { get; set; }
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public global::System.Collections.Generic.List<StoreItemID> ids { get; } = new global::System.Collections.Generic.List<StoreItemID>();
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public global::System.Collections.Generic.List<StoreItem> store_items { get; } = new global::System.Collections.Generic.List<StoreItem>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CStoreQuery_Query_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue("")]
         public string query_name
         {
@@ -320,18 +345,19 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializequery_name() => __pbn__query_name != null;
         public void Resetquery_name() => __pbn__query_name = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__query_name;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public CStoreQueryParams query { get; set; }
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public StoreBrowseContext context { get; set; }
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public StoreBrowseItemDataRequest data_request { get; set; }
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         [global::System.ComponentModel.DefaultValue("")]
         public string override_country_code
         {
@@ -340,36 +366,39 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializeoverride_country_code() => __pbn__override_country_code != null;
         public void Resetoverride_country_code() => __pbn__override_country_code = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__override_country_code;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CStoreQuery_Query_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public CStoreQueryResultMetadata metadata { get; set; }
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public global::System.Collections.Generic.List<StoreItemID> ids { get; } = new global::System.Collections.Generic.List<StoreItemID>();
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public global::System.Collections.Generic.List<StoreItem> store_items { get; } = new global::System.Collections.Generic.List<StoreItem>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CStoreQuery_SearchSuggestions_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue("")]
         public string query_name
         {
@@ -378,12 +407,13 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializequery_name() => __pbn__query_name != null;
         public void Resetquery_name() => __pbn__query_name = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__query_name;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public StoreBrowseContext context { get; set; }
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         [global::System.ComponentModel.DefaultValue("")]
         public string search_term
         {
@@ -392,9 +422,10 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializesearch_term() => __pbn__search_term != null;
         public void Resetsearch_term() => __pbn__search_term = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__search_term;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public uint max_results
         {
             get => __pbn__max_results.GetValueOrDefault();
@@ -402,15 +433,16 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializemax_results() => __pbn__max_results != null;
         public void Resetmax_results() => __pbn__max_results = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__max_results;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public CStoreQueryFilters filters { get; set; }
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         public StoreBrowseItemDataRequest data_request { get; set; }
 
-        [global::ProtoBuf.ProtoMember(7)]
+        [global::LightProto.ProtoMember(7)]
         public bool use_spellcheck
         {
             get => __pbn__use_spellcheck.GetValueOrDefault();
@@ -418,9 +450,10 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializeuse_spellcheck() => __pbn__use_spellcheck != null;
         public void Resetuse_spellcheck() => __pbn__use_spellcheck = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__use_spellcheck;
 
-        [global::ProtoBuf.ProtoMember(8)]
+        [global::LightProto.ProtoMember(8)]
         public bool search_tags
         {
             get => __pbn__search_tags.GetValueOrDefault();
@@ -428,9 +461,10 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializesearch_tags() => __pbn__search_tags != null;
         public void Resetsearch_tags() => __pbn__search_tags = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__search_tags;
 
-        [global::ProtoBuf.ProtoMember(9)]
+        [global::LightProto.ProtoMember(9)]
         public bool search_creators
         {
             get => __pbn__search_creators.GetValueOrDefault();
@@ -438,36 +472,39 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializesearch_creators() => __pbn__search_creators != null;
         public void Resetsearch_creators() => __pbn__search_creators = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__search_creators;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CStoreQuery_SearchSuggestions_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public CStoreQueryResultMetadata metadata { get; set; }
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public global::System.Collections.Generic.List<StoreItemID> ids { get; } = new global::System.Collections.Generic.List<StoreItemID>();
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public global::System.Collections.Generic.List<StoreItem> store_items { get; } = new global::System.Collections.Generic.List<StoreItem>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CStoreQueryFilters : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public bool released_only
         {
             get => __pbn__released_only.GetValueOrDefault();
@@ -475,9 +512,10 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializereleased_only() => __pbn__released_only != null;
         public void Resetreleased_only() => __pbn__released_only = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__released_only;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public bool coming_soon_only
         {
             get => __pbn__coming_soon_only.GetValueOrDefault();
@@ -485,33 +523,34 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializecoming_soon_only() => __pbn__coming_soon_only != null;
         public void Resetcoming_soon_only() => __pbn__coming_soon_only = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__coming_soon_only;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public CStoreQueryFilters_TypeFilters type_filters { get; set; }
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public global::System.Collections.Generic.List<int> exclude_from { get; } = new global::System.Collections.Generic.List<int>();
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public CStoreQueryFilters_PredefinedFilter predefined_filter { get; set; }
 
-        [global::ProtoBuf.ProtoMember(10)]
+        [global::LightProto.ProtoMember(10)]
         public global::System.Collections.Generic.List<CStoreQueryFilters_TagFilter> tagids_must_match { get; } = new global::System.Collections.Generic.List<CStoreQueryFilters_TagFilter>();
 
-        [global::ProtoBuf.ProtoMember(11)]
+        [global::LightProto.ProtoMember(11)]
         public global::System.Collections.Generic.List<int> tagids_exclude { get; } = new global::System.Collections.Generic.List<int>();
 
-        [global::ProtoBuf.ProtoMember(12)]
+        [global::LightProto.ProtoMember(12)]
         public CStoreQueryFilters_PriceFilters price_filters { get; set; }
 
-        [global::ProtoBuf.ProtoMember(15)]
+        [global::LightProto.ProtoMember(15)]
         public global::System.Collections.Generic.List<int> content_descriptors_must_match { get; } = new global::System.Collections.Generic.List<int>();
 
-        [global::ProtoBuf.ProtoMember(16)]
+        [global::LightProto.ProtoMember(16)]
         public global::System.Collections.Generic.List<int> content_descriptors_excluded { get; } = new global::System.Collections.Generic.List<int>();
 
-        [global::ProtoBuf.ProtoMember(40)]
+        [global::LightProto.ProtoMember(40)]
         public int regional_top_n_sellers
         {
             get => __pbn__regional_top_n_sellers.GetValueOrDefault();
@@ -519,9 +558,10 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializeregional_top_n_sellers() => __pbn__regional_top_n_sellers != null;
         public void Resetregional_top_n_sellers() => __pbn__regional_top_n_sellers = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__regional_top_n_sellers;
 
-        [global::ProtoBuf.ProtoMember(41)]
+        [global::LightProto.ProtoMember(41)]
         public int global_top_n_sellers
         {
             get => __pbn__global_top_n_sellers.GetValueOrDefault();
@@ -529,9 +569,10 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializeglobal_top_n_sellers() => __pbn__global_top_n_sellers != null;
         public void Resetglobal_top_n_sellers() => __pbn__global_top_n_sellers = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__global_top_n_sellers;
 
-        [global::ProtoBuf.ProtoMember(42)]
+        [global::LightProto.ProtoMember(42)]
         public int regional_long_term_top_n_sellers
         {
             get => __pbn__regional_long_term_top_n_sellers.GetValueOrDefault();
@@ -539,9 +580,10 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializeregional_long_term_top_n_sellers() => __pbn__regional_long_term_top_n_sellers != null;
         public void Resetregional_long_term_top_n_sellers() => __pbn__regional_long_term_top_n_sellers = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__regional_long_term_top_n_sellers;
 
-        [global::ProtoBuf.ProtoMember(43)]
+        [global::LightProto.ProtoMember(43)]
         public int global_long_term_top_n_sellers
         {
             get => __pbn__global_long_term_top_n_sellers.GetValueOrDefault();
@@ -549,24 +591,26 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializeglobal_long_term_top_n_sellers() => __pbn__global_long_term_top_n_sellers != null;
         public void Resetglobal_long_term_top_n_sellers() => __pbn__global_long_term_top_n_sellers = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__global_long_term_top_n_sellers;
 
-        [global::ProtoBuf.ProtoMember(44)]
+        [global::LightProto.ProtoMember(44)]
         public CStorePageFilter store_page_filter { get; set; }
 
-        [global::ProtoBuf.ProtoMember(45)]
+        [global::LightProto.ProtoMember(45)]
         public global::System.Collections.Generic.List<uint> parent_appids { get; } = new global::System.Collections.Generic.List<uint>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CStoreQueryFilters_PredefinedFilter : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public int filter_type
         {
             get => __pbn__filter_type.GetValueOrDefault();
@@ -574,21 +618,23 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializefilter_type() => __pbn__filter_type != null;
         public void Resetfilter_type() => __pbn__filter_type = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__filter_type;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public global::System.Collections.Generic.List<int> language_preferences { get; } = new global::System.Collections.Generic.List<int>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CStoreQueryFilters_PriceFilters : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public bool only_free_items
         {
             get => __pbn__only_free_items.GetValueOrDefault();
@@ -596,9 +642,10 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializeonly_free_items() => __pbn__only_free_items != null;
         public void Resetonly_free_items() => __pbn__only_free_items = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__only_free_items;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public bool exclude_free_items
         {
             get => __pbn__exclude_free_items.GetValueOrDefault();
@@ -606,9 +653,10 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializeexclude_free_items() => __pbn__exclude_free_items != null;
         public void Resetexclude_free_items() => __pbn__exclude_free_items = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__exclude_free_items;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public int min_discount_percent
         {
             get => __pbn__min_discount_percent.GetValueOrDefault();
@@ -616,30 +664,33 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializemin_discount_percent() => __pbn__min_discount_percent != null;
         public void Resetmin_discount_percent() => __pbn__min_discount_percent = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__min_discount_percent;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CStoreQueryFilters_TagFilter : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<int> tagids { get; } = new global::System.Collections.Generic.List<int>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CStoreQueryFilters_TypeFilters : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public bool include_apps
         {
             get => __pbn__include_apps.GetValueOrDefault();
@@ -647,9 +698,10 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializeinclude_apps() => __pbn__include_apps != null;
         public void Resetinclude_apps() => __pbn__include_apps = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__include_apps;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public bool include_packages
         {
             get => __pbn__include_packages.GetValueOrDefault();
@@ -657,9 +709,10 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializeinclude_packages() => __pbn__include_packages != null;
         public void Resetinclude_packages() => __pbn__include_packages = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__include_packages;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public bool include_bundles
         {
             get => __pbn__include_bundles.GetValueOrDefault();
@@ -667,9 +720,10 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializeinclude_bundles() => __pbn__include_bundles != null;
         public void Resetinclude_bundles() => __pbn__include_bundles = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__include_bundles;
 
-        [global::ProtoBuf.ProtoMember(10)]
+        [global::LightProto.ProtoMember(10)]
         public bool include_games
         {
             get => __pbn__include_games.GetValueOrDefault();
@@ -677,9 +731,10 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializeinclude_games() => __pbn__include_games != null;
         public void Resetinclude_games() => __pbn__include_games = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__include_games;
 
-        [global::ProtoBuf.ProtoMember(11)]
+        [global::LightProto.ProtoMember(11)]
         public bool include_demos
         {
             get => __pbn__include_demos.GetValueOrDefault();
@@ -687,9 +742,10 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializeinclude_demos() => __pbn__include_demos != null;
         public void Resetinclude_demos() => __pbn__include_demos = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__include_demos;
 
-        [global::ProtoBuf.ProtoMember(12)]
+        [global::LightProto.ProtoMember(12)]
         public bool include_mods
         {
             get => __pbn__include_mods.GetValueOrDefault();
@@ -697,9 +753,10 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializeinclude_mods() => __pbn__include_mods != null;
         public void Resetinclude_mods() => __pbn__include_mods = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__include_mods;
 
-        [global::ProtoBuf.ProtoMember(13)]
+        [global::LightProto.ProtoMember(13)]
         public bool include_dlc
         {
             get => __pbn__include_dlc.GetValueOrDefault();
@@ -707,9 +764,10 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializeinclude_dlc() => __pbn__include_dlc != null;
         public void Resetinclude_dlc() => __pbn__include_dlc = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__include_dlc;
 
-        [global::ProtoBuf.ProtoMember(14)]
+        [global::LightProto.ProtoMember(14)]
         public bool include_software
         {
             get => __pbn__include_software.GetValueOrDefault();
@@ -717,9 +775,10 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializeinclude_software() => __pbn__include_software != null;
         public void Resetinclude_software() => __pbn__include_software = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__include_software;
 
-        [global::ProtoBuf.ProtoMember(15)]
+        [global::LightProto.ProtoMember(15)]
         public bool include_video
         {
             get => __pbn__include_video.GetValueOrDefault();
@@ -727,9 +786,10 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializeinclude_video() => __pbn__include_video != null;
         public void Resetinclude_video() => __pbn__include_video = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__include_video;
 
-        [global::ProtoBuf.ProtoMember(16)]
+        [global::LightProto.ProtoMember(16)]
         public bool include_hardware
         {
             get => __pbn__include_hardware.GetValueOrDefault();
@@ -737,9 +797,10 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializeinclude_hardware() => __pbn__include_hardware != null;
         public void Resetinclude_hardware() => __pbn__include_hardware = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__include_hardware;
 
-        [global::ProtoBuf.ProtoMember(17)]
+        [global::LightProto.ProtoMember(17)]
         public bool include_series
         {
             get => __pbn__include_series.GetValueOrDefault();
@@ -747,9 +808,10 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializeinclude_series() => __pbn__include_series != null;
         public void Resetinclude_series() => __pbn__include_series = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__include_series;
 
-        [global::ProtoBuf.ProtoMember(18)]
+        [global::LightProto.ProtoMember(18)]
         public bool include_music
         {
             get => __pbn__include_music.GetValueOrDefault();
@@ -757,9 +819,10 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializeinclude_music() => __pbn__include_music != null;
         public void Resetinclude_music() => __pbn__include_music = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__include_music;
 
-        [global::ProtoBuf.ProtoMember(19)]
+        [global::LightProto.ProtoMember(19)]
         public uint dlc_for_appid
         {
             get => __pbn__dlc_for_appid.GetValueOrDefault();
@@ -767,18 +830,20 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializedlc_for_appid() => __pbn__dlc_for_appid != null;
         public void Resetdlc_for_appid() => __pbn__dlc_for_appid = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__dlc_for_appid;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CStoreQueryParams : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(0)]
         public int start
         {
@@ -787,9 +852,10 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializestart() => __pbn__start != null;
         public void Resetstart() => __pbn__start = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__start;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue(10)]
         public int count
         {
@@ -798,9 +864,10 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializecount() => __pbn__count != null;
         public void Resetcount() => __pbn__count = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__count;
 
-        [global::ProtoBuf.ProtoMember(10)]
+        [global::LightProto.ProtoMember(10)]
         [global::System.ComponentModel.DefaultValue(0)]
         public int sort
         {
@@ -809,24 +876,26 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializesort() => __pbn__sort != null;
         public void Resetsort() => __pbn__sort = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__sort;
 
-        [global::ProtoBuf.ProtoMember(20)]
+        [global::LightProto.ProtoMember(20)]
         public CStoreQueryFilters filters { get; set; }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CStoreQueryPerResultMetadata : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public StoreItemID id { get; set; }
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public double score
         {
             get => __pbn__score.GetValueOrDefault();
@@ -834,9 +903,10 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializescore() => __pbn__score != null;
         public void Resetscore() => __pbn__score = null;
+        [global::LightProto.ProtoIgnore]
         private double? __pbn__score;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public bool spellcheck_generated_result
         {
             get => __pbn__spellcheck_generated_result.GetValueOrDefault();
@@ -844,18 +914,20 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializespellcheck_generated_result() => __pbn__spellcheck_generated_result != null;
         public void Resetspellcheck_generated_result() => __pbn__spellcheck_generated_result = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__spellcheck_generated_result;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CStoreQueryResultMetadata : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public int total_matching_records
         {
             get => __pbn__total_matching_records.GetValueOrDefault();
@@ -863,9 +935,10 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializetotal_matching_records() => __pbn__total_matching_records != null;
         public void Resettotal_matching_records() => __pbn__total_matching_records = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__total_matching_records;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public int start
         {
             get => __pbn__start.GetValueOrDefault();
@@ -873,9 +946,10 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializestart() => __pbn__start != null;
         public void Resetstart() => __pbn__start = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__start;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public int count
         {
             get => __pbn__count.GetValueOrDefault();
@@ -883,18 +957,20 @@ namespace SteamKit2.WebUI.Internal
         }
         public bool ShouldSerializecount() => __pbn__count != null;
         public void Resetcount() => __pbn__count = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__count;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public global::System.Collections.Generic.List<CStoreQueryPerResultMetadata> per_result_metadata { get; } = new global::System.Collections.Generic.List<CStoreQueryPerResultMetadata>();
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public global::System.Collections.Generic.List<string> spellcheck_suggestions { get; } = new global::System.Collections.Generic.List<string>();
 
     }
 
     public class StoreQuery : SteamUnifiedMessages.UnifiedService
     {
+        [global::LightProto.ProtoIgnore]
         public override string ServiceName { get; } = "StoreQuery";
 
         public AsyncJob<SteamUnifiedMessages.ServiceMethodResponse<CStoreQuery_GetItemByUserCombinedTagsPriority_Response>> GetItemByUserCombinedTagsPriority( CStoreQuery_GetItemByUserCombinedTagsPriority_Request request )

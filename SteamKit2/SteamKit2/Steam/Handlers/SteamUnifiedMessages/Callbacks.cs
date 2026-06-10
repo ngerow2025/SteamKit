@@ -1,9 +1,9 @@
-﻿/*
+/*
  * This file is subject to the terms and conditions defined in
  * file 'license.txt', which is part of this source code package.
  */
 
-using ProtoBuf;
+using LightProto;
 
 namespace SteamKit2
 {
@@ -12,7 +12,7 @@ namespace SteamKit2
         /// <summary>
         /// This callback is returned in response to a service method sent through <see cref="SteamUnifiedMessages"/>.
         /// </summary>
-        public class ServiceMethodResponse<T> : CallbackMsg where T : IExtensible, new()
+        public class ServiceMethodResponse<T> : CallbackMsg where T : IExtensible, LightProto.IProtoParser<T>, new()
         {
             /// <summary>
             /// The result of the message.
@@ -36,7 +36,7 @@ namespace SteamKit2
         /// <summary>
         /// This callback represents a service notification received though <see cref="SteamUnifiedMessages"/>.
         /// </summary>
-        public class ServiceMethodNotification<T> : CallbackMsg where T : IExtensible, new()
+        public class ServiceMethodNotification<T> : CallbackMsg where T : IExtensible, LightProto.IProtoParser<T>, new()
         {
             /// <summary>
             /// The name of the job, in the format Service.Method#Version.

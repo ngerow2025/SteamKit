@@ -9,14 +9,15 @@
 namespace SteamKit2.Internal
 {
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CTimedTrial_GetTimeRemaining_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint appid
         {
             get => __pbn__appid.GetValueOrDefault();
@@ -24,18 +25,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeappid() => __pbn__appid != null;
         public void Resetappid() => __pbn__appid = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__appid;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CTimedTrial_GetTimeRemaining_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint seconds_played
         {
             get => __pbn__seconds_played.GetValueOrDefault();
@@ -43,9 +46,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeseconds_played() => __pbn__seconds_played != null;
         public void Resetseconds_played() => __pbn__seconds_played = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__seconds_played;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint seconds_allowed
         {
             get => __pbn__seconds_allowed.GetValueOrDefault();
@@ -53,9 +57,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeseconds_allowed() => __pbn__seconds_allowed != null;
         public void Resetseconds_allowed() => __pbn__seconds_allowed = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__seconds_allowed;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public uint packageid
         {
             get => __pbn__packageid.GetValueOrDefault();
@@ -63,9 +68,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializepackageid() => __pbn__packageid != null;
         public void Resetpackageid() => __pbn__packageid = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__packageid;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public uint mastersub_appid
         {
             get => __pbn__mastersub_appid.GetValueOrDefault();
@@ -73,18 +79,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializemastersub_appid() => __pbn__mastersub_appid != null;
         public void Resetmastersub_appid() => __pbn__mastersub_appid = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__mastersub_appid;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CTimedTrial_RecordPlaytime_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint appid
         {
             get => __pbn__appid.GetValueOrDefault();
@@ -92,9 +100,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeappid() => __pbn__appid != null;
         public void Resetappid() => __pbn__appid = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__appid;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint seconds_played
         {
             get => __pbn__seconds_played.GetValueOrDefault();
@@ -102,18 +111,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeseconds_played() => __pbn__seconds_played != null;
         public void Resetseconds_played() => __pbn__seconds_played = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__seconds_played;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CTimedTrial_RecordPlaytime_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint seconds_played
         {
             get => __pbn__seconds_played.GetValueOrDefault();
@@ -121,9 +132,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeseconds_played() => __pbn__seconds_played != null;
         public void Resetseconds_played() => __pbn__seconds_played = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__seconds_played;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint seconds_allowed
         {
             get => __pbn__seconds_allowed.GetValueOrDefault();
@@ -131,18 +143,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeseconds_allowed() => __pbn__seconds_allowed != null;
         public void Resetseconds_allowed() => __pbn__seconds_allowed = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__seconds_allowed;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CTimedTrial_ResetPlaytime_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint appid
         {
             get => __pbn__appid.GetValueOrDefault();
@@ -150,18 +164,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeappid() => __pbn__appid != null;
         public void Resetappid() => __pbn__appid = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__appid;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CTimedTrial_ResetPlaytime_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint seconds_played
         {
             get => __pbn__seconds_played.GetValueOrDefault();
@@ -169,9 +185,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeseconds_played() => __pbn__seconds_played != null;
         public void Resetseconds_played() => __pbn__seconds_played = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__seconds_played;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint seconds_allowed
         {
             get => __pbn__seconds_allowed.GetValueOrDefault();
@@ -179,12 +196,14 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeseconds_allowed() => __pbn__seconds_allowed != null;
         public void Resetseconds_allowed() => __pbn__seconds_allowed = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__seconds_allowed;
 
     }
 
     public class TimedTrial : SteamUnifiedMessages.UnifiedService
     {
+        [global::LightProto.ProtoIgnore]
         public override string ServiceName { get; } = "TimedTrial";
 
         public AsyncJob<SteamUnifiedMessages.ServiceMethodResponse<CTimedTrial_GetTimeRemaining_Response>> GetTimeRemaining( CTimedTrial_GetTimeRemaining_Request request )

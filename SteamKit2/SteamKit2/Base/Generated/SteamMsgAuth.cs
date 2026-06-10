@@ -9,14 +9,15 @@
 namespace SteamKit2.Internal
 {
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CAuthentication_GetPasswordRSAPublicKey_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue("")]
         public string account_name
         {
@@ -25,18 +26,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeaccount_name() => __pbn__account_name != null;
         public void Resetaccount_name() => __pbn__account_name = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__account_name;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CAuthentication_GetPasswordRSAPublicKey_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue("")]
         public string publickey_mod
         {
@@ -45,9 +48,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializepublickey_mod() => __pbn__publickey_mod != null;
         public void Resetpublickey_mod() => __pbn__publickey_mod = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__publickey_mod;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue("")]
         public string publickey_exp
         {
@@ -56,9 +60,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializepublickey_exp() => __pbn__publickey_exp != null;
         public void Resetpublickey_exp() => __pbn__publickey_exp = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__publickey_exp;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public ulong timestamp
         {
             get => __pbn__timestamp.GetValueOrDefault();
@@ -66,18 +71,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializetimestamp() => __pbn__timestamp != null;
         public void Resettimestamp() => __pbn__timestamp = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__timestamp;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CAuthentication_DeviceDetails : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue("")]
         public string device_friendly_name
         {
@@ -86,9 +93,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializedevice_friendly_name() => __pbn__device_friendly_name != null;
         public void Resetdevice_friendly_name() => __pbn__device_friendly_name = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__device_friendly_name;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue(EAuthTokenPlatformType.k_EAuthTokenPlatformType_Unknown)]
         public EAuthTokenPlatformType platform_type
         {
@@ -97,9 +105,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeplatform_type() => __pbn__platform_type != null;
         public void Resetplatform_type() => __pbn__platform_type = null;
+        [global::LightProto.ProtoIgnore]
         private EAuthTokenPlatformType? __pbn__platform_type;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public int os_type
         {
             get => __pbn__os_type.GetValueOrDefault();
@@ -107,9 +116,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeos_type() => __pbn__os_type != null;
         public void Resetos_type() => __pbn__os_type = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__os_type;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public uint gaming_device_type
         {
             get => __pbn__gaming_device_type.GetValueOrDefault();
@@ -117,9 +127,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializegaming_device_type() => __pbn__gaming_device_type != null;
         public void Resetgaming_device_type() => __pbn__gaming_device_type = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__gaming_device_type;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public uint client_count
         {
             get => __pbn__client_count.GetValueOrDefault();
@@ -127,9 +138,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeclient_count() => __pbn__client_count != null;
         public void Resetclient_count() => __pbn__client_count = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__client_count;
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         public byte[] machine_id
         {
             get => __pbn__machine_id;
@@ -137,9 +149,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializemachine_id() => __pbn__machine_id != null;
         public void Resetmachine_id() => __pbn__machine_id = null;
+        [global::LightProto.ProtoIgnore]
         private byte[] __pbn__machine_id;
 
-        [global::ProtoBuf.ProtoMember(7)]
+        [global::LightProto.ProtoMember(7)]
         [global::System.ComponentModel.DefaultValue(EAuthTokenAppType.k_EAuthTokenAppType_Unknown)]
         public EAuthTokenAppType app_type
         {
@@ -148,18 +161,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeapp_type() => __pbn__app_type != null;
         public void Resetapp_type() => __pbn__app_type = null;
+        [global::LightProto.ProtoIgnore]
         private EAuthTokenAppType? __pbn__app_type;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CAuthentication_BeginAuthSessionViaQR_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue("")]
         public string device_friendly_name
         {
@@ -168,9 +183,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializedevice_friendly_name() => __pbn__device_friendly_name != null;
         public void Resetdevice_friendly_name() => __pbn__device_friendly_name = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__device_friendly_name;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue(EAuthTokenPlatformType.k_EAuthTokenPlatformType_Unknown)]
         public EAuthTokenPlatformType platform_type
         {
@@ -179,12 +195,13 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeplatform_type() => __pbn__platform_type != null;
         public void Resetplatform_type() => __pbn__platform_type = null;
+        [global::LightProto.ProtoIgnore]
         private EAuthTokenPlatformType? __pbn__platform_type;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public CAuthentication_DeviceDetails device_details { get; set; }
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         [global::System.ComponentModel.DefaultValue(@"Unknown")]
         public string website_id
         {
@@ -193,18 +210,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializewebsite_id() => __pbn__website_id != null;
         public void Resetwebsite_id() => __pbn__website_id = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__website_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CAuthentication_AllowedConfirmation : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(EAuthSessionGuardType.k_EAuthSessionGuardType_Unknown)]
         public EAuthSessionGuardType confirmation_type
         {
@@ -213,9 +232,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeconfirmation_type() => __pbn__confirmation_type != null;
         public void Resetconfirmation_type() => __pbn__confirmation_type = null;
+        [global::LightProto.ProtoIgnore]
         private EAuthSessionGuardType? __pbn__confirmation_type;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue("")]
         public string associated_message
         {
@@ -224,18 +244,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeassociated_message() => __pbn__associated_message != null;
         public void Resetassociated_message() => __pbn__associated_message = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__associated_message;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CAuthentication_BeginAuthSessionViaQR_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public ulong client_id
         {
             get => __pbn__client_id.GetValueOrDefault();
@@ -243,9 +265,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeclient_id() => __pbn__client_id != null;
         public void Resetclient_id() => __pbn__client_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__client_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue("")]
         public string challenge_url
         {
@@ -254,9 +277,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializechallenge_url() => __pbn__challenge_url != null;
         public void Resetchallenge_url() => __pbn__challenge_url = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__challenge_url;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public byte[] request_id
         {
             get => __pbn__request_id;
@@ -264,9 +288,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializerequest_id() => __pbn__request_id != null;
         public void Resetrequest_id() => __pbn__request_id = null;
+        [global::LightProto.ProtoIgnore]
         private byte[] __pbn__request_id;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public float interval
         {
             get => __pbn__interval.GetValueOrDefault();
@@ -274,12 +299,13 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeinterval() => __pbn__interval != null;
         public void Resetinterval() => __pbn__interval = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__interval;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public global::System.Collections.Generic.List<CAuthentication_AllowedConfirmation> allowed_confirmations { get; } = new global::System.Collections.Generic.List<CAuthentication_AllowedConfirmation>();
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         public int version
         {
             get => __pbn__version.GetValueOrDefault();
@@ -287,18 +313,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeversion() => __pbn__version != null;
         public void Resetversion() => __pbn__version = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__version;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CAuthentication_BeginAuthSessionViaCredentials_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue("")]
         public string device_friendly_name
         {
@@ -307,9 +335,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializedevice_friendly_name() => __pbn__device_friendly_name != null;
         public void Resetdevice_friendly_name() => __pbn__device_friendly_name = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__device_friendly_name;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue("")]
         public string account_name
         {
@@ -318,9 +347,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeaccount_name() => __pbn__account_name != null;
         public void Resetaccount_name() => __pbn__account_name = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__account_name;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         [global::System.ComponentModel.DefaultValue("")]
         public string encrypted_password
         {
@@ -329,9 +359,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeencrypted_password() => __pbn__encrypted_password != null;
         public void Resetencrypted_password() => __pbn__encrypted_password = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__encrypted_password;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public ulong encryption_timestamp
         {
             get => __pbn__encryption_timestamp.GetValueOrDefault();
@@ -339,9 +370,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeencryption_timestamp() => __pbn__encryption_timestamp != null;
         public void Resetencryption_timestamp() => __pbn__encryption_timestamp = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__encryption_timestamp;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public bool remember_login
         {
             get => __pbn__remember_login.GetValueOrDefault();
@@ -349,9 +381,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeremember_login() => __pbn__remember_login != null;
         public void Resetremember_login() => __pbn__remember_login = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__remember_login;
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         [global::System.ComponentModel.DefaultValue(EAuthTokenPlatformType.k_EAuthTokenPlatformType_Unknown)]
         public EAuthTokenPlatformType platform_type
         {
@@ -360,9 +393,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeplatform_type() => __pbn__platform_type != null;
         public void Resetplatform_type() => __pbn__platform_type = null;
+        [global::LightProto.ProtoIgnore]
         private EAuthTokenPlatformType? __pbn__platform_type;
 
-        [global::ProtoBuf.ProtoMember(7)]
+        [global::LightProto.ProtoMember(7)]
         [global::System.ComponentModel.DefaultValue(ESessionPersistence.k_ESessionPersistence_Persistent)]
         public ESessionPersistence persistence
         {
@@ -371,9 +405,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializepersistence() => __pbn__persistence != null;
         public void Resetpersistence() => __pbn__persistence = null;
+        [global::LightProto.ProtoIgnore]
         private ESessionPersistence? __pbn__persistence;
 
-        [global::ProtoBuf.ProtoMember(8)]
+        [global::LightProto.ProtoMember(8)]
         [global::System.ComponentModel.DefaultValue(@"Unknown")]
         public string website_id
         {
@@ -382,12 +417,13 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializewebsite_id() => __pbn__website_id != null;
         public void Resetwebsite_id() => __pbn__website_id = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__website_id;
 
-        [global::ProtoBuf.ProtoMember(9)]
+        [global::LightProto.ProtoMember(9)]
         public CAuthentication_DeviceDetails device_details { get; set; }
 
-        [global::ProtoBuf.ProtoMember(10)]
+        [global::LightProto.ProtoMember(10)]
         [global::System.ComponentModel.DefaultValue("")]
         public string guard_data
         {
@@ -396,9 +432,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeguard_data() => __pbn__guard_data != null;
         public void Resetguard_data() => __pbn__guard_data = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__guard_data;
 
-        [global::ProtoBuf.ProtoMember(11)]
+        [global::LightProto.ProtoMember(11)]
         public uint language
         {
             get => __pbn__language.GetValueOrDefault();
@@ -406,9 +443,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializelanguage() => __pbn__language != null;
         public void Resetlanguage() => __pbn__language = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__language;
 
-        [global::ProtoBuf.ProtoMember(12)]
+        [global::LightProto.ProtoMember(12)]
         [global::System.ComponentModel.DefaultValue(2)]
         public int qos_level
         {
@@ -417,18 +455,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeqos_level() => __pbn__qos_level != null;
         public void Resetqos_level() => __pbn__qos_level = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__qos_level;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CAuthentication_BeginAuthSessionViaCredentials_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public ulong client_id
         {
             get => __pbn__client_id.GetValueOrDefault();
@@ -436,9 +476,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeclient_id() => __pbn__client_id != null;
         public void Resetclient_id() => __pbn__client_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__client_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public byte[] request_id
         {
             get => __pbn__request_id;
@@ -446,9 +487,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializerequest_id() => __pbn__request_id != null;
         public void Resetrequest_id() => __pbn__request_id = null;
+        [global::LightProto.ProtoIgnore]
         private byte[] __pbn__request_id;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public float interval
         {
             get => __pbn__interval.GetValueOrDefault();
@@ -456,12 +498,13 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeinterval() => __pbn__interval != null;
         public void Resetinterval() => __pbn__interval = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__interval;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public global::System.Collections.Generic.List<CAuthentication_AllowedConfirmation> allowed_confirmations { get; } = new global::System.Collections.Generic.List<CAuthentication_AllowedConfirmation>();
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public ulong steamid
         {
             get => __pbn__steamid.GetValueOrDefault();
@@ -469,9 +512,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializesteamid() => __pbn__steamid != null;
         public void Resetsteamid() => __pbn__steamid = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__steamid;
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         [global::System.ComponentModel.DefaultValue("")]
         public string weak_token
         {
@@ -480,9 +524,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeweak_token() => __pbn__weak_token != null;
         public void Resetweak_token() => __pbn__weak_token = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__weak_token;
 
-        [global::ProtoBuf.ProtoMember(7)]
+        [global::LightProto.ProtoMember(7)]
         [global::System.ComponentModel.DefaultValue("")]
         public string agreement_session_url
         {
@@ -491,9 +536,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeagreement_session_url() => __pbn__agreement_session_url != null;
         public void Resetagreement_session_url() => __pbn__agreement_session_url = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__agreement_session_url;
 
-        [global::ProtoBuf.ProtoMember(8)]
+        [global::LightProto.ProtoMember(8)]
         [global::System.ComponentModel.DefaultValue("")]
         public string extended_error_message
         {
@@ -502,18 +548,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeextended_error_message() => __pbn__extended_error_message != null;
         public void Resetextended_error_message() => __pbn__extended_error_message = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__extended_error_message;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CAuthentication_PollAuthSessionStatus_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public ulong client_id
         {
             get => __pbn__client_id.GetValueOrDefault();
@@ -521,9 +569,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeclient_id() => __pbn__client_id != null;
         public void Resetclient_id() => __pbn__client_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__client_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public byte[] request_id
         {
             get => __pbn__request_id;
@@ -531,9 +580,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializerequest_id() => __pbn__request_id != null;
         public void Resetrequest_id() => __pbn__request_id = null;
+        [global::LightProto.ProtoIgnore]
         private byte[] __pbn__request_id;
 
-        [global::ProtoBuf.ProtoMember(3, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(3, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong token_to_revoke
         {
             get => __pbn__token_to_revoke.GetValueOrDefault();
@@ -541,18 +591,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializetoken_to_revoke() => __pbn__token_to_revoke != null;
         public void Resettoken_to_revoke() => __pbn__token_to_revoke = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__token_to_revoke;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CAuthentication_PollAuthSessionStatus_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public ulong new_client_id
         {
             get => __pbn__new_client_id.GetValueOrDefault();
@@ -560,9 +612,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializenew_client_id() => __pbn__new_client_id != null;
         public void Resetnew_client_id() => __pbn__new_client_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__new_client_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue("")]
         public string new_challenge_url
         {
@@ -571,9 +624,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializenew_challenge_url() => __pbn__new_challenge_url != null;
         public void Resetnew_challenge_url() => __pbn__new_challenge_url = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__new_challenge_url;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         [global::System.ComponentModel.DefaultValue("")]
         public string refresh_token
         {
@@ -582,9 +636,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializerefresh_token() => __pbn__refresh_token != null;
         public void Resetrefresh_token() => __pbn__refresh_token = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__refresh_token;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         [global::System.ComponentModel.DefaultValue("")]
         public string access_token
         {
@@ -593,9 +648,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeaccess_token() => __pbn__access_token != null;
         public void Resetaccess_token() => __pbn__access_token = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__access_token;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public bool had_remote_interaction
         {
             get => __pbn__had_remote_interaction.GetValueOrDefault();
@@ -603,9 +659,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializehad_remote_interaction() => __pbn__had_remote_interaction != null;
         public void Resethad_remote_interaction() => __pbn__had_remote_interaction = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__had_remote_interaction;
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         [global::System.ComponentModel.DefaultValue("")]
         public string account_name
         {
@@ -614,9 +671,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeaccount_name() => __pbn__account_name != null;
         public void Resetaccount_name() => __pbn__account_name = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__account_name;
 
-        [global::ProtoBuf.ProtoMember(7)]
+        [global::LightProto.ProtoMember(7)]
         [global::System.ComponentModel.DefaultValue("")]
         public string new_guard_data
         {
@@ -625,9 +683,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializenew_guard_data() => __pbn__new_guard_data != null;
         public void Resetnew_guard_data() => __pbn__new_guard_data = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__new_guard_data;
 
-        [global::ProtoBuf.ProtoMember(8)]
+        [global::LightProto.ProtoMember(8)]
         [global::System.ComponentModel.DefaultValue("")]
         public string agreement_session_url
         {
@@ -636,18 +695,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeagreement_session_url() => __pbn__agreement_session_url != null;
         public void Resetagreement_session_url() => __pbn__agreement_session_url = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__agreement_session_url;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CAuthentication_GetAuthSessionInfo_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public ulong client_id
         {
             get => __pbn__client_id.GetValueOrDefault();
@@ -655,18 +716,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeclient_id() => __pbn__client_id != null;
         public void Resetclient_id() => __pbn__client_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__client_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CAuthentication_GetAuthSessionInfo_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue("")]
         public string ip
         {
@@ -675,9 +738,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeip() => __pbn__ip != null;
         public void Resetip() => __pbn__ip = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__ip;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue("")]
         public string geoloc
         {
@@ -686,9 +750,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializegeoloc() => __pbn__geoloc != null;
         public void Resetgeoloc() => __pbn__geoloc = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__geoloc;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         [global::System.ComponentModel.DefaultValue("")]
         public string city
         {
@@ -697,9 +762,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializecity() => __pbn__city != null;
         public void Resetcity() => __pbn__city = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__city;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         [global::System.ComponentModel.DefaultValue("")]
         public string state
         {
@@ -708,9 +774,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializestate() => __pbn__state != null;
         public void Resetstate() => __pbn__state = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__state;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         [global::System.ComponentModel.DefaultValue("")]
         public string country
         {
@@ -719,9 +786,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializecountry() => __pbn__country != null;
         public void Resetcountry() => __pbn__country = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__country;
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         [global::System.ComponentModel.DefaultValue(EAuthTokenPlatformType.k_EAuthTokenPlatformType_Unknown)]
         public EAuthTokenPlatformType platform_type
         {
@@ -730,9 +798,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeplatform_type() => __pbn__platform_type != null;
         public void Resetplatform_type() => __pbn__platform_type = null;
+        [global::LightProto.ProtoIgnore]
         private EAuthTokenPlatformType? __pbn__platform_type;
 
-        [global::ProtoBuf.ProtoMember(7)]
+        [global::LightProto.ProtoMember(7)]
         [global::System.ComponentModel.DefaultValue("")]
         public string device_friendly_name
         {
@@ -741,9 +810,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializedevice_friendly_name() => __pbn__device_friendly_name != null;
         public void Resetdevice_friendly_name() => __pbn__device_friendly_name = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__device_friendly_name;
 
-        [global::ProtoBuf.ProtoMember(8)]
+        [global::LightProto.ProtoMember(8)]
         public int version
         {
             get => __pbn__version.GetValueOrDefault();
@@ -751,9 +821,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeversion() => __pbn__version != null;
         public void Resetversion() => __pbn__version = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__version;
 
-        [global::ProtoBuf.ProtoMember(9)]
+        [global::LightProto.ProtoMember(9)]
         [global::System.ComponentModel.DefaultValue(EAuthSessionSecurityHistory.k_EAuthSessionSecurityHistory_Invalid)]
         public EAuthSessionSecurityHistory login_history
         {
@@ -762,9 +833,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializelogin_history() => __pbn__login_history != null;
         public void Resetlogin_history() => __pbn__login_history = null;
+        [global::LightProto.ProtoIgnore]
         private EAuthSessionSecurityHistory? __pbn__login_history;
 
-        [global::ProtoBuf.ProtoMember(10)]
+        [global::LightProto.ProtoMember(10)]
         public bool requestor_location_mismatch
         {
             get => __pbn__requestor_location_mismatch.GetValueOrDefault();
@@ -772,9 +844,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializerequestor_location_mismatch() => __pbn__requestor_location_mismatch != null;
         public void Resetrequestor_location_mismatch() => __pbn__requestor_location_mismatch = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__requestor_location_mismatch;
 
-        [global::ProtoBuf.ProtoMember(11)]
+        [global::LightProto.ProtoMember(11)]
         public bool high_usage_login
         {
             get => __pbn__high_usage_login.GetValueOrDefault();
@@ -782,9 +855,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializehigh_usage_login() => __pbn__high_usage_login != null;
         public void Resethigh_usage_login() => __pbn__high_usage_login = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__high_usage_login;
 
-        [global::ProtoBuf.ProtoMember(12)]
+        [global::LightProto.ProtoMember(12)]
         [global::System.ComponentModel.DefaultValue(ESessionPersistence.k_ESessionPersistence_Invalid)]
         public ESessionPersistence requested_persistence
         {
@@ -793,9 +867,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializerequested_persistence() => __pbn__requested_persistence != null;
         public void Resetrequested_persistence() => __pbn__requested_persistence = null;
+        [global::LightProto.ProtoIgnore]
         private ESessionPersistence? __pbn__requested_persistence;
 
-        [global::ProtoBuf.ProtoMember(13)]
+        [global::LightProto.ProtoMember(13)]
         public int device_trust
         {
             get => __pbn__device_trust.GetValueOrDefault();
@@ -803,9 +878,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializedevice_trust() => __pbn__device_trust != null;
         public void Resetdevice_trust() => __pbn__device_trust = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__device_trust;
 
-        [global::ProtoBuf.ProtoMember(14)]
+        [global::LightProto.ProtoMember(14)]
         [global::System.ComponentModel.DefaultValue(EAuthTokenAppType.k_EAuthTokenAppType_Unknown)]
         public EAuthTokenAppType app_type
         {
@@ -814,18 +890,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeapp_type() => __pbn__app_type != null;
         public void Resetapp_type() => __pbn__app_type = null;
+        [global::LightProto.ProtoIgnore]
         private EAuthTokenAppType? __pbn__app_type;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CAuthentication_GetAuthSessionRiskInfo_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public ulong client_id
         {
             get => __pbn__client_id.GetValueOrDefault();
@@ -833,9 +911,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeclient_id() => __pbn__client_id != null;
         public void Resetclient_id() => __pbn__client_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__client_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint language
         {
             get => __pbn__language.GetValueOrDefault();
@@ -843,18 +922,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializelanguage() => __pbn__language != null;
         public void Resetlanguage() => __pbn__language = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__language;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CAuthentication_GetAuthSessionRiskInfo_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue("")]
         public string location_confirmer
         {
@@ -863,9 +944,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializelocation_confirmer() => __pbn__location_confirmer != null;
         public void Resetlocation_confirmer() => __pbn__location_confirmer = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__location_confirmer;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue("")]
         public string location_requestor
         {
@@ -874,9 +956,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializelocation_requestor() => __pbn__location_requestor != null;
         public void Resetlocation_requestor() => __pbn__location_requestor = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__location_requestor;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         [global::System.ComponentModel.DefaultValue("")]
         public string location_other
         {
@@ -885,9 +968,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializelocation_other() => __pbn__location_other != null;
         public void Resetlocation_other() => __pbn__location_other = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__location_other;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         [global::System.ComponentModel.DefaultValue(EAuthTokenPlatformType.k_EAuthTokenPlatformType_Unknown)]
         public EAuthTokenPlatformType platform_type
         {
@@ -896,18 +980,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeplatform_type() => __pbn__platform_type != null;
         public void Resetplatform_type() => __pbn__platform_type = null;
+        [global::LightProto.ProtoIgnore]
         private EAuthTokenPlatformType? __pbn__platform_type;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CAuthentication_NotifyRiskQuizResults_Notification : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public ulong client_id
         {
             get => __pbn__client_id.GetValueOrDefault();
@@ -915,12 +1001,13 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeclient_id() => __pbn__client_id != null;
         public void Resetclient_id() => __pbn__client_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__client_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public RiskQuizResults results { get; set; }
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         [global::System.ComponentModel.DefaultValue("")]
         public string selected_action
         {
@@ -929,9 +1016,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeselected_action() => __pbn__selected_action != null;
         public void Resetselected_action() => __pbn__selected_action = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__selected_action;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public bool did_confirm_login
         {
             get => __pbn__did_confirm_login.GetValueOrDefault();
@@ -939,16 +1027,18 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializedid_confirm_login() => __pbn__did_confirm_login != null;
         public void Resetdid_confirm_login() => __pbn__did_confirm_login = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__did_confirm_login;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class RiskQuizResults : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public bool platform
             {
                 get => __pbn__platform.GetValueOrDefault();
@@ -956,9 +1046,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializeplatform() => __pbn__platform != null;
             public void Resetplatform() => __pbn__platform = null;
+            [global::LightProto.ProtoIgnore]
             private bool? __pbn__platform;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public bool location
             {
                 get => __pbn__location.GetValueOrDefault();
@@ -966,9 +1057,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializelocation() => __pbn__location != null;
             public void Resetlocation() => __pbn__location = null;
+            [global::LightProto.ProtoIgnore]
             private bool? __pbn__location;
 
-            [global::ProtoBuf.ProtoMember(3)]
+            [global::LightProto.ProtoMember(3)]
             public bool action
             {
                 get => __pbn__action.GetValueOrDefault();
@@ -976,20 +1068,22 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializeaction() => __pbn__action != null;
             public void Resetaction() => __pbn__action = null;
+            [global::LightProto.ProtoIgnore]
             private bool? __pbn__action;
 
         }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CAuthentication_UpdateAuthSessionWithMobileConfirmation_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public int version
         {
             get => __pbn__version.GetValueOrDefault();
@@ -997,9 +1091,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeversion() => __pbn__version != null;
         public void Resetversion() => __pbn__version = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__version;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public ulong client_id
         {
             get => __pbn__client_id.GetValueOrDefault();
@@ -1007,9 +1102,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeclient_id() => __pbn__client_id != null;
         public void Resetclient_id() => __pbn__client_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__client_id;
 
-        [global::ProtoBuf.ProtoMember(3, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(3, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong steamid
         {
             get => __pbn__steamid.GetValueOrDefault();
@@ -1017,9 +1113,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializesteamid() => __pbn__steamid != null;
         public void Resetsteamid() => __pbn__steamid = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__steamid;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public byte[] signature
         {
             get => __pbn__signature;
@@ -1027,9 +1124,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializesignature() => __pbn__signature != null;
         public void Resetsignature() => __pbn__signature = null;
+        [global::LightProto.ProtoIgnore]
         private byte[] __pbn__signature;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         [global::System.ComponentModel.DefaultValue(false)]
         public bool confirm
         {
@@ -1038,9 +1136,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeconfirm() => __pbn__confirm != null;
         public void Resetconfirm() => __pbn__confirm = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__confirm;
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         [global::System.ComponentModel.DefaultValue(ESessionPersistence.k_ESessionPersistence_Persistent)]
         public ESessionPersistence persistence
         {
@@ -1049,27 +1148,30 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializepersistence() => __pbn__persistence != null;
         public void Resetpersistence() => __pbn__persistence = null;
+        [global::LightProto.ProtoIgnore]
         private ESessionPersistence? __pbn__persistence;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CAuthentication_UpdateAuthSessionWithMobileConfirmation_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CAuthentication_UpdateAuthSessionWithSteamGuardCode_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public ulong client_id
         {
             get => __pbn__client_id.GetValueOrDefault();
@@ -1077,9 +1179,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeclient_id() => __pbn__client_id != null;
         public void Resetclient_id() => __pbn__client_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__client_id;
 
-        [global::ProtoBuf.ProtoMember(2, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(2, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong steamid
         {
             get => __pbn__steamid.GetValueOrDefault();
@@ -1087,9 +1190,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializesteamid() => __pbn__steamid != null;
         public void Resetsteamid() => __pbn__steamid = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__steamid;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         [global::System.ComponentModel.DefaultValue("")]
         public string code
         {
@@ -1098,9 +1202,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializecode() => __pbn__code != null;
         public void Resetcode() => __pbn__code = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__code;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         [global::System.ComponentModel.DefaultValue(EAuthSessionGuardType.k_EAuthSessionGuardType_Unknown)]
         public EAuthSessionGuardType code_type
         {
@@ -1109,18 +1214,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializecode_type() => __pbn__code_type != null;
         public void Resetcode_type() => __pbn__code_type = null;
+        [global::LightProto.ProtoIgnore]
         private EAuthSessionGuardType? __pbn__code_type;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CAuthentication_UpdateAuthSessionWithSteamGuardCode_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(7)]
+        [global::LightProto.ProtoMember(7)]
         [global::System.ComponentModel.DefaultValue("")]
         public string agreement_session_url
         {
@@ -1129,18 +1236,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeagreement_session_url() => __pbn__agreement_session_url != null;
         public void Resetagreement_session_url() => __pbn__agreement_session_url = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__agreement_session_url;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CAuthentication_AccessToken_GenerateForApp_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue("")]
         public string refresh_token
         {
@@ -1149,9 +1258,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializerefresh_token() => __pbn__refresh_token != null;
         public void Resetrefresh_token() => __pbn__refresh_token = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__refresh_token;
 
-        [global::ProtoBuf.ProtoMember(2, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(2, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong steamid
         {
             get => __pbn__steamid.GetValueOrDefault();
@@ -1159,9 +1269,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializesteamid() => __pbn__steamid != null;
         public void Resetsteamid() => __pbn__steamid = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__steamid;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         [global::System.ComponentModel.DefaultValue(ETokenRenewalType.k_ETokenRenewalType_None)]
         public ETokenRenewalType renewal_type
         {
@@ -1170,18 +1281,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializerenewal_type() => __pbn__renewal_type != null;
         public void Resetrenewal_type() => __pbn__renewal_type = null;
+        [global::LightProto.ProtoIgnore]
         private ETokenRenewalType? __pbn__renewal_type;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CAuthentication_AccessToken_GenerateForApp_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue("")]
         public string access_token
         {
@@ -1190,9 +1303,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeaccess_token() => __pbn__access_token != null;
         public void Resetaccess_token() => __pbn__access_token = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__access_token;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue("")]
         public string refresh_token
         {
@@ -1201,18 +1315,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializerefresh_token() => __pbn__refresh_token != null;
         public void Resetrefresh_token() => __pbn__refresh_token = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__refresh_token;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CAuthentication_RefreshToken_Enumerate_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue(false)]
         public bool include_revoked
         {
@@ -1221,21 +1337,23 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeinclude_revoked() => __pbn__include_revoked != null;
         public void Resetinclude_revoked() => __pbn__include_revoked = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__include_revoked;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CAuthentication_RefreshToken_Enumerate_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<RefreshTokenDescription> refresh_tokens { get; } = new global::System.Collections.Generic.List<RefreshTokenDescription>();
 
-        [global::ProtoBuf.ProtoMember(2, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(2, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong requesting_token
         {
             get => __pbn__requesting_token.GetValueOrDefault();
@@ -1243,16 +1361,18 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializerequesting_token() => __pbn__requesting_token != null;
         public void Resetrequesting_token() => __pbn__requesting_token = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__requesting_token;
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class TokenUsageEvent : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public uint time
             {
                 get => __pbn__time.GetValueOrDefault();
@@ -1260,12 +1380,13 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializetime() => __pbn__time != null;
             public void Resettime() => __pbn__time = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__time;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public CMsgIPAddress ip { get; set; }
 
-            [global::ProtoBuf.ProtoMember(3)]
+            [global::LightProto.ProtoMember(3)]
             [global::System.ComponentModel.DefaultValue("")]
             public string locale
             {
@@ -1274,9 +1395,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializelocale() => __pbn__locale != null;
             public void Resetlocale() => __pbn__locale = null;
+            [global::LightProto.ProtoIgnore]
             private string __pbn__locale;
 
-            [global::ProtoBuf.ProtoMember(4)]
+            [global::LightProto.ProtoMember(4)]
             [global::System.ComponentModel.DefaultValue("")]
             public string country
             {
@@ -1285,9 +1407,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializecountry() => __pbn__country != null;
             public void Resetcountry() => __pbn__country = null;
+            [global::LightProto.ProtoIgnore]
             private string __pbn__country;
 
-            [global::ProtoBuf.ProtoMember(5)]
+            [global::LightProto.ProtoMember(5)]
             [global::System.ComponentModel.DefaultValue("")]
             public string state
             {
@@ -1296,9 +1419,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializestate() => __pbn__state != null;
             public void Resetstate() => __pbn__state = null;
+            [global::LightProto.ProtoIgnore]
             private string __pbn__state;
 
-            [global::ProtoBuf.ProtoMember(6)]
+            [global::LightProto.ProtoMember(6)]
             [global::System.ComponentModel.DefaultValue("")]
             public string city
             {
@@ -1307,18 +1431,20 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializecity() => __pbn__city != null;
             public void Resetcity() => __pbn__city = null;
+            [global::LightProto.ProtoIgnore]
             private string __pbn__city;
 
         }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class RefreshTokenDescription : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+            [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
             public ulong token_id
             {
                 get => __pbn__token_id.GetValueOrDefault();
@@ -1326,9 +1452,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializetoken_id() => __pbn__token_id != null;
             public void Resettoken_id() => __pbn__token_id = null;
+            [global::LightProto.ProtoIgnore]
             private ulong? __pbn__token_id;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             [global::System.ComponentModel.DefaultValue("")]
             public string token_description
             {
@@ -1337,9 +1464,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializetoken_description() => __pbn__token_description != null;
             public void Resettoken_description() => __pbn__token_description = null;
+            [global::LightProto.ProtoIgnore]
             private string __pbn__token_description;
 
-            [global::ProtoBuf.ProtoMember(3)]
+            [global::LightProto.ProtoMember(3)]
             public uint time_updated
             {
                 get => __pbn__time_updated.GetValueOrDefault();
@@ -1347,9 +1475,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializetime_updated() => __pbn__time_updated != null;
             public void Resettime_updated() => __pbn__time_updated = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__time_updated;
 
-            [global::ProtoBuf.ProtoMember(4)]
+            [global::LightProto.ProtoMember(4)]
             [global::System.ComponentModel.DefaultValue(EAuthTokenPlatformType.k_EAuthTokenPlatformType_Unknown)]
             public EAuthTokenPlatformType platform_type
             {
@@ -1358,9 +1487,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializeplatform_type() => __pbn__platform_type != null;
             public void Resetplatform_type() => __pbn__platform_type = null;
+            [global::LightProto.ProtoIgnore]
             private EAuthTokenPlatformType? __pbn__platform_type;
 
-            [global::ProtoBuf.ProtoMember(5)]
+            [global::LightProto.ProtoMember(5)]
             public bool logged_in
             {
                 get => __pbn__logged_in.GetValueOrDefault();
@@ -1368,9 +1498,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializelogged_in() => __pbn__logged_in != null;
             public void Resetlogged_in() => __pbn__logged_in = null;
+            [global::LightProto.ProtoIgnore]
             private bool? __pbn__logged_in;
 
-            [global::ProtoBuf.ProtoMember(6)]
+            [global::LightProto.ProtoMember(6)]
             public uint os_platform
             {
                 get => __pbn__os_platform.GetValueOrDefault();
@@ -1378,9 +1509,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializeos_platform() => __pbn__os_platform != null;
             public void Resetos_platform() => __pbn__os_platform = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__os_platform;
 
-            [global::ProtoBuf.ProtoMember(7)]
+            [global::LightProto.ProtoMember(7)]
             public uint auth_type
             {
                 get => __pbn__auth_type.GetValueOrDefault();
@@ -1388,9 +1520,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializeauth_type() => __pbn__auth_type != null;
             public void Resetauth_type() => __pbn__auth_type = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__auth_type;
 
-            [global::ProtoBuf.ProtoMember(8)]
+            [global::LightProto.ProtoMember(8)]
             public uint gaming_device_type
             {
                 get => __pbn__gaming_device_type.GetValueOrDefault();
@@ -1398,15 +1531,16 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializegaming_device_type() => __pbn__gaming_device_type != null;
             public void Resetgaming_device_type() => __pbn__gaming_device_type = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__gaming_device_type;
 
-            [global::ProtoBuf.ProtoMember(9)]
+            [global::LightProto.ProtoMember(9)]
             public CAuthentication_RefreshToken_Enumerate_Response.TokenUsageEvent first_seen { get; set; }
 
-            [global::ProtoBuf.ProtoMember(10)]
+            [global::LightProto.ProtoMember(10)]
             public CAuthentication_RefreshToken_Enumerate_Response.TokenUsageEvent last_seen { get; set; }
 
-            [global::ProtoBuf.ProtoMember(11)]
+            [global::LightProto.ProtoMember(11)]
             public int os_type
             {
                 get => __pbn__os_type.GetValueOrDefault();
@@ -1414,9 +1548,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializeos_type() => __pbn__os_type != null;
             public void Resetos_type() => __pbn__os_type = null;
+            [global::LightProto.ProtoIgnore]
             private int? __pbn__os_type;
 
-            [global::ProtoBuf.ProtoMember(12)]
+            [global::LightProto.ProtoMember(12)]
             [global::System.ComponentModel.DefaultValue(EAuthenticationType.k_EAuthenticationType_Unknown)]
             public EAuthenticationType authentication_type
             {
@@ -1425,9 +1560,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializeauthentication_type() => __pbn__authentication_type != null;
             public void Resetauthentication_type() => __pbn__authentication_type = null;
+            [global::LightProto.ProtoIgnore]
             private EAuthenticationType? __pbn__authentication_type;
 
-            [global::ProtoBuf.ProtoMember(13)]
+            [global::LightProto.ProtoMember(13)]
             [global::System.ComponentModel.DefaultValue(EAuthTokenState.k_EAuthTokenState_Invalid)]
             public EAuthTokenState effective_token_state
             {
@@ -1436,41 +1572,45 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializeeffective_token_state() => __pbn__effective_token_state != null;
             public void Reseteffective_token_state() => __pbn__effective_token_state = null;
+            [global::LightProto.ProtoIgnore]
             private EAuthTokenState? __pbn__effective_token_state;
 
         }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CAuthentication_GetAuthSessionsForAccount_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CAuthentication_GetAuthSessionsForAccount_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<ulong> client_ids { get; } = new global::System.Collections.Generic.List<ulong>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CAuthentication_Token_Revoke_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue("")]
         public string token
         {
@@ -1479,9 +1619,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializetoken() => __pbn__token != null;
         public void Resettoken() => __pbn__token = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__token;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue(EAuthTokenRevokeAction.k_EAuthTokenRevokePermanent)]
         public EAuthTokenRevokeAction revoke_action
         {
@@ -1490,27 +1631,30 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializerevoke_action() => __pbn__revoke_action != null;
         public void Resetrevoke_action() => __pbn__revoke_action = null;
+        [global::LightProto.ProtoIgnore]
         private EAuthTokenRevokeAction? __pbn__revoke_action;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CAuthentication_Token_Revoke_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CAuthentication_RefreshToken_Revoke_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong token_id
         {
             get => __pbn__token_id.GetValueOrDefault();
@@ -1518,9 +1662,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializetoken_id() => __pbn__token_id != null;
         public void Resettoken_id() => __pbn__token_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__token_id;
 
-        [global::ProtoBuf.ProtoMember(2, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(2, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong steamid
         {
             get => __pbn__steamid.GetValueOrDefault();
@@ -1528,9 +1673,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializesteamid() => __pbn__steamid != null;
         public void Resetsteamid() => __pbn__steamid = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__steamid;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         [global::System.ComponentModel.DefaultValue(EAuthTokenRevokeAction.k_EAuthTokenRevokePermanent)]
         public EAuthTokenRevokeAction revoke_action
         {
@@ -1539,9 +1685,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializerevoke_action() => __pbn__revoke_action != null;
         public void Resetrevoke_action() => __pbn__revoke_action = null;
+        [global::LightProto.ProtoIgnore]
         private EAuthTokenRevokeAction? __pbn__revoke_action;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public byte[] signature
         {
             get => __pbn__signature;
@@ -1549,27 +1696,30 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializesignature() => __pbn__signature != null;
         public void Resetsignature() => __pbn__signature = null;
+        [global::LightProto.ProtoIgnore]
         private byte[] __pbn__signature;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CAuthentication_RefreshToken_Revoke_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CAuthenticationSupport_QueryRefreshTokensByAccount_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong steamid
         {
             get => __pbn__steamid.GetValueOrDefault();
@@ -1577,9 +1727,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializesteamid() => __pbn__steamid != null;
         public void Resetsteamid() => __pbn__steamid = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__steamid;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public bool include_revoked_tokens
         {
             get => __pbn__include_revoked_tokens.GetValueOrDefault();
@@ -1587,18 +1738,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeinclude_revoked_tokens() => __pbn__include_revoked_tokens != null;
         public void Resetinclude_revoked_tokens() => __pbn__include_revoked_tokens = null;
+        [global::LightProto.ProtoIgnore]
         private bool? __pbn__include_revoked_tokens;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSupportRefreshTokenDescription : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong token_id
         {
             get => __pbn__token_id.GetValueOrDefault();
@@ -1606,9 +1759,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializetoken_id() => __pbn__token_id != null;
         public void Resettoken_id() => __pbn__token_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__token_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         [global::System.ComponentModel.DefaultValue("")]
         public string token_description
         {
@@ -1617,9 +1771,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializetoken_description() => __pbn__token_description != null;
         public void Resettoken_description() => __pbn__token_description = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__token_description;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public uint time_updated
         {
             get => __pbn__time_updated.GetValueOrDefault();
@@ -1627,9 +1782,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializetime_updated() => __pbn__time_updated != null;
         public void Resettime_updated() => __pbn__time_updated = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__time_updated;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         [global::System.ComponentModel.DefaultValue(EAuthTokenPlatformType.k_EAuthTokenPlatformType_Unknown)]
         public EAuthTokenPlatformType platform_type
         {
@@ -1638,9 +1794,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeplatform_type() => __pbn__platform_type != null;
         public void Resetplatform_type() => __pbn__platform_type = null;
+        [global::LightProto.ProtoIgnore]
         private EAuthTokenPlatformType? __pbn__platform_type;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         [global::System.ComponentModel.DefaultValue(EAuthTokenState.k_EAuthTokenState_Invalid)]
         public EAuthTokenState token_state
         {
@@ -1649,9 +1806,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializetoken_state() => __pbn__token_state != null;
         public void Resettoken_state() => __pbn__token_state = null;
+        [global::LightProto.ProtoIgnore]
         private EAuthTokenState? __pbn__token_state;
 
-        [global::ProtoBuf.ProtoMember(6, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(6, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong owner_steamid
         {
             get => __pbn__owner_steamid.GetValueOrDefault();
@@ -1659,9 +1817,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeowner_steamid() => __pbn__owner_steamid != null;
         public void Resetowner_steamid() => __pbn__owner_steamid = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__owner_steamid;
 
-        [global::ProtoBuf.ProtoMember(7)]
+        [global::LightProto.ProtoMember(7)]
         public uint os_platform
         {
             get => __pbn__os_platform.GetValueOrDefault();
@@ -1669,9 +1828,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeos_platform() => __pbn__os_platform != null;
         public void Resetos_platform() => __pbn__os_platform = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__os_platform;
 
-        [global::ProtoBuf.ProtoMember(8)]
+        [global::LightProto.ProtoMember(8)]
         public int os_type
         {
             get => __pbn__os_type.GetValueOrDefault();
@@ -1679,9 +1839,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeos_type() => __pbn__os_type != null;
         public void Resetos_type() => __pbn__os_type = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__os_type;
 
-        [global::ProtoBuf.ProtoMember(9)]
+        [global::LightProto.ProtoMember(9)]
         public uint auth_type
         {
             get => __pbn__auth_type.GetValueOrDefault();
@@ -1689,9 +1850,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeauth_type() => __pbn__auth_type != null;
         public void Resetauth_type() => __pbn__auth_type = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__auth_type;
 
-        [global::ProtoBuf.ProtoMember(10)]
+        [global::LightProto.ProtoMember(10)]
         public uint gaming_device_type
         {
             get => __pbn__gaming_device_type.GetValueOrDefault();
@@ -1699,22 +1861,24 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializegaming_device_type() => __pbn__gaming_device_type != null;
         public void Resetgaming_device_type() => __pbn__gaming_device_type = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__gaming_device_type;
 
-        [global::ProtoBuf.ProtoMember(11)]
+        [global::LightProto.ProtoMember(11)]
         public TokenUsageEvent first_seen { get; set; }
 
-        [global::ProtoBuf.ProtoMember(12)]
+        [global::LightProto.ProtoMember(12)]
         public TokenUsageEvent last_seen { get; set; }
 
-        [global::ProtoBuf.ProtoContract()]
+        [global::LightProto.ProtoContract()]
         public partial class TokenUsageEvent : global::ProtoBuf.IExtensible
         {
-            private global::ProtoBuf.IExtension __pbn__extensionData;
-            global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-                => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+            [global::LightProto.ProtoIgnore]
+            private global::LightProto.IExtension __pbn__extensionData;
+            global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+                => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-            [global::ProtoBuf.ProtoMember(1)]
+            [global::LightProto.ProtoMember(1)]
             public uint time
             {
                 get => __pbn__time.GetValueOrDefault();
@@ -1722,12 +1886,13 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializetime() => __pbn__time != null;
             public void Resettime() => __pbn__time = null;
+            [global::LightProto.ProtoIgnore]
             private uint? __pbn__time;
 
-            [global::ProtoBuf.ProtoMember(2)]
+            [global::LightProto.ProtoMember(2)]
             public CMsgIPAddress ip { get; set; }
 
-            [global::ProtoBuf.ProtoMember(3)]
+            [global::LightProto.ProtoMember(3)]
             [global::System.ComponentModel.DefaultValue("")]
             public string country
             {
@@ -1736,9 +1901,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializecountry() => __pbn__country != null;
             public void Resetcountry() => __pbn__country = null;
+            [global::LightProto.ProtoIgnore]
             private string __pbn__country;
 
-            [global::ProtoBuf.ProtoMember(4)]
+            [global::LightProto.ProtoMember(4)]
             [global::System.ComponentModel.DefaultValue("")]
             public string state
             {
@@ -1747,9 +1913,10 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializestate() => __pbn__state != null;
             public void Resetstate() => __pbn__state = null;
+            [global::LightProto.ProtoIgnore]
             private string __pbn__state;
 
-            [global::ProtoBuf.ProtoMember(5)]
+            [global::LightProto.ProtoMember(5)]
             [global::System.ComponentModel.DefaultValue("")]
             public string city
             {
@@ -1758,23 +1925,25 @@ namespace SteamKit2.Internal
             }
             public bool ShouldSerializecity() => __pbn__city != null;
             public void Resetcity() => __pbn__city = null;
+            [global::LightProto.ProtoIgnore]
             private string __pbn__city;
 
         }
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CAuthenticationSupport_QueryRefreshTokensByAccount_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<CSupportRefreshTokenDescription> refresh_tokens { get; } = new global::System.Collections.Generic.List<CSupportRefreshTokenDescription>();
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public int last_token_reset
         {
             get => __pbn__last_token_reset.GetValueOrDefault();
@@ -1782,18 +1951,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializelast_token_reset() => __pbn__last_token_reset != null;
         public void Resetlast_token_reset() => __pbn__last_token_reset = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__last_token_reset;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CAuthenticationSupport_QueryRefreshTokenByID_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong token_id
         {
             get => __pbn__token_id.GetValueOrDefault();
@@ -1801,30 +1972,33 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializetoken_id() => __pbn__token_id != null;
         public void Resettoken_id() => __pbn__token_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__token_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CAuthenticationSupport_QueryRefreshTokenByID_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<CSupportRefreshTokenDescription> refresh_tokens { get; } = new global::System.Collections.Generic.List<CSupportRefreshTokenDescription>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CAuthenticationSupport_RevokeToken_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong token_id
         {
             get => __pbn__token_id.GetValueOrDefault();
@@ -1832,9 +2006,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializetoken_id() => __pbn__token_id != null;
         public void Resettoken_id() => __pbn__token_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__token_id;
 
-        [global::ProtoBuf.ProtoMember(2, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(2, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong steamid
         {
             get => __pbn__steamid.GetValueOrDefault();
@@ -1842,27 +2017,30 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializesteamid() => __pbn__steamid != null;
         public void Resetsteamid() => __pbn__steamid = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__steamid;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CAuthenticationSupport_RevokeToken_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CAuthenticationSupport_GetTokenHistory_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong token_id
         {
             get => __pbn__token_id.GetValueOrDefault();
@@ -1870,18 +2048,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializetoken_id() => __pbn__token_id != null;
         public void Resettoken_id() => __pbn__token_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__token_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CSupportRefreshTokenAudit : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public int action
         {
             get => __pbn__action.GetValueOrDefault();
@@ -1889,9 +2069,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeaction() => __pbn__action != null;
         public void Resetaction() => __pbn__action = null;
+        [global::LightProto.ProtoIgnore]
         private int? __pbn__action;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint time
         {
             get => __pbn__time.GetValueOrDefault();
@@ -1899,12 +2080,13 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializetime() => __pbn__time != null;
         public void Resettime() => __pbn__time = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__time;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public CMsgIPAddress ip { get; set; }
 
-        [global::ProtoBuf.ProtoMember(4, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(4, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong actor
         {
             get => __pbn__actor.GetValueOrDefault();
@@ -1912,30 +2094,33 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeactor() => __pbn__actor != null;
         public void Resetactor() => __pbn__actor = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__actor;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CAuthenticationSupport_GetTokenHistory_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public global::System.Collections.Generic.List<CSupportRefreshTokenAudit> history { get; } = new global::System.Collections.Generic.List<CSupportRefreshTokenAudit>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CAuthenticationSupport_MarkTokenCompromised_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(1, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong steamid
         {
             get => __pbn__steamid.GetValueOrDefault();
@@ -1943,9 +2128,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializesteamid() => __pbn__steamid != null;
         public void Resetsteamid() => __pbn__steamid = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__steamid;
 
-        [global::ProtoBuf.ProtoMember(2, DataFormat = global::ProtoBuf.DataFormat.FixedSize)]
+        [global::LightProto.ProtoMember(2, DataFormat = global::LightProto.DataFormat.FixedSize)]
         public ulong token_id
         {
             get => __pbn__token_id.GetValueOrDefault();
@@ -1953,27 +2139,30 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializetoken_id() => __pbn__token_id != null;
         public void Resettoken_id() => __pbn__token_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__token_id;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CAuthenticationSupport_MarkTokenCompromised_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CCloudGaming_CreateNonce_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue("")]
         public string platform
         {
@@ -1982,9 +2171,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeplatform() => __pbn__platform != null;
         public void Resetplatform() => __pbn__platform = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__platform;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint appid
         {
             get => __pbn__appid.GetValueOrDefault();
@@ -1992,18 +2182,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeappid() => __pbn__appid != null;
         public void Resetappid() => __pbn__appid = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__appid;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CCloudGaming_CreateNonce_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue("")]
         public string nonce
         {
@@ -2012,9 +2204,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializenonce() => __pbn__nonce != null;
         public void Resetnonce() => __pbn__nonce = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__nonce;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint expiry
         {
             get => __pbn__expiry.GetValueOrDefault();
@@ -2022,18 +2215,20 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeexpiry() => __pbn__expiry != null;
         public void Resetexpiry() => __pbn__expiry = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__expiry;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CCloudGaming_GetTimeRemaining_Request : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         [global::System.ComponentModel.DefaultValue("")]
         public string platform
         {
@@ -2042,21 +2237,23 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeplatform() => __pbn__platform != null;
         public void Resetplatform() => __pbn__platform = null;
+        [global::LightProto.ProtoIgnore]
         private string __pbn__platform;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public global::System.Collections.Generic.List<uint> appid_list { get; } = new global::System.Collections.Generic.List<uint>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CCloudGaming_TimeRemaining : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public uint appid
         {
             get => __pbn__appid.GetValueOrDefault();
@@ -2064,9 +2261,10 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeappid() => __pbn__appid != null;
         public void Resetappid() => __pbn__appid = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__appid;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint minutes_remaining
         {
             get => __pbn__minutes_remaining.GetValueOrDefault();
@@ -2074,23 +2272,25 @@ namespace SteamKit2.Internal
         }
         public bool ShouldSerializeminutes_remaining() => __pbn__minutes_remaining != null;
         public void Resetminutes_remaining() => __pbn__minutes_remaining = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__minutes_remaining;
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CCloudGaming_GetTimeRemaining_Response : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public global::System.Collections.Generic.List<CCloudGaming_TimeRemaining> entries { get; } = new global::System.Collections.Generic.List<CCloudGaming_TimeRemaining>();
 
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EAuthTokenPlatformType
     {
         k_EAuthTokenPlatformType_Unknown = 0,
@@ -2099,7 +2299,7 @@ namespace SteamKit2.Internal
         k_EAuthTokenPlatformType_MobileApp = 3,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EAuthTokenAppType
     {
         k_EAuthTokenAppType_Unknown = 0,
@@ -2107,7 +2307,7 @@ namespace SteamKit2.Internal
         k_EAuthTokenAppType_Mobile_ChatApp = 2,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EAuthSessionGuardType
     {
         k_EAuthSessionGuardType_Unknown = 0,
@@ -2120,7 +2320,7 @@ namespace SteamKit2.Internal
         k_EAuthSessionGuardType_LegacyMachineAuth = 7,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EAuthSessionSecurityHistory
     {
         k_EAuthSessionSecurityHistory_Invalid = 0,
@@ -2128,14 +2328,14 @@ namespace SteamKit2.Internal
         k_EAuthSessionSecurityHistory_NoPriorHistory = 2,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum ETokenRenewalType
     {
         k_ETokenRenewalType_None = 0,
         k_ETokenRenewalType_Allow = 1,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EAuthenticationType
     {
         k_EAuthenticationType_Unknown = 0,
@@ -2145,7 +2345,7 @@ namespace SteamKit2.Internal
         k_EAuthenticationType_GuestAccount = 4,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EAuthTokenState
     {
         k_EAuthTokenState_Invalid = 0,
@@ -2158,7 +2358,7 @@ namespace SteamKit2.Internal
         k_EAuthTokenState_Revoked = 99,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EAuthTokenRevokeAction
     {
         k_EAuthTokenRevokeLogout = 0,
@@ -2173,6 +2373,7 @@ namespace SteamKit2.Internal
 
     public class Authentication : SteamUnifiedMessages.UnifiedService
     {
+        [global::LightProto.ProtoIgnore]
         public override string ServiceName { get; } = "Authentication";
 
         public AsyncJob<SteamUnifiedMessages.ServiceMethodResponse<CAuthentication_GetPasswordRSAPublicKey_Response>> GetPasswordRSAPublicKey( CAuthentication_GetPasswordRSAPublicKey_Request request )
@@ -2304,6 +2505,7 @@ namespace SteamKit2.Internal
 
     public class AuthenticationSupport : SteamUnifiedMessages.UnifiedService
     {
+        [global::LightProto.ProtoIgnore]
         public override string ServiceName { get; } = "AuthenticationSupport";
 
         public AsyncJob<SteamUnifiedMessages.ServiceMethodResponse<CAuthenticationSupport_QueryRefreshTokensByAccount_Response>> QueryRefreshTokensByAccount( CAuthenticationSupport_QueryRefreshTokensByAccount_Request request )
@@ -2360,6 +2562,7 @@ namespace SteamKit2.Internal
 
     public class CloudGaming : SteamUnifiedMessages.UnifiedService
     {
+        [global::LightProto.ProtoIgnore]
         public override string ServiceName { get; } = "CloudGaming";
 
         public AsyncJob<SteamUnifiedMessages.ServiceMethodResponse<CCloudGaming_CreateNonce_Response>> CreateNonce( CCloudGaming_CreateNonce_Request request )

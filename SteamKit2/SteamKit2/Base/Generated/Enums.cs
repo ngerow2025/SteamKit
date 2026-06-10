@@ -9,7 +9,7 @@
 namespace SteamKit2.Internal
 {
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EPublishedFileQueryType
     {
         k_PublishedFileQueryType_RankedByVote = 0,
@@ -36,7 +36,7 @@ namespace SteamKit2.Internal
         k_PublishedFileQueryType_RankedByLastUpdatedDate = 21,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EPublishedFileInappropriateProvider
     {
         k_EPublishedFileInappropriateProvider_Invalid = 0,
@@ -44,7 +44,7 @@ namespace SteamKit2.Internal
         k_EPublishedFileInappropriateProvider_Amazon = 2,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EPublishedFileInappropriateResult
     {
         k_EPublishedFileInappropriateResult_NotScanned = 0,
@@ -55,7 +55,7 @@ namespace SteamKit2.Internal
         k_EPublishedFileInappropriateResult_VeryLikely = 100,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EPersonaStateFlag
     {
         k_EPersonaStateFlag_HasRichPresence = 1,
@@ -70,7 +70,7 @@ namespace SteamKit2.Internal
         k_EPersonaStateFlag_LaunchTypeCompatTool = 8192,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EContentCheckProvider
     {
         k_EContentCheckProvider_Invalid = 0,
@@ -82,7 +82,7 @@ namespace SteamKit2.Internal
         k_EContentCheckProvider_SteamLearn = 6,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EProfileCustomizationType
     {
         k_EProfileCustomizationTypeInvalid = 0,
@@ -112,7 +112,7 @@ namespace SteamKit2.Internal
         k_EProfileCustomizationTypeReplay = 24,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EPublishedFileStorageSystem
     {
         k_EPublishedFileStorageSystemInvalid = 0,
@@ -121,7 +121,7 @@ namespace SteamKit2.Internal
         k_EPublishedFileStorageSystemUGCCloud = 3,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum ECloudStoragePersistState
     {
         k_ECloudStoragePersistStatePersisted = 0,
@@ -129,7 +129,7 @@ namespace SteamKit2.Internal
         k_ECloudStoragePersistStateDeleted = 2,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum ESDCardFormatStage
     {
         k_ESDCardFormatStage_Invalid = 0,
@@ -140,7 +140,7 @@ namespace SteamKit2.Internal
         k_ESDCardFormatStage_Finalizing = 5,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EStorageFormatStage
     {
         k_EStorageFormatStage_Invalid = 0,
@@ -152,7 +152,7 @@ namespace SteamKit2.Internal
         k_EStorageFormatStage_Finalizing = 6,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum ESystemFanControlMode
     {
         k_SystemFanControlMode_Invalid = 0,
@@ -160,7 +160,7 @@ namespace SteamKit2.Internal
         k_SystemFanControlMode_Default = 2,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EStartupMovieVariant
     {
         k_EStartupMovieVariant_Invalid = 0,
@@ -170,7 +170,7 @@ namespace SteamKit2.Internal
         k_EStartupMovieVariant_Machine = 4,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EColorGamutLabelSet
     {
         k_ColorGamutLabelSet_Default = 0,
@@ -178,7 +178,7 @@ namespace SteamKit2.Internal
         k_ColorGamutLabelSet_Native_sRGB_Boosted = 2,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EWindowStackingOrder
     {
         k_EWindowStackingOrder_Invalid = 0,
@@ -186,7 +186,7 @@ namespace SteamKit2.Internal
         k_EWindowStackingOrder_Bottom = 2,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EBluetoothDeviceType
     {
         k_BluetoothDeviceType_Invalid = 0,
@@ -203,7 +203,7 @@ namespace SteamKit2.Internal
         k_BluetoothDeviceType_Keyboard = 11,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum ESystemAudioDirection
     {
         k_SystemAudioDirection_Invalid = 0,
@@ -211,7 +211,7 @@ namespace SteamKit2.Internal
         k_SystemAudioDirection_Output = 2,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum ESystemAudioChannel
     {
         k_SystemAudioChannel_Invalid = 0,
@@ -226,7 +226,7 @@ namespace SteamKit2.Internal
         k_SystemAudioChannel_Mono = 9,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum ESystemAudioPortType
     {
         k_SystemAudioPortType_Invalid = 0,
@@ -236,7 +236,7 @@ namespace SteamKit2.Internal
         k_SystemAudioPortType_Video32RGBA = 4,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum ESystemAudioPortDirection
     {
         k_SystemAudioPortDirection_Invalid = 0,
@@ -244,7 +244,7 @@ namespace SteamKit2.Internal
         k_SystemAudioPortDirection_Output = 2,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum ESystemServiceState
     {
         k_ESystemServiceState_Unavailable = 0,
@@ -252,7 +252,7 @@ namespace SteamKit2.Internal
         k_ESystemServiceState_Enabled = 2,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EGraphicsPerfOverlayLevel
     {
         k_EGraphicsPerfOverlayLevel_Hidden = 0,
@@ -262,7 +262,7 @@ namespace SteamKit2.Internal
         k_EGraphicsPerfOverlayLevel_Minimal = 4,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EGPUPerformanceLevel
     {
         k_EGPUPerformanceLevel_Invalid = 0,
@@ -273,7 +273,7 @@ namespace SteamKit2.Internal
         k_EGPUPerformanceLevel_Profiling = 5,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum ESplitScalingFilter
     {
         k_ESplitScalingFilter_Invalid = 0,
@@ -283,7 +283,7 @@ namespace SteamKit2.Internal
         k_ESplitScalingFilter_NIS_Deprecated = 4,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum ESplitScalingScaler
     {
         k_ESplitScalingScaler_Invalid = 0,
@@ -294,7 +294,7 @@ namespace SteamKit2.Internal
         k_ESplitScalingScaler_Stretch = 5,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EGamescopeBlurMode
     {
         k_EGamescopeBlurMode_Disabled = 0,
@@ -302,7 +302,7 @@ namespace SteamKit2.Internal
         k_EGamescopeBlurMode_Always = 2,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum ESLSHelper
     {
         k_ESLSHelper_Invalid = 0,
@@ -314,7 +314,7 @@ namespace SteamKit2.Internal
         k_ESLSHelper_Devcoredump = 6,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EHDRVisualization
     {
         k_EHDRVisualization_None = 0,
@@ -324,7 +324,7 @@ namespace SteamKit2.Internal
         k_EHDRVisualization_HeatmapClassic = 4,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EHDRToneMapOperator
     {
         k_EHDRToneMapOperator_Invalid = 0,
@@ -332,7 +332,7 @@ namespace SteamKit2.Internal
         k_EHDRToneMapOperator_Reinhard = 2,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum ECPUGovernor
     {
         k_ECPUGovernor_Invalid = 0,
@@ -341,7 +341,7 @@ namespace SteamKit2.Internal
         k_ECPUGovernor_Manual = 3,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EUpdaterType
     {
         k_EUpdaterType_Invalid = 0,
@@ -354,7 +354,7 @@ namespace SteamKit2.Internal
         k_EUpdaterType_Dummy = 7,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EUpdaterState
     {
         k_EUpdaterState_Invalid = 0,
@@ -367,7 +367,7 @@ namespace SteamKit2.Internal
         k_EUpdaterState_RollBack = 8,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EStorageBlockContentType
     {
         k_EStorageBlockContentType_Invalid = 0,
@@ -377,7 +377,7 @@ namespace SteamKit2.Internal
         k_EStorageBlockContentType_Raid = 4,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EStorageBlockFileSystemType
     {
         k_EStorageBlockFileSystemType_Invalid = 0,
@@ -386,7 +386,7 @@ namespace SteamKit2.Internal
         k_EStorageBlockFileSystemType_Ext4 = 3,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EStorageDriveMediaType
     {
         k_EStorageDriveMediaType_Invalid = 0,
@@ -396,7 +396,7 @@ namespace SteamKit2.Internal
         k_EStorageDriveMediaType_Removable = 4,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum ESystemDisplayCompatibilityMode
     {
         k_ESystemDisplayCompatibilityMode_Invalid = 0,
@@ -404,7 +404,7 @@ namespace SteamKit2.Internal
         k_ESystemDisplayCompatibilityMode_MinimalBandwith = 2,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum ESteamOSCompatibilityCategory
     {
         k_ESteamOSCompatibilityCategory_Unknown = 0,
@@ -412,7 +412,7 @@ namespace SteamKit2.Internal
         k_ESteamOSCompatibilityCategory_Compatible = 2,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum ESteamOSCompatibilityResultDisplayType
     {
         k_ESteamOSCompatibilityResultDisplayType_Invisible = 0,
@@ -421,7 +421,7 @@ namespace SteamKit2.Internal
         k_ESteamOSCompatibilityResultDisplayType_Compatible = 3,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum ESteamDeckCompatibilityCategory
     {
         k_ESteamDeckCompatibilityCategory_Unknown = 0,
@@ -430,7 +430,7 @@ namespace SteamKit2.Internal
         k_ESteamDeckCompatibilityCategory_Verified = 3,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum ESteamDeckCompatibilityResultDisplayType
     {
         k_ESteamDeckCompatibilityResultDisplayType_Invisible = 0,
@@ -440,7 +440,7 @@ namespace SteamKit2.Internal
         k_ESteamDeckCompatibilityResultDisplayType_Verified = 4,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum ESteamDeckCompatibilityTestResult
     {
         k_ESteamDeckCompatibilityTestResult_Invalid = 0,
@@ -450,7 +450,7 @@ namespace SteamKit2.Internal
         k_ESteamDeckCompatibilityTestResult_FailMinor = 4,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EACState
     {
         k_EACState_Unknown = 0,
@@ -459,7 +459,7 @@ namespace SteamKit2.Internal
         k_EACState_ConnectedSlow = 3,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EBatteryState
     {
         k_EBatteryState_Unknown = 0,
@@ -468,7 +468,7 @@ namespace SteamKit2.Internal
         k_EBatteryState_Full = 3,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EOSBranch
     {
         k_EOSBranch_Unknown = 0,
@@ -482,7 +482,7 @@ namespace SteamKit2.Internal
         k_EOSBranch_Staging = 8,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EBrowserGPUStatus
     {
         k_EBrowserGPUStatus_Invalid = 0,
@@ -497,7 +497,7 @@ namespace SteamKit2.Internal
         k_EBrowserGPUStatus_DisabledCompositingCommandLine = 10,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EBrowserFeatureStatus
     {
         k_EBrowserFeatureStatus_Invalid = 0,
@@ -516,7 +516,7 @@ namespace SteamKit2.Internal
         k_EBrowserFeatureStatus_EnabledForceOn = 13,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EGpuDriverId
     {
         k_EGpuDriverId_Invalid = 0,
@@ -541,7 +541,7 @@ namespace SteamKit2.Internal
         k_EGpuDriverId_MesaHoneyKrisp = 19,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum ECommunityItemClass
     {
         k_ECommunityItemClass_Invalid = 0,
@@ -564,7 +564,7 @@ namespace SteamKit2.Internal
         k_ECommunityItemClass_SteamDeckStartupMovie = 17,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum ESteamDeckCompatibilityFeedback
     {
         k_ESteamDeckCompatibilityFeedback_Unset = 0,
@@ -573,7 +573,7 @@ namespace SteamKit2.Internal
         k_ESteamDeckCompatibilityFeedback_Ignore = 3,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EProvideDeckFeedbackPreference
     {
         k_EProvideDeckFeedbackPreference_Unset = 0,
@@ -581,7 +581,7 @@ namespace SteamKit2.Internal
         k_EProvideDeckFeedbackPreference_No = 2,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EHardwareCompatibilityFeedbackDetails
     {
         k_EHardwareCompatibilityFeedbackDetails_Unset = 0,
@@ -592,7 +592,7 @@ namespace SteamKit2.Internal
         k_EHardwareCompatibilityFeedbackDetails_Other = 16,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EGameFrameRateReportingPreference
     {
         k_EGameFrameRateReportingPreference_Unset = 0,
@@ -601,7 +601,7 @@ namespace SteamKit2.Internal
         k_EGameFrameRateReportingPreference_Yes_NonAnonymous = 3,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum ETouchGesture
     {
         k_ETouchGestureNone = 0,
@@ -620,7 +620,7 @@ namespace SteamKit2.Internal
         k_ETouchGestureFlingCancelled = 13,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum ESessionPersistence
     {
         k_ESessionPersistence_Invalid = -1,
@@ -628,7 +628,7 @@ namespace SteamKit2.Internal
         k_ESessionPersistence_Persistent = 1,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum ENewSteamAnnouncementState
     {
         k_ENewSteamAnnouncementState_Invalid = 0,
@@ -637,7 +637,7 @@ namespace SteamKit2.Internal
         k_ENewSteamAnnouncementState_FeaturedAnnouncement = 3,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EForumType
     {
         k_EForumType_Invalid = 0,
@@ -651,7 +651,7 @@ namespace SteamKit2.Internal
         k_EForumType_Max = 8,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum ECommentThreadType
     {
         k_ECommentThreadTypeInvalid = 0,
@@ -678,7 +678,7 @@ namespace SteamKit2.Internal
         k_ECommentThreadTypeMax = 21,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EBroadcastPermission
     {
         k_EBroadcastPermissionDisabled = 0,
@@ -688,14 +688,14 @@ namespace SteamKit2.Internal
         k_EBroadcastPermissionSubscribers = 4,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EBroadcastEncoderSetting
     {
         k_EBroadcastEncoderBestQuality = 0,
         k_EBroadcastEncoderBestPerformance = 1,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum ECloudGamingPlatform
     {
         k_ECloudGamingPlatformNone = 0,
@@ -703,7 +703,7 @@ namespace SteamKit2.Internal
         k_ECloudGamingPlatformNVIDIA = 2,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum ECompromiseDetectionType
     {
         k_ECompromiseDetectionType_None = 0,
@@ -716,7 +716,7 @@ namespace SteamKit2.Internal
         k_ECompromiseDetectionType_DeviceType = 7,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EAsyncGameSessionUserState
     {
         k_EAsyncGameSessionUserStateUnknown = -1,
@@ -725,7 +725,7 @@ namespace SteamKit2.Internal
         k_EAsyncGameSessionUserStateDone = 2,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EAsyncGameSessionUserVisibility
     {
         k_EAsyncGameSessionUserVisibilityEnvelopeAndSessionList = 0,
@@ -733,7 +733,7 @@ namespace SteamKit2.Internal
         k_EAsyncGameSessionUserVisibilityDismissed = 2,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EGameRecordingType
     {
         k_EGameRecordingType_Unknown = 0,
@@ -743,7 +743,7 @@ namespace SteamKit2.Internal
         k_EGameRecordingType_Clip = 4,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EGRMode
     {
         k_EGRMode_Never = 0,
@@ -751,7 +751,7 @@ namespace SteamKit2.Internal
         k_EGRMode_Manual = 2,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EExportCodec
     {
         k_EExportCodec_Default = 0,
@@ -759,7 +759,7 @@ namespace SteamKit2.Internal
         k_EExportCodec_H265 = 2,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EProtoAppType
     {
         k_EAppTypeInvalid = 0,
@@ -784,7 +784,7 @@ namespace SteamKit2.Internal
         k_EAppTypeDepotOnly = -2147483648,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EChildProcessQueryCommand
     {
         k_EChildProcessQueryCommand_Invalid = 0,
@@ -792,7 +792,7 @@ namespace SteamKit2.Internal
         k_EChildProcessQueryCommand_Max = 2,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EChildProcessQueryExitCode
     {
         k_EChildProcessQueryExitCode_Success = 0,
@@ -803,7 +803,7 @@ namespace SteamKit2.Internal
         k_EChildProcessQueryExitCode_ErrorNotSupportedByPlatform = -5,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EWindowsUpdateInstallationImpact
     {
         k_EWindowsUpdateInstallationImpact_Unknown = -1,
@@ -812,7 +812,7 @@ namespace SteamKit2.Internal
         k_EWindowsUpdateInstallationImpact_ExclusiveHandling = 2,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EWindowsUpdateRebootBehavior
     {
         k_EWindowsUpdateRebootBehavior_Unknown = -1,
@@ -821,7 +821,7 @@ namespace SteamKit2.Internal
         k_EWindowsUpdateRebootBehavior_MightNeedReboot = 2,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EExternalSaleEventType
     {
         k_EExternalSaleEventType_Unknown = 0,
@@ -832,7 +832,7 @@ namespace SteamKit2.Internal
         k_EExternalSaleEventType_Franchise = 5,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EEnhancedMarketAppearanceStatus
     {
         k_EnhancedMarketAppearanceStatus_None = 0,
@@ -841,7 +841,7 @@ namespace SteamKit2.Internal
         k_EnhancedMarketAppearanceStatus_Completed = 3,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EContentReportSubjectType
     {
         k_EContentReportSubjectType_Invalid = 0,
@@ -854,7 +854,7 @@ namespace SteamKit2.Internal
         k_EContentReportSubjectType_MAX = 7,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EControlledLegalCategoryStatus
     {
         k_EControlledLegalCategoryStatus_None = 0,
@@ -863,7 +863,7 @@ namespace SteamKit2.Internal
         k_EControlledLegalCategoryStatus_Acquitted = 3,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EContentModeratorLevel
     {
         k_EContentModeratorLevel_Any = 0,
@@ -872,7 +872,7 @@ namespace SteamKit2.Internal
         k_EContentModeratorLevel_MAX = 11,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EContentReportResolution
     {
         k_EContentReportResolution_Unresolved = 0,
@@ -894,7 +894,7 @@ namespace SteamKit2.Internal
         k_EContentReportResolution_MAX = 16,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EContentModerationSanction
     {
         k_EContentModerationSanction_Invalid = 0,
@@ -911,7 +911,7 @@ namespace SteamKit2.Internal
         k_EContentModerationSanction_MAX = 11,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EContentReportSubjectAction
     {
         k_EContentReportSubjectAction_Invalid = 0,
@@ -939,7 +939,7 @@ namespace SteamKit2.Internal
         k_EContentReportSubjectAction_PrivateMessaged = 22,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EContentReportReason
     {
         k_EContentReportReason_Invalid = 0,
@@ -1009,7 +1009,7 @@ namespace SteamKit2.Internal
         k_EContentReportReason_MAX = 64,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EResolutionAutomation
     {
         k_EResolutionAutomation_Manual = 0,
@@ -1018,7 +1018,7 @@ namespace SteamKit2.Internal
         k_EResolutionAutomation_MAX = 3,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EPressOutletAction
     {
         k_EPressOutletAction_Invalid = 0,
@@ -1037,7 +1037,7 @@ namespace SteamKit2.Internal
         k_EPressOutletAction_MAX = 13,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EPressOutletMemberPendingState
     {
         k_EPressOutletMemberPendingState_Member = 0,
@@ -1046,7 +1046,7 @@ namespace SteamKit2.Internal
         k_EPressOutletMemberPendingState_MAX = 3,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum ECommentDeleteReason
     {
         k_ECommentDeleteReason_Invalid = 0,

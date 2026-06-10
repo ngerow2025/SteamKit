@@ -9,7 +9,7 @@
 namespace SteamKit2.GC.Dota.Internal
 {
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum ENetworkDisconnectionReason
     {
         NETWORK_DISCONNECT_INVALID = 0,

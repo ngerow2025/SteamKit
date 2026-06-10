@@ -9,14 +9,15 @@
 namespace SteamKit2.GC.Deadlock.Internal
 {
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public partial class CEngineGotvSyncPacket : global::ProtoBuf.IExtensible
     {
-        private global::ProtoBuf.IExtension __pbn__extensionData;
-        global::ProtoBuf.IExtension global::ProtoBuf.IExtensible.GetExtensionObject(bool createIfMissing)
-            => global::ProtoBuf.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
+        [global::LightProto.ProtoIgnore]
+        private global::LightProto.IExtension __pbn__extensionData;
+        global::LightProto.IExtension global::LightProto.IExtensible.GetExtensionObject(bool createIfMissing)
+            => global::LightProto.Extensible.GetExtensionObject(ref __pbn__extensionData, createIfMissing);
 
-        [global::ProtoBuf.ProtoMember(1)]
+        [global::LightProto.ProtoMember(1)]
         public ulong match_id
         {
             get => __pbn__match_id.GetValueOrDefault();
@@ -24,9 +25,10 @@ namespace SteamKit2.GC.Deadlock.Internal
         }
         public bool ShouldSerializematch_id() => __pbn__match_id != null;
         public void Resetmatch_id() => __pbn__match_id = null;
+        [global::LightProto.ProtoIgnore]
         private ulong? __pbn__match_id;
 
-        [global::ProtoBuf.ProtoMember(2)]
+        [global::LightProto.ProtoMember(2)]
         public uint instance_id
         {
             get => __pbn__instance_id.GetValueOrDefault();
@@ -34,9 +36,10 @@ namespace SteamKit2.GC.Deadlock.Internal
         }
         public bool ShouldSerializeinstance_id() => __pbn__instance_id != null;
         public void Resetinstance_id() => __pbn__instance_id = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__instance_id;
 
-        [global::ProtoBuf.ProtoMember(3)]
+        [global::LightProto.ProtoMember(3)]
         public uint signupfragment
         {
             get => __pbn__signupfragment.GetValueOrDefault();
@@ -44,9 +47,10 @@ namespace SteamKit2.GC.Deadlock.Internal
         }
         public bool ShouldSerializesignupfragment() => __pbn__signupfragment != null;
         public void Resetsignupfragment() => __pbn__signupfragment = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__signupfragment;
 
-        [global::ProtoBuf.ProtoMember(4)]
+        [global::LightProto.ProtoMember(4)]
         public uint currentfragment
         {
             get => __pbn__currentfragment.GetValueOrDefault();
@@ -54,9 +58,10 @@ namespace SteamKit2.GC.Deadlock.Internal
         }
         public bool ShouldSerializecurrentfragment() => __pbn__currentfragment != null;
         public void Resetcurrentfragment() => __pbn__currentfragment = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__currentfragment;
 
-        [global::ProtoBuf.ProtoMember(5)]
+        [global::LightProto.ProtoMember(5)]
         public float tickrate
         {
             get => __pbn__tickrate.GetValueOrDefault();
@@ -64,9 +69,10 @@ namespace SteamKit2.GC.Deadlock.Internal
         }
         public bool ShouldSerializetickrate() => __pbn__tickrate != null;
         public void Resettickrate() => __pbn__tickrate = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__tickrate;
 
-        [global::ProtoBuf.ProtoMember(6)]
+        [global::LightProto.ProtoMember(6)]
         public uint tick
         {
             get => __pbn__tick.GetValueOrDefault();
@@ -74,9 +80,10 @@ namespace SteamKit2.GC.Deadlock.Internal
         }
         public bool ShouldSerializetick() => __pbn__tick != null;
         public void Resettick() => __pbn__tick = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__tick;
 
-        [global::ProtoBuf.ProtoMember(8)]
+        [global::LightProto.ProtoMember(8)]
         public float rtdelay
         {
             get => __pbn__rtdelay.GetValueOrDefault();
@@ -84,9 +91,10 @@ namespace SteamKit2.GC.Deadlock.Internal
         }
         public bool ShouldSerializertdelay() => __pbn__rtdelay != null;
         public void Resetrtdelay() => __pbn__rtdelay = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__rtdelay;
 
-        [global::ProtoBuf.ProtoMember(9)]
+        [global::LightProto.ProtoMember(9)]
         public float rcvage
         {
             get => __pbn__rcvage.GetValueOrDefault();
@@ -94,9 +102,10 @@ namespace SteamKit2.GC.Deadlock.Internal
         }
         public bool ShouldSerializercvage() => __pbn__rcvage != null;
         public void Resetrcvage() => __pbn__rcvage = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__rcvage;
 
-        [global::ProtoBuf.ProtoMember(10)]
+        [global::LightProto.ProtoMember(10)]
         public float keyframe_interval
         {
             get => __pbn__keyframe_interval.GetValueOrDefault();
@@ -104,9 +113,10 @@ namespace SteamKit2.GC.Deadlock.Internal
         }
         public bool ShouldSerializekeyframe_interval() => __pbn__keyframe_interval != null;
         public void Resetkeyframe_interval() => __pbn__keyframe_interval = null;
+        [global::LightProto.ProtoIgnore]
         private float? __pbn__keyframe_interval;
 
-        [global::ProtoBuf.ProtoMember(11)]
+        [global::LightProto.ProtoMember(11)]
         public uint cdndelay
         {
             get => __pbn__cdndelay.GetValueOrDefault();
@@ -114,6 +124,7 @@ namespace SteamKit2.GC.Deadlock.Internal
         }
         public bool ShouldSerializecdndelay() => __pbn__cdndelay != null;
         public void Resetcdndelay() => __pbn__cdndelay = null;
+        [global::LightProto.ProtoIgnore]
         private uint? __pbn__cdndelay;
 
     }

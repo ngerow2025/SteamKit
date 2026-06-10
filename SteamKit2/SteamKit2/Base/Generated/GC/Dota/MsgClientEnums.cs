@@ -9,14 +9,14 @@
 namespace SteamKit2.GC.Dota.Internal
 {
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum ETournamentTemplate
     {
         k_ETournamentTemplate_None = 0,
         k_ETournamentTemplate_AutomatedWin3 = 1,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum ETournamentGameState
     {
         k_ETournamentGameState_Unknown = 0,
@@ -31,7 +31,7 @@ namespace SteamKit2.GC.Dota.Internal
         k_ETournamentGameState_NotNeeded = 41,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum ETournamentTeamState
     {
         k_ETournamentTeamState_Unknown = 0,
@@ -57,7 +57,7 @@ namespace SteamKit2.GC.Dota.Internal
         k_ETournamentTeamState_Finished16th = 15016,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum ETournamentState
     {
         k_ETournamentState_Unknown = 0,
@@ -74,7 +74,7 @@ namespace SteamKit2.GC.Dota.Internal
         k_ETournamentState_WaitingToMerge = 101,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum ETournamentNodeState
     {
         k_ETournamentNodeState_Unknown = 0,
@@ -93,7 +93,7 @@ namespace SteamKit2.GC.Dota.Internal
         k_ETournamentNodeState_A_TimeoutRefund = 13,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EDOTAGroupMergeResult
     {
         k_EDOTAGroupMergeResult_OK = 0,
@@ -108,7 +108,7 @@ namespace SteamKit2.GC.Dota.Internal
         k_EDOTAGroupMergeResult_NOT_INVITED = 9,
     }
 
-    [global::ProtoBuf.ProtoContract()]
+    [global::LightProto.ProtoContract()]
     public enum EPartyBeaconType
     {
         k_EPartyBeaconType_Available = 0,

@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
@@ -74,9 +74,48 @@ namespace ProtobufGen
                 }
 
                 var dir = Path.GetDirectoryName( arguments.Output );
-                Directory.CreateDirectory( dir );
+                if (!string.IsNullOrEmpty(dir))
+                {
+                    Directory.CreateDirectory( dir );
+                }
 
-                File.WriteAllText( arguments.Output, file.Text );
+                var text = file.Text;
+                text = text.Replace( "global::ProtoBuf.ProtoContract", "global::LightProto.ProtoContract" );
+                text = text.Replace( "global::ProtoBuf.ProtoMember", "global::LightProto.ProtoMember" );
+                text = text.Replace( "global::ProtoBuf.IExtensible.GetExtensionObject", "global::LightProto.IExtensible.GetExtensionObject" );
+                text = text.Replace( "global::ProtoBuf.IExtension", "global::LightProto.IExtension" );
+                text = text.Replace( "global::ProtoBuf.Extensible", "global::LightProto.Extensible" );
+                text = text.Replace( "global::ProtoBuf.DataFormat", "global::LightProto.DataFormat" );
+                text = text.Replace( "global::System.Collections.Generic.List<byte[]>", "global::System.Collections.Generic.List<global::ProtoBuf.SteamBytes>" );
+                text = text.Replace( "public override string ServiceName", $"[global::LightProto.ProtoIgnore]{Environment.NewLine}        public override string ServiceName" );
+
+                text = System.Text.RegularExpressions.Regex.Replace(
+                    text,
+                    @"public\s+(?<type>[^\s@]+)\s+@(?<name>[a-z]+)\b\s*(?<block>\{[^{}]*\})?(\s*=\s*(?<init>[^;]+);)?",
+                    match => {
+                        string type = match.Groups["type"].Value;
+                        string name = match.Groups["name"].Value;
+                        string body = match.Groups["block"].Value;
+                        string initValue = match.Groups["init"].Value;
+
+                        string initializer = string.IsNullOrEmpty(initValue) ? "" : $" = {initValue};";
+
+                        if (type.Contains("List<")) {
+                            return $"public {type} {name}_ {body}{initializer}\n        [global::LightProto.ProtoIgnore]\n        public {type} @{name} => {name}_;";
+                        } else {
+                            return $"public {type} {name}_ {body}{initializer}\n        [global::LightProto.ProtoIgnore]\n        public {type} @{name} {{ get => {name}_; set => {name}_ = value; }}";
+                        }
+                    }
+                );
+
+                text = System.Text.RegularExpressions.Regex.Replace(
+                    text,
+                    @"^(\s*)(private\s+[^;\r\n]+__pbn__[a-zA-Z0-9_]+\s*;)",
+                    $"$1[global::LightProto.ProtoIgnore]{Environment.NewLine}$1$2",
+                    System.Text.RegularExpressions.RegexOptions.Multiline
+                );
+
+                File.WriteAllText( arguments.Output, text );
             }
 
             return 0;

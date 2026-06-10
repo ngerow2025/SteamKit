@@ -12,7 +12,7 @@ namespace SteamKit2
     /// </summary>
     public partial class SteamMatchmaking : ClientMsgHandler
     {
-        readonly ConcurrentDictionary<JobID, ProtoBuf.IExtensible> lobbyManipulationRequests = new();
+        readonly ConcurrentDictionary<JobID, LightProto.IExtensible> lobbyManipulationRequests = new();
 
         readonly LobbyCache lobbyCache = new();
 

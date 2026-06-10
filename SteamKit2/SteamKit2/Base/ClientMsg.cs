@@ -1,4 +1,4 @@
-﻿/*
+/*
  * This file is subject to the terms and conditions defined in
  * file 'license.txt', which is part of this source code package.
  */
@@ -7,7 +7,7 @@
 using System;
 using System.Diagnostics.CodeAnalysis;
 using System.IO;
-using ProtoBuf;
+using LightProto;
 using SteamKit2.Internal;
 
 namespace SteamKit2
@@ -133,7 +133,7 @@ namespace SteamKit2
     /// </summary>
     /// <typeparam name="TBody">The body type of this message.</typeparam>
     public sealed class ClientMsgProtobuf<TBody> : ClientMsgProtobuf
-        where TBody : IExtensible, new()
+        where TBody : IExtensible, LightProto.IProtoParser<TBody>, new()
     {
         private TBody _body;
 
